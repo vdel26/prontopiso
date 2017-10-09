@@ -24,11 +24,11 @@
 .black {
   color: #000; }
 
+.black-85 {
+  color: rgba(0, 0, 0, 0.85); }
+
 .black-50 {
   color: rgba(0, 0, 0, 0.5); }
-
-.black-15 {
-  color: rgba(0, 0, 0, 0.15); }
 
 .white {
   color: #fff; }
@@ -47,10 +47,10 @@
     color: transparent; }
   .black-ns {
     color: #000; }
+  .black-85-ns {
+    color: rgba(0, 0, 0, 0.85); }
   .black-50-ns {
     color: rgba(0, 0, 0, 0.5); }
-  .black-15-ns {
-    color: rgba(0, 0, 0, 0.15); }
   .white-ns {
     color: #fff; }
   .blue-ns {
@@ -67,10 +67,10 @@
     color: transparent; }
   .black-m {
     color: #000; }
+  .black-85-m {
+    color: rgba(0, 0, 0, 0.85); }
   .black-50-m {
     color: rgba(0, 0, 0, 0.5); }
-  .black-15-m {
-    color: rgba(0, 0, 0, 0.15); }
   .white-m {
     color: #fff; }
   .blue-m {
@@ -87,10 +87,10 @@
     color: transparent; }
   .black-l {
     color: #000; }
+  .black-85-l {
+    color: rgba(0, 0, 0, 0.85); }
   .black-50-l {
     color: rgba(0, 0, 0, 0.5); }
-  .black-15-l {
-    color: rgba(0, 0, 0, 0.15); }
   .white-l {
     color: #fff; }
   .blue-l {
@@ -112,11 +112,11 @@
 .bg-black {
   background-color: #000; }
 
+.bg-black-85 {
+  background-color: rgba(0, 0, 0, 0.85); }
+
 .bg-black-50 {
   background-color: rgba(0, 0, 0, 0.5); }
-
-.bg-black-15 {
-  background-color: rgba(0, 0, 0, 0.15); }
 
 .bg-white {
   background-color: #fff; }
@@ -135,10 +135,10 @@
     background-color: transparent; }
   .bg-black-ns {
     background-color: #000; }
+  .bg-black-85-ns {
+    background-color: rgba(0, 0, 0, 0.85); }
   .bg-black-50-ns {
     background-color: rgba(0, 0, 0, 0.5); }
-  .bg-black-15-ns {
-    background-color: rgba(0, 0, 0, 0.15); }
   .bg-white-ns {
     background-color: #fff; }
   .bg-blue-ns {
@@ -155,10 +155,10 @@
     background-color: transparent; }
   .bg-black-m {
     background-color: #000; }
+  .bg-black-85-m {
+    background-color: rgba(0, 0, 0, 0.85); }
   .bg-black-50-m {
     background-color: rgba(0, 0, 0, 0.5); }
-  .bg-black-15-m {
-    background-color: rgba(0, 0, 0, 0.15); }
   .bg-white-m {
     background-color: #fff; }
   .bg-blue-m {
@@ -175,10 +175,10 @@
     background-color: transparent; }
   .bg-black-l {
     background-color: #000; }
+  .bg-black-85-l {
+    background-color: rgba(0, 0, 0, 0.85); }
   .bg-black-50-l {
     background-color: rgba(0, 0, 0, 0.5); }
-  .bg-black-15-l {
-    background-color: rgba(0, 0, 0, 0.15); }
   .bg-white-l {
     background-color: #fff; }
   .bg-blue-l {

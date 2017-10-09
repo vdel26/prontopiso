@@ -51,6 +51,18 @@
   max-width: 48px;
   max-width: 3rem; }
 
+.w100 {
+  width: 100px;
+  width: 6.25rem; }
+
+.min-w100 {
+  min-width: 100px;
+  min-width: 6.25rem; }
+
+.max-w100 {
+  max-width: 100px;
+  max-width: 6.25rem; }
+
 .w-10 {
   width: 10%; }
 
@@ -280,6 +292,15 @@
   .max-w48-ns {
     max-width: 48px;
     max-width: 3rem; }
+  .w100-ns {
+    width: 100px;
+    width: 6.25rem; }
+  .min-w100-ns {
+    min-width: 100px;
+    min-width: 6.25rem; }
+  .max-w100-ns {
+    max-width: 100px;
+    max-width: 6.25rem; }
   .w-10-ns {
     width: 10%; }
   .min-w-10-ns {
@@ -441,6 +462,15 @@
   .max-w48-m {
     max-width: 48px;
     max-width: 3rem; }
+  .w100-m {
+    width: 100px;
+    width: 6.25rem; }
+  .min-w100-m {
+    min-width: 100px;
+    min-width: 6.25rem; }
+  .max-w100-m {
+    max-width: 100px;
+    max-width: 6.25rem; }
   .w-10-m {
     width: 10%; }
   .min-w-10-m {
@@ -602,6 +632,15 @@
   .max-w48-l {
     max-width: 48px;
     max-width: 3rem; }
+  .w100-l {
+    width: 100px;
+    width: 6.25rem; }
+  .min-w100-l {
+    min-width: 100px;
+    min-width: 6.25rem; }
+  .max-w100-l {
+    max-width: 100px;
+    max-width: 6.25rem; }
   .w-10-l {
     width: 10%; }
   .min-w-10-l {

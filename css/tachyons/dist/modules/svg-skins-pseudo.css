@@ -43,13 +43,13 @@
 .hover-fill-black:focus {
   fill: #000; }
 
+.hover-fill-black-85:hover,
+.hover-fill-black-85:focus {
+  fill: rgba(0, 0, 0, 0.85); }
+
 .hover-fill-black-50:hover,
 .hover-fill-black-50:focus {
   fill: rgba(0, 0, 0, 0.5); }
-
-.hover-fill-black-15:hover,
-.hover-fill-black-15:focus {
-  fill: rgba(0, 0, 0, 0.15); }
 
 .hover-fill-white:hover,
 .hover-fill-white:focus {
@@ -75,12 +75,12 @@
   .hover-fill-black-ns:hover,
   .hover-fill-black-ns:focus {
     fill: #000; }
+  .hover-fill-black-85-ns:hover,
+  .hover-fill-black-85-ns:focus {
+    fill: rgba(0, 0, 0, 0.85); }
   .hover-fill-black-50-ns:hover,
   .hover-fill-black-50-ns:focus {
     fill: rgba(0, 0, 0, 0.5); }
-  .hover-fill-black-15-ns:hover,
-  .hover-fill-black-15-ns:focus {
-    fill: rgba(0, 0, 0, 0.15); }
   .hover-fill-white-ns:hover,
   .hover-fill-white-ns:focus {
     fill: #fff; }
@@ -104,12 +104,12 @@
   .hover-fill-black-m:hover,
   .hover-fill-black-m:focus {
     fill: #000; }
+  .hover-fill-black-85-m:hover,
+  .hover-fill-black-85-m:focus {
+    fill: rgba(0, 0, 0, 0.85); }
   .hover-fill-black-50-m:hover,
   .hover-fill-black-50-m:focus {
     fill: rgba(0, 0, 0, 0.5); }
-  .hover-fill-black-15-m:hover,
-  .hover-fill-black-15-m:focus {
-    fill: rgba(0, 0, 0, 0.15); }
   .hover-fill-white-m:hover,
   .hover-fill-white-m:focus {
     fill: #fff; }
@@ -133,12 +133,12 @@
   .hover-fill-black-l:hover,
   .hover-fill-black-l:focus {
     fill: #000; }
+  .hover-fill-black-85-l:hover,
+  .hover-fill-black-85-l:focus {
+    fill: rgba(0, 0, 0, 0.85); }
   .hover-fill-black-50-l:hover,
   .hover-fill-black-50-l:focus {
     fill: rgba(0, 0, 0, 0.5); }
-  .hover-fill-black-15-l:hover,
-  .hover-fill-black-15-l:focus {
-    fill: rgba(0, 0, 0, 0.15); }
   .hover-fill-white-l:hover,
   .hover-fill-white-l:focus {
     fill: #fff; }
@@ -167,13 +167,13 @@
 .hover-stroke-black:focus {
   stroke: #000; }
 
+.hover-stroke-black-85:hover,
+.hover-stroke-black-85:focus {
+  stroke: rgba(0, 0, 0, 0.85); }
+
 .hover-stroke-black-50:hover,
 .hover-stroke-black-50:focus {
   stroke: rgba(0, 0, 0, 0.5); }
-
-.hover-stroke-black-15:hover,
-.hover-stroke-black-15:focus {
-  stroke: rgba(0, 0, 0, 0.15); }
 
 .hover-stroke-white:hover,
 .hover-stroke-white:focus {
@@ -199,12 +199,12 @@
   .hover-stroke-black-ns:hover,
   .hover-stroke-black-ns:focus {
     stroke: #000; }
+  .hover-stroke-black-85-ns:hover,
+  .hover-stroke-black-85-ns:focus {
+    stroke: rgba(0, 0, 0, 0.85); }
   .hover-stroke-black-50-ns:hover,
   .hover-stroke-black-50-ns:focus {
     stroke: rgba(0, 0, 0, 0.5); }
-  .hover-stroke-black-15-ns:hover,
-  .hover-stroke-black-15-ns:focus {
-    stroke: rgba(0, 0, 0, 0.15); }
   .hover-stroke-white-ns:hover,
   .hover-stroke-white-ns:focus {
     stroke: #fff; }
@@ -228,12 +228,12 @@
   .hover-stroke-black-m:hover,
   .hover-stroke-black-m:focus {
     stroke: #000; }
+  .hover-stroke-black-85-m:hover,
+  .hover-stroke-black-85-m:focus {
+    stroke: rgba(0, 0, 0, 0.85); }
   .hover-stroke-black-50-m:hover,
   .hover-stroke-black-50-m:focus {
     stroke: rgba(0, 0, 0, 0.5); }
-  .hover-stroke-black-15-m:hover,
-  .hover-stroke-black-15-m:focus {
-    stroke: rgba(0, 0, 0, 0.15); }
   .hover-stroke-white-m:hover,
   .hover-stroke-white-m:focus {
     stroke: #fff; }
@@ -257,12 +257,12 @@
   .hover-stroke-black-l:hover,
   .hover-stroke-black-l:focus {
     stroke: #000; }
+  .hover-stroke-black-85-l:hover,
+  .hover-stroke-black-85-l:focus {
+    stroke: rgba(0, 0, 0, 0.85); }
   .hover-stroke-black-50-l:hover,
   .hover-stroke-black-50-l:focus {
     stroke: rgba(0, 0, 0, 0.5); }
-  .hover-stroke-black-15-l:hover,
-  .hover-stroke-black-15-l:focus {
-    stroke: rgba(0, 0, 0, 0.15); }
   .hover-stroke-white-l:hover,
   .hover-stroke-white-l:focus {
     stroke: #fff; }

@@ -38,11 +38,11 @@
 .fill-black {
   fill: #000; }
 
+.fill-black-85 {
+  fill: rgba(0, 0, 0, 0.85); }
+
 .fill-black-50 {
   fill: rgba(0, 0, 0, 0.5); }
-
-.fill-black-15 {
-  fill: rgba(0, 0, 0, 0.15); }
 
 .fill-white {
   fill: #fff; }
@@ -61,10 +61,10 @@
     fill: transparent; }
   .fill-black-ns {
     fill: #000; }
+  .fill-black-85-ns {
+    fill: rgba(0, 0, 0, 0.85); }
   .fill-black-50-ns {
     fill: rgba(0, 0, 0, 0.5); }
-  .fill-black-15-ns {
-    fill: rgba(0, 0, 0, 0.15); }
   .fill-white-ns {
     fill: #fff; }
   .fill-blue-ns {
@@ -81,10 +81,10 @@
     fill: transparent; }
   .fill-black-m {
     fill: #000; }
+  .fill-black-85-m {
+    fill: rgba(0, 0, 0, 0.85); }
   .fill-black-50-m {
     fill: rgba(0, 0, 0, 0.5); }
-  .fill-black-15-m {
-    fill: rgba(0, 0, 0, 0.15); }
   .fill-white-m {
     fill: #fff; }
   .fill-blue-m {
@@ -101,10 +101,10 @@
     fill: transparent; }
   .fill-black-l {
     fill: #000; }
+  .fill-black-85-l {
+    fill: rgba(0, 0, 0, 0.85); }
   .fill-black-50-l {
     fill: rgba(0, 0, 0, 0.5); }
-  .fill-black-15-l {
-    fill: rgba(0, 0, 0, 0.15); }
   .fill-white-l {
     fill: #fff; }
   .fill-blue-l {
@@ -126,11 +126,11 @@
 .stroke-black {
   stroke: #000; }
 
+.stroke-black-85 {
+  stroke: rgba(0, 0, 0, 0.85); }
+
 .stroke-black-50 {
   stroke: rgba(0, 0, 0, 0.5); }
-
-.stroke-black-15 {
-  stroke: rgba(0, 0, 0, 0.15); }
 
 .stroke-white {
   stroke: #fff; }
@@ -149,10 +149,10 @@
     stroke: transparent; }
   .stroke-black-ns {
     stroke: #000; }
+  .stroke-black-85-ns {
+    stroke: rgba(0, 0, 0, 0.85); }
   .stroke-black-50-ns {
     stroke: rgba(0, 0, 0, 0.5); }
-  .stroke-black-15-ns {
-    stroke: rgba(0, 0, 0, 0.15); }
   .stroke-white-ns {
     stroke: #fff; }
   .stroke-blue-ns {
@@ -169,10 +169,10 @@
     stroke: transparent; }
   .stroke-black-m {
     stroke: #000; }
+  .stroke-black-85-m {
+    stroke: rgba(0, 0, 0, 0.85); }
   .stroke-black-50-m {
     stroke: rgba(0, 0, 0, 0.5); }
-  .stroke-black-15-m {
-    stroke: rgba(0, 0, 0, 0.15); }
   .stroke-white-m {
     stroke: #fff; }
   .stroke-blue-m {
@@ -189,10 +189,10 @@
     stroke: transparent; }
   .stroke-black-l {
     stroke: #000; }
+  .stroke-black-85-l {
+    stroke: rgba(0, 0, 0, 0.85); }
   .stroke-black-50-l {
     stroke: rgba(0, 0, 0, 0.5); }
-  .stroke-black-15-l {
-    stroke: rgba(0, 0, 0, 0.15); }
   .stroke-white-l {
     stroke: #fff; }
   .stroke-blue-l {

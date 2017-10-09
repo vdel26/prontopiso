@@ -1,0 +1,23 @@
+- name: "1"
+  description: "Completa un breve formulario online y recibe sin compromiso una tasación previa de tu vivienda en 24h."
+  icon: assets/images/how-it-works/01.svg
+
+- name: "2"
+  description: "En un plazo de 48h nos pondremos en contacto contigo para programar la visita de uno de nuestros agentes, que realizará la tasación final de tu vivienda y te ofrecerá un precio mínimo garantizado al momento."
+  icon: assets/images/how-it-works/02.svg
+
+- name: "3"
+  description: "Nos ocuparemos de la promoción de tu vivienda en los principales portales inmobiliarios y nos encargaremos de organizar visitas con potenciales compradores para obtener el mejor precio."
+  icon: assets/images/how-it-works/03.svg
+
+- name: "4"
+  description: "Si llegado el día 90 no hemos vendido tu vivienda, te anticiparemos el precio mínimo garantizado de manera gratuita, para que puedas hacer frente a la compra de tu siguiente propiedad."
+  icon: assets/images/how-it-works/04.svg
+
+- name: "5"
+  description: "ProntoPiso se encargará del proceso de venta de la vivienda, intermediando en la negociación y gestionando la formalización de la compraventa."
+  icon: assets/images/how-it-works/05.svg
+
+- name: "6"
+  description: "Relájate y dedícate a buscar tu vivienda soñada, ¡ProntoPiso se encarga del resto!"
+  icon: assets/images/how-it-works/06.svg
