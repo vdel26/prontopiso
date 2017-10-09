@@ -49,6 +49,10 @@
   padding: 18px;
   padding: 1.125rem; }
 
+.pa20 {
+  padding: 20px;
+  padding: 1.25rem; }
+
 .pa25 {
   padding: 25px;
   padding: 1.5625rem; }
@@ -102,6 +106,10 @@
 .pt18 {
   padding-top: 18px;
   padding-top: 1.125rem; }
+
+.pt20 {
+  padding-top: 20px;
+  padding-top: 1.25rem; }
 
 .pt25 {
   padding-top: 25px;
@@ -157,6 +165,10 @@
   padding-right: 18px;
   padding-right: 1.125rem; }
 
+.pr20 {
+  padding-right: 20px;
+  padding-right: 1.25rem; }
+
 .pr25 {
   padding-right: 25px;
   padding-right: 1.5625rem; }
@@ -211,6 +223,10 @@
   padding-bottom: 18px;
   padding-bottom: 1.125rem; }
 
+.pb20 {
+  padding-bottom: 20px;
+  padding-bottom: 1.25rem; }
+
 .pb25 {
   padding-bottom: 25px;
   padding-bottom: 1.5625rem; }
@@ -264,6 +280,10 @@
 .pl18 {
   padding-left: 18px;
   padding-left: 1.125rem; }
+
+.pl20 {
+  padding-left: 20px;
+  padding-left: 1.25rem; }
 
 .pl25 {
   padding-left: 25px;
@@ -325,6 +345,12 @@
   padding-top: 1.125rem;
   padding-bottom: 18px;
   padding-bottom: 1.125rem; }
+
+.pv20 {
+  padding-top: 20px;
+  padding-top: 1.25rem;
+  padding-bottom: 20px;
+  padding-bottom: 1.25rem; }
 
 .pv25 {
   padding-top: 25px;
@@ -406,6 +432,12 @@
   padding-left: 18px;
   padding-left: 1.125rem; }
 
+.ph20 {
+  padding-right: 20px;
+  padding-right: 1.25rem;
+  padding-left: 20px;
+  padding-left: 1.25rem; }
+
 .ph25 {
   padding-right: 25px;
   padding-right: 1.5625rem;
@@ -476,6 +508,9 @@
   .pa18-ns {
     padding: 18px;
     padding: 1.125rem; }
+  .pa20-ns {
+    padding: 20px;
+    padding: 1.25rem; }
   .pa25-ns {
     padding: 25px;
     padding: 1.5625rem; }
@@ -516,6 +551,9 @@
   .pt18-ns {
     padding-top: 18px;
     padding-top: 1.125rem; }
+  .pt20-ns {
+    padding-top: 20px;
+    padding-top: 1.25rem; }
   .pt25-ns {
     padding-top: 25px;
     padding-top: 1.5625rem; }
@@ -556,6 +594,9 @@
   .pr18-ns {
     padding-right: 18px;
     padding-right: 1.125rem; }
+  .pr20-ns {
+    padding-right: 20px;
+    padding-right: 1.25rem; }
   .pr25-ns {
     padding-right: 25px;
     padding-right: 1.5625rem; }
@@ -596,6 +637,9 @@
   .pb18-ns {
     padding-bottom: 18px;
     padding-bottom: 1.125rem; }
+  .pb20-ns {
+    padding-bottom: 20px;
+    padding-bottom: 1.25rem; }
   .pb25-ns {
     padding-bottom: 25px;
     padding-bottom: 1.5625rem; }
@@ -636,6 +680,9 @@
   .pl18-ns {
     padding-left: 18px;
     padding-left: 1.125rem; }
+  .pl20-ns {
+    padding-left: 20px;
+    padding-left: 1.25rem; }
   .pl25-ns {
     padding-left: 25px;
     padding-left: 1.5625rem; }
@@ -683,6 +730,11 @@
     padding-top: 1.125rem;
     padding-bottom: 18px;
     padding-bottom: 1.125rem; }
+  .pv20-ns {
+    padding-top: 20px;
+    padding-top: 1.25rem;
+    padding-bottom: 20px;
+    padding-bottom: 1.25rem; }
   .pv25-ns {
     padding-top: 25px;
     padding-top: 1.5625rem;
@@ -749,6 +801,11 @@
     padding-right: 1.125rem;
     padding-left: 18px;
     padding-left: 1.125rem; }
+  .ph20-ns {
+    padding-right: 20px;
+    padding-right: 1.25rem;
+    padding-left: 20px;
+    padding-left: 1.25rem; }
   .ph25-ns {
     padding-right: 25px;
     padding-right: 1.5625rem;
@@ -810,6 +867,9 @@
   .pa18-m {
     padding: 18px;
     padding: 1.125rem; }
+  .pa20-m {
+    padding: 20px;
+    padding: 1.25rem; }
   .pa25-m {
     padding: 25px;
     padding: 1.5625rem; }
@@ -850,6 +910,9 @@
   .pt18-m {
     padding-top: 18px;
     padding-top: 1.125rem; }
+  .pt20-m {
+    padding-top: 20px;
+    padding-top: 1.25rem; }
   .pt25-m {
     padding-top: 25px;
     padding-top: 1.5625rem; }
@@ -890,6 +953,9 @@
   .pr18-m {
     padding-right: 18px;
     padding-right: 1.125rem; }
+  .pr20-m {
+    padding-right: 20px;
+    padding-right: 1.25rem; }
   .pr25-m {
     padding-right: 25px;
     padding-right: 1.5625rem; }
@@ -930,6 +996,9 @@
   .pb18-m {
     padding-bottom: 18px;
     padding-bottom: 1.125rem; }
+  .pb20-m {
+    padding-bottom: 20px;
+    padding-bottom: 1.25rem; }
   .pb25-m {
     padding-bottom: 25px;
     padding-bottom: 1.5625rem; }
@@ -970,6 +1039,9 @@
   .pl18-m {
     padding-left: 18px;
     padding-left: 1.125rem; }
+  .pl20-m {
+    padding-left: 20px;
+    padding-left: 1.25rem; }
   .pl25-m {
     padding-left: 25px;
     padding-left: 1.5625rem; }
@@ -1017,6 +1089,11 @@
     padding-top: 1.125rem;
     padding-bottom: 18px;
     padding-bottom: 1.125rem; }
+  .pv20-m {
+    padding-top: 20px;
+    padding-top: 1.25rem;
+    padding-bottom: 20px;
+    padding-bottom: 1.25rem; }
   .pv25-m {
     padding-top: 25px;
     padding-top: 1.5625rem;
@@ -1083,6 +1160,11 @@
     padding-right: 1.125rem;
     padding-left: 18px;
     padding-left: 1.125rem; }
+  .ph20-m {
+    padding-right: 20px;
+    padding-right: 1.25rem;
+    padding-left: 20px;
+    padding-left: 1.25rem; }
   .ph25-m {
     padding-right: 25px;
     padding-right: 1.5625rem;
@@ -1144,6 +1226,9 @@
   .pa18-l {
     padding: 18px;
     padding: 1.125rem; }
+  .pa20-l {
+    padding: 20px;
+    padding: 1.25rem; }
   .pa25-l {
     padding: 25px;
     padding: 1.5625rem; }
@@ -1184,6 +1269,9 @@
   .pt18-l {
     padding-top: 18px;
     padding-top: 1.125rem; }
+  .pt20-l {
+    padding-top: 20px;
+    padding-top: 1.25rem; }
   .pt25-l {
     padding-top: 25px;
     padding-top: 1.5625rem; }
@@ -1224,6 +1312,9 @@
   .pr18-l {
     padding-right: 18px;
     padding-right: 1.125rem; }
+  .pr20-l {
+    padding-right: 20px;
+    padding-right: 1.25rem; }
   .pr25-l {
     padding-right: 25px;
     padding-right: 1.5625rem; }
@@ -1264,6 +1355,9 @@
   .pb18-l {
     padding-bottom: 18px;
     padding-bottom: 1.125rem; }
+  .pb20-l {
+    padding-bottom: 20px;
+    padding-bottom: 1.25rem; }
   .pb25-l {
     padding-bottom: 25px;
     padding-bottom: 1.5625rem; }
@@ -1304,6 +1398,9 @@
   .pl18-l {
     padding-left: 18px;
     padding-left: 1.125rem; }
+  .pl20-l {
+    padding-left: 20px;
+    padding-left: 1.25rem; }
   .pl25-l {
     padding-left: 25px;
     padding-left: 1.5625rem; }
@@ -1351,6 +1448,11 @@
     padding-top: 1.125rem;
     padding-bottom: 18px;
     padding-bottom: 1.125rem; }
+  .pv20-l {
+    padding-top: 20px;
+    padding-top: 1.25rem;
+    padding-bottom: 20px;
+    padding-bottom: 1.25rem; }
   .pv25-l {
     padding-top: 25px;
     padding-top: 1.5625rem;
@@ -1417,6 +1519,11 @@
     padding-right: 1.125rem;
     padding-left: 18px;
     padding-left: 1.125rem; }
+  .ph20-l {
+    padding-right: 20px;
+    padding-right: 1.25rem;
+    padding-left: 20px;
+    padding-left: 1.25rem; }
   .ph25-l {
     padding-right: 25px;
     padding-right: 1.5625rem;
@@ -1482,6 +1589,10 @@
   margin: 18px;
   margin: 1.125rem; }
 
+.ma20 {
+  margin: 20px;
+  margin: 1.25rem; }
+
 .ma25 {
   margin: 25px;
   margin: 1.5625rem; }
@@ -1535,6 +1646,10 @@
 .mt18 {
   margin-top: 18px;
   margin-top: 1.125rem; }
+
+.mt20 {
+  margin-top: 20px;
+  margin-top: 1.25rem; }
 
 .mt25 {
   margin-top: 25px;
@@ -1590,6 +1705,10 @@
   margin-right: 18px;
   margin-right: 1.125rem; }
 
+.mr20 {
+  margin-right: 20px;
+  margin-right: 1.25rem; }
+
 .mr25 {
   margin-right: 25px;
   margin-right: 1.5625rem; }
@@ -1644,6 +1763,10 @@
   margin-bottom: 18px;
   margin-bottom: 1.125rem; }
 
+.mb20 {
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem; }
+
 .mb25 {
   margin-bottom: 25px;
   margin-bottom: 1.5625rem; }
@@ -1697,6 +1820,10 @@
 .ml18 {
   margin-left: 18px;
   margin-left: 1.125rem; }
+
+.ml20 {
+  margin-left: 20px;
+  margin-left: 1.25rem; }
 
 .ml25 {
   margin-left: 25px;
@@ -1758,6 +1885,12 @@
   margin-top: 1.125rem;
   margin-bottom: 18px;
   margin-bottom: 1.125rem; }
+
+.mv20 {
+  margin-top: 20px;
+  margin-top: 1.25rem;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem; }
 
 .mv25 {
   margin-top: 25px;
@@ -1839,6 +1972,12 @@
   margin-left: 18px;
   margin-left: 1.125rem; }
 
+.mh20 {
+  margin-right: 20px;
+  margin-right: 1.25rem;
+  margin-left: 20px;
+  margin-left: 1.25rem; }
+
 .mh25 {
   margin-right: 25px;
   margin-right: 1.5625rem;
@@ -1909,6 +2048,9 @@
   .ma18-ns {
     margin: 18px;
     margin: 1.125rem; }
+  .ma20-ns {
+    margin: 20px;
+    margin: 1.25rem; }
   .ma25-ns {
     margin: 25px;
     margin: 1.5625rem; }
@@ -1949,6 +2091,9 @@
   .mt18-ns {
     margin-top: 18px;
     margin-top: 1.125rem; }
+  .mt20-ns {
+    margin-top: 20px;
+    margin-top: 1.25rem; }
   .mt25-ns {
     margin-top: 25px;
     margin-top: 1.5625rem; }
@@ -1989,6 +2134,9 @@
   .mr18-ns {
     margin-right: 18px;
     margin-right: 1.125rem; }
+  .mr20-ns {
+    margin-right: 20px;
+    margin-right: 1.25rem; }
   .mr25-ns {
     margin-right: 25px;
     margin-right: 1.5625rem; }
@@ -2029,6 +2177,9 @@
   .mb18-ns {
     margin-bottom: 18px;
     margin-bottom: 1.125rem; }
+  .mb20-ns {
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem; }
   .mb25-ns {
     margin-bottom: 25px;
     margin-bottom: 1.5625rem; }
@@ -2069,6 +2220,9 @@
   .ml18-ns {
     margin-left: 18px;
     margin-left: 1.125rem; }
+  .ml20-ns {
+    margin-left: 20px;
+    margin-left: 1.25rem; }
   .ml25-ns {
     margin-left: 25px;
     margin-left: 1.5625rem; }
@@ -2116,6 +2270,11 @@
     margin-top: 1.125rem;
     margin-bottom: 18px;
     margin-bottom: 1.125rem; }
+  .mv20-ns {
+    margin-top: 20px;
+    margin-top: 1.25rem;
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem; }
   .mv25-ns {
     margin-top: 25px;
     margin-top: 1.5625rem;
@@ -2182,6 +2341,11 @@
     margin-right: 1.125rem;
     margin-left: 18px;
     margin-left: 1.125rem; }
+  .mh20-ns {
+    margin-right: 20px;
+    margin-right: 1.25rem;
+    margin-left: 20px;
+    margin-left: 1.25rem; }
   .mh25-ns {
     margin-right: 25px;
     margin-right: 1.5625rem;
@@ -2243,6 +2407,9 @@
   .ma18-m {
     margin: 18px;
     margin: 1.125rem; }
+  .ma20-m {
+    margin: 20px;
+    margin: 1.25rem; }
   .ma25-m {
     margin: 25px;
     margin: 1.5625rem; }
@@ -2283,6 +2450,9 @@
   .mt18-m {
     margin-top: 18px;
     margin-top: 1.125rem; }
+  .mt20-m {
+    margin-top: 20px;
+    margin-top: 1.25rem; }
   .mt25-m {
     margin-top: 25px;
     margin-top: 1.5625rem; }
@@ -2323,6 +2493,9 @@
   .mr18-m {
     margin-right: 18px;
     margin-right: 1.125rem; }
+  .mr20-m {
+    margin-right: 20px;
+    margin-right: 1.25rem; }
   .mr25-m {
     margin-right: 25px;
     margin-right: 1.5625rem; }
@@ -2363,6 +2536,9 @@
   .mb18-m {
     margin-bottom: 18px;
     margin-bottom: 1.125rem; }
+  .mb20-m {
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem; }
   .mb25-m {
     margin-bottom: 25px;
     margin-bottom: 1.5625rem; }
@@ -2403,6 +2579,9 @@
   .ml18-m {
     margin-left: 18px;
     margin-left: 1.125rem; }
+  .ml20-m {
+    margin-left: 20px;
+    margin-left: 1.25rem; }
   .ml25-m {
     margin-left: 25px;
     margin-left: 1.5625rem; }
@@ -2450,6 +2629,11 @@
     margin-top: 1.125rem;
     margin-bottom: 18px;
     margin-bottom: 1.125rem; }
+  .mv20-m {
+    margin-top: 20px;
+    margin-top: 1.25rem;
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem; }
   .mv25-m {
     margin-top: 25px;
     margin-top: 1.5625rem;
@@ -2516,6 +2700,11 @@
     margin-right: 1.125rem;
     margin-left: 18px;
     margin-left: 1.125rem; }
+  .mh20-m {
+    margin-right: 20px;
+    margin-right: 1.25rem;
+    margin-left: 20px;
+    margin-left: 1.25rem; }
   .mh25-m {
     margin-right: 25px;
     margin-right: 1.5625rem;
@@ -2577,6 +2766,9 @@
   .ma18-l {
     margin: 18px;
     margin: 1.125rem; }
+  .ma20-l {
+    margin: 20px;
+    margin: 1.25rem; }
   .ma25-l {
     margin: 25px;
     margin: 1.5625rem; }
@@ -2617,6 +2809,9 @@
   .mt18-l {
     margin-top: 18px;
     margin-top: 1.125rem; }
+  .mt20-l {
+    margin-top: 20px;
+    margin-top: 1.25rem; }
   .mt25-l {
     margin-top: 25px;
     margin-top: 1.5625rem; }
@@ -2657,6 +2852,9 @@
   .mr18-l {
     margin-right: 18px;
     margin-right: 1.125rem; }
+  .mr20-l {
+    margin-right: 20px;
+    margin-right: 1.25rem; }
   .mr25-l {
     margin-right: 25px;
     margin-right: 1.5625rem; }
@@ -2697,6 +2895,9 @@
   .mb18-l {
     margin-bottom: 18px;
     margin-bottom: 1.125rem; }
+  .mb20-l {
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem; }
   .mb25-l {
     margin-bottom: 25px;
     margin-bottom: 1.5625rem; }
@@ -2737,6 +2938,9 @@
   .ml18-l {
     margin-left: 18px;
     margin-left: 1.125rem; }
+  .ml20-l {
+    margin-left: 20px;
+    margin-left: 1.25rem; }
   .ml25-l {
     margin-left: 25px;
     margin-left: 1.5625rem; }
@@ -2784,6 +2988,11 @@
     margin-top: 1.125rem;
     margin-bottom: 18px;
     margin-bottom: 1.125rem; }
+  .mv20-l {
+    margin-top: 20px;
+    margin-top: 1.25rem;
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem; }
   .mv25-l {
     margin-top: 25px;
     margin-top: 1.5625rem;
@@ -2850,6 +3059,11 @@
     margin-right: 1.125rem;
     margin-left: 18px;
     margin-left: 1.125rem; }
+  .mh20-l {
+    margin-right: 20px;
+    margin-right: 1.25rem;
+    margin-left: 20px;
+    margin-left: 1.25rem; }
   .mh25-l {
     margin-right: 25px;
     margin-right: 1.5625rem;

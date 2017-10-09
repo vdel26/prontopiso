@@ -39,6 +39,10 @@
 .hover-white:focus {
   color: #fff; }
 
+.hover-white-10:hover,
+.hover-white-10:focus {
+  color: rgba(255, 255, 255, 0.1); }
+
 .hover-blue:hover,
 .hover-blue:focus {
   color: #1f8beb; }
@@ -68,6 +72,9 @@
   .hover-white-ns:hover,
   .hover-white-ns:focus {
     color: #fff; }
+  .hover-white-10-ns:hover,
+  .hover-white-10-ns:focus {
+    color: rgba(255, 255, 255, 0.1); }
   .hover-blue-ns:hover,
   .hover-blue-ns:focus {
     color: #1f8beb; } }
@@ -97,6 +104,9 @@
   .hover-white-m:hover,
   .hover-white-m:focus {
     color: #fff; }
+  .hover-white-10-m:hover,
+  .hover-white-10-m:focus {
+    color: rgba(255, 255, 255, 0.1); }
   .hover-blue-m:hover,
   .hover-blue-m:focus {
     color: #1f8beb; } }
@@ -126,6 +136,9 @@
   .hover-white-l:hover,
   .hover-white-l:focus {
     color: #fff; }
+  .hover-white-10-l:hover,
+  .hover-white-10-l:focus {
+    color: rgba(255, 255, 255, 0.1); }
   .hover-blue-l:hover,
   .hover-blue-l:focus {
     color: #1f8beb; } }
@@ -163,6 +176,10 @@
 .hover-bg-white:focus {
   background-color: #fff; }
 
+.hover-bg-white-10:hover,
+.hover-bg-white-10:focus {
+  background-color: rgba(255, 255, 255, 0.1); }
+
 .hover-bg-blue:hover,
 .hover-bg-blue:focus {
   background-color: #1f8beb; }
@@ -192,6 +209,9 @@
   .hover-bg-white-ns:hover,
   .hover-bg-white-ns:focus {
     background-color: #fff; }
+  .hover-bg-white-10-ns:hover,
+  .hover-bg-white-10-ns:focus {
+    background-color: rgba(255, 255, 255, 0.1); }
   .hover-bg-blue-ns:hover,
   .hover-bg-blue-ns:focus {
     background-color: #1f8beb; } }
@@ -221,6 +241,9 @@
   .hover-bg-white-m:hover,
   .hover-bg-white-m:focus {
     background-color: #fff; }
+  .hover-bg-white-10-m:hover,
+  .hover-bg-white-10-m:focus {
+    background-color: rgba(255, 255, 255, 0.1); }
   .hover-bg-blue-m:hover,
   .hover-bg-blue-m:focus {
     background-color: #1f8beb; } }
@@ -250,6 +273,9 @@
   .hover-bg-white-l:hover,
   .hover-bg-white-l:focus {
     background-color: #fff; }
+  .hover-bg-white-10-l:hover,
+  .hover-bg-white-10-l:focus {
+    background-color: rgba(255, 255, 255, 0.1); }
   .hover-bg-blue-l:hover,
   .hover-bg-blue-l:focus {
     background-color: #1f8beb; } }

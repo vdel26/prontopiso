@@ -47,6 +47,9 @@
 .fill-white {
   fill: #fff; }
 
+.fill-white-10 {
+  fill: rgba(255, 255, 255, 0.1); }
+
 .fill-blue {
   fill: #1f8beb; }
 
@@ -67,6 +70,8 @@
     fill: rgba(0, 0, 0, 0.5); }
   .fill-white-ns {
     fill: #fff; }
+  .fill-white-10-ns {
+    fill: rgba(255, 255, 255, 0.1); }
   .fill-blue-ns {
     fill: #1f8beb; } }
 
@@ -87,6 +92,8 @@
     fill: rgba(0, 0, 0, 0.5); }
   .fill-white-m {
     fill: #fff; }
+  .fill-white-10-m {
+    fill: rgba(255, 255, 255, 0.1); }
   .fill-blue-m {
     fill: #1f8beb; } }
 
@@ -107,6 +114,8 @@
     fill: rgba(0, 0, 0, 0.5); }
   .fill-white-l {
     fill: #fff; }
+  .fill-white-10-l {
+    fill: rgba(255, 255, 255, 0.1); }
   .fill-blue-l {
     fill: #1f8beb; } }
 
@@ -135,6 +144,9 @@
 .stroke-white {
   stroke: #fff; }
 
+.stroke-white-10 {
+  stroke: rgba(255, 255, 255, 0.1); }
+
 .stroke-blue {
   stroke: #1f8beb; }
 
@@ -155,6 +167,8 @@
     stroke: rgba(0, 0, 0, 0.5); }
   .stroke-white-ns {
     stroke: #fff; }
+  .stroke-white-10-ns {
+    stroke: rgba(255, 255, 255, 0.1); }
   .stroke-blue-ns {
     stroke: #1f8beb; } }
 
@@ -175,6 +189,8 @@
     stroke: rgba(0, 0, 0, 0.5); }
   .stroke-white-m {
     stroke: #fff; }
+  .stroke-white-10-m {
+    stroke: rgba(255, 255, 255, 0.1); }
   .stroke-blue-m {
     stroke: #1f8beb; } }
 
@@ -195,6 +211,8 @@
     stroke: rgba(0, 0, 0, 0.5); }
   .stroke-white-l {
     stroke: #fff; }
+  .stroke-white-10-l {
+    stroke: rgba(255, 255, 255, 0.1); }
   .stroke-blue-l {
     stroke: #1f8beb; } }
 
@@ -213,6 +231,10 @@
 .sw18 {
   stroke-width: 18px;
   stroke-width: 1.125rem; }
+
+.sw20 {
+  stroke-width: 20px;
+  stroke-width: 1.25rem; }
 
 .sw25 {
   stroke-width: 25px;
@@ -265,6 +287,9 @@
   .sw18-ns {
     stroke-width: 18px;
     stroke-width: 1.125rem; }
+  .sw20-ns {
+    stroke-width: 20px;
+    stroke-width: 1.25rem; }
   .sw25-ns {
     stroke-width: 25px;
     stroke-width: 1.5625rem; }
@@ -307,6 +332,9 @@
   .sw18-m {
     stroke-width: 18px;
     stroke-width: 1.125rem; }
+  .sw20-m {
+    stroke-width: 20px;
+    stroke-width: 1.25rem; }
   .sw25-m {
     stroke-width: 25px;
     stroke-width: 1.5625rem; }
@@ -349,6 +377,9 @@
   .sw18-l {
     stroke-width: 18px;
     stroke-width: 1.125rem; }
+  .sw20-l {
+    stroke-width: 20px;
+    stroke-width: 1.25rem; }
   .sw25-l {
     stroke-width: 25px;
     stroke-width: 1.5625rem; }

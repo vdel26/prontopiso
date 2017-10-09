@@ -10,16 +10,18 @@ layout: default
 
   <p class="mt0 mb60">Somos una agencia inmobiliaria diferente: si no vendemos tu vivienda en 90 días te adelantamos su valor de mercado para que puedas buscar tu nuevo hogar, sin preocupaciones.</p>
 
-  <form class="" action="index.html" method="post">
-    <input class="input-reset pa0 bn" type="text" name="" value="" placeholder="Código postal">
-    <input class="input-reset pa0 bn" type="submit" name="" value="Empezar" placeholder="Empezar">
+  <form class="cf pa10 ba br2" action="index.html" method="post"
+        style="box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1); border: solid 1px #f0f0f0;">
+    <input class="fl input-reset w-65 pa15 f16 bn" type="text" name="" value="" placeholder="Código postal">
+    <input class="fl input-reset w-35 pv15 ph20 white bg-blue f16 fw5 bn br2" type="submit" name="" value="Empezar" placeholder="Empezar">
   </form>
 
 </section>
 
 
 
-<section id="features-section" class="pb20 tc">
+<section id="features-section" class="pt100 ph36 pb20 tc"
+         style="background-image: url('assets/images/features/00.svg'); background-repeat: no-repeat; background-position-x: center; background-position-y: 20px;">
 
   <header class="mb100 blue">
     <h1 class="mt0 mb30 f20 fw5">¿Buscas cambiar de vivienda?</h1>
@@ -27,7 +29,7 @@ layout: default
   </header>
 
 {% for feature in site.data.features %}
-  <section class="mh36 mb90">
+  <section class="mb90">
     <img class="dib w48 mb30" src="{{ feature.icon }}">
     <h2 class="mt0 mb20 f18 lh-175 fw5">{{ feature.name }}</h2>
     <p class="mv0 f16 o-50 lh-200">{{ feature.description }}</p>
@@ -38,17 +40,18 @@ layout: default
 
 
 
-<section id="how-it-works-section" class="pb20 tc">
+<section id="how-it-works-section" class="ph36 pb20 tc"
+         style="background-image: url('assets/images/how-it-works/00.svg'); background-repeat: no-repeat; background-position-x: center; background-position-y: 20px;">
 
   <header class="mb100 blue">
     <h1 class="mt0 mb30 f20 fw5">¿Cómo funciona?</h1>
   </header>
 
 {% for feature in site.data.how-it-works %}
-  <section class="mh36 mb90">
+  <section class="mb90">
     <img class="dib w100 mb30" src="{{ feature.icon }}">
-    <h2 class="mt0 mb20 f18 lh-175 fw5">{{ feature.name }}</h2>
-    <p class="mv0 f16 o-50 lh-200">{{ feature.description }}</p>
+    <h2 class="mt0 mb20 blue f16 lh-175 fw5">{{ feature.name }}</h2>
+    <p class="mv0 f16 lh-200">{{ feature.description }}</p>
   </section>
 {% endfor %}
 
@@ -56,15 +59,16 @@ layout: default
 
 
 
-<aside id="newsletter-section" class="pb20 tc">
+<aside id="start-section" class="ph36 pb20 tc">
 
   <header class="mb100 blue">
     <h1 class="mt0 mb30 f20 fw5">¡Solicita una valoración ahora!</h1>
   </header>
 
-  <form class="" action="index.html" method="post">
-    <input class="input-reset pa0 bn" type="text" name="" value="" placeholder="Código postal">
-    <input class="input-reset pa0 bn" type="submit" name="" value="Empezar" placeholder="Empezar">
+  <form class="cf pa10 ba br2" action="index.html" method="post"
+        style="box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1); border: solid 1px #f0f0f0;">
+    <input class="fl input-reset w-65 pa15 f16 bn" type="text" name="" value="" placeholder="Código postal">
+    <input class="fl input-reset w-35 pv15 ph20 white bg-blue f16 fw5 bn br2" type="submit" name="" value="Empezar" placeholder="Empezar">
   </form>
 
 </aside>

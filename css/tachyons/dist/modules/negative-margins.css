@@ -37,6 +37,10 @@
   margin: -18px;
   margin: -1.125rem; }
 
+.na20 {
+  margin: -20px;
+  margin: -1.25rem; }
+
 .na25 {
   margin: -25px;
   margin: -1.5625rem; }
@@ -84,6 +88,10 @@
 .nt18 {
   margin-top: -18px;
   margin-top: -1.125rem; }
+
+.nt20 {
+  margin-top: -20px;
+  margin-top: -1.25rem; }
 
 .nt25 {
   margin-top: -25px;
@@ -133,6 +141,10 @@
   margin-right: -18px;
   margin-right: -1.125rem; }
 
+.nr20 {
+  margin-right: -20px;
+  margin-right: -1.25rem; }
+
 .nr25 {
   margin-right: -25px;
   margin-right: -1.5625rem; }
@@ -181,6 +193,10 @@
   margin-bottom: -18px;
   margin-bottom: -1.125rem; }
 
+.nb20 {
+  margin-bottom: -20px;
+  margin-bottom: -1.25rem; }
+
 .nb25 {
   margin-bottom: -25px;
   margin-bottom: -1.5625rem; }
@@ -228,6 +244,10 @@
 .nl18 {
   margin-left: -18px;
   margin-left: -1.125rem; }
+
+.nl20 {
+  margin-left: -20px;
+  margin-left: -1.25rem; }
 
 .nl25 {
   margin-left: -25px;
@@ -282,6 +302,12 @@
   margin-top: -1.125rem;
   margin-bottom: -18px;
   margin-bottom: -1.125rem; }
+
+.nv20 {
+  margin-top: -20px;
+  margin-top: -1.25rem;
+  margin-bottom: -20px;
+  margin-bottom: -1.25rem; }
 
 .nv25 {
   margin-top: -25px;
@@ -355,6 +381,12 @@
   margin-left: -18px;
   margin-left: -1.125rem; }
 
+.nh20 {
+  margin-right: -20px;
+  margin-right: -1.25rem;
+  margin-left: -20px;
+  margin-left: -1.25rem; }
+
 .nh25 {
   margin-right: -25px;
   margin-right: -1.5625rem;
@@ -419,6 +451,9 @@
   .na18-ns {
     margin: -18px;
     margin: -1.125rem; }
+  .na20-ns {
+    margin: -20px;
+    margin: -1.25rem; }
   .na25-ns {
     margin: -25px;
     margin: -1.5625rem; }
@@ -455,6 +490,9 @@
   .nt18-ns {
     margin-top: -18px;
     margin-top: -1.125rem; }
+  .nt20-ns {
+    margin-top: -20px;
+    margin-top: -1.25rem; }
   .nt25-ns {
     margin-top: -25px;
     margin-top: -1.5625rem; }
@@ -491,6 +529,9 @@
   .nr18-ns {
     margin-right: -18px;
     margin-right: -1.125rem; }
+  .nr20-ns {
+    margin-right: -20px;
+    margin-right: -1.25rem; }
   .nr25-ns {
     margin-right: -25px;
     margin-right: -1.5625rem; }
@@ -527,6 +568,9 @@
   .nb18-ns {
     margin-bottom: -18px;
     margin-bottom: -1.125rem; }
+  .nb20-ns {
+    margin-bottom: -20px;
+    margin-bottom: -1.25rem; }
   .nb25-ns {
     margin-bottom: -25px;
     margin-bottom: -1.5625rem; }
@@ -563,6 +607,9 @@
   .nl18-ns {
     margin-left: -18px;
     margin-left: -1.125rem; }
+  .nl20-ns {
+    margin-left: -20px;
+    margin-left: -1.25rem; }
   .nl25-ns {
     margin-left: -25px;
     margin-left: -1.5625rem; }
@@ -605,6 +652,11 @@
     margin-top: -1.125rem;
     margin-bottom: -18px;
     margin-bottom: -1.125rem; }
+  .nv20-ns {
+    margin-top: -20px;
+    margin-top: -1.25rem;
+    margin-bottom: -20px;
+    margin-bottom: -1.25rem; }
   .nv25-ns {
     margin-top: -25px;
     margin-top: -1.5625rem;
@@ -665,6 +717,11 @@
     margin-right: -1.125rem;
     margin-left: -18px;
     margin-left: -1.125rem; }
+  .nh20-ns {
+    margin-right: -20px;
+    margin-right: -1.25rem;
+    margin-left: -20px;
+    margin-left: -1.25rem; }
   .nh25-ns {
     margin-right: -25px;
     margin-right: -1.5625rem;
@@ -721,6 +778,9 @@
   .na18-m {
     margin: -18px;
     margin: -1.125rem; }
+  .na20-m {
+    margin: -20px;
+    margin: -1.25rem; }
   .na25-m {
     margin: -25px;
     margin: -1.5625rem; }
@@ -757,6 +817,9 @@
   .nt18-m {
     margin-top: -18px;
     margin-top: -1.125rem; }
+  .nt20-m {
+    margin-top: -20px;
+    margin-top: -1.25rem; }
   .nt25-m {
     margin-top: -25px;
     margin-top: -1.5625rem; }
@@ -793,6 +856,9 @@
   .nr18-m {
     margin-right: -18px;
     margin-right: -1.125rem; }
+  .nr20-m {
+    margin-right: -20px;
+    margin-right: -1.25rem; }
   .nr25-m {
     margin-right: -25px;
     margin-right: -1.5625rem; }
@@ -829,6 +895,9 @@
   .nb18-m {
     margin-bottom: -18px;
     margin-bottom: -1.125rem; }
+  .nb20-m {
+    margin-bottom: -20px;
+    margin-bottom: -1.25rem; }
   .nb25-m {
     margin-bottom: -25px;
     margin-bottom: -1.5625rem; }
@@ -865,6 +934,9 @@
   .nl18-m {
     margin-left: -18px;
     margin-left: -1.125rem; }
+  .nl20-m {
+    margin-left: -20px;
+    margin-left: -1.25rem; }
   .nl25-m {
     margin-left: -25px;
     margin-left: -1.5625rem; }
@@ -907,6 +979,11 @@
     margin-top: -1.125rem;
     margin-bottom: -18px;
     margin-bottom: -1.125rem; }
+  .nv20-m {
+    margin-top: -20px;
+    margin-top: -1.25rem;
+    margin-bottom: -20px;
+    margin-bottom: -1.25rem; }
   .nv25-m {
     margin-top: -25px;
     margin-top: -1.5625rem;
@@ -967,6 +1044,11 @@
     margin-right: -1.125rem;
     margin-left: -18px;
     margin-left: -1.125rem; }
+  .nh20-m {
+    margin-right: -20px;
+    margin-right: -1.25rem;
+    margin-left: -20px;
+    margin-left: -1.25rem; }
   .nh25-m {
     margin-right: -25px;
     margin-right: -1.5625rem;
@@ -1023,6 +1105,9 @@
   .na18-l {
     margin: -18px;
     margin: -1.125rem; }
+  .na20-l {
+    margin: -20px;
+    margin: -1.25rem; }
   .na25-l {
     margin: -25px;
     margin: -1.5625rem; }
@@ -1059,6 +1144,9 @@
   .nt18-l {
     margin-top: -18px;
     margin-top: -1.125rem; }
+  .nt20-l {
+    margin-top: -20px;
+    margin-top: -1.25rem; }
   .nt25-l {
     margin-top: -25px;
     margin-top: -1.5625rem; }
@@ -1095,6 +1183,9 @@
   .nr18-l {
     margin-right: -18px;
     margin-right: -1.125rem; }
+  .nr20-l {
+    margin-right: -20px;
+    margin-right: -1.25rem; }
   .nr25-l {
     margin-right: -25px;
     margin-right: -1.5625rem; }
@@ -1131,6 +1222,9 @@
   .nb18-l {
     margin-bottom: -18px;
     margin-bottom: -1.125rem; }
+  .nb20-l {
+    margin-bottom: -20px;
+    margin-bottom: -1.25rem; }
   .nb25-l {
     margin-bottom: -25px;
     margin-bottom: -1.5625rem; }
@@ -1167,6 +1261,9 @@
   .nl18-l {
     margin-left: -18px;
     margin-left: -1.125rem; }
+  .nl20-l {
+    margin-left: -20px;
+    margin-left: -1.25rem; }
   .nl25-l {
     margin-left: -25px;
     margin-left: -1.5625rem; }
@@ -1209,6 +1306,11 @@
     margin-top: -1.125rem;
     margin-bottom: -18px;
     margin-bottom: -1.125rem; }
+  .nv20-l {
+    margin-top: -20px;
+    margin-top: -1.25rem;
+    margin-bottom: -20px;
+    margin-bottom: -1.25rem; }
   .nv25-l {
     margin-top: -25px;
     margin-top: -1.5625rem;
@@ -1269,6 +1371,11 @@
     margin-right: -1.125rem;
     margin-left: -18px;
     margin-left: -1.125rem; }
+  .nh20-l {
+    margin-right: -20px;
+    margin-right: -1.25rem;
+    margin-left: -20px;
+    margin-left: -1.25rem; }
   .nh25-l {
     margin-right: -25px;
     margin-right: -1.5625rem;

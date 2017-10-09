@@ -41,6 +41,9 @@
 .b--white {
   border-color: #fff; }
 
+.b--white-10 {
+  border-color: rgba(255, 255, 255, 0.1); }
+
 .b--blue {
   border-color: #1f8beb; }
 
@@ -61,6 +64,8 @@
     border-color: rgba(0, 0, 0, 0.5); }
   .b--white-ns {
     border-color: #fff; }
+  .b--white-10-ns {
+    border-color: rgba(255, 255, 255, 0.1); }
   .b--blue-ns {
     border-color: #1f8beb; } }
 
@@ -81,6 +86,8 @@
     border-color: rgba(0, 0, 0, 0.5); }
   .b--white-m {
     border-color: #fff; }
+  .b--white-10-m {
+    border-color: rgba(255, 255, 255, 0.1); }
   .b--blue-m {
     border-color: #1f8beb; } }
 
@@ -101,5 +108,7 @@
     border-color: rgba(0, 0, 0, 0.5); }
   .b--white-l {
     border-color: #fff; }
+  .b--white-10-l {
+    border-color: rgba(255, 255, 255, 0.1); }
   .b--blue-l {
     border-color: #1f8beb; } }

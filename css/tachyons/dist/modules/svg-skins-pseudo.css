@@ -55,6 +55,10 @@
 .hover-fill-white:focus {
   fill: #fff; }
 
+.hover-fill-white-10:hover,
+.hover-fill-white-10:focus {
+  fill: rgba(255, 255, 255, 0.1); }
+
 .hover-fill-blue:hover,
 .hover-fill-blue:focus {
   fill: #1f8beb; }
@@ -84,6 +88,9 @@
   .hover-fill-white-ns:hover,
   .hover-fill-white-ns:focus {
     fill: #fff; }
+  .hover-fill-white-10-ns:hover,
+  .hover-fill-white-10-ns:focus {
+    fill: rgba(255, 255, 255, 0.1); }
   .hover-fill-blue-ns:hover,
   .hover-fill-blue-ns:focus {
     fill: #1f8beb; } }
@@ -113,6 +120,9 @@
   .hover-fill-white-m:hover,
   .hover-fill-white-m:focus {
     fill: #fff; }
+  .hover-fill-white-10-m:hover,
+  .hover-fill-white-10-m:focus {
+    fill: rgba(255, 255, 255, 0.1); }
   .hover-fill-blue-m:hover,
   .hover-fill-blue-m:focus {
     fill: #1f8beb; } }
@@ -142,6 +152,9 @@
   .hover-fill-white-l:hover,
   .hover-fill-white-l:focus {
     fill: #fff; }
+  .hover-fill-white-10-l:hover,
+  .hover-fill-white-10-l:focus {
+    fill: rgba(255, 255, 255, 0.1); }
   .hover-fill-blue-l:hover,
   .hover-fill-blue-l:focus {
     fill: #1f8beb; } }
@@ -179,6 +192,10 @@
 .hover-stroke-white:focus {
   stroke: #fff; }
 
+.hover-stroke-white-10:hover,
+.hover-stroke-white-10:focus {
+  stroke: rgba(255, 255, 255, 0.1); }
+
 .hover-stroke-blue:hover,
 .hover-stroke-blue:focus {
   stroke: #1f8beb; }
@@ -208,6 +225,9 @@
   .hover-stroke-white-ns:hover,
   .hover-stroke-white-ns:focus {
     stroke: #fff; }
+  .hover-stroke-white-10-ns:hover,
+  .hover-stroke-white-10-ns:focus {
+    stroke: rgba(255, 255, 255, 0.1); }
   .hover-stroke-blue-ns:hover,
   .hover-stroke-blue-ns:focus {
     stroke: #1f8beb; } }
@@ -237,6 +257,9 @@
   .hover-stroke-white-m:hover,
   .hover-stroke-white-m:focus {
     stroke: #fff; }
+  .hover-stroke-white-10-m:hover,
+  .hover-stroke-white-10-m:focus {
+    stroke: rgba(255, 255, 255, 0.1); }
   .hover-stroke-blue-m:hover,
   .hover-stroke-blue-m:focus {
     stroke: #1f8beb; } }
@@ -266,6 +289,9 @@
   .hover-stroke-white-l:hover,
   .hover-stroke-white-l:focus {
     stroke: #fff; }
+  .hover-stroke-white-10-l:hover,
+  .hover-stroke-white-10-l:focus {
+    stroke: rgba(255, 255, 255, 0.1); }
   .hover-stroke-blue-l:hover,
   .hover-stroke-blue-l:focus {
     stroke: #1f8beb; } }
@@ -289,6 +315,11 @@
 .hover-sw18:focus {
   stroke-width: 18px;
   stroke-width: 1.125rem; }
+
+.hover-sw20:hover,
+.hover-sw20:focus {
+  stroke-width: 20px;
+  stroke-width: 1.25rem; }
 
 .hover-sw25:hover,
 .hover-sw25:focus {
@@ -355,6 +386,10 @@
   .hover-sw18-ns:focus {
     stroke-width: 18px;
     stroke-width: 1.125rem; }
+  .hover-sw20-ns:hover,
+  .hover-sw20-ns:focus {
+    stroke-width: 20px;
+    stroke-width: 1.25rem; }
   .hover-sw25-ns:hover,
   .hover-sw25-ns:focus {
     stroke-width: 25px;
@@ -411,6 +446,10 @@
   .hover-sw18-m:focus {
     stroke-width: 18px;
     stroke-width: 1.125rem; }
+  .hover-sw20-m:hover,
+  .hover-sw20-m:focus {
+    stroke-width: 20px;
+    stroke-width: 1.25rem; }
   .hover-sw25-m:hover,
   .hover-sw25-m:focus {
     stroke-width: 25px;
@@ -467,6 +506,10 @@
   .hover-sw18-l:focus {
     stroke-width: 18px;
     stroke-width: 1.125rem; }
+  .hover-sw20-l:hover,
+  .hover-sw20-l:focus {
+    stroke-width: 20px;
+    stroke-width: 1.25rem; }
   .hover-sw25-l:hover,
   .hover-sw25-l:focus {
     stroke-width: 25px;

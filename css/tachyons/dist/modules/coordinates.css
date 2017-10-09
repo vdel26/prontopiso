@@ -84,6 +84,22 @@
   left: 18px;
   left: 1.125rem; }
 
+.top-20 {
+  top: 20px;
+  top: 1.25rem; }
+
+.right-20 {
+  right: 20px;
+  right: 1.25rem; }
+
+.bottom-20 {
+  bottom: 20px;
+  bottom: 1.25rem; }
+
+.left-20 {
+  left: 20px;
+  left: 1.25rem; }
+
 .top-25 {
   top: 25px;
   top: 1.5625rem; }
@@ -291,6 +307,18 @@
   .left-18-ns {
     left: 18px;
     left: 1.125rem; }
+  .top-20-ns {
+    top: 20px;
+    top: 1.25rem; }
+  .right-20-ns {
+    right: 20px;
+    right: 1.25rem; }
+  .bottom-20-ns {
+    bottom: 20px;
+    bottom: 1.25rem; }
+  .left-20-ns {
+    left: 20px;
+    left: 1.25rem; }
   .top-25-ns {
     top: 25px;
     top: 1.5625rem; }
@@ -458,6 +486,18 @@
   .left-18-m {
     left: 18px;
     left: 1.125rem; }
+  .top-20-m {
+    top: 20px;
+    top: 1.25rem; }
+  .right-20-m {
+    right: 20px;
+    right: 1.25rem; }
+  .bottom-20-m {
+    bottom: 20px;
+    bottom: 1.25rem; }
+  .left-20-m {
+    left: 20px;
+    left: 1.25rem; }
   .top-25-m {
     top: 25px;
     top: 1.5625rem; }
@@ -625,6 +665,18 @@
   .left-18-l {
     left: 18px;
     left: 1.125rem; }
+  .top-20-l {
+    top: 20px;
+    top: 1.25rem; }
+  .right-20-l {
+    right: 20px;
+    right: 1.25rem; }
+  .bottom-20-l {
+    bottom: 20px;
+    bottom: 1.25rem; }
+  .left-20-l {
+    left: 20px;
+    left: 1.25rem; }
   .top-25-l {
     top: 25px;
     top: 1.5625rem; }
