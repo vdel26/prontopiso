@@ -1,19 +1,11 @@
-- name: Functional CSS
-  description: "Front-end code is categorically bad and I think you should write less of it. If you're building websites for a living and still writing CSS all the damn time, welcome 2 the future."
-  icon: images/functional.svg
+- name: "Valoramos tu casa de forma fiable y rápida"
+  description: "Con la ayuda del cliente y nuestro conocimiento de mercado ofrecemos una muy buena valoración fidedigna de la vivienda en 24h."
+  icon: assets/images/features/01-fast.svg
 
-- name: Auto-update
-  description: "Using a potent combination of magic and node.js, BrowserSync automatically refreshes your browser every time you save. You can even test on multiple devices all at once using an external IP."
-  icon: images/auto.svg
+- name: "Nuestro precio mínimo garantizado te da seguridad"
+  description: "Garantizamos un precio de venta mínimo entorno al 90-97% del valor de mercado. Nuestro objetivo será venderla como mínimo por el 100%."
+  icon: assets/images/features/02-price.svg
 
-- name: Actively Maintained
-  description: "I use Jekyons every day to create prototypes for profit & pleasure. That means any updates I decide to make in an attempt to make my job easier get passed on to you in the form of new features."
-  icon: images/heart.svg
-
-- name: Jekyll Partials
-  description: "With Jekyll's templating engine, you can share partial sections of code across multiple pages. Make your :( static prototype :( feel like a ~*fancy app*~."
-  icon: images/partial.svg
-
-- name: Easy Deployment
-  description: "Ready to share your creation with the world (or your Mom)? Spin up an outside IP using BrowserSync or deploy to Github Pages to share your work with others"
-  icon: images/deploy.svg
+- name: "Cambia de casa sin ataduras en 90 días"
+  description: "Facilitamos la compra de tu próxima vivienda. Si no vendemos la propiedad en 90 días, te anticipamos el precio garantizado para que puedas comprar."
+  icon: assets/images/features/03-strings.svg
