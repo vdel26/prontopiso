@@ -1,12 +1,9 @@
 # Site settings
-title: Jekyons
+title: "Prontopiso"
 version: "v1"
 description: "Stop writing CSS and start building prototypes."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-
-# Tachyons Version
-tv: "4.7.0"
 
 # Build settings
 markdown: kramdown
