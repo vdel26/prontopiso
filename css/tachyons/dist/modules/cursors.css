@@ -1,0 +1,24 @@
+/*
+
+  CURSORS
+
+  Media Query Extensions:
+   -ns = not-small
+   -m  = medium
+   -l  = large
+
+*/
+.cursor-auto {
+  cursor: auto; }
+
+.cursor-default {
+  cursor: default; }
+
+.cursor-none {
+  cursor: none; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+.cursor-not-allowed {
+  cursor: not-allowed; }

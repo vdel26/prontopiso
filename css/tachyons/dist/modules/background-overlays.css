@@ -1,0 +1,21 @@
+/*
+
+  BACKGROUND OVERLAYS
+
+  Add an overlay to background images.
+
+  Base:
+    bg-darken
+    bg-lighten
+
+  Modifiers:
+    -25 = 25% opacity
+    -50 = 50% opacity
+    -75 = 75% opacity
+
+  Media Query Extensions:
+    -ns = not-small
+    -m  = medium
+    -l  = large
+
+*/

@@ -1,0 +1,105 @@
+/*
+
+   BORDER COLORS
+   Docs: http://tachyons.io/docs/themes/borders/
+
+   Border colors can be used to extend the base
+   border classes ba,bt,bb,br,bl found in the _borders.css file.
+
+   The base border class by default will set the color of the border
+   to that of the current text color. These classes are for the cases
+   where you desire for the text and border colors to be different.
+
+   Base:
+     b = border
+
+   Modifiers:
+   --color-name = each color variable name is also a border color name
+
+*/
+.b--inherit {
+  border-color: inherit; }
+
+.b--initial {
+  border-color: initial; }
+
+.b--current {
+  border-color: currentColor; }
+
+.b--transparent {
+  border-color: transparent; }
+
+.b--black {
+  border-color: #000; }
+
+.b--black-50 {
+  border-color: rgba(0, 0, 0, 0.5); }
+
+.b--black-15 {
+  border-color: rgba(0, 0, 0, 0.15); }
+
+.b--white {
+  border-color: #fff; }
+
+.b--blue {
+  border-color: #1f8beb; }
+
+@media screen and (min-width: 30em) {
+  .b--inherit-ns {
+    border-color: inherit; }
+  .b--initial-ns {
+    border-color: initial; }
+  .b--current-ns {
+    border-color: currentColor; }
+  .b--transparent-ns {
+    border-color: transparent; }
+  .b--black-ns {
+    border-color: #000; }
+  .b--black-50-ns {
+    border-color: rgba(0, 0, 0, 0.5); }
+  .b--black-15-ns {
+    border-color: rgba(0, 0, 0, 0.15); }
+  .b--white-ns {
+    border-color: #fff; }
+  .b--blue-ns {
+    border-color: #1f8beb; } }
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .b--inherit-m {
+    border-color: inherit; }
+  .b--initial-m {
+    border-color: initial; }
+  .b--current-m {
+    border-color: currentColor; }
+  .b--transparent-m {
+    border-color: transparent; }
+  .b--black-m {
+    border-color: #000; }
+  .b--black-50-m {
+    border-color: rgba(0, 0, 0, 0.5); }
+  .b--black-15-m {
+    border-color: rgba(0, 0, 0, 0.15); }
+  .b--white-m {
+    border-color: #fff; }
+  .b--blue-m {
+    border-color: #1f8beb; } }
+
+@media screen and (min-width: 60em) {
+  .b--inherit-l {
+    border-color: inherit; }
+  .b--initial-l {
+    border-color: initial; }
+  .b--current-l {
+    border-color: currentColor; }
+  .b--transparent-l {
+    border-color: transparent; }
+  .b--black-l {
+    border-color: #000; }
+  .b--black-50-l {
+    border-color: rgba(0, 0, 0, 0.5); }
+  .b--black-15-l {
+    border-color: rgba(0, 0, 0, 0.15); }
+  .b--white-l {
+    border-color: #fff; }
+  .b--blue-l {
+    border-color: #1f8beb; } }

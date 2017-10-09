@@ -1,0 +1,27 @@
+/*
+
+   POSITIONING
+   Docs: http://tachyons.io/docs/layout/position/
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+// Variables
+@import '../_variables';
+
+
+@each $name, $value in $positions {
+  .#{$name} { position: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $positions {
+      .#{$name}-#{$suffix} { position: $value; }
+    }
+  }
+}

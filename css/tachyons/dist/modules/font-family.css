@@ -1,0 +1,29 @@
+/*
+
+   FONT FAMILY GROUPS
+   Docs: http://tachyons.io/docs/typography/font-family/
+
+*/
+.playfair {
+  font-family: "Playfair Display", serif; }
+
+.graphik {
+  font-family: Graphik, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
+
+@media screen and (min-width: 30em) {
+  .playfair-ns {
+    font-family: "Playfair Display", serif; }
+  .graphik-ns {
+    font-family: Graphik, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; } }
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .playfair-m {
+    font-family: "Playfair Display", serif; }
+  .graphik-m {
+    font-family: Graphik, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; } }
+
+@media screen and (min-width: 60em) {
+  .playfair-l {
+    font-family: "Playfair Display", serif; }
+  .graphik-l {
+    font-family: Graphik, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; } }

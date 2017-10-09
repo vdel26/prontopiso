@@ -1,0 +1,605 @@
+//
+//
+//  VARIABLES
+//  https://github.com/hacknug/tachyons-uber/
+//
+//
+
+
+// Breakpoint Settings
+
+$breakpoints: (
+  ns: 'screen and (min-width: 30em)',
+  m:  'screen and (min-width: 30em) and (max-width: 60em)',
+  l:  'screen and (min-width: 60em)',
+);
+
+
+// Typography Settings
+
+$font-families: (
+  playfair: '"Playfair Display", serif',
+  graphik: 'Graphik, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif',
+);
+
+$font-sizes: (
+  12: 12px .75rem, /* 12/16 */
+  14: 14px .875rem, /* 14/16 */
+  16: 16px 1rem, /* 16/16 */
+  18: 18px 1.125rem, /* 18/16 */
+  20: 20px 1.25rem, /* 20/16 */
+  32: 32px 2rem, /* 32/16 */
+);
+
+$line-heights: (
+  100: 1,
+  120: 1.2,
+  140: 1.4,
+  150: 1.5,
+  160: 1.6,
+  175: 1.75,
+  185: 1.85,
+  200: 2,
+);
+
+$letter-spacings: (
+  tracked: .1em,
+  tracked-mega: .25em,
+  tracked-tight: -.05em,
+);
+
+$measures: (
+  measure: 30em,
+  measure-wide: 34em,
+  measure-narrow: 20em,
+);
+
+$font-weights: (
+  i: inherit,
+  4: 400,
+  5: 500,
+  7: 700,
+);
+
+$font-styles: (
+  inherit: inherit,
+  normal: normal,
+  italic: italic,
+  oblique: oblique,
+);
+
+$vertical-aligns: (
+  base: baseline,
+  mid: middle,
+  top: top,
+  btm: bottom,
+);
+
+$text-decorations: (
+  strike: line-through,
+  underline: underline,
+  no-underline: none,
+);
+
+$text-aligns: (
+  r: right,
+  l: left,
+  c: center,
+  j: justify,
+  // ja: justify-all,
+  // s: start,
+  // e: end,
+  // mp: match-parent,
+);
+
+$text-transforms: (
+  c: capitalize,
+  l: lowercase,
+  u: uppercase,
+  n: none,
+);
+
+$white-spaces: (
+  ws-normal: normal,
+  nowrap: nowrap,
+  pre: pre,
+);
+
+
+// Layout Settings
+
+$spacings: (
+  0: 0,
+  10: 10px .625rem,
+  15: 15px .9375rem,
+  18: 18px 1.125rem,
+  25: 25px 1.5625rem,
+  30: 30px 1.875rem,
+  36: 36px 2rem,
+  40: 40px 2.5rem,
+  60: 60px 3.75rem,
+  90: 90px 5.625rem,
+  100: 100px 6.25rem,
+  140: 140px 8.75rem,
+  150: 150px 9.375rem,
+  a: auto,
+);
+
+$displays: (
+  n: none,
+  i: inline,
+  b: block,
+  f: flex,
+  ib: inline-block,
+  if: inline-flex,
+  it: inline-table,
+  t: table,
+  tc: table-cell,
+  t-row: table-row,
+  t-row-group: table-row-group,
+  t-column: table-column,
+  t-column-group: table-column-group,
+);
+
+$flex-directions: (
+  flex-row: row,
+  flex-row-reverse: row-reverse,
+  flex-column: column,
+  flex-column-reverse: column-reverse,
+);
+
+$flex-wraps: (
+  flex-nowrap: nowrap,
+  flex-wrap: wrap,
+  flex-wrap-reverse: wrap-reverse,
+);
+
+// https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+$flex-justify-contents: (
+  justify-start: flex-start,
+  justify-end: flex-end,
+  justify-center: center,
+  justify-between: space-between,
+  justify-around: space-around,
+);
+
+// https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
+$flex-align-items: (
+  items-start: flex-start,
+  items-end: flex-end,
+  items-center: center,
+  items-baseline: baseline,
+  items-stretch: stretch,
+);
+
+// https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
+$flex-align-contents: (
+  content-start: flex-start,
+  content-end: flex-end,
+  content-center: center,
+  content-between: space-between,
+  content-around: space-around,
+  content-stretch: stretch,
+);
+
+// https://developer.mozilla.org/en-US/docs/Web/CSS/align-self
+$flex-align-selfs: (
+  self-start: flex-start,
+  self-end: flex-end,
+  self-center: center,
+  self-baseline: baseline,
+  self-stretch: stretch,
+);
+
+$flex-grow-factors: (
+  grow: (
+    flex-grow-0: 0,
+    flex-grow-1: 1,
+    flex-grow-2: 2,
+    flex-grow-3: 3,
+  ),
+  shrink: (
+    flex-shrink-0: 0,
+    flex-shrink-1: 1,
+    flex-shrink-2: 2,
+    flex-shrink-3: 3,
+  ),
+);
+
+$flex-orders: (
+  order-0: 0,
+  order-1: 1,
+  order-2: 2,
+  order-3: 3,
+  order-4: 4,
+  order-5: 5,
+  order-6: 6,
+  order-7: 7,
+  order-8: 8,
+  order-last: 99999,
+);
+
+$clears: (
+  r: right,
+  l: left,
+  b: both,
+  n: none,
+);
+
+$floats: (
+  r: right,
+  l: left,
+  n: none,
+);
+
+$paddings: (
+  a: padding,
+  t: padding-top,
+  r: padding-right,
+  b: padding-bottom,
+  l: padding-left,
+  v: padding-top padding-bottom,
+  h: padding-right padding-left,
+);
+
+$margins: (
+  a: margin,
+  t: margin-top,
+  r: margin-right,
+  b: margin-bottom,
+  l: margin-left,
+  v: margin-top margin-bottom,
+  h: margin-right margin-left,
+);
+
+// Use spacing variables
+$widths: (
+/* Width Scale */
+  w48: 48px 3rem,
+
+/* Width Percentages - Based off of width of parent */
+  w-10: 10%,
+  w-20: 20%,
+  w-25: 25%,
+  w-30: 30%,
+  w-33: 33%,
+  w-34: 34%,
+  w-40: 40%,
+  w-50: 50%,
+  w-60: 60%,
+  w-70: 70%,
+  w-75: 75%,
+  w-80: 80%,
+  w-90: 90%,
+  w-100: 100%,
+
+/* Screen Width Percentage */
+  vw-25: 25vw,
+  vw-50: 50vw,
+  vw-75: 75vw,
+  vw-100: 100vw,
+
+/* String Properties */
+  w-third: calc(100% / 3),
+  w-two-thirds: calc(100% / 1.5),
+
+  w-auto: auto,
+  w-inherit: inherit,
+  w-none: none,
+);
+
+// Use spacing variables
+$heights: (
+/* Height Scale */
+  h48: 48px 3rem,
+
+/* Height Percentages - Based off of height of parent */
+  h-25: 25%,
+  h-50: 50%,
+  h-75: 75%,
+  h-100: 100%,
+
+/* Screen Height Percentage */
+  vh-25: 25vh,
+  vh-50: 50vh,
+  vh-75: 75vh,
+  vh-100: 100vh,
+
+/* String Properties */
+  h-auto: auto,
+  h-inherit: inherit,
+  h-none: none,
+);
+
+$positions: (
+  inherit: inherit,
+  initial: initial,
+  unset: unset,
+  static: static,
+  relative: relative,
+  absolute: absolute,
+  fixed: fixed,
+  sticky: sticky,
+);
+
+$column-counts: (
+  // 1: 1,
+  // 2: 2,
+  // 3: 3,
+  // 4: 4,
+  // 5: 5,
+  // 6: 6,
+);
+
+// Use spacing variables
+$column-gaps: (
+  // 0: 0,
+  // 1: .25rem,
+  // 2: .5rem,
+  // 3: 1rem,
+  // 4: 2rem,
+  // 5: 4rem,
+);
+
+
+// Theming Settings
+
+$colors: (
+  inherit: inherit,
+  initial: initial,
+  current: currentColor,
+  transparent: transparent,
+  black: #000,
+  black-85: rgba(0,0,0,.85),
+  black-50: rgba(0,0,0,.5),
+  // black-15: rgba(0,0,0,.15),
+  white: #fff,
+  blue: #1f8beb,
+);
+
+$bg-sizes: (
+  cover: cover,
+  contain: contain,
+);
+
+$bg-positions: (
+  center: center center,
+  top: top center,
+  right: center right,
+  bottom: bottom center,
+  left: center left,
+);
+
+$bg-repeats: (
+  r: repeat,
+  rx: repeat-x,
+  ry: repeat-y,
+  space: space,
+  round: round,
+  nr: no-repeat,
+);
+
+// Use color variables
+$bg-overlays: (
+  // darken: (
+  //   0: rgba(0,0,0,0),
+  //   25: rgba(0,0,0,.25),
+  //   50: rgba(0,0,0,.50),
+  //   75: rgba(0,0,0,.75),
+  // ),
+  // lighten: (
+  //   0: rgba(0,0,0,0),
+  //   25: rgba(255,255,255,.25),
+  //   50: rgba(255,255,255,.50),
+  //   75: rgba(255,255,255,.75),
+  // ),
+);
+
+$box-shadows: (
+  // 1: 0   0   4px 2px rgba(0,0,0,.2),
+  // 2: 0   0   8px 2px rgba(0,0,0,.2),
+  // 3: 2px 2px 4px 2px rgba(0,0,0,.2),
+  // 4: 2px 2px 8px 0   rgba(0,0,0,.2),
+  // 5: 4px 4px 8px 0   rgba(0,0,0,.2),
+);
+
+$border-styles: (
+  dotted: dotted,
+  dashed: dashed,
+  solid: solid,
+  none: none,
+);
+
+// Use spacing variables
+$border-widths: (
+  0: 0,
+  1: .125rem,
+  2: .25rem,
+  3: .5rem,
+  4: 1rem,
+  5: 2rem,
+);
+
+// Use spacing variables
+$border-radius: (
+  0: 0,
+  2: 2px .125rem,
+  -pill: 9999px,
+);
+
+// full name keeps the leading 0's, otherwise removed by SASS?
+$opacities: (
+  o-100: 1,
+  o-50: .5,
+  o-0: 0,
+);
+
+
+// Element Settings
+
+$aspect-ratios: (
+  // 16x9: percentage(9 / 16),
+  // 9x16: percentage(16 / 9),
+  // 4x3: percentage(3 / 4),
+  // 3x4: percentage(4 / 3),
+  // 6x4: percentage(4 / 6),
+  // 4x6: percentage(6 / 4),
+  // 8x5: percentage(5 / 8),
+  // 5x8: percentage(8 / 5),
+  // 7x5: percentage(5 / 7),
+  // 5x7: percentage(7 / 5),
+  // 1x1: percentage(1 / 1),
+);
+
+$object-fits: (
+  inherit: inherit,
+  initial: initial,
+  unset: unset,
+  fill: fill,
+  contain: contain,
+  cover: cover,
+  none: none,
+  scale-down: scale-down,
+);
+
+$object-positions: (
+  inherit: inherit,
+  initial: initial,
+  unset: unset,
+  center: center,
+  top: top,
+  right: right,
+  bottom: bottom,
+  left: left,
+);
+
+$image-renderings: (
+  inherit: inherit,
+  initial: initial,
+  unset: unset,
+  auto: auto,
+  crisp-edges: crisp-edges,
+  pixelated: pixelated,
+);
+
+
+// Other Settings
+
+$cursors: (
+  auto: auto,
+  default: default,
+  none: none,
+  pointer: pointer,
+  not-allowed: not-allowed,
+);
+
+$pointer-events: (
+  auto: auto,
+  none: none,
+  all: all,
+);
+
+
+// Things Waiting To Be Sorted
+
+$outlines: (
+  outline: 1px solid,
+  outline-transparent: 1px solid transparent,
+  outline-0: 0,
+);
+
+$coordinates: (
+  0: 0,
+  1: 1rem,
+  2: 2rem,
+  -1: -1rem,
+  -2: -2rem,
+);
+
+$mix-blend-modes: (
+  // inherit: inherit,
+  // initial: initial,
+  // unset: unset,
+  // normal: normal,
+  // multiply: multiply,
+  // screen: screen,
+  // overlay: overlay,
+  // darken: darken,
+  // lighten: lighten,
+  // color-dodge: color-dodge,
+  // color-burn: color-burn,
+  // hard-light: hard-light,
+  // soft-light: soft-light,
+  // difference: difference,
+  // exclusion: exclusion,
+  // hue: hue,
+  // saturation: saturation,
+  // color: color,
+  // luminosity: luminosity,
+);
+
+$overflows: (
+  inherit: inherit,
+  initial: initial,
+  unset: unset,
+  visible: visible,
+  hidden: hidden,
+  scroll: scroll,
+  auto: auto,
+);
+
+$overflow-wraps: (
+  inherit: inherit,
+  initial: initial,
+  unset: unset,
+  normal: normal,
+  break: break-word,
+);
+
+$rotations: (
+  // 45: 45deg,
+  // 90: 90deg,
+  // 135: 135deg,
+  // 180: 180deg,
+  // 225: 225deg,
+  // 270: 270deg,
+  // 315: 315deg,
+);
+
+$word-breaks: (
+  normal: normal,
+  wrap: break-all,
+  nowrap: keep-all,
+
+/* Non standard for WebKit */
+  break: break-word,
+);
+
+$hyphens: (
+  none: none,
+  manual: manual,
+  auto: auto,
+);
+
+$z-indexes: (
+  inherit: inherit,
+  initial: initial,
+  unset: unset,
+
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+
+  n1: -1,
+  n2: -2,
+  n3: -3,
+  n4: -4,
+  n5: -5,
+
+  999: 999,
+  9999: 9999,
+  max: 2147483647,
+);

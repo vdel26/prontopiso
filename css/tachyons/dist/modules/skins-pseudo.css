@@ -1,0 +1,255 @@
+/*
+
+   SKINS:PSEUDO
+
+   Customize the color of an element when
+   it is focused or hovered over.
+
+*/
+/* Text colors */
+.hover-inherit:hover,
+.hover-inherit:focus {
+  color: inherit; }
+
+.hover-initial:hover,
+.hover-initial:focus {
+  color: initial; }
+
+.hover-current:hover,
+.hover-current:focus {
+  color: currentColor; }
+
+.hover-transparent:hover,
+.hover-transparent:focus {
+  color: transparent; }
+
+.hover-black:hover,
+.hover-black:focus {
+  color: #000; }
+
+.hover-black-50:hover,
+.hover-black-50:focus {
+  color: rgba(0, 0, 0, 0.5); }
+
+.hover-black-15:hover,
+.hover-black-15:focus {
+  color: rgba(0, 0, 0, 0.15); }
+
+.hover-white:hover,
+.hover-white:focus {
+  color: #fff; }
+
+.hover-blue:hover,
+.hover-blue:focus {
+  color: #1f8beb; }
+
+@media screen and (min-width: 30em) {
+  .hover-inherit-ns:hover,
+  .hover-inherit-ns:focus {
+    color: inherit; }
+  .hover-initial-ns:hover,
+  .hover-initial-ns:focus {
+    color: initial; }
+  .hover-current-ns:hover,
+  .hover-current-ns:focus {
+    color: currentColor; }
+  .hover-transparent-ns:hover,
+  .hover-transparent-ns:focus {
+    color: transparent; }
+  .hover-black-ns:hover,
+  .hover-black-ns:focus {
+    color: #000; }
+  .hover-black-50-ns:hover,
+  .hover-black-50-ns:focus {
+    color: rgba(0, 0, 0, 0.5); }
+  .hover-black-15-ns:hover,
+  .hover-black-15-ns:focus {
+    color: rgba(0, 0, 0, 0.15); }
+  .hover-white-ns:hover,
+  .hover-white-ns:focus {
+    color: #fff; }
+  .hover-blue-ns:hover,
+  .hover-blue-ns:focus {
+    color: #1f8beb; } }
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .hover-inherit-m:hover,
+  .hover-inherit-m:focus {
+    color: inherit; }
+  .hover-initial-m:hover,
+  .hover-initial-m:focus {
+    color: initial; }
+  .hover-current-m:hover,
+  .hover-current-m:focus {
+    color: currentColor; }
+  .hover-transparent-m:hover,
+  .hover-transparent-m:focus {
+    color: transparent; }
+  .hover-black-m:hover,
+  .hover-black-m:focus {
+    color: #000; }
+  .hover-black-50-m:hover,
+  .hover-black-50-m:focus {
+    color: rgba(0, 0, 0, 0.5); }
+  .hover-black-15-m:hover,
+  .hover-black-15-m:focus {
+    color: rgba(0, 0, 0, 0.15); }
+  .hover-white-m:hover,
+  .hover-white-m:focus {
+    color: #fff; }
+  .hover-blue-m:hover,
+  .hover-blue-m:focus {
+    color: #1f8beb; } }
+
+@media screen and (min-width: 60em) {
+  .hover-inherit-l:hover,
+  .hover-inherit-l:focus {
+    color: inherit; }
+  .hover-initial-l:hover,
+  .hover-initial-l:focus {
+    color: initial; }
+  .hover-current-l:hover,
+  .hover-current-l:focus {
+    color: currentColor; }
+  .hover-transparent-l:hover,
+  .hover-transparent-l:focus {
+    color: transparent; }
+  .hover-black-l:hover,
+  .hover-black-l:focus {
+    color: #000; }
+  .hover-black-50-l:hover,
+  .hover-black-50-l:focus {
+    color: rgba(0, 0, 0, 0.5); }
+  .hover-black-15-l:hover,
+  .hover-black-15-l:focus {
+    color: rgba(0, 0, 0, 0.15); }
+  .hover-white-l:hover,
+  .hover-white-l:focus {
+    color: #fff; }
+  .hover-blue-l:hover,
+  .hover-blue-l:focus {
+    color: #1f8beb; } }
+
+/* Background colors */
+.hover-bg-inherit:hover,
+.hover-bg-inherit:focus {
+  background-color: inherit; }
+
+.hover-bg-initial:hover,
+.hover-bg-initial:focus {
+  background-color: initial; }
+
+.hover-bg-current:hover,
+.hover-bg-current:focus {
+  background-color: currentColor; }
+
+.hover-bg-transparent:hover,
+.hover-bg-transparent:focus {
+  background-color: transparent; }
+
+.hover-bg-black:hover,
+.hover-bg-black:focus {
+  background-color: #000; }
+
+.hover-bg-black-50:hover,
+.hover-bg-black-50:focus {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.hover-bg-black-15:hover,
+.hover-bg-black-15:focus {
+  background-color: rgba(0, 0, 0, 0.15); }
+
+.hover-bg-white:hover,
+.hover-bg-white:focus {
+  background-color: #fff; }
+
+.hover-bg-blue:hover,
+.hover-bg-blue:focus {
+  background-color: #1f8beb; }
+
+@media screen and (min-width: 30em) {
+  .hover-bg-inherit-ns:hover,
+  .hover-bg-inherit-ns:focus {
+    background-color: inherit; }
+  .hover-bg-initial-ns:hover,
+  .hover-bg-initial-ns:focus {
+    background-color: initial; }
+  .hover-bg-current-ns:hover,
+  .hover-bg-current-ns:focus {
+    background-color: currentColor; }
+  .hover-bg-transparent-ns:hover,
+  .hover-bg-transparent-ns:focus {
+    background-color: transparent; }
+  .hover-bg-black-ns:hover,
+  .hover-bg-black-ns:focus {
+    background-color: #000; }
+  .hover-bg-black-50-ns:hover,
+  .hover-bg-black-50-ns:focus {
+    background-color: rgba(0, 0, 0, 0.5); }
+  .hover-bg-black-15-ns:hover,
+  .hover-bg-black-15-ns:focus {
+    background-color: rgba(0, 0, 0, 0.15); }
+  .hover-bg-white-ns:hover,
+  .hover-bg-white-ns:focus {
+    background-color: #fff; }
+  .hover-bg-blue-ns:hover,
+  .hover-bg-blue-ns:focus {
+    background-color: #1f8beb; } }
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .hover-bg-inherit-m:hover,
+  .hover-bg-inherit-m:focus {
+    background-color: inherit; }
+  .hover-bg-initial-m:hover,
+  .hover-bg-initial-m:focus {
+    background-color: initial; }
+  .hover-bg-current-m:hover,
+  .hover-bg-current-m:focus {
+    background-color: currentColor; }
+  .hover-bg-transparent-m:hover,
+  .hover-bg-transparent-m:focus {
+    background-color: transparent; }
+  .hover-bg-black-m:hover,
+  .hover-bg-black-m:focus {
+    background-color: #000; }
+  .hover-bg-black-50-m:hover,
+  .hover-bg-black-50-m:focus {
+    background-color: rgba(0, 0, 0, 0.5); }
+  .hover-bg-black-15-m:hover,
+  .hover-bg-black-15-m:focus {
+    background-color: rgba(0, 0, 0, 0.15); }
+  .hover-bg-white-m:hover,
+  .hover-bg-white-m:focus {
+    background-color: #fff; }
+  .hover-bg-blue-m:hover,
+  .hover-bg-blue-m:focus {
+    background-color: #1f8beb; } }
+
+@media screen and (min-width: 60em) {
+  .hover-bg-inherit-l:hover,
+  .hover-bg-inherit-l:focus {
+    background-color: inherit; }
+  .hover-bg-initial-l:hover,
+  .hover-bg-initial-l:focus {
+    background-color: initial; }
+  .hover-bg-current-l:hover,
+  .hover-bg-current-l:focus {
+    background-color: currentColor; }
+  .hover-bg-transparent-l:hover,
+  .hover-bg-transparent-l:focus {
+    background-color: transparent; }
+  .hover-bg-black-l:hover,
+  .hover-bg-black-l:focus {
+    background-color: #000; }
+  .hover-bg-black-50-l:hover,
+  .hover-bg-black-50-l:focus {
+    background-color: rgba(0, 0, 0, 0.5); }
+  .hover-bg-black-15-l:hover,
+  .hover-bg-black-15-l:focus {
+    background-color: rgba(0, 0, 0, 0.15); }
+  .hover-bg-white-l:hover,
+  .hover-bg-white-l:focus {
+    background-color: #fff; }
+  .hover-bg-blue-l:hover,
+  .hover-bg-blue-l:focus {
+    background-color: #1f8beb; } }

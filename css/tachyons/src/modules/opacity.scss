@@ -1,0 +1,22 @@
+/*
+
+    OPACITY
+    Docs: http://tachyons.io/docs/themes/opacity/
+
+*/
+
+// Variables
+@import '../_variables';
+
+
+@each $name, $value in $opacities {
+  .#{$name} { opacity: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $opacities {
+      .#{$name}-#{$suffix} { opacity: $value; }
+    }
+  }
+}

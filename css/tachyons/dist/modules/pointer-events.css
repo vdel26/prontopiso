@@ -1,0 +1,45 @@
+/*
+
+   POINTER EVENTS
+
+   Base:
+    pe = pointer-events
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.pe-auto {
+  pointer-events: auto; }
+
+.pe-none {
+  pointer-events: none; }
+
+.pe-all {
+  pointer-events: all; }
+
+@media screen and (min-width: 30em) {
+  .pe-auto-ns {
+    pointer-events: auto; }
+  .pe-none-ns {
+    pointer-events: none; }
+  .pe-all-ns {
+    pointer-events: all; } }
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .pe-auto-m {
+    pointer-events: auto; }
+  .pe-none-m {
+    pointer-events: none; }
+  .pe-all-m {
+    pointer-events: all; } }
+
+@media screen and (min-width: 60em) {
+  .pe-auto-l {
+    pointer-events: auto; }
+  .pe-none-l {
+    pointer-events: none; }
+  .pe-all-l {
+    pointer-events: all; } }

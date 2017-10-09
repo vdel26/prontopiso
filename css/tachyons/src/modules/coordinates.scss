@@ -1,0 +1,77 @@
+/*
+
+   COORDINATES
+   Docs: http://tachyons.io/docs/layout/position/
+
+   Use in combination with the position module.
+
+   Base:
+     top
+     bottom
+     right
+     left
+
+   Modifiers:
+     -0  = literal value 0
+     -1  = literal value 1
+     -2  = literal value 2
+     --1 = literal value -1
+     --2 = literal value -2
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+// Variables
+@import '../_variables';
+
+
+@each $name, $values in $spacings {
+  .top-#{$name} {
+    @each $value in $values { top: $value; }
+  }
+  .right-#{$name} {
+    @each $value in $values { right: $value; }
+  }
+  .bottom-#{$name} {
+    @each $value in $values { bottom: $value; }
+  }
+  .left-#{$name} {
+    @each $value in $values { left: $value; }
+  }
+}
+
+.absolute--fill {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $values in $spacings {
+      .top-#{$name}-#{$suffix} {
+        @each $value in $values { top: $value; }
+      }
+      .right-#{$name}-#{$suffix} {
+        @each $value in $values { right: $value; }
+      }
+      .bottom-#{$name}-#{$suffix} {
+        @each $value in $values { bottom: $value; }
+      }
+      .left-#{$name}-#{$suffix} {
+        @each $value in $values { left: $value; }
+      }
+    }
+    .absolute--fill-#{$suffix} {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

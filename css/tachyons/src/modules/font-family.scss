@@ -1,0 +1,22 @@
+/*
+
+   FONT FAMILY GROUPS
+   Docs: http://tachyons.io/docs/typography/font-family/
+
+*/
+
+// Variables
+@import '../_variables';
+
+
+@each $name, $value in $font-families {
+  .#{$name} { font-family: unquote($value); }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $font-families {
+      .#{$name}-#{$suffix} { font-family: unquote($value); }
+    }
+  }
+}

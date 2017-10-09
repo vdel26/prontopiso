@@ -1,0 +1,508 @@
+/*
+
+   SVG SKINS
+
+   Base:
+     fill = fill color
+     stroke = stroke color
+     sw = stroke-width
+
+   Modifiers:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+*/
+/* Fill colors */
+.hover-fill-inherit:hover,
+.hover-fill-inherit:focus {
+  fill: inherit; }
+
+.hover-fill-initial:hover,
+.hover-fill-initial:focus {
+  fill: initial; }
+
+.hover-fill-current:hover,
+.hover-fill-current:focus {
+  fill: currentColor; }
+
+.hover-fill-transparent:hover,
+.hover-fill-transparent:focus {
+  fill: transparent; }
+
+.hover-fill-black:hover,
+.hover-fill-black:focus {
+  fill: #000; }
+
+.hover-fill-black-50:hover,
+.hover-fill-black-50:focus {
+  fill: rgba(0, 0, 0, 0.5); }
+
+.hover-fill-black-15:hover,
+.hover-fill-black-15:focus {
+  fill: rgba(0, 0, 0, 0.15); }
+
+.hover-fill-white:hover,
+.hover-fill-white:focus {
+  fill: #fff; }
+
+.hover-fill-blue:hover,
+.hover-fill-blue:focus {
+  fill: #1f8beb; }
+
+@media screen and (min-width: 30em) {
+  .hover-fill-inherit-ns:hover,
+  .hover-fill-inherit-ns:focus {
+    fill: inherit; }
+  .hover-fill-initial-ns:hover,
+  .hover-fill-initial-ns:focus {
+    fill: initial; }
+  .hover-fill-current-ns:hover,
+  .hover-fill-current-ns:focus {
+    fill: currentColor; }
+  .hover-fill-transparent-ns:hover,
+  .hover-fill-transparent-ns:focus {
+    fill: transparent; }
+  .hover-fill-black-ns:hover,
+  .hover-fill-black-ns:focus {
+    fill: #000; }
+  .hover-fill-black-50-ns:hover,
+  .hover-fill-black-50-ns:focus {
+    fill: rgba(0, 0, 0, 0.5); }
+  .hover-fill-black-15-ns:hover,
+  .hover-fill-black-15-ns:focus {
+    fill: rgba(0, 0, 0, 0.15); }
+  .hover-fill-white-ns:hover,
+  .hover-fill-white-ns:focus {
+    fill: #fff; }
+  .hover-fill-blue-ns:hover,
+  .hover-fill-blue-ns:focus {
+    fill: #1f8beb; } }
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .hover-fill-inherit-m:hover,
+  .hover-fill-inherit-m:focus {
+    fill: inherit; }
+  .hover-fill-initial-m:hover,
+  .hover-fill-initial-m:focus {
+    fill: initial; }
+  .hover-fill-current-m:hover,
+  .hover-fill-current-m:focus {
+    fill: currentColor; }
+  .hover-fill-transparent-m:hover,
+  .hover-fill-transparent-m:focus {
+    fill: transparent; }
+  .hover-fill-black-m:hover,
+  .hover-fill-black-m:focus {
+    fill: #000; }
+  .hover-fill-black-50-m:hover,
+  .hover-fill-black-50-m:focus {
+    fill: rgba(0, 0, 0, 0.5); }
+  .hover-fill-black-15-m:hover,
+  .hover-fill-black-15-m:focus {
+    fill: rgba(0, 0, 0, 0.15); }
+  .hover-fill-white-m:hover,
+  .hover-fill-white-m:focus {
+    fill: #fff; }
+  .hover-fill-blue-m:hover,
+  .hover-fill-blue-m:focus {
+    fill: #1f8beb; } }
+
+@media screen and (min-width: 60em) {
+  .hover-fill-inherit-l:hover,
+  .hover-fill-inherit-l:focus {
+    fill: inherit; }
+  .hover-fill-initial-l:hover,
+  .hover-fill-initial-l:focus {
+    fill: initial; }
+  .hover-fill-current-l:hover,
+  .hover-fill-current-l:focus {
+    fill: currentColor; }
+  .hover-fill-transparent-l:hover,
+  .hover-fill-transparent-l:focus {
+    fill: transparent; }
+  .hover-fill-black-l:hover,
+  .hover-fill-black-l:focus {
+    fill: #000; }
+  .hover-fill-black-50-l:hover,
+  .hover-fill-black-50-l:focus {
+    fill: rgba(0, 0, 0, 0.5); }
+  .hover-fill-black-15-l:hover,
+  .hover-fill-black-15-l:focus {
+    fill: rgba(0, 0, 0, 0.15); }
+  .hover-fill-white-l:hover,
+  .hover-fill-white-l:focus {
+    fill: #fff; }
+  .hover-fill-blue-l:hover,
+  .hover-fill-blue-l:focus {
+    fill: #1f8beb; } }
+
+/* Stroke colors */
+.hover-stroke-inherit:hover,
+.hover-stroke-inherit:focus {
+  stroke: inherit; }
+
+.hover-stroke-initial:hover,
+.hover-stroke-initial:focus {
+  stroke: initial; }
+
+.hover-stroke-current:hover,
+.hover-stroke-current:focus {
+  stroke: currentColor; }
+
+.hover-stroke-transparent:hover,
+.hover-stroke-transparent:focus {
+  stroke: transparent; }
+
+.hover-stroke-black:hover,
+.hover-stroke-black:focus {
+  stroke: #000; }
+
+.hover-stroke-black-50:hover,
+.hover-stroke-black-50:focus {
+  stroke: rgba(0, 0, 0, 0.5); }
+
+.hover-stroke-black-15:hover,
+.hover-stroke-black-15:focus {
+  stroke: rgba(0, 0, 0, 0.15); }
+
+.hover-stroke-white:hover,
+.hover-stroke-white:focus {
+  stroke: #fff; }
+
+.hover-stroke-blue:hover,
+.hover-stroke-blue:focus {
+  stroke: #1f8beb; }
+
+@media screen and (min-width: 30em) {
+  .hover-stroke-inherit-ns:hover,
+  .hover-stroke-inherit-ns:focus {
+    stroke: inherit; }
+  .hover-stroke-initial-ns:hover,
+  .hover-stroke-initial-ns:focus {
+    stroke: initial; }
+  .hover-stroke-current-ns:hover,
+  .hover-stroke-current-ns:focus {
+    stroke: currentColor; }
+  .hover-stroke-transparent-ns:hover,
+  .hover-stroke-transparent-ns:focus {
+    stroke: transparent; }
+  .hover-stroke-black-ns:hover,
+  .hover-stroke-black-ns:focus {
+    stroke: #000; }
+  .hover-stroke-black-50-ns:hover,
+  .hover-stroke-black-50-ns:focus {
+    stroke: rgba(0, 0, 0, 0.5); }
+  .hover-stroke-black-15-ns:hover,
+  .hover-stroke-black-15-ns:focus {
+    stroke: rgba(0, 0, 0, 0.15); }
+  .hover-stroke-white-ns:hover,
+  .hover-stroke-white-ns:focus {
+    stroke: #fff; }
+  .hover-stroke-blue-ns:hover,
+  .hover-stroke-blue-ns:focus {
+    stroke: #1f8beb; } }
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .hover-stroke-inherit-m:hover,
+  .hover-stroke-inherit-m:focus {
+    stroke: inherit; }
+  .hover-stroke-initial-m:hover,
+  .hover-stroke-initial-m:focus {
+    stroke: initial; }
+  .hover-stroke-current-m:hover,
+  .hover-stroke-current-m:focus {
+    stroke: currentColor; }
+  .hover-stroke-transparent-m:hover,
+  .hover-stroke-transparent-m:focus {
+    stroke: transparent; }
+  .hover-stroke-black-m:hover,
+  .hover-stroke-black-m:focus {
+    stroke: #000; }
+  .hover-stroke-black-50-m:hover,
+  .hover-stroke-black-50-m:focus {
+    stroke: rgba(0, 0, 0, 0.5); }
+  .hover-stroke-black-15-m:hover,
+  .hover-stroke-black-15-m:focus {
+    stroke: rgba(0, 0, 0, 0.15); }
+  .hover-stroke-white-m:hover,
+  .hover-stroke-white-m:focus {
+    stroke: #fff; }
+  .hover-stroke-blue-m:hover,
+  .hover-stroke-blue-m:focus {
+    stroke: #1f8beb; } }
+
+@media screen and (min-width: 60em) {
+  .hover-stroke-inherit-l:hover,
+  .hover-stroke-inherit-l:focus {
+    stroke: inherit; }
+  .hover-stroke-initial-l:hover,
+  .hover-stroke-initial-l:focus {
+    stroke: initial; }
+  .hover-stroke-current-l:hover,
+  .hover-stroke-current-l:focus {
+    stroke: currentColor; }
+  .hover-stroke-transparent-l:hover,
+  .hover-stroke-transparent-l:focus {
+    stroke: transparent; }
+  .hover-stroke-black-l:hover,
+  .hover-stroke-black-l:focus {
+    stroke: #000; }
+  .hover-stroke-black-50-l:hover,
+  .hover-stroke-black-50-l:focus {
+    stroke: rgba(0, 0, 0, 0.5); }
+  .hover-stroke-black-15-l:hover,
+  .hover-stroke-black-15-l:focus {
+    stroke: rgba(0, 0, 0, 0.15); }
+  .hover-stroke-white-l:hover,
+  .hover-stroke-white-l:focus {
+    stroke: #fff; }
+  .hover-stroke-blue-l:hover,
+  .hover-stroke-blue-l:focus {
+    stroke: #1f8beb; } }
+
+/* Stroke widths */
+.hover-sw0:hover,
+.hover-sw0:focus {
+  stroke-width: 0; }
+
+.hover-sw10:hover,
+.hover-sw10:focus {
+  stroke-width: 10px;
+  stroke-width: 0.625rem; }
+
+.hover-sw15:hover,
+.hover-sw15:focus {
+  stroke-width: 15px;
+  stroke-width: 0.9375rem; }
+
+.hover-sw18:hover,
+.hover-sw18:focus {
+  stroke-width: 18px;
+  stroke-width: 1.125rem; }
+
+.hover-sw25:hover,
+.hover-sw25:focus {
+  stroke-width: 25px;
+  stroke-width: 1.5625rem; }
+
+.hover-sw30:hover,
+.hover-sw30:focus {
+  stroke-width: 30px;
+  stroke-width: 1.875rem; }
+
+.hover-sw36:hover,
+.hover-sw36:focus {
+  stroke-width: 36px;
+  stroke-width: 2rem; }
+
+.hover-sw40:hover,
+.hover-sw40:focus {
+  stroke-width: 40px;
+  stroke-width: 2.5rem; }
+
+.hover-sw60:hover,
+.hover-sw60:focus {
+  stroke-width: 60px;
+  stroke-width: 3.75rem; }
+
+.hover-sw90:hover,
+.hover-sw90:focus {
+  stroke-width: 90px;
+  stroke-width: 5.625rem; }
+
+.hover-sw100:hover,
+.hover-sw100:focus {
+  stroke-width: 100px;
+  stroke-width: 6.25rem; }
+
+.hover-sw140:hover,
+.hover-sw140:focus {
+  stroke-width: 140px;
+  stroke-width: 8.75rem; }
+
+.hover-sw150:hover,
+.hover-sw150:focus {
+  stroke-width: 150px;
+  stroke-width: 9.375rem; }
+
+.hover-swa:hover,
+.hover-swa:focus {
+  stroke-width: auto; }
+
+@media screen and (min-width: 30em) {
+  .hover-sw0-ns:hover,
+  .hover-sw0-ns:focus {
+    stroke-width: 0; }
+  .hover-sw10-ns:hover,
+  .hover-sw10-ns:focus {
+    stroke-width: 10px;
+    stroke-width: 0.625rem; }
+  .hover-sw15-ns:hover,
+  .hover-sw15-ns:focus {
+    stroke-width: 15px;
+    stroke-width: 0.9375rem; }
+  .hover-sw18-ns:hover,
+  .hover-sw18-ns:focus {
+    stroke-width: 18px;
+    stroke-width: 1.125rem; }
+  .hover-sw25-ns:hover,
+  .hover-sw25-ns:focus {
+    stroke-width: 25px;
+    stroke-width: 1.5625rem; }
+  .hover-sw30-ns:hover,
+  .hover-sw30-ns:focus {
+    stroke-width: 30px;
+    stroke-width: 1.875rem; }
+  .hover-sw36-ns:hover,
+  .hover-sw36-ns:focus {
+    stroke-width: 36px;
+    stroke-width: 2rem; }
+  .hover-sw40-ns:hover,
+  .hover-sw40-ns:focus {
+    stroke-width: 40px;
+    stroke-width: 2.5rem; }
+  .hover-sw60-ns:hover,
+  .hover-sw60-ns:focus {
+    stroke-width: 60px;
+    stroke-width: 3.75rem; }
+  .hover-sw90-ns:hover,
+  .hover-sw90-ns:focus {
+    stroke-width: 90px;
+    stroke-width: 5.625rem; }
+  .hover-sw100-ns:hover,
+  .hover-sw100-ns:focus {
+    stroke-width: 100px;
+    stroke-width: 6.25rem; }
+  .hover-sw140-ns:hover,
+  .hover-sw140-ns:focus {
+    stroke-width: 140px;
+    stroke-width: 8.75rem; }
+  .hover-sw150-ns:hover,
+  .hover-sw150-ns:focus {
+    stroke-width: 150px;
+    stroke-width: 9.375rem; }
+  .hover-swa-ns:hover,
+  .hover-swa-ns:focus {
+    stroke-width: auto; } }
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .hover-sw0-m:hover,
+  .hover-sw0-m:focus {
+    stroke-width: 0; }
+  .hover-sw10-m:hover,
+  .hover-sw10-m:focus {
+    stroke-width: 10px;
+    stroke-width: 0.625rem; }
+  .hover-sw15-m:hover,
+  .hover-sw15-m:focus {
+    stroke-width: 15px;
+    stroke-width: 0.9375rem; }
+  .hover-sw18-m:hover,
+  .hover-sw18-m:focus {
+    stroke-width: 18px;
+    stroke-width: 1.125rem; }
+  .hover-sw25-m:hover,
+  .hover-sw25-m:focus {
+    stroke-width: 25px;
+    stroke-width: 1.5625rem; }
+  .hover-sw30-m:hover,
+  .hover-sw30-m:focus {
+    stroke-width: 30px;
+    stroke-width: 1.875rem; }
+  .hover-sw36-m:hover,
+  .hover-sw36-m:focus {
+    stroke-width: 36px;
+    stroke-width: 2rem; }
+  .hover-sw40-m:hover,
+  .hover-sw40-m:focus {
+    stroke-width: 40px;
+    stroke-width: 2.5rem; }
+  .hover-sw60-m:hover,
+  .hover-sw60-m:focus {
+    stroke-width: 60px;
+    stroke-width: 3.75rem; }
+  .hover-sw90-m:hover,
+  .hover-sw90-m:focus {
+    stroke-width: 90px;
+    stroke-width: 5.625rem; }
+  .hover-sw100-m:hover,
+  .hover-sw100-m:focus {
+    stroke-width: 100px;
+    stroke-width: 6.25rem; }
+  .hover-sw140-m:hover,
+  .hover-sw140-m:focus {
+    stroke-width: 140px;
+    stroke-width: 8.75rem; }
+  .hover-sw150-m:hover,
+  .hover-sw150-m:focus {
+    stroke-width: 150px;
+    stroke-width: 9.375rem; }
+  .hover-swa-m:hover,
+  .hover-swa-m:focus {
+    stroke-width: auto; } }
+
+@media screen and (min-width: 60em) {
+  .hover-sw0-l:hover,
+  .hover-sw0-l:focus {
+    stroke-width: 0; }
+  .hover-sw10-l:hover,
+  .hover-sw10-l:focus {
+    stroke-width: 10px;
+    stroke-width: 0.625rem; }
+  .hover-sw15-l:hover,
+  .hover-sw15-l:focus {
+    stroke-width: 15px;
+    stroke-width: 0.9375rem; }
+  .hover-sw18-l:hover,
+  .hover-sw18-l:focus {
+    stroke-width: 18px;
+    stroke-width: 1.125rem; }
+  .hover-sw25-l:hover,
+  .hover-sw25-l:focus {
+    stroke-width: 25px;
+    stroke-width: 1.5625rem; }
+  .hover-sw30-l:hover,
+  .hover-sw30-l:focus {
+    stroke-width: 30px;
+    stroke-width: 1.875rem; }
+  .hover-sw36-l:hover,
+  .hover-sw36-l:focus {
+    stroke-width: 36px;
+    stroke-width: 2rem; }
+  .hover-sw40-l:hover,
+  .hover-sw40-l:focus {
+    stroke-width: 40px;
+    stroke-width: 2.5rem; }
+  .hover-sw60-l:hover,
+  .hover-sw60-l:focus {
+    stroke-width: 60px;
+    stroke-width: 3.75rem; }
+  .hover-sw90-l:hover,
+  .hover-sw90-l:focus {
+    stroke-width: 90px;
+    stroke-width: 5.625rem; }
+  .hover-sw100-l:hover,
+  .hover-sw100-l:focus {
+    stroke-width: 100px;
+    stroke-width: 6.25rem; }
+  .hover-sw140-l:hover,
+  .hover-sw140-l:focus {
+    stroke-width: 140px;
+    stroke-width: 8.75rem; }
+  .hover-sw150-l:hover,
+  .hover-sw150-l:focus {
+    stroke-width: 150px;
+    stroke-width: 9.375rem; }
+  .hover-swa-l:hover,
+  .hover-swa-l:focus {
+    stroke-width: auto; } }
