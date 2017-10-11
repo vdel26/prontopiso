@@ -1,11 +1,11 @@
-- name: "Valoramos tu casa de forma fiable y rápida"
-  description: "Con la ayuda del cliente y nuestro conocimiento de mercado ofrecemos una muy buena valoración fidedigna de la vivienda en 24h."
+- name: 'Valoramos tu casa de forma fiable y rápida'
+  description: 'Con la ayuda del cliente y nuestro conocimiento de mercado ofrecemos una muy buena valoración fidedigna de la vivienda en 24h.'
   icon: assets/images/features/01-fast.svg
 
-- name: "Nuestro precio mínimo garantizado te da seguridad"
-  description: "Garantizamos un precio de venta mínimo entorno al 90-97% del valor de mercado. Nuestro objetivo será venderla como mínimo por el 100%."
+- name: 'Nuestro precio mínimo garantizado te da seguridad'
+  description: 'Garantizamos un precio de venta mínimo entorno al 90-97% del valor de mercado. Nuestro objetivo será venderla como mínimo por el 100%.'
   icon: assets/images/features/02-price.svg
 
-- name: "Cambia de casa sin ataduras en 90 días"
-  description: "Facilitamos la compra de tu próxima vivienda. Si no vendemos la propiedad en 90 días, te anticipamos el precio garantizado para que puedas comprar."
+- name: 'Cambia de casa sin ataduras en 90 días'
+  description: 'Facilitamos la compra de tu próxima vivienda. Si no vendemos la propiedad en 90 días, te anticipamos el precio garantizado para que puedas comprar.'
   icon: assets/images/features/03-strings.svg
