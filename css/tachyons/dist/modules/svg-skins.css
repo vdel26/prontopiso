@@ -220,6 +220,10 @@
 .sw0 {
   stroke-width: 0; }
 
+.sw5 {
+  stroke-width: 5px;
+  stroke-width: 0.3125rem; }
+
 .sw10 {
   stroke-width: 10px;
   stroke-width: 0.625rem; }
@@ -244,9 +248,13 @@
   stroke-width: 30px;
   stroke-width: 1.875rem; }
 
+.sw32 {
+  stroke-width: 32px;
+  stroke-width: 2rem; }
+
 .sw36 {
   stroke-width: 36px;
-  stroke-width: 2rem; }
+  stroke-width: 2.25rem; }
 
 .sw40 {
   stroke-width: 40px;
@@ -255,6 +263,10 @@
 .sw45 {
   stroke-width: 45px;
   stroke-width: 2.8125rem; }
+
+.sw50 {
+  stroke-width: 50px;
+  stroke-width: 3.125rem; }
 
 .sw60 {
   stroke-width: 60px;
@@ -310,6 +322,9 @@
 @media screen and (min-width: 30em) {
   .sw0-ns {
     stroke-width: 0; }
+  .sw5-ns {
+    stroke-width: 5px;
+    stroke-width: 0.3125rem; }
   .sw10-ns {
     stroke-width: 10px;
     stroke-width: 0.625rem; }
@@ -328,15 +343,21 @@
   .sw30-ns {
     stroke-width: 30px;
     stroke-width: 1.875rem; }
+  .sw32-ns {
+    stroke-width: 32px;
+    stroke-width: 2rem; }
   .sw36-ns {
     stroke-width: 36px;
-    stroke-width: 2rem; }
+    stroke-width: 2.25rem; }
   .sw40-ns {
     stroke-width: 40px;
     stroke-width: 2.5rem; }
   .sw45-ns {
     stroke-width: 45px;
     stroke-width: 2.8125rem; }
+  .sw50-ns {
+    stroke-width: 50px;
+    stroke-width: 3.125rem; }
   .sw60-ns {
     stroke-width: 60px;
     stroke-width: 3.75rem; }
@@ -379,6 +400,9 @@
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .sw0-m {
     stroke-width: 0; }
+  .sw5-m {
+    stroke-width: 5px;
+    stroke-width: 0.3125rem; }
   .sw10-m {
     stroke-width: 10px;
     stroke-width: 0.625rem; }
@@ -397,15 +421,21 @@
   .sw30-m {
     stroke-width: 30px;
     stroke-width: 1.875rem; }
+  .sw32-m {
+    stroke-width: 32px;
+    stroke-width: 2rem; }
   .sw36-m {
     stroke-width: 36px;
-    stroke-width: 2rem; }
+    stroke-width: 2.25rem; }
   .sw40-m {
     stroke-width: 40px;
     stroke-width: 2.5rem; }
   .sw45-m {
     stroke-width: 45px;
     stroke-width: 2.8125rem; }
+  .sw50-m {
+    stroke-width: 50px;
+    stroke-width: 3.125rem; }
   .sw60-m {
     stroke-width: 60px;
     stroke-width: 3.75rem; }
@@ -448,6 +478,9 @@
 @media screen and (min-width: 60em) {
   .sw0-l {
     stroke-width: 0; }
+  .sw5-l {
+    stroke-width: 5px;
+    stroke-width: 0.3125rem; }
   .sw10-l {
     stroke-width: 10px;
     stroke-width: 0.625rem; }
@@ -466,15 +499,21 @@
   .sw30-l {
     stroke-width: 30px;
     stroke-width: 1.875rem; }
+  .sw32-l {
+    stroke-width: 32px;
+    stroke-width: 2rem; }
   .sw36-l {
     stroke-width: 36px;
-    stroke-width: 2rem; }
+    stroke-width: 2.25rem; }
   .sw40-l {
     stroke-width: 40px;
     stroke-width: 2.5rem; }
   .sw45-l {
     stroke-width: 45px;
     stroke-width: 2.8125rem; }
+  .sw50-l {
+    stroke-width: 50px;
+    stroke-width: 3.125rem; }
   .sw60-l {
     stroke-width: 60px;
     stroke-width: 3.75rem; }

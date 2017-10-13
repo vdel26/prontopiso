@@ -1,3 +1,16 @@
+var mainNav = document.querySelector('#main-nav')
+  , navToggle = document.querySelector('#toggle-nav')
+  , navToggles = document.querySelectorAll('#toggle-nav svg');
+
+navToggle.addEventListener('click', function(e) {
+  e.preventDefault();
+  mainNav.classList.toggle('dn');
+  mainNav.classList.toggle('df');
+  for (i = 0; i < navToggles.length; ++i) {
+    navToggles[i].classList.toggle('dn');
+  }
+}, false);
+
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 'auto',
   centeredSlides: true,
