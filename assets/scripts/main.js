@@ -1,5 +1,5 @@
 var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
+  slidesPerView: 'auto',
   centeredSlides: true,
   freeMode: true,
   // freeModeSticky: true,
@@ -12,4 +12,9 @@ var swiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    480: {
+      slidesPerView: 1,
+    }
+  }
 });

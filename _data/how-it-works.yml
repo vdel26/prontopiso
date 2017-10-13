@@ -21,3 +21,4 @@
 - name: '6'
   description: 'Relájate y dedícate a buscar tu vivienda soñada, <span class="fw5">¡ProntoPiso se encarga del resto!</span>'
   icon: assets/images/how-it-works/06.svg
+  extra-classes: ' blue'
