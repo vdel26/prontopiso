@@ -252,6 +252,10 @@
   stroke-width: 40px;
   stroke-width: 2.5rem; }
 
+.sw45 {
+  stroke-width: 45px;
+  stroke-width: 2.8125rem; }
+
 .sw60 {
   stroke-width: 60px;
   stroke-width: 3.75rem; }
@@ -302,6 +306,9 @@
   .sw40-ns {
     stroke-width: 40px;
     stroke-width: 2.5rem; }
+  .sw45-ns {
+    stroke-width: 45px;
+    stroke-width: 2.8125rem; }
   .sw60-ns {
     stroke-width: 60px;
     stroke-width: 3.75rem; }
@@ -347,6 +354,9 @@
   .sw40-m {
     stroke-width: 40px;
     stroke-width: 2.5rem; }
+  .sw45-m {
+    stroke-width: 45px;
+    stroke-width: 2.8125rem; }
   .sw60-m {
     stroke-width: 60px;
     stroke-width: 3.75rem; }
@@ -392,6 +402,9 @@
   .sw40-l {
     stroke-width: 40px;
     stroke-width: 2.5rem; }
+  .sw45-l {
+    stroke-width: 45px;
+    stroke-width: 2.8125rem; }
   .sw60-l {
     stroke-width: 60px;
     stroke-width: 3.75rem; }

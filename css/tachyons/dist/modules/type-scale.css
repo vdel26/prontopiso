@@ -40,9 +40,17 @@
   font-size: 20px;
   font-size: 1.25rem; }
 
+.f30 {
+  font-size: 30px;
+  font-size: 1.875rem; }
+
 .f32 {
   font-size: 32px;
   font-size: 2rem; }
+
+.f58 {
+  font-size: 58px;
+  font-size: 3.625rem; }
 
 @media screen and (min-width: 30em) {
   .f12-ns {
@@ -60,9 +68,15 @@
   .f20-ns {
     font-size: 20px;
     font-size: 1.25rem; }
+  .f30-ns {
+    font-size: 30px;
+    font-size: 1.875rem; }
   .f32-ns {
     font-size: 32px;
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .f58-ns {
+    font-size: 58px;
+    font-size: 3.625rem; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .f12-m {
@@ -80,9 +94,15 @@
   .f20-m {
     font-size: 20px;
     font-size: 1.25rem; }
+  .f30-m {
+    font-size: 30px;
+    font-size: 1.875rem; }
   .f32-m {
     font-size: 32px;
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .f58-m {
+    font-size: 58px;
+    font-size: 3.625rem; } }
 
 @media screen and (min-width: 60em) {
   .f12-l {
@@ -100,6 +120,12 @@
   .f20-l {
     font-size: 20px;
     font-size: 1.25rem; }
+  .f30-l {
+    font-size: 30px;
+    font-size: 1.875rem; }
   .f32-l {
     font-size: 32px;
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .f58-l {
+    font-size: 58px;
+    font-size: 3.625rem; } }
