@@ -111,6 +111,26 @@
 }
 
 /* Pseudo */
+/*body {
+  overflow-x: hidden;
+}
+#hero {
+  overflow: hidden;
+}
+#hero::after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: calc(100% - 150px);
+  right: 0;
+  height: 100vw;
+  width: 150vw;
+  background-color: #fff;
+  transform: rotate(7.6deg);
+  transform-origin: bottom left;
+  box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}*/
 #features {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
 }
@@ -147,8 +167,7 @@
   z-index: 2;
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
-  background-image:
-    linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0) 12.5%, rgba(255, 255, 255, 0) 87.5%, #ffffff 100%);
+  background-image: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0) 12.5%, rgba(255, 255, 255, 0) 87.5%, #ffffff 100%);
 }
 #how-it-works .swiper-container::after {
   content: '';

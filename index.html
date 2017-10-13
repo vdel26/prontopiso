@@ -20,22 +20,22 @@ layout: default
 
 
 
-<section id="features" class="pt100 ph36 pb20 tc"
+<section id="features" class="cf pt100 ph36 pb20 tc"
          style="background-image: url('assets/images/features/00.svg');
                 background-repeat: no-repeat;
                 background-position-x: center;
                 background-position-y: 20px;">
 
   <header class="mb100 blue">
-    <h1 class="mt0 mb30 f20 fw5">¿Buscas cambiar de vivienda?</h1>
-    <p class="f18 lh-140">Céntrate en la búsqueda de tu vivienda soñada y deja que nosotros vendamos tu propiedad actual al mejor precio.</p>
+    <h1 class="mt0 mb30 f20 f32-ns fw5">¿Buscas cambiar de vivienda?</h1>
+    <p class="f18 f30-ns lh-140 lh-160-ns">Céntrate en la búsqueda de tu vivienda soñada y deja que nosotros vendamos tu propiedad actual al mejor precio.</p>
   </header>
 
-{% for feature in site.data.features %}
-  <section class="mb90">
-    <img class="dib w48 mb30" src="{{ feature.icon }}">
-    <h2 class="mt0 mb20 f18 lh-175 fw5">{{ feature.name }}</h2>
-    <p class="mv0 f16 o-50 lh-200">{{ feature.description }}</p>
+{% for item in site.data.features %}
+  <section class="fl-ns w-third-ns mb90">
+    <img class="dib h48 mb30" src="{{ item.icon }}">
+    <h2 class="mt0 mb20 f18 lh-175 fw5">{{ item.name }}</h2>
+    <p class="mv0 f16 o-50 lh-200">{{ item.description }}</p>
   </section>
 {% endfor %}
 
@@ -52,11 +52,11 @@ layout: default
 
   <section class="z-0 swiper-container mb90">
     <div class="swiper-wrapper">
-    {% for feature in site.data.how-it-works %}
+    {% for item in site.data.how-it-works %}
       <div class="swiper-slide ph36">
-        <img class="db w100 mha mb10" src="{{ feature.icon }}">
-        <h2 class="relative mt0 mb90 blue f16 lh-175 fw5">{{ feature.name }}</h2>
-        <p class="mv0 f16 lh-200">{{ feature.description }}</p>
+        <img class="db w100 mha mb10" src="{{ item.icon }}">
+        <h2 class="relative mt0 mb90 blue f16 lh-175 fw5">{{ item.name }}</h2>
+        <p class="mv0 f16 lh-200">{{ item.description }}</p>
       </div>
     {% endfor %}
     </div>
@@ -70,8 +70,9 @@ layout: default
 
 <aside id="aside" class="ph36 pb20 tc">
 
-  <header class="mb100 blue">
-    <h1 class="mt0 mb30 f20 fw5">¡Solicita una valoración ahora!</h1>
+  <header class="relative mb100 blue">
+    <img class="db mha" src="assets/images/aside/00.svg" alt="">
+    <h1 class="absolute right-0 left-0 mv0 f20 fw5" style="top: 50%; transform: translateY(-50%);">¡Solicita una valoración ahora!</h1>
   </header>
 
   <form class="cf pa10 ba br2" action="index.html" method="post"
