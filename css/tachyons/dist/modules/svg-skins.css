@@ -260,6 +260,10 @@
   stroke-width: 60px;
   stroke-width: 3.75rem; }
 
+.sw70 {
+  stroke-width: 70px;
+  stroke-width: 4.375rem; }
+
 .sw90 {
   stroke-width: 90px;
   stroke-width: 5.625rem; }
@@ -268,6 +272,10 @@
   stroke-width: 100px;
   stroke-width: 6.25rem; }
 
+.sw120 {
+  stroke-width: 120px;
+  stroke-width: 7.5rem; }
+
 .sw140 {
   stroke-width: 140px;
   stroke-width: 8.75rem; }
@@ -275,6 +283,10 @@
 .sw150 {
   stroke-width: 150px;
   stroke-width: 9.375rem; }
+
+.sw160 {
+  stroke-width: 160px;
+  stroke-width: 10rem; }
 
 .swa {
   stroke-width: auto; }
@@ -312,18 +324,27 @@
   .sw60-ns {
     stroke-width: 60px;
     stroke-width: 3.75rem; }
+  .sw70-ns {
+    stroke-width: 70px;
+    stroke-width: 4.375rem; }
   .sw90-ns {
     stroke-width: 90px;
     stroke-width: 5.625rem; }
   .sw100-ns {
     stroke-width: 100px;
     stroke-width: 6.25rem; }
+  .sw120-ns {
+    stroke-width: 120px;
+    stroke-width: 7.5rem; }
   .sw140-ns {
     stroke-width: 140px;
     stroke-width: 8.75rem; }
   .sw150-ns {
     stroke-width: 150px;
     stroke-width: 9.375rem; }
+  .sw160-ns {
+    stroke-width: 160px;
+    stroke-width: 10rem; }
   .swa-ns {
     stroke-width: auto; } }
 
@@ -360,18 +381,27 @@
   .sw60-m {
     stroke-width: 60px;
     stroke-width: 3.75rem; }
+  .sw70-m {
+    stroke-width: 70px;
+    stroke-width: 4.375rem; }
   .sw90-m {
     stroke-width: 90px;
     stroke-width: 5.625rem; }
   .sw100-m {
     stroke-width: 100px;
     stroke-width: 6.25rem; }
+  .sw120-m {
+    stroke-width: 120px;
+    stroke-width: 7.5rem; }
   .sw140-m {
     stroke-width: 140px;
     stroke-width: 8.75rem; }
   .sw150-m {
     stroke-width: 150px;
     stroke-width: 9.375rem; }
+  .sw160-m {
+    stroke-width: 160px;
+    stroke-width: 10rem; }
   .swa-m {
     stroke-width: auto; } }
 
@@ -408,17 +438,26 @@
   .sw60-l {
     stroke-width: 60px;
     stroke-width: 3.75rem; }
+  .sw70-l {
+    stroke-width: 70px;
+    stroke-width: 4.375rem; }
   .sw90-l {
     stroke-width: 90px;
     stroke-width: 5.625rem; }
   .sw100-l {
     stroke-width: 100px;
     stroke-width: 6.25rem; }
+  .sw120-l {
+    stroke-width: 120px;
+    stroke-width: 7.5rem; }
   .sw140-l {
     stroke-width: 140px;
     stroke-width: 8.75rem; }
   .sw150-l {
     stroke-width: 150px;
     stroke-width: 9.375rem; }
+  .sw160-l {
+    stroke-width: 160px;
+    stroke-width: 10rem; }
   .swa-l {
     stroke-width: auto; } }

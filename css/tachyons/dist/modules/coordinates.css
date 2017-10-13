@@ -196,6 +196,22 @@
   left: 60px;
   left: 3.75rem; }
 
+.top-70 {
+  top: 70px;
+  top: 4.375rem; }
+
+.right-70 {
+  right: 70px;
+  right: 4.375rem; }
+
+.bottom-70 {
+  bottom: 70px;
+  bottom: 4.375rem; }
+
+.left-70 {
+  left: 70px;
+  left: 4.375rem; }
+
 .top-90 {
   top: 90px;
   top: 5.625rem; }
@@ -228,6 +244,22 @@
   left: 100px;
   left: 6.25rem; }
 
+.top-120 {
+  top: 120px;
+  top: 7.5rem; }
+
+.right-120 {
+  right: 120px;
+  right: 7.5rem; }
+
+.bottom-120 {
+  bottom: 120px;
+  bottom: 7.5rem; }
+
+.left-120 {
+  left: 120px;
+  left: 7.5rem; }
+
 .top-140 {
   top: 140px;
   top: 8.75rem; }
@@ -259,6 +291,22 @@
 .left-150 {
   left: 150px;
   left: 9.375rem; }
+
+.top-160 {
+  top: 160px;
+  top: 10rem; }
+
+.right-160 {
+  right: 160px;
+  right: 10rem; }
+
+.bottom-160 {
+  bottom: 160px;
+  bottom: 10rem; }
+
+.left-160 {
+  left: 160px;
+  left: 10rem; }
 
 .top-a {
   top: auto; }
@@ -407,6 +455,18 @@
   .left-60-ns {
     left: 60px;
     left: 3.75rem; }
+  .top-70-ns {
+    top: 70px;
+    top: 4.375rem; }
+  .right-70-ns {
+    right: 70px;
+    right: 4.375rem; }
+  .bottom-70-ns {
+    bottom: 70px;
+    bottom: 4.375rem; }
+  .left-70-ns {
+    left: 70px;
+    left: 4.375rem; }
   .top-90-ns {
     top: 90px;
     top: 5.625rem; }
@@ -431,6 +491,18 @@
   .left-100-ns {
     left: 100px;
     left: 6.25rem; }
+  .top-120-ns {
+    top: 120px;
+    top: 7.5rem; }
+  .right-120-ns {
+    right: 120px;
+    right: 7.5rem; }
+  .bottom-120-ns {
+    bottom: 120px;
+    bottom: 7.5rem; }
+  .left-120-ns {
+    left: 120px;
+    left: 7.5rem; }
   .top-140-ns {
     top: 140px;
     top: 8.75rem; }
@@ -455,6 +527,18 @@
   .left-150-ns {
     left: 150px;
     left: 9.375rem; }
+  .top-160-ns {
+    top: 160px;
+    top: 10rem; }
+  .right-160-ns {
+    right: 160px;
+    right: 10rem; }
+  .bottom-160-ns {
+    bottom: 160px;
+    bottom: 10rem; }
+  .left-160-ns {
+    left: 160px;
+    left: 10rem; }
   .top-a-ns {
     top: auto; }
   .right-a-ns {
@@ -598,6 +682,18 @@
   .left-60-m {
     left: 60px;
     left: 3.75rem; }
+  .top-70-m {
+    top: 70px;
+    top: 4.375rem; }
+  .right-70-m {
+    right: 70px;
+    right: 4.375rem; }
+  .bottom-70-m {
+    bottom: 70px;
+    bottom: 4.375rem; }
+  .left-70-m {
+    left: 70px;
+    left: 4.375rem; }
   .top-90-m {
     top: 90px;
     top: 5.625rem; }
@@ -622,6 +718,18 @@
   .left-100-m {
     left: 100px;
     left: 6.25rem; }
+  .top-120-m {
+    top: 120px;
+    top: 7.5rem; }
+  .right-120-m {
+    right: 120px;
+    right: 7.5rem; }
+  .bottom-120-m {
+    bottom: 120px;
+    bottom: 7.5rem; }
+  .left-120-m {
+    left: 120px;
+    left: 7.5rem; }
   .top-140-m {
     top: 140px;
     top: 8.75rem; }
@@ -646,6 +754,18 @@
   .left-150-m {
     left: 150px;
     left: 9.375rem; }
+  .top-160-m {
+    top: 160px;
+    top: 10rem; }
+  .right-160-m {
+    right: 160px;
+    right: 10rem; }
+  .bottom-160-m {
+    bottom: 160px;
+    bottom: 10rem; }
+  .left-160-m {
+    left: 160px;
+    left: 10rem; }
   .top-a-m {
     top: auto; }
   .right-a-m {
@@ -789,6 +909,18 @@
   .left-60-l {
     left: 60px;
     left: 3.75rem; }
+  .top-70-l {
+    top: 70px;
+    top: 4.375rem; }
+  .right-70-l {
+    right: 70px;
+    right: 4.375rem; }
+  .bottom-70-l {
+    bottom: 70px;
+    bottom: 4.375rem; }
+  .left-70-l {
+    left: 70px;
+    left: 4.375rem; }
   .top-90-l {
     top: 90px;
     top: 5.625rem; }
@@ -813,6 +945,18 @@
   .left-100-l {
     left: 100px;
     left: 6.25rem; }
+  .top-120-l {
+    top: 120px;
+    top: 7.5rem; }
+  .right-120-l {
+    right: 120px;
+    right: 7.5rem; }
+  .bottom-120-l {
+    bottom: 120px;
+    bottom: 7.5rem; }
+  .left-120-l {
+    left: 120px;
+    left: 7.5rem; }
   .top-140-l {
     top: 140px;
     top: 8.75rem; }
@@ -837,6 +981,18 @@
   .left-150-l {
     left: 150px;
     left: 9.375rem; }
+  .top-160-l {
+    top: 160px;
+    top: 10rem; }
+  .right-160-l {
+    right: 160px;
+    right: 10rem; }
+  .bottom-160-l {
+    bottom: 160px;
+    bottom: 10rem; }
+  .left-160-l {
+    left: 160px;
+    left: 10rem; }
   .top-a-l {
     top: auto; }
   .right-a-l {

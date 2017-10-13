@@ -54,6 +54,7 @@ $measures: (
   measure: 30em,
   measure-wide: 34em,
   measure-narrow: 20em,
+  measure-70: 70em,
 );
 
 $font-weights: (
@@ -122,10 +123,13 @@ $spacings: (
   40: 40px 2.5rem,
   45: 45px 2.8125rem,
   60: 60px 3.75rem,
+  70: 70px 4.375rem,
   90: 90px 5.625rem,
   100: 100px 6.25rem,
+  120: 120px 7.5rem,
   140: 140px 8.75rem,
   150: 150px 9.375rem,
+  160: 160px 10rem,
   a: auto,
 );
 

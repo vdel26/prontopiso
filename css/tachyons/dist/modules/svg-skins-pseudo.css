@@ -351,6 +351,11 @@
   stroke-width: 60px;
   stroke-width: 3.75rem; }
 
+.hover-sw70:hover,
+.hover-sw70:focus {
+  stroke-width: 70px;
+  stroke-width: 4.375rem; }
+
 .hover-sw90:hover,
 .hover-sw90:focus {
   stroke-width: 90px;
@@ -361,6 +366,11 @@
   stroke-width: 100px;
   stroke-width: 6.25rem; }
 
+.hover-sw120:hover,
+.hover-sw120:focus {
+  stroke-width: 120px;
+  stroke-width: 7.5rem; }
+
 .hover-sw140:hover,
 .hover-sw140:focus {
   stroke-width: 140px;
@@ -370,6 +380,11 @@
 .hover-sw150:focus {
   stroke-width: 150px;
   stroke-width: 9.375rem; }
+
+.hover-sw160:hover,
+.hover-sw160:focus {
+  stroke-width: 160px;
+  stroke-width: 10rem; }
 
 .hover-swa:hover,
 .hover-swa:focus {
@@ -419,6 +434,10 @@
   .hover-sw60-ns:focus {
     stroke-width: 60px;
     stroke-width: 3.75rem; }
+  .hover-sw70-ns:hover,
+  .hover-sw70-ns:focus {
+    stroke-width: 70px;
+    stroke-width: 4.375rem; }
   .hover-sw90-ns:hover,
   .hover-sw90-ns:focus {
     stroke-width: 90px;
@@ -427,6 +446,10 @@
   .hover-sw100-ns:focus {
     stroke-width: 100px;
     stroke-width: 6.25rem; }
+  .hover-sw120-ns:hover,
+  .hover-sw120-ns:focus {
+    stroke-width: 120px;
+    stroke-width: 7.5rem; }
   .hover-sw140-ns:hover,
   .hover-sw140-ns:focus {
     stroke-width: 140px;
@@ -435,6 +458,10 @@
   .hover-sw150-ns:focus {
     stroke-width: 150px;
     stroke-width: 9.375rem; }
+  .hover-sw160-ns:hover,
+  .hover-sw160-ns:focus {
+    stroke-width: 160px;
+    stroke-width: 10rem; }
   .hover-swa-ns:hover,
   .hover-swa-ns:focus {
     stroke-width: auto; } }
@@ -483,6 +510,10 @@
   .hover-sw60-m:focus {
     stroke-width: 60px;
     stroke-width: 3.75rem; }
+  .hover-sw70-m:hover,
+  .hover-sw70-m:focus {
+    stroke-width: 70px;
+    stroke-width: 4.375rem; }
   .hover-sw90-m:hover,
   .hover-sw90-m:focus {
     stroke-width: 90px;
@@ -491,6 +522,10 @@
   .hover-sw100-m:focus {
     stroke-width: 100px;
     stroke-width: 6.25rem; }
+  .hover-sw120-m:hover,
+  .hover-sw120-m:focus {
+    stroke-width: 120px;
+    stroke-width: 7.5rem; }
   .hover-sw140-m:hover,
   .hover-sw140-m:focus {
     stroke-width: 140px;
@@ -499,6 +534,10 @@
   .hover-sw150-m:focus {
     stroke-width: 150px;
     stroke-width: 9.375rem; }
+  .hover-sw160-m:hover,
+  .hover-sw160-m:focus {
+    stroke-width: 160px;
+    stroke-width: 10rem; }
   .hover-swa-m:hover,
   .hover-swa-m:focus {
     stroke-width: auto; } }
@@ -547,6 +586,10 @@
   .hover-sw60-l:focus {
     stroke-width: 60px;
     stroke-width: 3.75rem; }
+  .hover-sw70-l:hover,
+  .hover-sw70-l:focus {
+    stroke-width: 70px;
+    stroke-width: 4.375rem; }
   .hover-sw90-l:hover,
   .hover-sw90-l:focus {
     stroke-width: 90px;
@@ -555,6 +598,10 @@
   .hover-sw100-l:focus {
     stroke-width: 100px;
     stroke-width: 6.25rem; }
+  .hover-sw120-l:hover,
+  .hover-sw120-l:focus {
+    stroke-width: 120px;
+    stroke-width: 7.5rem; }
   .hover-sw140-l:hover,
   .hover-sw140-l:focus {
     stroke-width: 140px;
@@ -563,6 +610,10 @@
   .hover-sw150-l:focus {
     stroke-width: 150px;
     stroke-width: 9.375rem; }
+  .hover-sw160-l:hover,
+  .hover-sw160-l:focus {
+    stroke-width: 160px;
+    stroke-width: 10rem; }
   .hover-swa-l:hover,
   .hover-swa-l:focus {
     stroke-width: auto; } }
