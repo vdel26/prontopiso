@@ -356,6 +356,11 @@
   stroke-width: 70px;
   stroke-width: 4.375rem; }
 
+.hover-sw75:hover,
+.hover-sw75:focus {
+  stroke-width: 75px;
+  stroke-width: 4.6875rem; }
+
 .hover-sw90:hover,
 .hover-sw90:focus {
   stroke-width: 90px;
@@ -385,6 +390,11 @@
 .hover-sw160:focus {
   stroke-width: 160px;
   stroke-width: 10rem; }
+
+.hover-sw180:hover,
+.hover-sw180:focus {
+  stroke-width: 180px;
+  stroke-width: 11.25rem; }
 
 .hover-sw200:hover,
 .hover-sw200:focus {
@@ -448,6 +458,10 @@
   .hover-sw70-ns:focus {
     stroke-width: 70px;
     stroke-width: 4.375rem; }
+  .hover-sw75-ns:hover,
+  .hover-sw75-ns:focus {
+    stroke-width: 75px;
+    stroke-width: 4.6875rem; }
   .hover-sw90-ns:hover,
   .hover-sw90-ns:focus {
     stroke-width: 90px;
@@ -472,6 +486,10 @@
   .hover-sw160-ns:focus {
     stroke-width: 160px;
     stroke-width: 10rem; }
+  .hover-sw180-ns:hover,
+  .hover-sw180-ns:focus {
+    stroke-width: 180px;
+    stroke-width: 11.25rem; }
   .hover-sw200-ns:hover,
   .hover-sw200-ns:focus {
     stroke-width: 200px;
@@ -532,6 +550,10 @@
   .hover-sw70-m:focus {
     stroke-width: 70px;
     stroke-width: 4.375rem; }
+  .hover-sw75-m:hover,
+  .hover-sw75-m:focus {
+    stroke-width: 75px;
+    stroke-width: 4.6875rem; }
   .hover-sw90-m:hover,
   .hover-sw90-m:focus {
     stroke-width: 90px;
@@ -556,6 +578,10 @@
   .hover-sw160-m:focus {
     stroke-width: 160px;
     stroke-width: 10rem; }
+  .hover-sw180-m:hover,
+  .hover-sw180-m:focus {
+    stroke-width: 180px;
+    stroke-width: 11.25rem; }
   .hover-sw200-m:hover,
   .hover-sw200-m:focus {
     stroke-width: 200px;
@@ -616,6 +642,10 @@
   .hover-sw70-l:focus {
     stroke-width: 70px;
     stroke-width: 4.375rem; }
+  .hover-sw75-l:hover,
+  .hover-sw75-l:focus {
+    stroke-width: 75px;
+    stroke-width: 4.6875rem; }
   .hover-sw90-l:hover,
   .hover-sw90-l:focus {
     stroke-width: 90px;
@@ -640,6 +670,10 @@
   .hover-sw160-l:focus {
     stroke-width: 160px;
     stroke-width: 10rem; }
+  .hover-sw180-l:hover,
+  .hover-sw180-l:focus {
+    stroke-width: 180px;
+    stroke-width: 11.25rem; }
   .hover-sw200-l:hover,
   .hover-sw200-l:focus {
     stroke-width: 200px;

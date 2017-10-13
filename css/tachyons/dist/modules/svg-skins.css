@@ -264,6 +264,10 @@
   stroke-width: 70px;
   stroke-width: 4.375rem; }
 
+.sw75 {
+  stroke-width: 75px;
+  stroke-width: 4.6875rem; }
+
 .sw90 {
   stroke-width: 90px;
   stroke-width: 5.625rem; }
@@ -287,6 +291,10 @@
 .sw160 {
   stroke-width: 160px;
   stroke-width: 10rem; }
+
+.sw180 {
+  stroke-width: 180px;
+  stroke-width: 11.25rem; }
 
 .sw200 {
   stroke-width: 200px;
@@ -335,6 +343,9 @@
   .sw70-ns {
     stroke-width: 70px;
     stroke-width: 4.375rem; }
+  .sw75-ns {
+    stroke-width: 75px;
+    stroke-width: 4.6875rem; }
   .sw90-ns {
     stroke-width: 90px;
     stroke-width: 5.625rem; }
@@ -353,6 +364,9 @@
   .sw160-ns {
     stroke-width: 160px;
     stroke-width: 10rem; }
+  .sw180-ns {
+    stroke-width: 180px;
+    stroke-width: 11.25rem; }
   .sw200-ns {
     stroke-width: 200px;
     stroke-width: 12.5rem; }
@@ -398,6 +412,9 @@
   .sw70-m {
     stroke-width: 70px;
     stroke-width: 4.375rem; }
+  .sw75-m {
+    stroke-width: 75px;
+    stroke-width: 4.6875rem; }
   .sw90-m {
     stroke-width: 90px;
     stroke-width: 5.625rem; }
@@ -416,6 +433,9 @@
   .sw160-m {
     stroke-width: 160px;
     stroke-width: 10rem; }
+  .sw180-m {
+    stroke-width: 180px;
+    stroke-width: 11.25rem; }
   .sw200-m {
     stroke-width: 200px;
     stroke-width: 12.5rem; }
@@ -461,6 +481,9 @@
   .sw70-l {
     stroke-width: 70px;
     stroke-width: 4.375rem; }
+  .sw75-l {
+    stroke-width: 75px;
+    stroke-width: 4.6875rem; }
   .sw90-l {
     stroke-width: 90px;
     stroke-width: 5.625rem; }
@@ -479,6 +502,9 @@
   .sw160-l {
     stroke-width: 160px;
     stroke-width: 10rem; }
+  .sw180-l {
+    stroke-width: 180px;
+    stroke-width: 11.25rem; }
   .sw200-l {
     stroke-width: 200px;
     stroke-width: 12.5rem; }
