@@ -40,6 +40,10 @@
   font-size: 20px;
   font-size: 1.25rem; }
 
+.f25 {
+  font-size: 25px;
+  font-size: 1.5625rem; }
+
 .f30 {
   font-size: 30px;
   font-size: 1.875rem; }
@@ -47,6 +51,10 @@
 .f32 {
   font-size: 32px;
   font-size: 2rem; }
+
+.f50 {
+  font-size: 50px;
+  font-size: 3.125rem; }
 
 .f58 {
   font-size: 58px;
@@ -68,12 +76,18 @@
   .f20-ns {
     font-size: 20px;
     font-size: 1.25rem; }
+  .f25-ns {
+    font-size: 25px;
+    font-size: 1.5625rem; }
   .f30-ns {
     font-size: 30px;
     font-size: 1.875rem; }
   .f32-ns {
     font-size: 32px;
     font-size: 2rem; }
+  .f50-ns {
+    font-size: 50px;
+    font-size: 3.125rem; }
   .f58-ns {
     font-size: 58px;
     font-size: 3.625rem; } }
@@ -94,12 +108,18 @@
   .f20-m {
     font-size: 20px;
     font-size: 1.25rem; }
+  .f25-m {
+    font-size: 25px;
+    font-size: 1.5625rem; }
   .f30-m {
     font-size: 30px;
     font-size: 1.875rem; }
   .f32-m {
     font-size: 32px;
     font-size: 2rem; }
+  .f50-m {
+    font-size: 50px;
+    font-size: 3.125rem; }
   .f58-m {
     font-size: 58px;
     font-size: 3.625rem; } }
@@ -120,12 +140,18 @@
   .f20-l {
     font-size: 20px;
     font-size: 1.25rem; }
+  .f25-l {
+    font-size: 25px;
+    font-size: 1.5625rem; }
   .f30-l {
     font-size: 30px;
     font-size: 1.875rem; }
   .f32-l {
     font-size: 32px;
     font-size: 2rem; }
+  .f50-l {
+    font-size: 50px;
+    font-size: 3.125rem; }
   .f58-l {
     font-size: 58px;
     font-size: 3.625rem; } }

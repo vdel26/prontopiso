@@ -44,6 +44,9 @@
 .fill-black-50 {
   fill: rgba(0, 0, 0, 0.5); }
 
+.fill-black-125 {
+  fill: rgba(0, 0, 0, 0.125); }
+
 .fill-white {
   fill: #fff; }
 
@@ -68,6 +71,8 @@
     fill: rgba(0, 0, 0, 0.85); }
   .fill-black-50-ns {
     fill: rgba(0, 0, 0, 0.5); }
+  .fill-black-125-ns {
+    fill: rgba(0, 0, 0, 0.125); }
   .fill-white-ns {
     fill: #fff; }
   .fill-white-10-ns {
@@ -90,6 +95,8 @@
     fill: rgba(0, 0, 0, 0.85); }
   .fill-black-50-m {
     fill: rgba(0, 0, 0, 0.5); }
+  .fill-black-125-m {
+    fill: rgba(0, 0, 0, 0.125); }
   .fill-white-m {
     fill: #fff; }
   .fill-white-10-m {
@@ -112,6 +119,8 @@
     fill: rgba(0, 0, 0, 0.85); }
   .fill-black-50-l {
     fill: rgba(0, 0, 0, 0.5); }
+  .fill-black-125-l {
+    fill: rgba(0, 0, 0, 0.125); }
   .fill-white-l {
     fill: #fff; }
   .fill-white-10-l {
@@ -141,6 +150,9 @@
 .stroke-black-50 {
   stroke: rgba(0, 0, 0, 0.5); }
 
+.stroke-black-125 {
+  stroke: rgba(0, 0, 0, 0.125); }
+
 .stroke-white {
   stroke: #fff; }
 
@@ -165,6 +177,8 @@
     stroke: rgba(0, 0, 0, 0.85); }
   .stroke-black-50-ns {
     stroke: rgba(0, 0, 0, 0.5); }
+  .stroke-black-125-ns {
+    stroke: rgba(0, 0, 0, 0.125); }
   .stroke-white-ns {
     stroke: #fff; }
   .stroke-white-10-ns {
@@ -187,6 +201,8 @@
     stroke: rgba(0, 0, 0, 0.85); }
   .stroke-black-50-m {
     stroke: rgba(0, 0, 0, 0.5); }
+  .stroke-black-125-m {
+    stroke: rgba(0, 0, 0, 0.125); }
   .stroke-white-m {
     stroke: #fff; }
   .stroke-white-10-m {
@@ -209,6 +225,8 @@
     stroke: rgba(0, 0, 0, 0.85); }
   .stroke-black-50-l {
     stroke: rgba(0, 0, 0, 0.5); }
+  .stroke-black-125-l {
+    stroke: rgba(0, 0, 0, 0.125); }
   .stroke-white-l {
     stroke: #fff; }
   .stroke-white-10-l {

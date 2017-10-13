@@ -418,6 +418,7 @@ figure,
 form,
 fieldset,
 legend,
+label,
 pre,
 code,
 a,
@@ -960,6 +961,9 @@ img {
 .b--black-50 {
   border-color: rgba(0, 0, 0, 0.5); }
 
+.b--black-125 {
+  border-color: rgba(0, 0, 0, 0.125); }
+
 .b--white {
   border-color: #fff; }
 
@@ -984,6 +988,8 @@ img {
     border-color: rgba(0, 0, 0, 0.85); }
   .b--black-50-ns {
     border-color: rgba(0, 0, 0, 0.5); }
+  .b--black-125-ns {
+    border-color: rgba(0, 0, 0, 0.125); }
   .b--white-ns {
     border-color: #fff; }
   .b--white-10-ns {
@@ -1006,6 +1012,8 @@ img {
     border-color: rgba(0, 0, 0, 0.85); }
   .b--black-50-m {
     border-color: rgba(0, 0, 0, 0.5); }
+  .b--black-125-m {
+    border-color: rgba(0, 0, 0, 0.125); }
   .b--white-m {
     border-color: #fff; }
   .b--white-10-m {
@@ -1028,6 +1036,8 @@ img {
     border-color: rgba(0, 0, 0, 0.85); }
   .b--black-50-l {
     border-color: rgba(0, 0, 0, 0.5); }
+  .b--black-125-l {
+    border-color: rgba(0, 0, 0, 0.125); }
   .b--white-l {
     border-color: #fff; }
   .b--white-10-l {
@@ -6580,6 +6590,9 @@ img {
 .black-50 {
   color: rgba(0, 0, 0, 0.5); }
 
+.black-125 {
+  color: rgba(0, 0, 0, 0.125); }
+
 .white {
   color: #fff; }
 
@@ -6604,6 +6617,8 @@ img {
     color: rgba(0, 0, 0, 0.85); }
   .black-50-ns {
     color: rgba(0, 0, 0, 0.5); }
+  .black-125-ns {
+    color: rgba(0, 0, 0, 0.125); }
   .white-ns {
     color: #fff; }
   .white-10-ns {
@@ -6626,6 +6641,8 @@ img {
     color: rgba(0, 0, 0, 0.85); }
   .black-50-m {
     color: rgba(0, 0, 0, 0.5); }
+  .black-125-m {
+    color: rgba(0, 0, 0, 0.125); }
   .white-m {
     color: #fff; }
   .white-10-m {
@@ -6648,6 +6665,8 @@ img {
     color: rgba(0, 0, 0, 0.85); }
   .black-50-l {
     color: rgba(0, 0, 0, 0.5); }
+  .black-125-l {
+    color: rgba(0, 0, 0, 0.125); }
   .white-l {
     color: #fff; }
   .white-10-l {
@@ -6677,6 +6696,9 @@ img {
 .bg-black-50 {
   background-color: rgba(0, 0, 0, 0.5); }
 
+.bg-black-125 {
+  background-color: rgba(0, 0, 0, 0.125); }
+
 .bg-white {
   background-color: #fff; }
 
@@ -6701,6 +6723,8 @@ img {
     background-color: rgba(0, 0, 0, 0.85); }
   .bg-black-50-ns {
     background-color: rgba(0, 0, 0, 0.5); }
+  .bg-black-125-ns {
+    background-color: rgba(0, 0, 0, 0.125); }
   .bg-white-ns {
     background-color: #fff; }
   .bg-white-10-ns {
@@ -6723,6 +6747,8 @@ img {
     background-color: rgba(0, 0, 0, 0.85); }
   .bg-black-50-m {
     background-color: rgba(0, 0, 0, 0.5); }
+  .bg-black-125-m {
+    background-color: rgba(0, 0, 0, 0.125); }
   .bg-white-m {
     background-color: #fff; }
   .bg-white-10-m {
@@ -6745,6 +6771,8 @@ img {
     background-color: rgba(0, 0, 0, 0.85); }
   .bg-black-50-l {
     background-color: rgba(0, 0, 0, 0.5); }
+  .bg-black-125-l {
+    background-color: rgba(0, 0, 0, 0.125); }
   .bg-white-l {
     background-color: #fff; }
   .bg-white-10-l {
@@ -6789,6 +6817,10 @@ img {
 .hover-black-50:focus {
   color: rgba(0, 0, 0, 0.5); }
 
+.hover-black-125:hover,
+.hover-black-125:focus {
+  color: rgba(0, 0, 0, 0.125); }
+
 .hover-white:hover,
 .hover-white:focus {
   color: #fff; }
@@ -6823,6 +6855,9 @@ img {
   .hover-black-50-ns:hover,
   .hover-black-50-ns:focus {
     color: rgba(0, 0, 0, 0.5); }
+  .hover-black-125-ns:hover,
+  .hover-black-125-ns:focus {
+    color: rgba(0, 0, 0, 0.125); }
   .hover-white-ns:hover,
   .hover-white-ns:focus {
     color: #fff; }
@@ -6855,6 +6890,9 @@ img {
   .hover-black-50-m:hover,
   .hover-black-50-m:focus {
     color: rgba(0, 0, 0, 0.5); }
+  .hover-black-125-m:hover,
+  .hover-black-125-m:focus {
+    color: rgba(0, 0, 0, 0.125); }
   .hover-white-m:hover,
   .hover-white-m:focus {
     color: #fff; }
@@ -6887,6 +6925,9 @@ img {
   .hover-black-50-l:hover,
   .hover-black-50-l:focus {
     color: rgba(0, 0, 0, 0.5); }
+  .hover-black-125-l:hover,
+  .hover-black-125-l:focus {
+    color: rgba(0, 0, 0, 0.125); }
   .hover-white-l:hover,
   .hover-white-l:focus {
     color: #fff; }
@@ -6926,6 +6967,10 @@ img {
 .hover-bg-black-50:focus {
   background-color: rgba(0, 0, 0, 0.5); }
 
+.hover-bg-black-125:hover,
+.hover-bg-black-125:focus {
+  background-color: rgba(0, 0, 0, 0.125); }
+
 .hover-bg-white:hover,
 .hover-bg-white:focus {
   background-color: #fff; }
@@ -6960,6 +7005,9 @@ img {
   .hover-bg-black-50-ns:hover,
   .hover-bg-black-50-ns:focus {
     background-color: rgba(0, 0, 0, 0.5); }
+  .hover-bg-black-125-ns:hover,
+  .hover-bg-black-125-ns:focus {
+    background-color: rgba(0, 0, 0, 0.125); }
   .hover-bg-white-ns:hover,
   .hover-bg-white-ns:focus {
     background-color: #fff; }
@@ -6992,6 +7040,9 @@ img {
   .hover-bg-black-50-m:hover,
   .hover-bg-black-50-m:focus {
     background-color: rgba(0, 0, 0, 0.5); }
+  .hover-bg-black-125-m:hover,
+  .hover-bg-black-125-m:focus {
+    background-color: rgba(0, 0, 0, 0.125); }
   .hover-bg-white-m:hover,
   .hover-bg-white-m:focus {
     background-color: #fff; }
@@ -7024,6 +7075,9 @@ img {
   .hover-bg-black-50-l:hover,
   .hover-bg-black-50-l:focus {
     background-color: rgba(0, 0, 0, 0.5); }
+  .hover-bg-black-125-l:hover,
+  .hover-bg-black-125-l:focus {
+    background-color: rgba(0, 0, 0, 0.125); }
   .hover-bg-white-l:hover,
   .hover-bg-white-l:focus {
     background-color: #fff; }
@@ -7080,6 +7134,9 @@ img {
 .fill-black-50 {
   fill: rgba(0, 0, 0, 0.5); }
 
+.fill-black-125 {
+  fill: rgba(0, 0, 0, 0.125); }
+
 .fill-white {
   fill: #fff; }
 
@@ -7104,6 +7161,8 @@ img {
     fill: rgba(0, 0, 0, 0.85); }
   .fill-black-50-ns {
     fill: rgba(0, 0, 0, 0.5); }
+  .fill-black-125-ns {
+    fill: rgba(0, 0, 0, 0.125); }
   .fill-white-ns {
     fill: #fff; }
   .fill-white-10-ns {
@@ -7126,6 +7185,8 @@ img {
     fill: rgba(0, 0, 0, 0.85); }
   .fill-black-50-m {
     fill: rgba(0, 0, 0, 0.5); }
+  .fill-black-125-m {
+    fill: rgba(0, 0, 0, 0.125); }
   .fill-white-m {
     fill: #fff; }
   .fill-white-10-m {
@@ -7148,6 +7209,8 @@ img {
     fill: rgba(0, 0, 0, 0.85); }
   .fill-black-50-l {
     fill: rgba(0, 0, 0, 0.5); }
+  .fill-black-125-l {
+    fill: rgba(0, 0, 0, 0.125); }
   .fill-white-l {
     fill: #fff; }
   .fill-white-10-l {
@@ -7177,6 +7240,9 @@ img {
 .stroke-black-50 {
   stroke: rgba(0, 0, 0, 0.5); }
 
+.stroke-black-125 {
+  stroke: rgba(0, 0, 0, 0.125); }
+
 .stroke-white {
   stroke: #fff; }
 
@@ -7201,6 +7267,8 @@ img {
     stroke: rgba(0, 0, 0, 0.85); }
   .stroke-black-50-ns {
     stroke: rgba(0, 0, 0, 0.5); }
+  .stroke-black-125-ns {
+    stroke: rgba(0, 0, 0, 0.125); }
   .stroke-white-ns {
     stroke: #fff; }
   .stroke-white-10-ns {
@@ -7223,6 +7291,8 @@ img {
     stroke: rgba(0, 0, 0, 0.85); }
   .stroke-black-50-m {
     stroke: rgba(0, 0, 0, 0.5); }
+  .stroke-black-125-m {
+    stroke: rgba(0, 0, 0, 0.125); }
   .stroke-white-m {
     stroke: #fff; }
   .stroke-white-10-m {
@@ -7245,6 +7315,8 @@ img {
     stroke: rgba(0, 0, 0, 0.85); }
   .stroke-black-50-l {
     stroke: rgba(0, 0, 0, 0.5); }
+  .stroke-black-125-l {
+    stroke: rgba(0, 0, 0, 0.125); }
   .stroke-white-l {
     stroke: #fff; }
   .stroke-white-10-l {
@@ -7642,6 +7714,10 @@ img {
 .hover-fill-black-50:focus {
   fill: rgba(0, 0, 0, 0.5); }
 
+.hover-fill-black-125:hover,
+.hover-fill-black-125:focus {
+  fill: rgba(0, 0, 0, 0.125); }
+
 .hover-fill-white:hover,
 .hover-fill-white:focus {
   fill: #fff; }
@@ -7676,6 +7752,9 @@ img {
   .hover-fill-black-50-ns:hover,
   .hover-fill-black-50-ns:focus {
     fill: rgba(0, 0, 0, 0.5); }
+  .hover-fill-black-125-ns:hover,
+  .hover-fill-black-125-ns:focus {
+    fill: rgba(0, 0, 0, 0.125); }
   .hover-fill-white-ns:hover,
   .hover-fill-white-ns:focus {
     fill: #fff; }
@@ -7708,6 +7787,9 @@ img {
   .hover-fill-black-50-m:hover,
   .hover-fill-black-50-m:focus {
     fill: rgba(0, 0, 0, 0.5); }
+  .hover-fill-black-125-m:hover,
+  .hover-fill-black-125-m:focus {
+    fill: rgba(0, 0, 0, 0.125); }
   .hover-fill-white-m:hover,
   .hover-fill-white-m:focus {
     fill: #fff; }
@@ -7740,6 +7822,9 @@ img {
   .hover-fill-black-50-l:hover,
   .hover-fill-black-50-l:focus {
     fill: rgba(0, 0, 0, 0.5); }
+  .hover-fill-black-125-l:hover,
+  .hover-fill-black-125-l:focus {
+    fill: rgba(0, 0, 0, 0.125); }
   .hover-fill-white-l:hover,
   .hover-fill-white-l:focus {
     fill: #fff; }
@@ -7779,6 +7864,10 @@ img {
 .hover-stroke-black-50:focus {
   stroke: rgba(0, 0, 0, 0.5); }
 
+.hover-stroke-black-125:hover,
+.hover-stroke-black-125:focus {
+  stroke: rgba(0, 0, 0, 0.125); }
+
 .hover-stroke-white:hover,
 .hover-stroke-white:focus {
   stroke: #fff; }
@@ -7813,6 +7902,9 @@ img {
   .hover-stroke-black-50-ns:hover,
   .hover-stroke-black-50-ns:focus {
     stroke: rgba(0, 0, 0, 0.5); }
+  .hover-stroke-black-125-ns:hover,
+  .hover-stroke-black-125-ns:focus {
+    stroke: rgba(0, 0, 0, 0.125); }
   .hover-stroke-white-ns:hover,
   .hover-stroke-white-ns:focus {
     stroke: #fff; }
@@ -7845,6 +7937,9 @@ img {
   .hover-stroke-black-50-m:hover,
   .hover-stroke-black-50-m:focus {
     stroke: rgba(0, 0, 0, 0.5); }
+  .hover-stroke-black-125-m:hover,
+  .hover-stroke-black-125-m:focus {
+    stroke: rgba(0, 0, 0, 0.125); }
   .hover-stroke-white-m:hover,
   .hover-stroke-white-m:focus {
     stroke: #fff; }
@@ -7877,6 +7972,9 @@ img {
   .hover-stroke-black-50-l:hover,
   .hover-stroke-black-50-l:focus {
     stroke: rgba(0, 0, 0, 0.5); }
+  .hover-stroke-black-125-l:hover,
+  .hover-stroke-black-125-l:focus {
+    stroke: rgba(0, 0, 0, 0.125); }
   .hover-stroke-white-l:hover,
   .hover-stroke-white-l:focus {
     stroke: #fff; }
@@ -16621,6 +16719,10 @@ img {
   font-size: 20px;
   font-size: 1.25rem; }
 
+.f25 {
+  font-size: 25px;
+  font-size: 1.5625rem; }
+
 .f30 {
   font-size: 30px;
   font-size: 1.875rem; }
@@ -16628,6 +16730,10 @@ img {
 .f32 {
   font-size: 32px;
   font-size: 2rem; }
+
+.f50 {
+  font-size: 50px;
+  font-size: 3.125rem; }
 
 .f58 {
   font-size: 58px;
@@ -16649,12 +16755,18 @@ img {
   .f20-ns {
     font-size: 20px;
     font-size: 1.25rem; }
+  .f25-ns {
+    font-size: 25px;
+    font-size: 1.5625rem; }
   .f30-ns {
     font-size: 30px;
     font-size: 1.875rem; }
   .f32-ns {
     font-size: 32px;
     font-size: 2rem; }
+  .f50-ns {
+    font-size: 50px;
+    font-size: 3.125rem; }
   .f58-ns {
     font-size: 58px;
     font-size: 3.625rem; } }
@@ -16675,12 +16787,18 @@ img {
   .f20-m {
     font-size: 20px;
     font-size: 1.25rem; }
+  .f25-m {
+    font-size: 25px;
+    font-size: 1.5625rem; }
   .f30-m {
     font-size: 30px;
     font-size: 1.875rem; }
   .f32-m {
     font-size: 32px;
     font-size: 2rem; }
+  .f50-m {
+    font-size: 50px;
+    font-size: 3.125rem; }
   .f58-m {
     font-size: 58px;
     font-size: 3.625rem; } }
@@ -16701,12 +16819,18 @@ img {
   .f20-l {
     font-size: 20px;
     font-size: 1.25rem; }
+  .f25-l {
+    font-size: 25px;
+    font-size: 1.5625rem; }
   .f30-l {
     font-size: 30px;
     font-size: 1.875rem; }
   .f32-l {
     font-size: 32px;
     font-size: 2rem; }
+  .f50-l {
+    font-size: 50px;
+    font-size: 3.125rem; }
   .f58-l {
     font-size: 58px;
     font-size: 3.625rem; } }
@@ -16736,6 +16860,9 @@ img {
 
 .measure-40 {
   max-width: 40em; }
+
+.measure-58 {
+  max-width: 58em; }
 
 .measure-70 {
   max-width: 70em; }
@@ -16767,6 +16894,8 @@ img {
     max-width: 24em; }
   .measure-40-ns {
     max-width: 40em; }
+  .measure-58-ns {
+    max-width: 58em; }
   .measure-70-ns {
     max-width: 70em; }
   .indent-ns {
@@ -16792,6 +16921,8 @@ img {
     max-width: 24em; }
   .measure-40-m {
     max-width: 40em; }
+  .measure-58-m {
+    max-width: 58em; }
   .measure-70-m {
     max-width: 70em; }
   .indent-m {
@@ -16817,6 +16948,8 @@ img {
     max-width: 24em; }
   .measure-40-l {
     max-width: 40em; }
+  .measure-58-l {
+    max-width: 58em; }
   .measure-70-l {
     max-width: 70em; }
   .indent-l {

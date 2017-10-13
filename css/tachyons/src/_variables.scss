@@ -28,8 +28,10 @@ $font-sizes: (
   16: 16px 1rem, /* 16/16 */
   18: 18px 1.125rem, /* 18/16 */
   20: 20px 1.25rem, /* 20/16 */
+  25: 25px 1.5625rem,
   30: 30px 1.875rem,
   32: 32px 2rem, /* 32/16 */
+  50: 50px 3.125rem,
   58: 58px 3.625rem,
 );
 
@@ -56,6 +58,7 @@ $measures: (
   measure-narrow: 20em,
   measure-24: 24em,
   measure-40: 40em,
+  measure-58: 58em,
   measure-70: 70em,
 );
 
@@ -373,7 +376,7 @@ $colors: (
   black: #000,
   black-85: rgba(0,0,0,.85),
   black-50: rgba(0,0,0,.5),
-  // black-15: rgba(0,0,0,.15),
+  black-125: rgba(0,0,0,.125),
   white: #fff,
   white-10: rgba(255,255,255,.1),
   blue: #1f8beb,

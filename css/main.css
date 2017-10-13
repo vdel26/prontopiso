@@ -131,6 +131,8 @@
   }
 }
 
+
+/* Home */
 @supports not (display: flex) {
   #main-nav { padding-top: 0; }
   #main-nav ul { top: 55%; transform: translateY(-50%); position: relative; }
@@ -142,6 +144,18 @@
   background-position: center;
   background-size: cover;
 }
+/*#hero::after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 350px; right: 0;
+  height: 100vw;
+  width: 150vw;
+  background-color: #fff;
+  transform: rotate(7.6deg);
+  transform-origin: bottom right;
+  box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.05);
+}*/
 
 #features header {
   background-image: url(../assets/images/features/00.svg);
@@ -245,3 +259,7 @@
   background-position-y: center;
   background-size: contain;
 }
+
+
+/* Form */
+input[type="radio"]:checked + label { border-color: #1f8beb; }

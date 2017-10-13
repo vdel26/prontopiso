@@ -35,6 +35,10 @@
 .hover-black-50:focus {
   color: rgba(0, 0, 0, 0.5); }
 
+.hover-black-125:hover,
+.hover-black-125:focus {
+  color: rgba(0, 0, 0, 0.125); }
+
 .hover-white:hover,
 .hover-white:focus {
   color: #fff; }
@@ -69,6 +73,9 @@
   .hover-black-50-ns:hover,
   .hover-black-50-ns:focus {
     color: rgba(0, 0, 0, 0.5); }
+  .hover-black-125-ns:hover,
+  .hover-black-125-ns:focus {
+    color: rgba(0, 0, 0, 0.125); }
   .hover-white-ns:hover,
   .hover-white-ns:focus {
     color: #fff; }
@@ -101,6 +108,9 @@
   .hover-black-50-m:hover,
   .hover-black-50-m:focus {
     color: rgba(0, 0, 0, 0.5); }
+  .hover-black-125-m:hover,
+  .hover-black-125-m:focus {
+    color: rgba(0, 0, 0, 0.125); }
   .hover-white-m:hover,
   .hover-white-m:focus {
     color: #fff; }
@@ -133,6 +143,9 @@
   .hover-black-50-l:hover,
   .hover-black-50-l:focus {
     color: rgba(0, 0, 0, 0.5); }
+  .hover-black-125-l:hover,
+  .hover-black-125-l:focus {
+    color: rgba(0, 0, 0, 0.125); }
   .hover-white-l:hover,
   .hover-white-l:focus {
     color: #fff; }
@@ -172,6 +185,10 @@
 .hover-bg-black-50:focus {
   background-color: rgba(0, 0, 0, 0.5); }
 
+.hover-bg-black-125:hover,
+.hover-bg-black-125:focus {
+  background-color: rgba(0, 0, 0, 0.125); }
+
 .hover-bg-white:hover,
 .hover-bg-white:focus {
   background-color: #fff; }
@@ -206,6 +223,9 @@
   .hover-bg-black-50-ns:hover,
   .hover-bg-black-50-ns:focus {
     background-color: rgba(0, 0, 0, 0.5); }
+  .hover-bg-black-125-ns:hover,
+  .hover-bg-black-125-ns:focus {
+    background-color: rgba(0, 0, 0, 0.125); }
   .hover-bg-white-ns:hover,
   .hover-bg-white-ns:focus {
     background-color: #fff; }
@@ -238,6 +258,9 @@
   .hover-bg-black-50-m:hover,
   .hover-bg-black-50-m:focus {
     background-color: rgba(0, 0, 0, 0.5); }
+  .hover-bg-black-125-m:hover,
+  .hover-bg-black-125-m:focus {
+    background-color: rgba(0, 0, 0, 0.125); }
   .hover-bg-white-m:hover,
   .hover-bg-white-m:focus {
     background-color: #fff; }
@@ -270,6 +293,9 @@
   .hover-bg-black-50-l:hover,
   .hover-bg-black-50-l:focus {
     background-color: rgba(0, 0, 0, 0.5); }
+  .hover-bg-black-125-l:hover,
+  .hover-bg-black-125-l:focus {
+    background-color: rgba(0, 0, 0, 0.125); }
   .hover-bg-white-l:hover,
   .hover-bg-white-l:focus {
     background-color: #fff; }
