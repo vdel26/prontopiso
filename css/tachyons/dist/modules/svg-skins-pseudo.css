@@ -386,6 +386,16 @@
   stroke-width: 160px;
   stroke-width: 10rem; }
 
+.hover-sw200:hover,
+.hover-sw200:focus {
+  stroke-width: 200px;
+  stroke-width: 12.5rem; }
+
+.hover-sw240:hover,
+.hover-sw240:focus {
+  stroke-width: 240px;
+  stroke-width: 15rem; }
+
 .hover-swa:hover,
 .hover-swa:focus {
   stroke-width: auto; }
@@ -462,6 +472,14 @@
   .hover-sw160-ns:focus {
     stroke-width: 160px;
     stroke-width: 10rem; }
+  .hover-sw200-ns:hover,
+  .hover-sw200-ns:focus {
+    stroke-width: 200px;
+    stroke-width: 12.5rem; }
+  .hover-sw240-ns:hover,
+  .hover-sw240-ns:focus {
+    stroke-width: 240px;
+    stroke-width: 15rem; }
   .hover-swa-ns:hover,
   .hover-swa-ns:focus {
     stroke-width: auto; } }
@@ -538,6 +556,14 @@
   .hover-sw160-m:focus {
     stroke-width: 160px;
     stroke-width: 10rem; }
+  .hover-sw200-m:hover,
+  .hover-sw200-m:focus {
+    stroke-width: 200px;
+    stroke-width: 12.5rem; }
+  .hover-sw240-m:hover,
+  .hover-sw240-m:focus {
+    stroke-width: 240px;
+    stroke-width: 15rem; }
   .hover-swa-m:hover,
   .hover-swa-m:focus {
     stroke-width: auto; } }
@@ -614,6 +640,14 @@
   .hover-sw160-l:focus {
     stroke-width: 160px;
     stroke-width: 10rem; }
+  .hover-sw200-l:hover,
+  .hover-sw200-l:focus {
+    stroke-width: 200px;
+    stroke-width: 12.5rem; }
+  .hover-sw240-l:hover,
+  .hover-sw240-l:focus {
+    stroke-width: 240px;
+    stroke-width: 15rem; }
   .hover-swa-l:hover,
   .hover-swa-l:focus {
     stroke-width: auto; } }

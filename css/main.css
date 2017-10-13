@@ -136,6 +136,12 @@
   overflow: hidden;
 }*/
 
+#hero {
+  background-image: url(../assets/images/hero/00.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 #features header {
   background-image: url(../assets/images/features/00.svg);
   background-repeat: no-repeat;

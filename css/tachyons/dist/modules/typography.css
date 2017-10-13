@@ -18,6 +18,12 @@
 .measure-narrow {
   max-width: 20em; }
 
+.measure-24 {
+  max-width: 24em; }
+
+.measure-40 {
+  max-width: 40em; }
+
 .measure-70 {
   max-width: 70em; }
 
@@ -44,6 +50,10 @@
     max-width: 34em; }
   .measure-narrow-ns {
     max-width: 20em; }
+  .measure-24-ns {
+    max-width: 24em; }
+  .measure-40-ns {
+    max-width: 40em; }
   .measure-70-ns {
     max-width: 70em; }
   .indent-ns {
@@ -65,6 +75,10 @@
     max-width: 34em; }
   .measure-narrow-m {
     max-width: 20em; }
+  .measure-24-m {
+    max-width: 24em; }
+  .measure-40-m {
+    max-width: 40em; }
   .measure-70-m {
     max-width: 70em; }
   .indent-m {
@@ -86,6 +100,10 @@
     max-width: 34em; }
   .measure-narrow-l {
     max-width: 20em; }
+  .measure-24-l {
+    max-width: 24em; }
+  .measure-40-l {
+    max-width: 40em; }
   .measure-70-l {
     max-width: 70em; }
   .indent-l {

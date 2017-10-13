@@ -2,19 +2,23 @@
 layout: default
 ---
 
-<section id="hero" class="pt30 ph36 pb140 tc">
+<section id="hero" class="pt120 pt200-ns ph36 pb140 pb240-ns tc">
 
-  <header class="mb30">
-    <h1 class="mv0 playfair f32 lh-120">Garantizamos la venta de tu vivienda</h1>
-  </header>
+  <div class="measure-40-ns mha-ns">
 
-  <p class="mt0 mb60">Somos una agencia inmobiliaria diferente: si no vendemos tu vivienda en 90 días te adelantamos su valor de mercado para que puedas buscar tu nuevo hogar, sin preocupaciones.</p>
+    <header class="mb30">
+      <h1 class="mv0 playfair f32 f58-ns lh-120">Garantizamos la venta de tu vivienda</h1>
+    </header>
 
-  <form class="cf pa10 ba br2" action="index.html" method="post"
-        style="box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1); border: solid 1px #f0f0f0;">
-    <input class="fl input-reset w-65 pa15 f16 bn" type="text" name="" value="" placeholder="Código postal">
-    <input class="fl input-reset w-35 pv15 ph20 white bg-blue f16 fw5 bn br2" type="submit" name="" value="Empezar" placeholder="Empezar">
-  </form>
+    <p class="mt0 mb60 f20-ns">Somos una agencia inmobiliaria diferente: acordamos el valor de mercado y si no vendemos tu vivienda en 90 días te adelantamos el dinero para que puedas buscar tu nuevo hogar, sin preocupaciones.</p>
+
+    <form class="cf pa10 bg-white ba br2" action="index.html" method="post"
+          style="box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1); border: solid 1px #f0f0f0;">
+      <input class="fl input-reset w-65 pa15 f16 bn" type="text" name="" value="" placeholder="Código postal">
+      <input class="fl input-reset w-35 pv15 ph20 white bg-blue f16 fw5 bn br2" type="submit" name="" value="Empezar" placeholder="Empezar">
+    </form>
+
+  </div>
 
 </section>
 
@@ -27,7 +31,7 @@ layout: default
     <p class="mv0 mt45-ns f18 f30-ns lh-140 lh-160-ns">Céntrate en la búsqueda de tu vivienda soñada y deja que nosotros vendamos tu propiedad actual al mejor precio.</p>
   </header>
 
-  <section class="ph36">
+  <div class="ph36">
   {% for item in site.data.features %}
     <article class="fl-ns w-third-ns mb90 ph40-ns">
       <img class="dib h48 mb30" src="{{ item.icon }}">
@@ -35,7 +39,7 @@ layout: default
       <p class="mv0 f16 o-50 lh-200">{{ item.description }}</p>
     </article>
   {% endfor %}
-  </section>
+  </div>
 
 </section>
 

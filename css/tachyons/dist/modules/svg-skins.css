@@ -288,6 +288,14 @@
   stroke-width: 160px;
   stroke-width: 10rem; }
 
+.sw200 {
+  stroke-width: 200px;
+  stroke-width: 12.5rem; }
+
+.sw240 {
+  stroke-width: 240px;
+  stroke-width: 15rem; }
+
 .swa {
   stroke-width: auto; }
 
@@ -345,6 +353,12 @@
   .sw160-ns {
     stroke-width: 160px;
     stroke-width: 10rem; }
+  .sw200-ns {
+    stroke-width: 200px;
+    stroke-width: 12.5rem; }
+  .sw240-ns {
+    stroke-width: 240px;
+    stroke-width: 15rem; }
   .swa-ns {
     stroke-width: auto; } }
 
@@ -402,6 +416,12 @@
   .sw160-m {
     stroke-width: 160px;
     stroke-width: 10rem; }
+  .sw200-m {
+    stroke-width: 200px;
+    stroke-width: 12.5rem; }
+  .sw240-m {
+    stroke-width: 240px;
+    stroke-width: 15rem; }
   .swa-m {
     stroke-width: auto; } }
 
@@ -459,5 +479,11 @@
   .sw160-l {
     stroke-width: 160px;
     stroke-width: 10rem; }
+  .sw200-l {
+    stroke-width: 200px;
+    stroke-width: 12.5rem; }
+  .sw240-l {
+    stroke-width: 240px;
+    stroke-width: 15rem; }
   .swa-l {
     stroke-width: auto; } }

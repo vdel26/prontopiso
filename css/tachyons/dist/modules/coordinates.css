@@ -308,6 +308,38 @@
   left: 160px;
   left: 10rem; }
 
+.top-200 {
+  top: 200px;
+  top: 12.5rem; }
+
+.right-200 {
+  right: 200px;
+  right: 12.5rem; }
+
+.bottom-200 {
+  bottom: 200px;
+  bottom: 12.5rem; }
+
+.left-200 {
+  left: 200px;
+  left: 12.5rem; }
+
+.top-240 {
+  top: 240px;
+  top: 15rem; }
+
+.right-240 {
+  right: 240px;
+  right: 15rem; }
+
+.bottom-240 {
+  bottom: 240px;
+  bottom: 15rem; }
+
+.left-240 {
+  left: 240px;
+  left: 15rem; }
+
 .top-a {
   top: auto; }
 
@@ -539,6 +571,30 @@
   .left-160-ns {
     left: 160px;
     left: 10rem; }
+  .top-200-ns {
+    top: 200px;
+    top: 12.5rem; }
+  .right-200-ns {
+    right: 200px;
+    right: 12.5rem; }
+  .bottom-200-ns {
+    bottom: 200px;
+    bottom: 12.5rem; }
+  .left-200-ns {
+    left: 200px;
+    left: 12.5rem; }
+  .top-240-ns {
+    top: 240px;
+    top: 15rem; }
+  .right-240-ns {
+    right: 240px;
+    right: 15rem; }
+  .bottom-240-ns {
+    bottom: 240px;
+    bottom: 15rem; }
+  .left-240-ns {
+    left: 240px;
+    left: 15rem; }
   .top-a-ns {
     top: auto; }
   .right-a-ns {
@@ -766,6 +822,30 @@
   .left-160-m {
     left: 160px;
     left: 10rem; }
+  .top-200-m {
+    top: 200px;
+    top: 12.5rem; }
+  .right-200-m {
+    right: 200px;
+    right: 12.5rem; }
+  .bottom-200-m {
+    bottom: 200px;
+    bottom: 12.5rem; }
+  .left-200-m {
+    left: 200px;
+    left: 12.5rem; }
+  .top-240-m {
+    top: 240px;
+    top: 15rem; }
+  .right-240-m {
+    right: 240px;
+    right: 15rem; }
+  .bottom-240-m {
+    bottom: 240px;
+    bottom: 15rem; }
+  .left-240-m {
+    left: 240px;
+    left: 15rem; }
   .top-a-m {
     top: auto; }
   .right-a-m {
@@ -993,6 +1073,30 @@
   .left-160-l {
     left: 160px;
     left: 10rem; }
+  .top-200-l {
+    top: 200px;
+    top: 12.5rem; }
+  .right-200-l {
+    right: 200px;
+    right: 12.5rem; }
+  .bottom-200-l {
+    bottom: 200px;
+    bottom: 12.5rem; }
+  .left-200-l {
+    left: 200px;
+    left: 12.5rem; }
+  .top-240-l {
+    top: 240px;
+    top: 15rem; }
+  .right-240-l {
+    right: 240px;
+    right: 15rem; }
+  .bottom-240-l {
+    bottom: 240px;
+    bottom: 15rem; }
+  .left-240-l {
+    left: 240px;
+    left: 15rem; }
   .top-a-l {
     top: auto; }
   .right-a-l {
