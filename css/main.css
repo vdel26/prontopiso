@@ -262,6 +262,16 @@
 
 
 /* Form */
+#main-form header {
+  background-image: url('../assets/images/form/00.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} @media screen and (min-width: 30em) {
+  #main-form header {
+    background-size: contain;
+  }
+}
 ::-webkit-input-placeholder { color: #b2bcc3; }
 ::-moz-placeholder { color: #b2bcc3; }
 :-ms-input-placeholder { color: #b2bcc3; }
