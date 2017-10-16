@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<form id="main-form" class="measure-65-ns mha-ns pt120 pt200-ns ph36 pb140 pb240-ns f18-ns" action="index.html" method="post">
+<form id="main-form" class="measure-65-ns mha-ns pt120 pt200-ns ph36 pb150 pb160-ns f18-ns" name="main-form" action="index.html" netlify>
 
   <header class="nh36 mh40-ns mb90 pt45 pt100-ns pb100 pb90-ns">
-    <h1 class="mv0 mh36 playfair f25 f50-ns lh-120">Completa este formulario y recibe la tasación previa de tu vivienda en 24h.</h1>
+    <h1 class="mv0 mh36 mh0-ns playfair f25 f50-ns lh-120">Completa este formulario y recibe la tasación previa de tu vivienda en 24h.</h1>
   </header>
 
 
@@ -15,7 +15,7 @@ layout: default
 
     <div class="fl-ns w-100 w-third-ns mb20 mb40-ns ph20-ns">
       <input class="input-reset dib w-100 pa15 graphik f16 lh-100 ba b--black-125 br2"
-             type="number" name="zipcode" id="zipcode" value="">
+             type="number" name="address-zipCode" id="address-zipCode" value="">
     </div>
 
   </fieldset>
@@ -26,63 +26,32 @@ layout: default
     <legend class="mh20-ns mb20 mb60-ns fw5">2. ¿Podrías especificar el tipo de vivienda?</legend>
 
     <div class="fl-ns w-100 w-third-ns mb15 mb40-ns ph20-ns">
-      <input class="absolute o-0" type="radio" name="type" id="type-piso" value="Piso">
-      <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="type-piso">Piso</label>
+      <input class="absolute o-0" type="radio" name="typeBuilding" id="typeBuilding-1" value="1">
+      <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="typeBuilding-1">Piso</label>
     </div>
 
     <div class="fl-ns w-100 w-third-ns mb15 mb40-ns ph20-ns">
-      <input class="absolute o-0" type="radio" name="type" id="type-casa" value="Casa o chalet">
-      <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="type-casa">Casa o chalet</label>
+      <input class="absolute o-0" type="radio" name="typeBuilding" id="typeBuilding-2" value="2">
+      <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="typeBuilding-2">Casa o chalet</label>
     </div>
 
     <div class="fl-ns w-100 w-third-ns mb15 mb40-ns ph20-ns">
-      <input class="absolute o-0" type="radio" name="type" id="type-estudio" value="Estudio">
-      <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="type-estudio">Estudio</label>
+      <input class="absolute o-0" type="radio" name="typeBuilding" id="typeBuilding-3" value="3">
+      <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="typeBuilding-3">Estudio</label>
     </div>
 
     <div class="fl-ns w-100 w-third-ns mb15 mb40-ns ph20-ns">
-      <input class="absolute o-0" type="radio" name="type" id="type-atico" value="Ático">
-      <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="type-atico">Ático</label>
+      <input class="absolute o-0" type="radio" name="typeBuilding" id="typeBuilding-4" value="4">
+      <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="typeBuilding-4">Ático</label>
     </div>
 
     <div class="fl-ns w-100 w-third-ns mb15 mb40-ns ph20-ns">
-      <input class="absolute o-0" type="radio" name="type" id="type-duplex" value="Dúplex">
-      <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="type-duplex">Dúplex</label>
+      <input class="absolute o-0" type="radio" name="typeBuilding" id="typeBuilding-5" value="5">
+      <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="typeBuilding-5">Dúplex</label>
     </div>
 
   </fieldset>
 
-
-  <!-- <fieldset class="cf ma0 mb45 mb50-ns pa0 ph20-ns bn">
-
-    <legend class="mh20-ns mb20 mb60-ns fw5">3. ¿Cuál es tu dirección?</legend>
-
-    <div class="fl-ns w-100 w-third-ns mb20 mb40-ns ph20-ns">
-      <input class="input-reset dib w-100 pa15 graphik f16 lh-100 ba b--black-125 br2"
-             type="text" name="street" id="street" value="" placeholder="Calle y número">
-    </div>
-
-    <div class="fl-ns w-100 w-third-ns mb20 mb40-ns ph20-ns">
-      <input class="input-reset dib w-100 pa15 graphik f16 lh-100 ba b--black-125 br2"
-             type="text" name="floor" id="floor" value="" placeholder="Selecciona una planta">
-    </div>
-
-    <div class="fl-ns w-100 w-third-ns mb20 mb40-ns ph20-ns">
-      <input class="input-reset dib w-100 pa15 graphik f16 lh-100 ba b--black-125 br2"
-             type="text" name="block" id="block" value="" placeholder="Bloque (Opcional)">
-    </div>
-
-    <div class="fl-ns w-100 w-third-ns mb20 mb40-ns ph20-ns">
-      <input class="input-reset dib w-100 pa15 graphik f16 lh-100 ba b--black-125 br2"
-             type="text" name="stair" id="stair" value="" placeholder="Escalera (Opcional)">
-    </div>
-
-    <div class="fl-ns w-100 w-third-ns mb20 mb40-ns ph20-ns">
-      <input class="input-reset dib w-100 pa15 graphik f16 lh-100 ba b--black-125 br2"
-             type="text" name="door" id="door" value="" placeholder="Puerta (Opcional)">
-    </div>
-
-  </fieldset> -->
 
   <fieldset class="cf ma0 mb45 mb50-ns pa0 ph20-ns bn">
 
@@ -94,7 +63,7 @@ layout: default
 
     <div class="fl-ns w-100 w-two-thirds-ns mb20 mb60-ns ph20-ns">
       <input class="input-reset dib w-100 pa15 graphik f16 lh-100 ba b--black-125 br2"
-             type="text" name="street" id="street" value="" placeholder="Calle y número">
+             type="text" name="address-street" id="address-street" value="" placeholder="Calle y número">
     </div>
 
 
@@ -104,7 +73,7 @@ layout: default
 
     <div class="fl-ns w-100 w-third-ns mb20 mb60-ns ph20-ns">
       <input class="input-reset dib w-100 pa15 graphik f16 lh-100 ba b--black-125 br2"
-             type="text" name="floor" id="floor" value="" placeholder="Selecciona una planta">
+             type="text" name="address-floor" id="address-floor" value="" placeholder="Selecciona una planta">
     </div>
 
 
@@ -114,7 +83,7 @@ layout: default
 
     <div class="fl-ns w-100 w-third-ns mb20 mb60-ns ph20-ns">
       <input class="input-reset dib w-100 pa15 graphik f16 lh-100 ba b--black-125 br2"
-             type="text" name="block" id="block" value="" placeholder="Opcional">
+             type="text" name="address-block" id="address-block" value="" placeholder="Opcional">
     </div>
 
 
@@ -124,7 +93,7 @@ layout: default
 
     <div class="fl-ns w-100 w-third-ns mb20 mb60-ns ph20-ns">
       <input class="input-reset dib w-100 pa15 graphik f16 lh-100 ba b--black-125 br2"
-             type="text" name="stair" id="stair" value="" placeholder="Opcional">
+             type="text" name="address-stair" id="address-stair" value="" placeholder="Opcional">
     </div>
 
 
@@ -134,13 +103,127 @@ layout: default
 
     <div class="fl-ns w-100 w-third-ns mb20 mb60-ns ph20-ns">
       <input class="input-reset dib w-100 pa15 graphik f16 lh-100 ba b--black-125 br2"
-             type="text" name="door" id="door" value="" placeholder="Opcional">
+             type="text" name="address-door" id="address-door" value="" placeholder="Opcional">
     </div>
 
   </fieldset>
 
 
+  <fieldset class="cf ma0 mb45 mb50-ns pa0 ph20-ns bn">
 
+    <legend class="mh20-ns mb20 mb60-ns fw5">4. Características principales</legend>
+
+    <div class="cb-ns fl-ns w-100 w-third-ns mb15 mb40-ns ph20-ns">
+      <span class="dib w-100 pv0 pv15-ns graphik f16 lh-100 tl bn b--transparent br2">Superfície</span>
+    </div>
+
+    <div class="fl-ns w-100 w-third-ns mb20 mb60-ns ph20-ns placeholder-m2">
+      <input class="input-reset dib w-100 pa15 graphik f16 lh-100 ba b--black-125 br2"
+             type="text" name="features-area" id="features-area" value="" placeholder="">
+    </div>
+
+
+    <div class="cb-ns fl-ns w-100 w-third-ns mb15 mb40-ns ph20-ns">
+      <span class="dib w-100 pv0 pv15-ns graphik f16 lh-100 tl bn b--transparent br2">Número de habitaciones</span>
+    </div>
+
+    <div class="cf fl-ns w-100 w-two-thirds-ns mb20">
+
+      <div class="fl w-50 w-25-ns mb20 mb40-ns pr10 ph20-ns">
+        <input class="absolute o-0" type="radio" name="features-rooms" id="features-rooms-1" value="1">
+        <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="features-rooms-1">1</label>
+      </div>
+
+      <div class="fl w-50 w-25-ns mb20 mb40-ns pl10 ph20-ns">
+        <input class="absolute o-0" type="radio" name="features-rooms" id="features-rooms-2" value="2">
+        <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="features-rooms-2">2</label>
+      </div>
+
+      <div class="fl w-50 w-25-ns mb20 mb40-ns pr10 ph20-ns">
+        <input class="absolute o-0" type="radio" name="features-rooms" id="features-rooms-3" value="3">
+        <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="features-rooms-3">3</label>
+      </div>
+
+      <div class="fl w-50 w-25-ns mb20 mb40-ns pl10 ph20-ns">
+        <input class="absolute o-0" type="radio" name="features-rooms" id="features-rooms-4" value="4">
+        <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="features-rooms-4">4</label>
+      </div>
+
+      <div class="fl w-50 w-25-ns mb20 mb40-ns pr10 ph20-ns">
+        <input class="absolute o-0" type="radio" name="features-rooms" id="features-rooms-5" value="5">
+        <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="features-rooms-5">5 o más</label>
+      </div>
+
+    </div>
+
+
+    <div class="cb-ns fl-ns w-100 w-third-ns mb15 mb40-ns ph20-ns">
+      <span class="dib w-100 pv0 pv15-ns graphik f16 lh-100 tl bn b--transparent br2">¿Dispone de parking?</span>
+    </div>
+
+    <div class="cf fl-ns w-100 w-two-thirds-ns mb20">
+
+      <div class="fl w-50 w-25-ns mb20 mb40-ns pr10 ph20-ns">
+        <input class="absolute o-0" type="radio" name="features-parking" id="features-parking-true" value="true">
+        <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="features-parking-true">Sí</label>
+      </div>
+
+      <div class="fl w-50 w-25-ns mb20 mb40-ns pl10 ph20-ns">
+        <input class="absolute o-0" type="radio" name="features-parking" id="features-parking-false" value="false">
+        <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="features-parking-false">No</label>
+      </div>
+
+      <div class="fl w-100 w-50-ns mb20 mb60-ns ph20-ns">
+        <input class="input-reset dib w-100 pa15 graphik f16 lh-100 ba b--black-125 br2"
+               type="number" name="features-parkingPlaces" id="features-parkingPlaces" value="" placeholder="Número de plazas">
+      </div>
+
+    </div>
+
+
+    <div class="cb-ns fl-ns w-100 w-third-ns mb15 mb40-ns ph20-ns">
+      <span class="dib w-100 pv0 pv15-ns graphik f16 lh-100 tl bn b--transparent br2">¿Dispone de terraza o balcón?</span>
+    </div>
+
+    <div class="cf fl-ns w-100 w-two-thirds-ns mb20">
+
+      <div class="fl w-50 w-25-ns mb20 mb40-ns pr10 ph20-ns">
+        <input class="absolute o-0" type="radio" name="features-terrace" id="features-terrace-true" value="true">
+        <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="features-terrace-true">Sí</label>
+      </div>
+
+      <div class="fl w-50 w-25-ns mb20 mb40-ns pl10 ph20-ns">
+        <input class="absolute o-0" type="radio" name="features-terrace" id="features-terrace-false" value="false">
+        <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="features-terrace-false">No</label>
+      </div>
+
+      <div class="fl w-100 w-50-ns mb20 mb60-ns ph20-ns placeholder-m2">
+        <input class="input-reset dib w-100 pa15 graphik f16 lh-100 ba b--black-125 br2"
+               type="number" name="features-terraceArea" id="features-terraceArea" value="" placeholder="">
+      </div>
+
+    </div>
+
+
+    <div class="cb-ns fl-ns w-100 w-third-ns mb15 mb40-ns ph20-ns">
+      <span class="dib w-100 pv0 pv15-ns graphik f16 lh-100 tl bn b--transparent br2">¿Dispone de ascensor?</span>
+    </div>
+
+    <div class="cf fl-ns w-100 w-two-thirds-ns mb20">
+
+      <div class="fl w-50 w-25-ns mb20 mb40-ns pr10 ph20-ns">
+        <input class="absolute o-0" type="radio" name="features-elevator" id="features-elevator-true" value="true">
+        <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="features-elevator-true">Sí</label>
+      </div>
+
+      <div class="fl w-50 w-25-ns mb20 mb40-ns pl10 ph20-ns">
+        <input class="absolute o-0" type="radio" name="features-elevator" id="features-elevator-false" value="false">
+        <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="features-elevator-false">No</label>
+      </div>
+
+    </div>
+
+  </fieldset>
 
 
   <fieldset class="cf ma0 mb45 mb50-ns pa0 ph20-ns bn">
@@ -153,7 +236,7 @@ layout: default
 
     <div class="fl-ns w-100 w-third-ns mb20 mb40-ns ph20-ns">
       <input class="input-reset dib w-100 pa15 graphik f16 lh-100 ba b--black-125 br2"
-             type="text" name="date" id="date" value="" placeholder="Selecciona una fecha"
+             type="text" name="buyDate" id="buyDate" value="" placeholder="Selecciona una fecha"
              onfocus="(this.type='date')" oonfocus="(this.placeholder='')" oonblur="(this.type='text')">
     </div>
 
@@ -165,22 +248,22 @@ layout: default
     <legend class="mh20-ns mb20 mb60-ns fw5">6. ¿En qué estado se encuentra la propiedad?</legend>
 
     <div class="fl-ns w-100 w-third-ns mb15 mb40-ns ph20-ns">
-      <input class="absolute o-0" type="radio" name="condition" id="condition-good" value="Piso">
+      <input class="absolute o-0" type="radio" name="actualStatus" id="actualStatus-1" value="1">
       <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="condition-good">Buen estado</label>
     </div>
 
     <div class="fl-ns w-100 w-third-ns mb15 mb40-ns ph20-ns">
-      <input class="absolute o-0" type="radio" name="condition" id="condition-okay" value="Casa o chalet">
+      <input class="absolute o-0" type="radio" name="actualStatus" id="actualStatus-2" value="2">
       <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="condition-okay">Reforma ligera</label>
     </div>
 
     <div class="fl-ns w-100 w-third-ns mb15 mb40-ns ph20-ns">
-      <input class="absolute o-0" type="radio" name="condition" id="condition-bad" value="Estudio">
+      <input class="absolute o-0" type="radio" name="actualStatus" id="actualStatus-3" value="3">
       <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="condition-bad">Reforma integral</label>
     </div>
 
     <div class="fl-ns w-100 w-third-ns mb15 mb40-ns ph20-ns">
-      <input class="absolute o-0" type="radio" name="condition" id="condition-terrible" value="Ático">
+      <input class="absolute o-0" type="radio" name="actualStatus" id="actualStatus-4" value="4">
       <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="condition-terrible">Obra nueva</label>
     </div>
 
@@ -192,29 +275,48 @@ layout: default
     <legend class="mh20-ns mb20 mb60-ns fw5">7. ¿Cuando te gustaría vender tu propiedad?</legend>
 
     <div class="fl-ns w-100 w-third-ns mb15 mb40-ns ph20-ns">
-      <input class="absolute o-0" type="radio" name="sell" id="sell-asap" value="Piso">
-      <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="sell-asap">Lo antes posible</label>
+      <input class="absolute o-0" type="radio" name="sellTime" id="sellTime-1" value="Piso">
+      <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="sellTime-1">Lo antes posible</label>
     </div>
 
     <div class="fl-ns w-100 w-third-ns mb15 mb40-ns ph20-ns">
-      <input class="absolute o-0" type="radio" name="sell" id="sell-three" value="Casa o chalet">
-      <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="sell-three">En 3 meses</label>
+      <input class="absolute o-0" type="radio" name="sellTime" id="sellTime-2" value="Casa o chalet">
+      <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="sellTime-2">En 3 meses</label>
     </div>
 
     <div class="fl-ns w-100 w-third-ns mb15 mb40-ns ph20-ns">
-      <input class="absolute o-0" type="radio" name="sell" id="sell-six" value="Estudio">
-      <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="sell-six">De 3 a 6 meses</label>
+      <input class="absolute o-0" type="radio" name="sellTime" id="sellTime-3" value="Estudio">
+      <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="sellTime-3">De 3 a 6 meses</label>
     </div>
 
     <div class="fl-ns w-100 w-third-ns mb15 mb40-ns ph20-ns">
-      <input class="absolute o-0" type="radio" name="sell" id="sell-wait" value="Ático">
-      <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="sell-wait">Sin prisa</label>
+      <input class="absolute o-0" type="radio" name="sellTime" id="sellTime-4" value="Ático">
+      <label class="input-reset dib w-100 pa15 graphik f16 lh-100 tc ba b--black-125 br2" for="sellTime-4">Sin prisa</label>
     </div>
 
   </fieldset>
 
 
-  <hr class="mh40-ns bn bb b--black-125">
+  <hr class="mh40-ns mb40 mb60-ns bn bb b--black-125">
+
+
+  <fieldset class="cf ma0 mb45 mb50-ns pa0 ph20-ns bn">
+
+    <div class="cf fr-ns w-100 w-third-ns mb20">
+
+      <div class="fl w-50 mb20 mb40-ns pr10 ph20-ns">
+        <input class="input-reset dib w-100 pa15 ph30-ns black bg-white graphik f16 lh-100 tc ba b--black-125 br2"
+               type="submit" name="cancel" id="cancel" value="Cancelar" placeholder="Cancelar">
+      </div>
+
+      <div class="fl w-50 mb20 mb40-ns pl10 ph20-ns">
+        <input class="input-reset dib w-100 pa15 ph30-ns white bg-blue graphik f16 lh-100 fw5 tc ba b--blue br2"
+               type="submit" name="submit" id="submit" value="Continuar" placeholder="Continuar">
+      </div>
+
+    </div>
+
+  </fieldset>
 
 
 </form>
