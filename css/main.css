@@ -143,19 +143,21 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  
+  height: 110vh;
 }
-/*#hero::after {
+#hero::after {
   content: '';
-  z-index: -1;
   position: absolute;
-  top: 350px; right: 0;
+  top: 100%;
+  right: 0;
   height: 100vw;
   width: 150vw;
   background-color: #fff;
   transform: rotate(7.6deg);
   transform-origin: bottom right;
   box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.05);
-}*/
+}
 
 #features header {
   background-image: url(../assets/images/features/00.svg);
@@ -201,6 +203,11 @@
   transform: rotate(-7.6deg);
   transform-origin: bottom left;
   box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.05);
+}
+@media screen and (min-width: 30em) {
+  #how-it-works { padding-top: 550px; }
+  #how-it-works::before { height: 550px; }
+  #how-it-works::after { top: 550px; }
 }
 #how-it-works .swiper-container::before {
   content: '';
