@@ -219,10 +219,10 @@
   transform: translateY(-50%);
 }
 @media screen and (min-width: 30em) {
-  #how-it-works .swiper-slide h2 {
-    width: 100px;
-    top: 110px;
-  }
+  #how-it-works .swiper-wrapper { padding-left: 148px; }
+  #how-it-works .swiper-slide { margin-left: -296px; }
+  #how-it-works .swiper-slide:nth-of-type(even) { margin-top: 226px; }
+  #how-it-works .swiper-slide h2 { width: 100px; top: 110px; }
 }
 #how-it-works .swiper-slide h2::before {
   content: '';
@@ -247,9 +247,12 @@
   background-color: #1f8ceb;
   border: 12px solid #fff;
 } @media screen and (min-width: 30em) {
-  #how-it-works .swiper-slide h2::after {
-    bottom: -56px;
-  }
+  #how-it-works .swiper-slide:nth-of-type(even) svg { margin-top: 28px; }
+  #how-it-works .swiper-slide:nth-of-type(even) h2 { top: -8px; }
+  /*#how-it-works .swiper-slide:nth-of-type(odd) h2::before { bottom: -56px; }*/
+  #how-it-works .swiper-slide:nth-of-type(even) h2::before { top: -20px; }
+  #how-it-works .swiper-slide:nth-of-type(odd) h2::after { bottom: -56px; }
+  #how-it-works .swiper-slide:nth-of-type(even) h2::after { top: -56px; }
 }
 
 #aside {
