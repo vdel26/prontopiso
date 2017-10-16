@@ -41,6 +41,10 @@
   padding: 5px;
   padding: 0.3125rem; }
 
+.pa8 {
+  padding: 8px;
+  padding: 0.5rem; }
+
 .pa10 {
   padding: 10px;
   padding: 0.625rem; }
@@ -142,6 +146,10 @@
 .pt5 {
   padding-top: 5px;
   padding-top: 0.3125rem; }
+
+.pt8 {
+  padding-top: 8px;
+  padding-top: 0.5rem; }
 
 .pt10 {
   padding-top: 10px;
@@ -245,6 +253,10 @@
   padding-right: 5px;
   padding-right: 0.3125rem; }
 
+.pr8 {
+  padding-right: 8px;
+  padding-right: 0.5rem; }
+
 .pr10 {
   padding-right: 10px;
   padding-right: 0.625rem; }
@@ -347,6 +359,10 @@
   padding-bottom: 5px;
   padding-bottom: 0.3125rem; }
 
+.pb8 {
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem; }
+
 .pb10 {
   padding-bottom: 10px;
   padding-bottom: 0.625rem; }
@@ -448,6 +464,10 @@
 .pl5 {
   padding-left: 5px;
   padding-left: 0.3125rem; }
+
+.pl8 {
+  padding-left: 8px;
+  padding-left: 0.5rem; }
 
 .pl10 {
   padding-left: 10px;
@@ -553,6 +573,12 @@
   padding-top: 0.3125rem;
   padding-bottom: 5px;
   padding-bottom: 0.3125rem; }
+
+.pv8 {
+  padding-top: 8px;
+  padding-top: 0.5rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem; }
 
 .pv10 {
   padding-top: 10px;
@@ -706,6 +732,12 @@
   padding-left: 5px;
   padding-left: 0.3125rem; }
 
+.ph8 {
+  padding-right: 8px;
+  padding-right: 0.5rem;
+  padding-left: 8px;
+  padding-left: 0.5rem; }
+
 .ph10 {
   padding-right: 10px;
   padding-right: 0.625rem;
@@ -854,6 +886,9 @@
   .pa5-ns {
     padding: 5px;
     padding: 0.3125rem; }
+  .pa8-ns {
+    padding: 8px;
+    padding: 0.5rem; }
   .pa10-ns {
     padding: 10px;
     padding: 0.625rem; }
@@ -930,6 +965,9 @@
   .pt5-ns {
     padding-top: 5px;
     padding-top: 0.3125rem; }
+  .pt8-ns {
+    padding-top: 8px;
+    padding-top: 0.5rem; }
   .pt10-ns {
     padding-top: 10px;
     padding-top: 0.625rem; }
@@ -1006,6 +1044,9 @@
   .pr5-ns {
     padding-right: 5px;
     padding-right: 0.3125rem; }
+  .pr8-ns {
+    padding-right: 8px;
+    padding-right: 0.5rem; }
   .pr10-ns {
     padding-right: 10px;
     padding-right: 0.625rem; }
@@ -1082,6 +1123,9 @@
   .pb5-ns {
     padding-bottom: 5px;
     padding-bottom: 0.3125rem; }
+  .pb8-ns {
+    padding-bottom: 8px;
+    padding-bottom: 0.5rem; }
   .pb10-ns {
     padding-bottom: 10px;
     padding-bottom: 0.625rem; }
@@ -1158,6 +1202,9 @@
   .pl5-ns {
     padding-left: 5px;
     padding-left: 0.3125rem; }
+  .pl8-ns {
+    padding-left: 8px;
+    padding-left: 0.5rem; }
   .pl10-ns {
     padding-left: 10px;
     padding-left: 0.625rem; }
@@ -1237,6 +1284,11 @@
     padding-top: 0.3125rem;
     padding-bottom: 5px;
     padding-bottom: 0.3125rem; }
+  .pv8-ns {
+    padding-top: 8px;
+    padding-top: 0.5rem;
+    padding-bottom: 8px;
+    padding-bottom: 0.5rem; }
   .pv10-ns {
     padding-top: 10px;
     padding-top: 0.625rem;
@@ -1363,6 +1415,11 @@
     padding-right: 0.3125rem;
     padding-left: 5px;
     padding-left: 0.3125rem; }
+  .ph8-ns {
+    padding-right: 8px;
+    padding-right: 0.5rem;
+    padding-left: 8px;
+    padding-left: 0.5rem; }
   .ph10-ns {
     padding-right: 10px;
     padding-right: 0.625rem;
@@ -1488,6 +1545,9 @@
   .pa5-m {
     padding: 5px;
     padding: 0.3125rem; }
+  .pa8-m {
+    padding: 8px;
+    padding: 0.5rem; }
   .pa10-m {
     padding: 10px;
     padding: 0.625rem; }
@@ -1564,6 +1624,9 @@
   .pt5-m {
     padding-top: 5px;
     padding-top: 0.3125rem; }
+  .pt8-m {
+    padding-top: 8px;
+    padding-top: 0.5rem; }
   .pt10-m {
     padding-top: 10px;
     padding-top: 0.625rem; }
@@ -1640,6 +1703,9 @@
   .pr5-m {
     padding-right: 5px;
     padding-right: 0.3125rem; }
+  .pr8-m {
+    padding-right: 8px;
+    padding-right: 0.5rem; }
   .pr10-m {
     padding-right: 10px;
     padding-right: 0.625rem; }
@@ -1716,6 +1782,9 @@
   .pb5-m {
     padding-bottom: 5px;
     padding-bottom: 0.3125rem; }
+  .pb8-m {
+    padding-bottom: 8px;
+    padding-bottom: 0.5rem; }
   .pb10-m {
     padding-bottom: 10px;
     padding-bottom: 0.625rem; }
@@ -1792,6 +1861,9 @@
   .pl5-m {
     padding-left: 5px;
     padding-left: 0.3125rem; }
+  .pl8-m {
+    padding-left: 8px;
+    padding-left: 0.5rem; }
   .pl10-m {
     padding-left: 10px;
     padding-left: 0.625rem; }
@@ -1871,6 +1943,11 @@
     padding-top: 0.3125rem;
     padding-bottom: 5px;
     padding-bottom: 0.3125rem; }
+  .pv8-m {
+    padding-top: 8px;
+    padding-top: 0.5rem;
+    padding-bottom: 8px;
+    padding-bottom: 0.5rem; }
   .pv10-m {
     padding-top: 10px;
     padding-top: 0.625rem;
@@ -1997,6 +2074,11 @@
     padding-right: 0.3125rem;
     padding-left: 5px;
     padding-left: 0.3125rem; }
+  .ph8-m {
+    padding-right: 8px;
+    padding-right: 0.5rem;
+    padding-left: 8px;
+    padding-left: 0.5rem; }
   .ph10-m {
     padding-right: 10px;
     padding-right: 0.625rem;
@@ -2122,6 +2204,9 @@
   .pa5-l {
     padding: 5px;
     padding: 0.3125rem; }
+  .pa8-l {
+    padding: 8px;
+    padding: 0.5rem; }
   .pa10-l {
     padding: 10px;
     padding: 0.625rem; }
@@ -2198,6 +2283,9 @@
   .pt5-l {
     padding-top: 5px;
     padding-top: 0.3125rem; }
+  .pt8-l {
+    padding-top: 8px;
+    padding-top: 0.5rem; }
   .pt10-l {
     padding-top: 10px;
     padding-top: 0.625rem; }
@@ -2274,6 +2362,9 @@
   .pr5-l {
     padding-right: 5px;
     padding-right: 0.3125rem; }
+  .pr8-l {
+    padding-right: 8px;
+    padding-right: 0.5rem; }
   .pr10-l {
     padding-right: 10px;
     padding-right: 0.625rem; }
@@ -2350,6 +2441,9 @@
   .pb5-l {
     padding-bottom: 5px;
     padding-bottom: 0.3125rem; }
+  .pb8-l {
+    padding-bottom: 8px;
+    padding-bottom: 0.5rem; }
   .pb10-l {
     padding-bottom: 10px;
     padding-bottom: 0.625rem; }
@@ -2426,6 +2520,9 @@
   .pl5-l {
     padding-left: 5px;
     padding-left: 0.3125rem; }
+  .pl8-l {
+    padding-left: 8px;
+    padding-left: 0.5rem; }
   .pl10-l {
     padding-left: 10px;
     padding-left: 0.625rem; }
@@ -2505,6 +2602,11 @@
     padding-top: 0.3125rem;
     padding-bottom: 5px;
     padding-bottom: 0.3125rem; }
+  .pv8-l {
+    padding-top: 8px;
+    padding-top: 0.5rem;
+    padding-bottom: 8px;
+    padding-bottom: 0.5rem; }
   .pv10-l {
     padding-top: 10px;
     padding-top: 0.625rem;
@@ -2631,6 +2733,11 @@
     padding-right: 0.3125rem;
     padding-left: 5px;
     padding-left: 0.3125rem; }
+  .ph8-l {
+    padding-right: 8px;
+    padding-right: 0.5rem;
+    padding-left: 8px;
+    padding-left: 0.5rem; }
   .ph10-l {
     padding-right: 10px;
     padding-right: 0.625rem;
@@ -2758,6 +2865,10 @@
   margin: 5px;
   margin: 0.3125rem; }
 
+.ma8 {
+  margin: 8px;
+  margin: 0.5rem; }
+
 .ma10 {
   margin: 10px;
   margin: 0.625rem; }
@@ -2859,6 +2970,10 @@
 .mt5 {
   margin-top: 5px;
   margin-top: 0.3125rem; }
+
+.mt8 {
+  margin-top: 8px;
+  margin-top: 0.5rem; }
 
 .mt10 {
   margin-top: 10px;
@@ -2962,6 +3077,10 @@
   margin-right: 5px;
   margin-right: 0.3125rem; }
 
+.mr8 {
+  margin-right: 8px;
+  margin-right: 0.5rem; }
+
 .mr10 {
   margin-right: 10px;
   margin-right: 0.625rem; }
@@ -3064,6 +3183,10 @@
   margin-bottom: 5px;
   margin-bottom: 0.3125rem; }
 
+.mb8 {
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem; }
+
 .mb10 {
   margin-bottom: 10px;
   margin-bottom: 0.625rem; }
@@ -3165,6 +3288,10 @@
 .ml5 {
   margin-left: 5px;
   margin-left: 0.3125rem; }
+
+.ml8 {
+  margin-left: 8px;
+  margin-left: 0.5rem; }
 
 .ml10 {
   margin-left: 10px;
@@ -3270,6 +3397,12 @@
   margin-top: 0.3125rem;
   margin-bottom: 5px;
   margin-bottom: 0.3125rem; }
+
+.mv8 {
+  margin-top: 8px;
+  margin-top: 0.5rem;
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem; }
 
 .mv10 {
   margin-top: 10px;
@@ -3423,6 +3556,12 @@
   margin-left: 5px;
   margin-left: 0.3125rem; }
 
+.mh8 {
+  margin-right: 8px;
+  margin-right: 0.5rem;
+  margin-left: 8px;
+  margin-left: 0.5rem; }
+
 .mh10 {
   margin-right: 10px;
   margin-right: 0.625rem;
@@ -3571,6 +3710,9 @@
   .ma5-ns {
     margin: 5px;
     margin: 0.3125rem; }
+  .ma8-ns {
+    margin: 8px;
+    margin: 0.5rem; }
   .ma10-ns {
     margin: 10px;
     margin: 0.625rem; }
@@ -3647,6 +3789,9 @@
   .mt5-ns {
     margin-top: 5px;
     margin-top: 0.3125rem; }
+  .mt8-ns {
+    margin-top: 8px;
+    margin-top: 0.5rem; }
   .mt10-ns {
     margin-top: 10px;
     margin-top: 0.625rem; }
@@ -3723,6 +3868,9 @@
   .mr5-ns {
     margin-right: 5px;
     margin-right: 0.3125rem; }
+  .mr8-ns {
+    margin-right: 8px;
+    margin-right: 0.5rem; }
   .mr10-ns {
     margin-right: 10px;
     margin-right: 0.625rem; }
@@ -3799,6 +3947,9 @@
   .mb5-ns {
     margin-bottom: 5px;
     margin-bottom: 0.3125rem; }
+  .mb8-ns {
+    margin-bottom: 8px;
+    margin-bottom: 0.5rem; }
   .mb10-ns {
     margin-bottom: 10px;
     margin-bottom: 0.625rem; }
@@ -3875,6 +4026,9 @@
   .ml5-ns {
     margin-left: 5px;
     margin-left: 0.3125rem; }
+  .ml8-ns {
+    margin-left: 8px;
+    margin-left: 0.5rem; }
   .ml10-ns {
     margin-left: 10px;
     margin-left: 0.625rem; }
@@ -3954,6 +4108,11 @@
     margin-top: 0.3125rem;
     margin-bottom: 5px;
     margin-bottom: 0.3125rem; }
+  .mv8-ns {
+    margin-top: 8px;
+    margin-top: 0.5rem;
+    margin-bottom: 8px;
+    margin-bottom: 0.5rem; }
   .mv10-ns {
     margin-top: 10px;
     margin-top: 0.625rem;
@@ -4080,6 +4239,11 @@
     margin-right: 0.3125rem;
     margin-left: 5px;
     margin-left: 0.3125rem; }
+  .mh8-ns {
+    margin-right: 8px;
+    margin-right: 0.5rem;
+    margin-left: 8px;
+    margin-left: 0.5rem; }
   .mh10-ns {
     margin-right: 10px;
     margin-right: 0.625rem;
@@ -4205,6 +4369,9 @@
   .ma5-m {
     margin: 5px;
     margin: 0.3125rem; }
+  .ma8-m {
+    margin: 8px;
+    margin: 0.5rem; }
   .ma10-m {
     margin: 10px;
     margin: 0.625rem; }
@@ -4281,6 +4448,9 @@
   .mt5-m {
     margin-top: 5px;
     margin-top: 0.3125rem; }
+  .mt8-m {
+    margin-top: 8px;
+    margin-top: 0.5rem; }
   .mt10-m {
     margin-top: 10px;
     margin-top: 0.625rem; }
@@ -4357,6 +4527,9 @@
   .mr5-m {
     margin-right: 5px;
     margin-right: 0.3125rem; }
+  .mr8-m {
+    margin-right: 8px;
+    margin-right: 0.5rem; }
   .mr10-m {
     margin-right: 10px;
     margin-right: 0.625rem; }
@@ -4433,6 +4606,9 @@
   .mb5-m {
     margin-bottom: 5px;
     margin-bottom: 0.3125rem; }
+  .mb8-m {
+    margin-bottom: 8px;
+    margin-bottom: 0.5rem; }
   .mb10-m {
     margin-bottom: 10px;
     margin-bottom: 0.625rem; }
@@ -4509,6 +4685,9 @@
   .ml5-m {
     margin-left: 5px;
     margin-left: 0.3125rem; }
+  .ml8-m {
+    margin-left: 8px;
+    margin-left: 0.5rem; }
   .ml10-m {
     margin-left: 10px;
     margin-left: 0.625rem; }
@@ -4588,6 +4767,11 @@
     margin-top: 0.3125rem;
     margin-bottom: 5px;
     margin-bottom: 0.3125rem; }
+  .mv8-m {
+    margin-top: 8px;
+    margin-top: 0.5rem;
+    margin-bottom: 8px;
+    margin-bottom: 0.5rem; }
   .mv10-m {
     margin-top: 10px;
     margin-top: 0.625rem;
@@ -4714,6 +4898,11 @@
     margin-right: 0.3125rem;
     margin-left: 5px;
     margin-left: 0.3125rem; }
+  .mh8-m {
+    margin-right: 8px;
+    margin-right: 0.5rem;
+    margin-left: 8px;
+    margin-left: 0.5rem; }
   .mh10-m {
     margin-right: 10px;
     margin-right: 0.625rem;
@@ -4839,6 +5028,9 @@
   .ma5-l {
     margin: 5px;
     margin: 0.3125rem; }
+  .ma8-l {
+    margin: 8px;
+    margin: 0.5rem; }
   .ma10-l {
     margin: 10px;
     margin: 0.625rem; }
@@ -4915,6 +5107,9 @@
   .mt5-l {
     margin-top: 5px;
     margin-top: 0.3125rem; }
+  .mt8-l {
+    margin-top: 8px;
+    margin-top: 0.5rem; }
   .mt10-l {
     margin-top: 10px;
     margin-top: 0.625rem; }
@@ -4991,6 +5186,9 @@
   .mr5-l {
     margin-right: 5px;
     margin-right: 0.3125rem; }
+  .mr8-l {
+    margin-right: 8px;
+    margin-right: 0.5rem; }
   .mr10-l {
     margin-right: 10px;
     margin-right: 0.625rem; }
@@ -5067,6 +5265,9 @@
   .mb5-l {
     margin-bottom: 5px;
     margin-bottom: 0.3125rem; }
+  .mb8-l {
+    margin-bottom: 8px;
+    margin-bottom: 0.5rem; }
   .mb10-l {
     margin-bottom: 10px;
     margin-bottom: 0.625rem; }
@@ -5143,6 +5344,9 @@
   .ml5-l {
     margin-left: 5px;
     margin-left: 0.3125rem; }
+  .ml8-l {
+    margin-left: 8px;
+    margin-left: 0.5rem; }
   .ml10-l {
     margin-left: 10px;
     margin-left: 0.625rem; }
@@ -5222,6 +5426,11 @@
     margin-top: 0.3125rem;
     margin-bottom: 5px;
     margin-bottom: 0.3125rem; }
+  .mv8-l {
+    margin-top: 8px;
+    margin-top: 0.5rem;
+    margin-bottom: 8px;
+    margin-bottom: 0.5rem; }
   .mv10-l {
     margin-top: 10px;
     margin-top: 0.625rem;
@@ -5348,6 +5557,11 @@
     margin-right: 0.3125rem;
     margin-left: 5px;
     margin-left: 0.3125rem; }
+  .mh8-l {
+    margin-right: 8px;
+    margin-right: 0.5rem;
+    margin-left: 8px;
+    margin-left: 0.5rem; }
   .mh10-l {
     margin-right: 10px;
     margin-right: 0.625rem;

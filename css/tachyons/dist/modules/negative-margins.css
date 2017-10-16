@@ -29,6 +29,10 @@
   margin: -5px;
   margin: -0.3125rem; }
 
+.na8 {
+  margin: -8px;
+  margin: -0.5rem; }
+
 .na10 {
   margin: -10px;
   margin: -0.625rem; }
@@ -124,6 +128,10 @@
 .nt5 {
   margin-top: -5px;
   margin-top: -0.3125rem; }
+
+.nt8 {
+  margin-top: -8px;
+  margin-top: -0.5rem; }
 
 .nt10 {
   margin-top: -10px;
@@ -221,6 +229,10 @@
   margin-right: -5px;
   margin-right: -0.3125rem; }
 
+.nr8 {
+  margin-right: -8px;
+  margin-right: -0.5rem; }
+
 .nr10 {
   margin-right: -10px;
   margin-right: -0.625rem; }
@@ -317,6 +329,10 @@
   margin-bottom: -5px;
   margin-bottom: -0.3125rem; }
 
+.nb8 {
+  margin-bottom: -8px;
+  margin-bottom: -0.5rem; }
+
 .nb10 {
   margin-bottom: -10px;
   margin-bottom: -0.625rem; }
@@ -412,6 +428,10 @@
 .nl5 {
   margin-left: -5px;
   margin-left: -0.3125rem; }
+
+.nl8 {
+  margin-left: -8px;
+  margin-left: -0.5rem; }
 
 .nl10 {
   margin-left: -10px;
@@ -510,6 +530,12 @@
   margin-top: -0.3125rem;
   margin-bottom: -5px;
   margin-bottom: -0.3125rem; }
+
+.nv8 {
+  margin-top: -8px;
+  margin-top: -0.5rem;
+  margin-bottom: -8px;
+  margin-bottom: -0.5rem; }
 
 .nv10 {
   margin-top: -10px;
@@ -655,6 +681,12 @@
   margin-left: -5px;
   margin-left: -0.3125rem; }
 
+.nh8 {
+  margin-right: -8px;
+  margin-right: -0.5rem;
+  margin-left: -8px;
+  margin-left: -0.5rem; }
+
 .nh10 {
   margin-right: -10px;
   margin-right: -0.625rem;
@@ -797,6 +829,9 @@
   .na5-ns {
     margin: -5px;
     margin: -0.3125rem; }
+  .na8-ns {
+    margin: -8px;
+    margin: -0.5rem; }
   .na10-ns {
     margin: -10px;
     margin: -0.625rem; }
@@ -869,6 +904,9 @@
   .nt5-ns {
     margin-top: -5px;
     margin-top: -0.3125rem; }
+  .nt8-ns {
+    margin-top: -8px;
+    margin-top: -0.5rem; }
   .nt10-ns {
     margin-top: -10px;
     margin-top: -0.625rem; }
@@ -941,6 +979,9 @@
   .nr5-ns {
     margin-right: -5px;
     margin-right: -0.3125rem; }
+  .nr8-ns {
+    margin-right: -8px;
+    margin-right: -0.5rem; }
   .nr10-ns {
     margin-right: -10px;
     margin-right: -0.625rem; }
@@ -1013,6 +1054,9 @@
   .nb5-ns {
     margin-bottom: -5px;
     margin-bottom: -0.3125rem; }
+  .nb8-ns {
+    margin-bottom: -8px;
+    margin-bottom: -0.5rem; }
   .nb10-ns {
     margin-bottom: -10px;
     margin-bottom: -0.625rem; }
@@ -1085,6 +1129,9 @@
   .nl5-ns {
     margin-left: -5px;
     margin-left: -0.3125rem; }
+  .nl8-ns {
+    margin-left: -8px;
+    margin-left: -0.5rem; }
   .nl10-ns {
     margin-left: -10px;
     margin-left: -0.625rem; }
@@ -1159,6 +1206,11 @@
     margin-top: -0.3125rem;
     margin-bottom: -5px;
     margin-bottom: -0.3125rem; }
+  .nv8-ns {
+    margin-top: -8px;
+    margin-top: -0.5rem;
+    margin-bottom: -8px;
+    margin-bottom: -0.5rem; }
   .nv10-ns {
     margin-top: -10px;
     margin-top: -0.625rem;
@@ -1279,6 +1331,11 @@
     margin-right: -0.3125rem;
     margin-left: -5px;
     margin-left: -0.3125rem; }
+  .nh8-ns {
+    margin-right: -8px;
+    margin-right: -0.5rem;
+    margin-left: -8px;
+    margin-left: -0.5rem; }
   .nh10-ns {
     margin-right: -10px;
     margin-right: -0.625rem;
@@ -1399,6 +1456,9 @@
   .na5-m {
     margin: -5px;
     margin: -0.3125rem; }
+  .na8-m {
+    margin: -8px;
+    margin: -0.5rem; }
   .na10-m {
     margin: -10px;
     margin: -0.625rem; }
@@ -1471,6 +1531,9 @@
   .nt5-m {
     margin-top: -5px;
     margin-top: -0.3125rem; }
+  .nt8-m {
+    margin-top: -8px;
+    margin-top: -0.5rem; }
   .nt10-m {
     margin-top: -10px;
     margin-top: -0.625rem; }
@@ -1543,6 +1606,9 @@
   .nr5-m {
     margin-right: -5px;
     margin-right: -0.3125rem; }
+  .nr8-m {
+    margin-right: -8px;
+    margin-right: -0.5rem; }
   .nr10-m {
     margin-right: -10px;
     margin-right: -0.625rem; }
@@ -1615,6 +1681,9 @@
   .nb5-m {
     margin-bottom: -5px;
     margin-bottom: -0.3125rem; }
+  .nb8-m {
+    margin-bottom: -8px;
+    margin-bottom: -0.5rem; }
   .nb10-m {
     margin-bottom: -10px;
     margin-bottom: -0.625rem; }
@@ -1687,6 +1756,9 @@
   .nl5-m {
     margin-left: -5px;
     margin-left: -0.3125rem; }
+  .nl8-m {
+    margin-left: -8px;
+    margin-left: -0.5rem; }
   .nl10-m {
     margin-left: -10px;
     margin-left: -0.625rem; }
@@ -1761,6 +1833,11 @@
     margin-top: -0.3125rem;
     margin-bottom: -5px;
     margin-bottom: -0.3125rem; }
+  .nv8-m {
+    margin-top: -8px;
+    margin-top: -0.5rem;
+    margin-bottom: -8px;
+    margin-bottom: -0.5rem; }
   .nv10-m {
     margin-top: -10px;
     margin-top: -0.625rem;
@@ -1881,6 +1958,11 @@
     margin-right: -0.3125rem;
     margin-left: -5px;
     margin-left: -0.3125rem; }
+  .nh8-m {
+    margin-right: -8px;
+    margin-right: -0.5rem;
+    margin-left: -8px;
+    margin-left: -0.5rem; }
   .nh10-m {
     margin-right: -10px;
     margin-right: -0.625rem;
@@ -2001,6 +2083,9 @@
   .na5-l {
     margin: -5px;
     margin: -0.3125rem; }
+  .na8-l {
+    margin: -8px;
+    margin: -0.5rem; }
   .na10-l {
     margin: -10px;
     margin: -0.625rem; }
@@ -2073,6 +2158,9 @@
   .nt5-l {
     margin-top: -5px;
     margin-top: -0.3125rem; }
+  .nt8-l {
+    margin-top: -8px;
+    margin-top: -0.5rem; }
   .nt10-l {
     margin-top: -10px;
     margin-top: -0.625rem; }
@@ -2145,6 +2233,9 @@
   .nr5-l {
     margin-right: -5px;
     margin-right: -0.3125rem; }
+  .nr8-l {
+    margin-right: -8px;
+    margin-right: -0.5rem; }
   .nr10-l {
     margin-right: -10px;
     margin-right: -0.625rem; }
@@ -2217,6 +2308,9 @@
   .nb5-l {
     margin-bottom: -5px;
     margin-bottom: -0.3125rem; }
+  .nb8-l {
+    margin-bottom: -8px;
+    margin-bottom: -0.5rem; }
   .nb10-l {
     margin-bottom: -10px;
     margin-bottom: -0.625rem; }
@@ -2289,6 +2383,9 @@
   .nl5-l {
     margin-left: -5px;
     margin-left: -0.3125rem; }
+  .nl8-l {
+    margin-left: -8px;
+    margin-left: -0.5rem; }
   .nl10-l {
     margin-left: -10px;
     margin-left: -0.625rem; }
@@ -2363,6 +2460,11 @@
     margin-top: -0.3125rem;
     margin-bottom: -5px;
     margin-bottom: -0.3125rem; }
+  .nv8-l {
+    margin-top: -8px;
+    margin-top: -0.5rem;
+    margin-bottom: -8px;
+    margin-bottom: -0.5rem; }
   .nv10-l {
     margin-top: -10px;
     margin-top: -0.625rem;
@@ -2483,6 +2585,11 @@
     margin-right: -0.3125rem;
     margin-left: -5px;
     margin-left: -0.3125rem; }
+  .nh8-l {
+    margin-right: -8px;
+    margin-right: -0.5rem;
+    margin-left: -8px;
+    margin-left: -0.5rem; }
   .nh10-l {
     margin-right: -10px;
     margin-right: -0.625rem;
