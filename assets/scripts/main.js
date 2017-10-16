@@ -11,6 +11,9 @@ navToggle.addEventListener('click', function(e) {
   }
 }, false);
 
+var scroll = new SmoothScroll('[data-scroll]');
+
+
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 'auto',
   centeredSlides: true,
