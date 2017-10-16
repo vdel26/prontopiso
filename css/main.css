@@ -262,4 +262,11 @@
 
 
 /* Form */
+::-webkit-input-placeholder { color: #b2bcc3; }
+::-moz-placeholder { color: #b2bcc3; }
+:-ms-input-placeholder { color: #b2bcc3; }
+:-moz-placeholder { color: #b2bcc3; }
 input[type="radio"]:checked + label { border-color: #1f8beb; }
+/*input[type="date"]::before { content: attr(placeholder); width: 100%; color: #b2bcc3; }*/
+/*input[type="date"]:focus:before,
+input[type="date"]:not([value=""]):not(:focus):valid:before { content: none; }*/

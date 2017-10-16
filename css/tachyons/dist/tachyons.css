@@ -423,7 +423,7 @@ pre,
 code,
 a,
 h1, h2, h3, h4, h5, h6,
-p,
+p, span,
 ul, ol, li, dl, dt, dd,
 textarea,
 table, td, th, tr,
@@ -432,6 +432,7 @@ input[type="number"],
 input[type="password"],
 input[type="tel"],
 input[type="text"],
+input[type="date"],
 input[type="url"],
 .border-box {
   -webkit-box-sizing: border-box;
@@ -16861,8 +16862,8 @@ img {
 .measure-40 {
   max-width: 40em; }
 
-.measure-58 {
-  max-width: 58em; }
+.measure-65 {
+  max-width: 65em; }
 
 .measure-70 {
   max-width: 70em; }
@@ -16894,8 +16895,8 @@ img {
     max-width: 24em; }
   .measure-40-ns {
     max-width: 40em; }
-  .measure-58-ns {
-    max-width: 58em; }
+  .measure-65-ns {
+    max-width: 65em; }
   .measure-70-ns {
     max-width: 70em; }
   .indent-ns {
@@ -16921,8 +16922,8 @@ img {
     max-width: 24em; }
   .measure-40-m {
     max-width: 40em; }
-  .measure-58-m {
-    max-width: 58em; }
+  .measure-65-m {
+    max-width: 65em; }
   .measure-70-m {
     max-width: 70em; }
   .indent-m {
@@ -16948,8 +16949,8 @@ img {
     max-width: 24em; }
   .measure-40-l {
     max-width: 40em; }
-  .measure-58-l {
-    max-width: 58em; }
+  .measure-65-l {
+    max-width: 65em; }
   .measure-70-l {
     max-width: 70em; }
   .indent-l {
