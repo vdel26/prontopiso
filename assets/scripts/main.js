@@ -10,6 +10,14 @@ try {
 } catch (e) {}
 
 
+// ScrollReveal
+window.sr = ScrollReveal();
+sr.reveal('p, h1, h2, h3, h4, h5, h6, img, svg', {
+  duration: 1000,
+  distance: '50px',
+}, 50);
+
+
 // Nav On Scroll
 var mainHeader = document.querySelector('#main-header')
   , bodyElement = document.querySelector('body')
