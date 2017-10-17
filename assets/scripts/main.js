@@ -46,8 +46,10 @@ navToggle.addEventListener('click', function(e) {
   }
 }, false);
 
+
 // SmoothScroll
 var scroll = new SmoothScroll('[data-scroll]');
+
 
 // How-It-Works Swiper
 var swiper = new Swiper('.swiper-container', {
@@ -69,4 +71,11 @@ var swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
     }
   }
+});
+
+
+// Form Progress
+stickybits('#form-progress', {
+  useStickyClasses: true,
+  noStyles: true,
 });
