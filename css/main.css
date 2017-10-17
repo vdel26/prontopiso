@@ -257,8 +257,11 @@
   bottom: -60px; left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
-  background-color: #1f8ceb;
+  background-color: #d8d8d8;
   border: 12px solid #fff;
+  transition: background-color .4s ease-in-out;
+} #how-it-works .swiper-slide-active h2::after {
+  background-color: #1f8ceb;
 } @media screen and (min-width: 30em) {
   #how-it-works .swiper-slide:nth-of-type(even) svg { margin-top: 28px; }
   #how-it-works .swiper-slide:nth-of-type(even) h2 { top: -8px; }
