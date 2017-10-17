@@ -1,14 +1,15 @@
-<header class="z-1 fixed top-0 right-0 left-0 df justify-between pa18 pv32-ns ph40-ns bg-white" style="box-shadow: 0 2px 4px 0 rgba(76, 76, 75, 0.1);">
+<header id="main-header" class="z-1 fixed top-0 top-25-ns right-0 left-0 df justify-between pa18 pv20-ns ph40-ns">
 
-  <h1 class="z-1 relative dib mv0 lh-100 fw4">
+  <h1 class="z-1 relative dib dif flex-column justify-center mv0 lh-100 fw4">
     <a class="db link inherit" href="{{ site.url }}">
-      <span class="clip-ns">{{ site.title }}</span>
+      <span class="clip">{{ site.title }}</span>
+      {% include logo.svg fill="#282828" %}
     </a>
   </h1>
 
   <a id="toggle-nav" class="z-1 df flex-column justify-center dn-ns" href="#toggle-nav">
 
-    <svg id="open-nav" class="" xmlns="http://www.w3.org/2000/svg" width="23px" height="14px" viewBox="0 0 23 14">
+    <svg id="open-nav" class="" xmlns="http://www.w3.org/2000/svg" width="23px" height="25px" viewBox="0 0 23 14">
       <path fill="#1F8BEB" fill-rule="evenodd" d="M0 0h23v2H0zM0 6h23v2H0zM0 12h23v2H0z"/>
     </svg>
 
@@ -24,24 +25,24 @@
       <li class="dn-ns mb15 ml50-ns mv0-ns f20 f16-ns">
         <a class="link db inherit fw5" href="#">Home</a>
       </li>
-      <li class="dib-ns mb15 ml50-ns mv0-ns f20 f16-ns">
+      <li class="dib-ns dif-ns flex-column-ns justify-center-ns mb15 ml50-ns mv0-ns f20 f16-ns">
         <a class="link db inherit" href="#how-it-works" data-scroll>Cómo funciona</a>
       </li>
-      <li class="dib-ns mb15 ml50-ns mv0-ns f20 f16-ns">
+      <li class="dib-ns dif-ns flex-column-ns justify-center-ns mb15 ml50-ns mv0-ns f20 f16-ns">
         <a class="link db inherit" href="#">Precio</a>
       </li>
-      <li class="dib-ns mb15 ml50-ns mv0-ns f20 f16-ns">
+      <li class="dib-ns dif-ns flex-column-ns justify-center-ns mb15 ml50-ns mv0-ns f20 f16-ns">
         <a class="link db inherit" href="#">
           <span class="dn di-ns">FAQ</span>
           <span class="di dn-ns">Preguntas frecuentes</span>
         </a>
       </li>
-      <li class="dib dn-ns mt5 mb15 ml50-ns mv0-ns" style="margin-top: 120px;">
-        <a class="link db inherit pv10 ph36 pa0-ns white bg-blue fw5 ba bn-ns b--blue br2" href="tel:0034-902-734-050">
+      <li id="nav-item-tasacion" class="dib dn-ns mt120 mb15 ml50-ns mv0-ns">
+        <a class="link db inherit pv10 pv8-ns ph36 ph12-ns white bg-blue fw5 fw4-ns ba bn-ns b--blue br2" href="tel:0034-902-734-050">
           <span class="">Obtén una tasación inicial</span>
         </a>
       </li>
-      <li class="dib mt5 mb15 ml50-ns mv0-ns">
+      <li id="nav-item-telefono" class="dib mt5 mb15 ml50-ns mv0-ns">
         <a class="link db inherit pv10 ph36 pa0-ns blue fw5 ba bn-ns b--blue br2" href="tel:0034-902-734-050">
           <span class="di dn-ns fw4">Llámanos</span>
           <span class="dn di-ns">+34</span>

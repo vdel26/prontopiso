@@ -1,3 +1,37 @@
+// Passive Events Util
+var supportsPassive = false;
+try {
+  var opts = Object.defineProperty({}, 'passive', {
+    get: function() {
+      supportsPassive = true;
+    }
+  });
+  window.addEventListener("test", null, opts);
+} catch (e) {}
+
+
+// Nav On Scroll
+var mainHeader = document.querySelector('#main-header')
+  , heroSection = document.querySelector('#hero')
+  , navItemTasacion = document.querySelector('#nav-item-tasacion')
+  , navItemTelefono = document.querySelector('#nav-item-telefono');
+
+document.addEventListener('wheel', function() {
+  if( heroSection.getBoundingClientRect().top < -25 ) {
+    mainHeader.classList.add('bg-white', 'top-0-ns', 'box-shadow');
+    mainHeader.classList.remove('top-25-ns');
+    navItemTasacion.classList.remove('dn-ns');
+    navItemTelefono.classList.add('dn-ns');
+  } else {
+    mainHeader.classList.remove('bg-white', 'top-0-ns', 'box-shadow');
+    mainHeader.classList.add('top-25-ns');
+    navItemTasacion.classList.add('dn-ns');
+    navItemTelefono.classList.remove('dn-ns');
+  }
+}, supportsPassive ? { passive: true } : false);
+
+
+// Toggle Nav
 var mainNav = document.querySelector('#main-nav')
   , navToggle = document.querySelector('#toggle-nav')
   , navToggles = document.querySelectorAll('#toggle-nav svg');
@@ -11,9 +45,10 @@ navToggle.addEventListener('click', function(e) {
   }
 }, false);
 
+// SmoothScroll
 var scroll = new SmoothScroll('[data-scroll]');
 
-
+// How-It-Works Swiper
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 'auto',
   centeredSlides: true,

@@ -93,6 +93,7 @@
        url('../assets/fonts/playfair-display-v11-latin-900italic.svg#PlayfairDisplay') format('svg');
 }
 
+
 /* Swiper Overrides */
 .swiper-button-next,
 .swiper-button-prev {
@@ -133,9 +134,14 @@
 
 
 /* Home */
+#main-header { transition: all .25s ease-in-out; }
+.box-shadow { box-shadow: 0 2px 4px 0 rgba(76, 76, 75, 0.1); }
+
 @supports not (display: flex) {
-  #main-nav { padding-top: 0; }
-  #main-nav ul { top: 55%; transform: translateY(-50%); position: relative; }
+  @media screen and (max-width: 30em) {
+    #main-nav { padding-top: 0; }
+    #main-nav ul { top: 55%; transform: translateY(-50%); position: relative; }
+  }
 }
 
 #hero {
