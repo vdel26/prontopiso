@@ -277,6 +277,8 @@
   background-position-x: calc(100% + 80px);
   background-position-y: center;
   background-size: contain;
+} @media screen and (min-width: 30em) {
+  #aside { background-position-x: right; }
 }
 
 

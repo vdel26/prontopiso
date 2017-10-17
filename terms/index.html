@@ -1,0 +1,43 @@
+---
+layout: default
+
+terms:
+  - title: "Política de privacidad"
+    condition: "En un plazo de 48h nos pondremos en contacto contigo para programar la visita de uno de nuestros agentes, que realizará la tasación final de tu vivienda y te ofrecerá un precio mínimo garantizado al momento."
+  - title: "Seguridad de datos"
+    condition: "En un plazo de 48h nos pondremos en contacto contigo para programar la visita de uno de nuestros agentes, que realizará la tasación final de tu vivienda y te ofrecerá un precio mínimo garantizado al momento."
+  - title: "¿Qué tipo de propiedades aceptan?"
+    condition: "En un plazo de 48h nos pondremos en contacto contigo para programar la visita de uno de nuestros agentes, que realizará la tasación final de tu vivienda y te ofrecerá un precio mínimo garantizado al momento. En un plazo de 48h nos pondremos en contacto contigo para programar la visita de uno de nuestros agentes, que realizará la tasación final de tu vivienda y te ofrecerá un precio mínimo garantizado al momento."
+  - title: "¿Qué métodos utilizan para realizar la valoración de la vivienda?"
+    condition: "En un plazo de 48h nos pondremos en contacto contigo para programar la visita de uno de nuestros agentes, que realizará la tasación final de tu vivienda y te ofrecerá un precio mínimo garantizado al momento."
+  - title: "¿Qué es el precio mínimo garantizado?"
+    condition: "En un plazo de 48h nos pondremos en contacto contigo para programar la visita de uno de nuestros agentes, que realizará la tasación final de tu vivienda y te ofrecerá un precio mínimo garantizado al momento. En un plazo de 48h nos pondremos en contacto contigo para programar la visita de uno de nuestros agentes, que realizará la tasación final."
+  - title: "¿Qué métodos utiliza ProntoPiso para promocionar las propiedades?"
+    condition: "En un plazo de 48h nos pondremos en contacto contigo para programar la visita de uno de nuestros agentes, que realizará la tasación final de tu vivienda y te ofrecerá un precio mínimo garantizado al momento."
+  - title: "¿Qué pasa si mi propiedad no se vende en 90 días?"
+    condition: "En un plazo de 48h nos pondremos en contacto contigo para programar la visita de uno de nuestros agentes, que realizará la tasación final de tu vivienda y te ofrecerá un precio mínimo garantizado al momento. En un plazo de 48h nos pondremos en contacto contigo para programar la visita de uno de nuestros agentes, que realizará la tasación final de tu vivienda y te ofrecerá un precio mínimo garantizado al momento."
+  - title: "¿Qué pasa si mi propiedad no se vende en 90 días?"
+    condition: "En un plazo de 48h nos pondremos en contacto contigo para programar la visita de uno de nuestros agentes, que realizará la tasación final de tu vivienda y te ofrecerá un precio mínimo garantizado al momento."
+  - title: "¿Qué pasa si mi propiedad se vende por un valor inferior al garantizado?"
+    condition: "En un plazo de 48h nos pondremos en contacto contigo para programar la visita de uno de nuestros agentes, que realizará la tasación final de tu vivienda y te ofrecerá un precio mínimo garantizado al momento. En un plazo de 48h nos pondremos en contacto contigo para programar la visita de uno de nuestros agentes, que realizará la tasación final."
+
+---
+
+<section id="terms" class="measure-70-ns mha-ns pt200 pb150">
+
+  <header class="mb40 ph36 blue">
+    <h1 class="mv0 f32 lh-125 fw5">Términos y condiciones</h1>
+  </header>
+
+  <article class="cf ph36">
+  {% for term in page.terms %}
+    <h2 class="mt0 mb20 blue f18 lh-175 fw5">{{ term.title }}</h2>
+    <p class="mt0 mb40 f16 lh-200 o-80">{{ term.condition }}</p>
+  {% endfor %}
+  </article>
+
+</section>
+
+
+
+{% include aside.html %}

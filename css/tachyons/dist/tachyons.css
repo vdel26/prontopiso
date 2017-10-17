@@ -6557,6 +6557,9 @@ img {
 .o-100 {
   opacity: 1; }
 
+.o-80 {
+  opacity: 0.8; }
+
 .o-50 {
   opacity: 0.5; }
 
@@ -6566,6 +6569,8 @@ img {
 @media screen and (min-width: 30em) {
   .o-100-ns {
     opacity: 1; }
+  .o-80-ns {
+    opacity: 0.8; }
   .o-50-ns {
     opacity: 0.5; }
   .o-0-ns {
@@ -6574,6 +6579,8 @@ img {
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .o-100-m {
     opacity: 1; }
+  .o-80-m {
+    opacity: 0.8; }
   .o-50-m {
     opacity: 0.5; }
   .o-0-m {
@@ -6582,6 +6589,8 @@ img {
 @media screen and (min-width: 60em) {
   .o-100-l {
     opacity: 1; }
+  .o-80-l {
+    opacity: 0.8; }
   .o-50-l {
     opacity: 0.5; }
   .o-0-l {

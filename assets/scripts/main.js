@@ -12,12 +12,12 @@ try {
 
 // Nav On Scroll
 var mainHeader = document.querySelector('#main-header')
-  , heroSection = document.querySelector('#hero')
+  , bodyElement = document.querySelector('body')
   , navItemTasacion = document.querySelector('#nav-item-tasacion')
   , navItemTelefono = document.querySelector('#nav-item-telefono');
 
-document.addEventListener('wheel', function() {
-  if( heroSection.getBoundingClientRect().top < -25 ) {
+function bodyScrolledEnough() {
+  if( bodyElement.getBoundingClientRect().top < -25 ) {
     mainHeader.classList.add('bg-white', 'top-0-ns', 'box-shadow');
     mainHeader.classList.remove('top-25-ns');
     navItemTasacion.classList.remove('dn-ns');
@@ -28,7 +28,8 @@ document.addEventListener('wheel', function() {
     navItemTasacion.classList.add('dn-ns');
     navItemTelefono.classList.remove('dn-ns');
   }
-}, supportsPassive ? { passive: true } : false);
+} bodyScrolledEnough();
+document.addEventListener('wheel', bodyScrolledEnough, supportsPassive ? { passive: true } : false);
 
 
 // Toggle Nav
