@@ -250,6 +250,10 @@
   stroke-width: 10px;
   stroke-width: 0.625rem; }
 
+.sw12 {
+  stroke-width: 12px;
+  stroke-width: 0.75rem; }
+
 .sw15 {
   stroke-width: 15px;
   stroke-width: 0.9375rem; }
@@ -353,6 +357,9 @@
   .sw10-ns {
     stroke-width: 10px;
     stroke-width: 0.625rem; }
+  .sw12-ns {
+    stroke-width: 12px;
+    stroke-width: 0.75rem; }
   .sw15-ns {
     stroke-width: 15px;
     stroke-width: 0.9375rem; }
@@ -434,6 +441,9 @@
   .sw10-m {
     stroke-width: 10px;
     stroke-width: 0.625rem; }
+  .sw12-m {
+    stroke-width: 12px;
+    stroke-width: 0.75rem; }
   .sw15-m {
     stroke-width: 15px;
     stroke-width: 0.9375rem; }
@@ -515,6 +525,9 @@
   .sw10-l {
     stroke-width: 10px;
     stroke-width: 0.625rem; }
+  .sw12-l {
+    stroke-width: 12px;
+    stroke-width: 0.75rem; }
   .sw15-l {
     stroke-width: 15px;
     stroke-width: 0.9375rem; }
