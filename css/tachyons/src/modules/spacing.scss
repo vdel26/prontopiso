@@ -74,6 +74,18 @@
   }
 }
 
+@each $name, $properties in $margins {
+  @each $step, $values in $spacings {
+    @if $values != 0 and $values != "auto" {
+      .n#{$name}#{$step} {
+        @each $property in $properties {
+          @each $value in $values { #{$property}: -#{$value}; }
+        }
+      }
+    }
+  }
+}
+
 @each $suffix, $value in $breakpoints {
   @media #{$value} {
     @each $name, $properties in $margins {
@@ -81,6 +93,22 @@
         .m#{$name}#{$step}-#{$suffix} {
           @each $property in $properties {
             @each $value in $values { #{$property}: $value; }
+          }
+        }
+      }
+    }
+  }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $properties in $margins {
+      @each $step, $values in $spacings {
+        @if $values != 0 and $values != "auto" {
+          .n#{$name}#{$step}-#{$suffix} {
+            @each $property in $properties {
+              @each $value in $values { #{$property}: -#{$value}; }
+            }
           }
         }
       }

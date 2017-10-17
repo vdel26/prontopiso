@@ -77,10 +77,11 @@ $font-styles: (
 );
 
 $vertical-aligns: (
-  base: baseline,
-  mid: middle,
-  top: top,
-  btm: bottom,
+  // base: baseline,
+  // mid: middle,
+  // top: top,
+  // btm: bottom,
+  text-bot: text-bottom,
 );
 
 $text-decorations: (
