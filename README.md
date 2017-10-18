@@ -5,6 +5,7 @@ git clone https://github.com/hacknug/prontopiso.git
 cd prontopiso
 npm install
 bundle install
+gulp styles
 jekyll build
 gulp
 ```

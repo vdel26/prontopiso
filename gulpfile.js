@@ -61,4 +61,4 @@ gulp.task('serve', function () {
     gulp.watch('_site/**/*.*').on('change', reload);
 });
 
-gulp.task('default', ['build', 'styles', 'serve']);
+gulp.task('default', ['build', 'serve']);
