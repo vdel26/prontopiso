@@ -51,6 +51,10 @@
 .hover-blue:focus {
   color: #1f8beb; }
 
+.hover-red:hover,
+.hover-red:focus {
+  color: #fe5f5f; }
+
 @media screen and (min-width: 30em) {
   .hover-inherit-ns:hover,
   .hover-inherit-ns:focus {
@@ -84,7 +88,10 @@
     color: rgba(255, 255, 255, 0.1); }
   .hover-blue-ns:hover,
   .hover-blue-ns:focus {
-    color: #1f8beb; } }
+    color: #1f8beb; }
+  .hover-red-ns:hover,
+  .hover-red-ns:focus {
+    color: #fe5f5f; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .hover-inherit-m:hover,
@@ -119,7 +126,10 @@
     color: rgba(255, 255, 255, 0.1); }
   .hover-blue-m:hover,
   .hover-blue-m:focus {
-    color: #1f8beb; } }
+    color: #1f8beb; }
+  .hover-red-m:hover,
+  .hover-red-m:focus {
+    color: #fe5f5f; } }
 
 @media screen and (min-width: 60em) {
   .hover-inherit-l:hover,
@@ -154,7 +164,10 @@
     color: rgba(255, 255, 255, 0.1); }
   .hover-blue-l:hover,
   .hover-blue-l:focus {
-    color: #1f8beb; } }
+    color: #1f8beb; }
+  .hover-red-l:hover,
+  .hover-red-l:focus {
+    color: #fe5f5f; } }
 
 /* Background colors */
 .hover-bg-inherit:hover,
@@ -201,6 +214,10 @@
 .hover-bg-blue:focus {
   background-color: #1f8beb; }
 
+.hover-bg-red:hover,
+.hover-bg-red:focus {
+  background-color: #fe5f5f; }
+
 @media screen and (min-width: 30em) {
   .hover-bg-inherit-ns:hover,
   .hover-bg-inherit-ns:focus {
@@ -234,7 +251,10 @@
     background-color: rgba(255, 255, 255, 0.1); }
   .hover-bg-blue-ns:hover,
   .hover-bg-blue-ns:focus {
-    background-color: #1f8beb; } }
+    background-color: #1f8beb; }
+  .hover-bg-red-ns:hover,
+  .hover-bg-red-ns:focus {
+    background-color: #fe5f5f; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .hover-bg-inherit-m:hover,
@@ -269,7 +289,10 @@
     background-color: rgba(255, 255, 255, 0.1); }
   .hover-bg-blue-m:hover,
   .hover-bg-blue-m:focus {
-    background-color: #1f8beb; } }
+    background-color: #1f8beb; }
+  .hover-bg-red-m:hover,
+  .hover-bg-red-m:focus {
+    background-color: #fe5f5f; } }
 
 @media screen and (min-width: 60em) {
   .hover-bg-inherit-l:hover,
@@ -304,4 +327,7 @@
     background-color: rgba(255, 255, 255, 0.1); }
   .hover-bg-blue-l:hover,
   .hover-bg-blue-l:focus {
-    background-color: #1f8beb; } }
+    background-color: #1f8beb; }
+  .hover-bg-red-l:hover,
+  .hover-bg-red-l:focus {
+    background-color: #fe5f5f; } }

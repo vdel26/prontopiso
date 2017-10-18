@@ -43,3 +43,18 @@ function fillInAddress() {
     }
     console.log(prontopiso_address);
 }
+
+
+var fieldsets = document.querySelectorAll('fieldset');
+document.addEventListener('wheel', function() {
+  // Get closest element to window center
+  var elem = document.elementFromPoint( window.innerWidth / 2, window.innerHeight / 2 );
+  if( elem.nodeName == 'FIELDSET' ) {
+    // Reset all fieldsets opacity and set only for current one
+    for (i = 0; i < fieldsets.length; ++i) {
+      fieldsets[i].style.opacity = '';
+    } elem.style.opacity = 1;
+    // Focus first input element in current fieldset
+    elem.querySelectorAll('input')[0].focus();
+  }
+}, supportsPassive ? { passive: true } : false);

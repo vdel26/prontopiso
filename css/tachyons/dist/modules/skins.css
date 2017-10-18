@@ -42,6 +42,9 @@
 .blue {
   color: #1f8beb; }
 
+.red {
+  color: #fe5f5f; }
+
 @media screen and (min-width: 30em) {
   .inherit-ns {
     color: inherit; }
@@ -64,7 +67,9 @@
   .white-10-ns {
     color: rgba(255, 255, 255, 0.1); }
   .blue-ns {
-    color: #1f8beb; } }
+    color: #1f8beb; }
+  .red-ns {
+    color: #fe5f5f; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .inherit-m {
@@ -88,7 +93,9 @@
   .white-10-m {
     color: rgba(255, 255, 255, 0.1); }
   .blue-m {
-    color: #1f8beb; } }
+    color: #1f8beb; }
+  .red-m {
+    color: #fe5f5f; } }
 
 @media screen and (min-width: 60em) {
   .inherit-l {
@@ -112,7 +119,9 @@
   .white-10-l {
     color: rgba(255, 255, 255, 0.1); }
   .blue-l {
-    color: #1f8beb; } }
+    color: #1f8beb; }
+  .red-l {
+    color: #fe5f5f; } }
 
 /* Background colors */
 .bg-inherit {
@@ -148,6 +157,9 @@
 .bg-blue {
   background-color: #1f8beb; }
 
+.bg-red {
+  background-color: #fe5f5f; }
+
 @media screen and (min-width: 30em) {
   .bg-inherit-ns {
     background-color: inherit; }
@@ -170,7 +182,9 @@
   .bg-white-10-ns {
     background-color: rgba(255, 255, 255, 0.1); }
   .bg-blue-ns {
-    background-color: #1f8beb; } }
+    background-color: #1f8beb; }
+  .bg-red-ns {
+    background-color: #fe5f5f; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .bg-inherit-m {
@@ -194,7 +208,9 @@
   .bg-white-10-m {
     background-color: rgba(255, 255, 255, 0.1); }
   .bg-blue-m {
-    background-color: #1f8beb; } }
+    background-color: #1f8beb; }
+  .bg-red-m {
+    background-color: #fe5f5f; } }
 
 @media screen and (min-width: 60em) {
   .bg-inherit-l {
@@ -218,4 +234,6 @@
   .bg-white-10-l {
     background-color: rgba(255, 255, 255, 0.1); }
   .bg-blue-l {
-    background-color: #1f8beb; } }
+    background-color: #1f8beb; }
+  .bg-red-l {
+    background-color: #fe5f5f; } }

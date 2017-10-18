@@ -974,6 +974,9 @@ img {
 .b--blue {
   border-color: #1f8beb; }
 
+.b--red {
+  border-color: #fe5f5f; }
+
 @media screen and (min-width: 30em) {
   .b--inherit-ns {
     border-color: inherit; }
@@ -996,7 +999,9 @@ img {
   .b--white-10-ns {
     border-color: rgba(255, 255, 255, 0.1); }
   .b--blue-ns {
-    border-color: #1f8beb; } }
+    border-color: #1f8beb; }
+  .b--red-ns {
+    border-color: #fe5f5f; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .b--inherit-m {
@@ -1020,7 +1025,9 @@ img {
   .b--white-10-m {
     border-color: rgba(255, 255, 255, 0.1); }
   .b--blue-m {
-    border-color: #1f8beb; } }
+    border-color: #1f8beb; }
+  .b--red-m {
+    border-color: #fe5f5f; } }
 
 @media screen and (min-width: 60em) {
   .b--inherit-l {
@@ -1044,7 +1051,9 @@ img {
   .b--white-10-l {
     border-color: rgba(255, 255, 255, 0.1); }
   .b--blue-l {
-    border-color: #1f8beb; } }
+    border-color: #1f8beb; }
+  .b--red-l {
+    border-color: #fe5f5f; } }
 
 /*
 
@@ -6572,6 +6581,9 @@ img {
 .o-50 {
   opacity: 0.5; }
 
+.o-30 {
+  opacity: 0.3; }
+
 .o-0 {
   opacity: 0; }
 
@@ -6582,6 +6594,8 @@ img {
     opacity: 0.8; }
   .o-50-ns {
     opacity: 0.5; }
+  .o-30-ns {
+    opacity: 0.3; }
   .o-0-ns {
     opacity: 0; } }
 
@@ -6592,6 +6606,8 @@ img {
     opacity: 0.8; }
   .o-50-m {
     opacity: 0.5; }
+  .o-30-m {
+    opacity: 0.3; }
   .o-0-m {
     opacity: 0; } }
 
@@ -6602,6 +6618,8 @@ img {
     opacity: 0.8; }
   .o-50-l {
     opacity: 0.5; }
+  .o-30-l {
+    opacity: 0.3; }
   .o-0-l {
     opacity: 0; } }
 
@@ -6725,6 +6743,9 @@ img {
 .blue {
   color: #1f8beb; }
 
+.red {
+  color: #fe5f5f; }
+
 @media screen and (min-width: 30em) {
   .inherit-ns {
     color: inherit; }
@@ -6747,7 +6768,9 @@ img {
   .white-10-ns {
     color: rgba(255, 255, 255, 0.1); }
   .blue-ns {
-    color: #1f8beb; } }
+    color: #1f8beb; }
+  .red-ns {
+    color: #fe5f5f; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .inherit-m {
@@ -6771,7 +6794,9 @@ img {
   .white-10-m {
     color: rgba(255, 255, 255, 0.1); }
   .blue-m {
-    color: #1f8beb; } }
+    color: #1f8beb; }
+  .red-m {
+    color: #fe5f5f; } }
 
 @media screen and (min-width: 60em) {
   .inherit-l {
@@ -6795,7 +6820,9 @@ img {
   .white-10-l {
     color: rgba(255, 255, 255, 0.1); }
   .blue-l {
-    color: #1f8beb; } }
+    color: #1f8beb; }
+  .red-l {
+    color: #fe5f5f; } }
 
 /* Background colors */
 .bg-inherit {
@@ -6831,6 +6858,9 @@ img {
 .bg-blue {
   background-color: #1f8beb; }
 
+.bg-red {
+  background-color: #fe5f5f; }
+
 @media screen and (min-width: 30em) {
   .bg-inherit-ns {
     background-color: inherit; }
@@ -6853,7 +6883,9 @@ img {
   .bg-white-10-ns {
     background-color: rgba(255, 255, 255, 0.1); }
   .bg-blue-ns {
-    background-color: #1f8beb; } }
+    background-color: #1f8beb; }
+  .bg-red-ns {
+    background-color: #fe5f5f; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .bg-inherit-m {
@@ -6877,7 +6909,9 @@ img {
   .bg-white-10-m {
     background-color: rgba(255, 255, 255, 0.1); }
   .bg-blue-m {
-    background-color: #1f8beb; } }
+    background-color: #1f8beb; }
+  .bg-red-m {
+    background-color: #fe5f5f; } }
 
 @media screen and (min-width: 60em) {
   .bg-inherit-l {
@@ -6901,7 +6935,9 @@ img {
   .bg-white-10-l {
     background-color: rgba(255, 255, 255, 0.1); }
   .bg-blue-l {
-    background-color: #1f8beb; } }
+    background-color: #1f8beb; }
+  .bg-red-l {
+    background-color: #fe5f5f; } }
 
 /*
 
@@ -6956,6 +6992,10 @@ img {
 .hover-blue:focus {
   color: #1f8beb; }
 
+.hover-red:hover,
+.hover-red:focus {
+  color: #fe5f5f; }
+
 @media screen and (min-width: 30em) {
   .hover-inherit-ns:hover,
   .hover-inherit-ns:focus {
@@ -6989,7 +7029,10 @@ img {
     color: rgba(255, 255, 255, 0.1); }
   .hover-blue-ns:hover,
   .hover-blue-ns:focus {
-    color: #1f8beb; } }
+    color: #1f8beb; }
+  .hover-red-ns:hover,
+  .hover-red-ns:focus {
+    color: #fe5f5f; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .hover-inherit-m:hover,
@@ -7024,7 +7067,10 @@ img {
     color: rgba(255, 255, 255, 0.1); }
   .hover-blue-m:hover,
   .hover-blue-m:focus {
-    color: #1f8beb; } }
+    color: #1f8beb; }
+  .hover-red-m:hover,
+  .hover-red-m:focus {
+    color: #fe5f5f; } }
 
 @media screen and (min-width: 60em) {
   .hover-inherit-l:hover,
@@ -7059,7 +7105,10 @@ img {
     color: rgba(255, 255, 255, 0.1); }
   .hover-blue-l:hover,
   .hover-blue-l:focus {
-    color: #1f8beb; } }
+    color: #1f8beb; }
+  .hover-red-l:hover,
+  .hover-red-l:focus {
+    color: #fe5f5f; } }
 
 /* Background colors */
 .hover-bg-inherit:hover,
@@ -7106,6 +7155,10 @@ img {
 .hover-bg-blue:focus {
   background-color: #1f8beb; }
 
+.hover-bg-red:hover,
+.hover-bg-red:focus {
+  background-color: #fe5f5f; }
+
 @media screen and (min-width: 30em) {
   .hover-bg-inherit-ns:hover,
   .hover-bg-inherit-ns:focus {
@@ -7139,7 +7192,10 @@ img {
     background-color: rgba(255, 255, 255, 0.1); }
   .hover-bg-blue-ns:hover,
   .hover-bg-blue-ns:focus {
-    background-color: #1f8beb; } }
+    background-color: #1f8beb; }
+  .hover-bg-red-ns:hover,
+  .hover-bg-red-ns:focus {
+    background-color: #fe5f5f; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .hover-bg-inherit-m:hover,
@@ -7174,7 +7230,10 @@ img {
     background-color: rgba(255, 255, 255, 0.1); }
   .hover-bg-blue-m:hover,
   .hover-bg-blue-m:focus {
-    background-color: #1f8beb; } }
+    background-color: #1f8beb; }
+  .hover-bg-red-m:hover,
+  .hover-bg-red-m:focus {
+    background-color: #fe5f5f; } }
 
 @media screen and (min-width: 60em) {
   .hover-bg-inherit-l:hover,
@@ -7209,7 +7268,10 @@ img {
     background-color: rgba(255, 255, 255, 0.1); }
   .hover-bg-blue-l:hover,
   .hover-bg-blue-l:focus {
-    background-color: #1f8beb; } }
+    background-color: #1f8beb; }
+  .hover-bg-red-l:hover,
+  .hover-bg-red-l:focus {
+    background-color: #fe5f5f; } }
 
 /*
 
@@ -7269,6 +7331,9 @@ img {
 .fill-blue {
   fill: #1f8beb; }
 
+.fill-red {
+  fill: #fe5f5f; }
+
 @media screen and (min-width: 30em) {
   .fill-inherit-ns {
     fill: inherit; }
@@ -7291,7 +7356,9 @@ img {
   .fill-white-10-ns {
     fill: rgba(255, 255, 255, 0.1); }
   .fill-blue-ns {
-    fill: #1f8beb; } }
+    fill: #1f8beb; }
+  .fill-red-ns {
+    fill: #fe5f5f; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .fill-inherit-m {
@@ -7315,7 +7382,9 @@ img {
   .fill-white-10-m {
     fill: rgba(255, 255, 255, 0.1); }
   .fill-blue-m {
-    fill: #1f8beb; } }
+    fill: #1f8beb; }
+  .fill-red-m {
+    fill: #fe5f5f; } }
 
 @media screen and (min-width: 60em) {
   .fill-inherit-l {
@@ -7339,7 +7408,9 @@ img {
   .fill-white-10-l {
     fill: rgba(255, 255, 255, 0.1); }
   .fill-blue-l {
-    fill: #1f8beb; } }
+    fill: #1f8beb; }
+  .fill-red-l {
+    fill: #fe5f5f; } }
 
 /* Stroke colors */
 .stroke-inherit {
@@ -7375,6 +7446,9 @@ img {
 .stroke-blue {
   stroke: #1f8beb; }
 
+.stroke-red {
+  stroke: #fe5f5f; }
+
 @media screen and (min-width: 30em) {
   .stroke-inherit-ns {
     stroke: inherit; }
@@ -7397,7 +7471,9 @@ img {
   .stroke-white-10-ns {
     stroke: rgba(255, 255, 255, 0.1); }
   .stroke-blue-ns {
-    stroke: #1f8beb; } }
+    stroke: #1f8beb; }
+  .stroke-red-ns {
+    stroke: #fe5f5f; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .stroke-inherit-m {
@@ -7421,7 +7497,9 @@ img {
   .stroke-white-10-m {
     stroke: rgba(255, 255, 255, 0.1); }
   .stroke-blue-m {
-    stroke: #1f8beb; } }
+    stroke: #1f8beb; }
+  .stroke-red-m {
+    stroke: #fe5f5f; } }
 
 @media screen and (min-width: 60em) {
   .stroke-inherit-l {
@@ -7445,7 +7523,9 @@ img {
   .stroke-white-10-l {
     stroke: rgba(255, 255, 255, 0.1); }
   .stroke-blue-l {
-    stroke: #1f8beb; } }
+    stroke: #1f8beb; }
+  .stroke-red-l {
+    stroke: #fe5f5f; } }
 
 /* Stroke widths */
 .sw0 {
@@ -7879,6 +7959,10 @@ img {
 .hover-fill-blue:focus {
   fill: #1f8beb; }
 
+.hover-fill-red:hover,
+.hover-fill-red:focus {
+  fill: #fe5f5f; }
+
 @media screen and (min-width: 30em) {
   .hover-fill-inherit-ns:hover,
   .hover-fill-inherit-ns:focus {
@@ -7912,7 +7996,10 @@ img {
     fill: rgba(255, 255, 255, 0.1); }
   .hover-fill-blue-ns:hover,
   .hover-fill-blue-ns:focus {
-    fill: #1f8beb; } }
+    fill: #1f8beb; }
+  .hover-fill-red-ns:hover,
+  .hover-fill-red-ns:focus {
+    fill: #fe5f5f; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .hover-fill-inherit-m:hover,
@@ -7947,7 +8034,10 @@ img {
     fill: rgba(255, 255, 255, 0.1); }
   .hover-fill-blue-m:hover,
   .hover-fill-blue-m:focus {
-    fill: #1f8beb; } }
+    fill: #1f8beb; }
+  .hover-fill-red-m:hover,
+  .hover-fill-red-m:focus {
+    fill: #fe5f5f; } }
 
 @media screen and (min-width: 60em) {
   .hover-fill-inherit-l:hover,
@@ -7982,7 +8072,10 @@ img {
     fill: rgba(255, 255, 255, 0.1); }
   .hover-fill-blue-l:hover,
   .hover-fill-blue-l:focus {
-    fill: #1f8beb; } }
+    fill: #1f8beb; }
+  .hover-fill-red-l:hover,
+  .hover-fill-red-l:focus {
+    fill: #fe5f5f; } }
 
 /* Stroke colors */
 .hover-stroke-inherit:hover,
@@ -8029,6 +8122,10 @@ img {
 .hover-stroke-blue:focus {
   stroke: #1f8beb; }
 
+.hover-stroke-red:hover,
+.hover-stroke-red:focus {
+  stroke: #fe5f5f; }
+
 @media screen and (min-width: 30em) {
   .hover-stroke-inherit-ns:hover,
   .hover-stroke-inherit-ns:focus {
@@ -8062,7 +8159,10 @@ img {
     stroke: rgba(255, 255, 255, 0.1); }
   .hover-stroke-blue-ns:hover,
   .hover-stroke-blue-ns:focus {
-    stroke: #1f8beb; } }
+    stroke: #1f8beb; }
+  .hover-stroke-red-ns:hover,
+  .hover-stroke-red-ns:focus {
+    stroke: #fe5f5f; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .hover-stroke-inherit-m:hover,
@@ -8097,7 +8197,10 @@ img {
     stroke: rgba(255, 255, 255, 0.1); }
   .hover-stroke-blue-m:hover,
   .hover-stroke-blue-m:focus {
-    stroke: #1f8beb; } }
+    stroke: #1f8beb; }
+  .hover-stroke-red-m:hover,
+  .hover-stroke-red-m:focus {
+    stroke: #fe5f5f; } }
 
 @media screen and (min-width: 60em) {
   .hover-stroke-inherit-l:hover,
@@ -8132,7 +8235,10 @@ img {
     stroke: rgba(255, 255, 255, 0.1); }
   .hover-stroke-blue-l:hover,
   .hover-stroke-blue-l:focus {
-    stroke: #1f8beb; } }
+    stroke: #1f8beb; }
+  .hover-stroke-red-l:hover,
+  .hover-stroke-red-l:focus {
+    stroke: #fe5f5f; } }
 
 /* Stroke widths */
 .hover-sw0:hover,

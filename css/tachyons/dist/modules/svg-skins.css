@@ -56,6 +56,9 @@
 .fill-blue {
   fill: #1f8beb; }
 
+.fill-red {
+  fill: #fe5f5f; }
+
 @media screen and (min-width: 30em) {
   .fill-inherit-ns {
     fill: inherit; }
@@ -78,7 +81,9 @@
   .fill-white-10-ns {
     fill: rgba(255, 255, 255, 0.1); }
   .fill-blue-ns {
-    fill: #1f8beb; } }
+    fill: #1f8beb; }
+  .fill-red-ns {
+    fill: #fe5f5f; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .fill-inherit-m {
@@ -102,7 +107,9 @@
   .fill-white-10-m {
     fill: rgba(255, 255, 255, 0.1); }
   .fill-blue-m {
-    fill: #1f8beb; } }
+    fill: #1f8beb; }
+  .fill-red-m {
+    fill: #fe5f5f; } }
 
 @media screen and (min-width: 60em) {
   .fill-inherit-l {
@@ -126,7 +133,9 @@
   .fill-white-10-l {
     fill: rgba(255, 255, 255, 0.1); }
   .fill-blue-l {
-    fill: #1f8beb; } }
+    fill: #1f8beb; }
+  .fill-red-l {
+    fill: #fe5f5f; } }
 
 /* Stroke colors */
 .stroke-inherit {
@@ -162,6 +171,9 @@
 .stroke-blue {
   stroke: #1f8beb; }
 
+.stroke-red {
+  stroke: #fe5f5f; }
+
 @media screen and (min-width: 30em) {
   .stroke-inherit-ns {
     stroke: inherit; }
@@ -184,7 +196,9 @@
   .stroke-white-10-ns {
     stroke: rgba(255, 255, 255, 0.1); }
   .stroke-blue-ns {
-    stroke: #1f8beb; } }
+    stroke: #1f8beb; }
+  .stroke-red-ns {
+    stroke: #fe5f5f; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .stroke-inherit-m {
@@ -208,7 +222,9 @@
   .stroke-white-10-m {
     stroke: rgba(255, 255, 255, 0.1); }
   .stroke-blue-m {
-    stroke: #1f8beb; } }
+    stroke: #1f8beb; }
+  .stroke-red-m {
+    stroke: #fe5f5f; } }
 
 @media screen and (min-width: 60em) {
   .stroke-inherit-l {
@@ -232,7 +248,9 @@
   .stroke-white-10-l {
     stroke: rgba(255, 255, 255, 0.1); }
   .stroke-blue-l {
-    stroke: #1f8beb; } }
+    stroke: #1f8beb; }
+  .stroke-red-l {
+    stroke: #fe5f5f; } }
 
 /* Stroke widths */
 .sw0 {

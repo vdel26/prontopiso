@@ -6,7 +6,7 @@ scripts:
   - 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBq4sUlndgBgF-rKYF2R-6XLMptaphHHcM&libraries=places&callback=initAutocomplete'
 
 classes:
-  fieldset: 'cf ma0 mb20 mb30-ns pa0 ph20-ns bn'
+  fieldset: 'cf ma0 mb20 mb30-ns pa0 ph20-ns bn o-30'
   legend: 'mh20-ns mb20 mb40-ns fw5'
   input:
     wrapper: 'cb-ns fl-ns w-100 w-third-ns mb15 mb30-ns ph20-ns'
@@ -44,7 +44,7 @@ classes:
       <legend class="{{ page.classes.legend }}">1. ¿Cuál es tu código postal?</legend>
 
       <div class="fl-ns w-100 w-third-ns mb20 mb40-ns ph20-ns">
-        <input class="{{ page.classes.input.input }}"
+        <input class="{{ page.classes.input.input }}" autofocus
                type="text" name="address-zipCode" id="address-zipCode" value="" required>
       </div>
 

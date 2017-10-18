@@ -50,6 +50,9 @@
 .b--blue {
   border-color: #1f8beb; }
 
+.b--red {
+  border-color: #fe5f5f; }
+
 @media screen and (min-width: 30em) {
   .b--inherit-ns {
     border-color: inherit; }
@@ -72,7 +75,9 @@
   .b--white-10-ns {
     border-color: rgba(255, 255, 255, 0.1); }
   .b--blue-ns {
-    border-color: #1f8beb; } }
+    border-color: #1f8beb; }
+  .b--red-ns {
+    border-color: #fe5f5f; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .b--inherit-m {
@@ -96,7 +101,9 @@
   .b--white-10-m {
     border-color: rgba(255, 255, 255, 0.1); }
   .b--blue-m {
-    border-color: #1f8beb; } }
+    border-color: #1f8beb; }
+  .b--red-m {
+    border-color: #fe5f5f; } }
 
 @media screen and (min-width: 60em) {
   .b--inherit-l {
@@ -120,4 +127,6 @@
   .b--white-10-l {
     border-color: rgba(255, 255, 255, 0.1); }
   .b--blue-l {
-    border-color: #1f8beb; } }
+    border-color: #1f8beb; }
+  .b--red-l {
+    border-color: #fe5f5f; } }

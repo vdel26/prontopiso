@@ -13,6 +13,9 @@
 .o-50 {
   opacity: 0.5; }
 
+.o-30 {
+  opacity: 0.3; }
+
 .o-0 {
   opacity: 0; }
 
@@ -23,6 +26,8 @@
     opacity: 0.8; }
   .o-50-ns {
     opacity: 0.5; }
+  .o-30-ns {
+    opacity: 0.3; }
   .o-0-ns {
     opacity: 0; } }
 
@@ -33,6 +38,8 @@
     opacity: 0.8; }
   .o-50-m {
     opacity: 0.5; }
+  .o-30-m {
+    opacity: 0.3; }
   .o-0-m {
     opacity: 0; } }
 
@@ -43,5 +50,7 @@
     opacity: 0.8; }
   .o-50-l {
     opacity: 0.5; }
+  .o-30-l {
+    opacity: 0.3; }
   .o-0-l {
     opacity: 0; } }
