@@ -2,13 +2,14 @@
 layout: default
 
 classes:
-  article: 'cf ph36'
+  article: 'cf mb120 ph36'
   header: 'mb40'
   h1: 'mv0 f32 lh-125 fw5 blue'
   h2: 'mt40 mb20 blue f16 f18-ns lh-175 fw5'
   p: 'mt0 mb20 f14 f16-ns lh-200 o-80'
 
 terms:
+  title: 'Condiciones de Uso'
   intro:
     - 'En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), PRONTOPISO, S.L. informa que es titular del sitio web https://prontopiso.com. De acuerdo con la exigencia del artículo 10 de la citada Ley, PRONTOPISO, S.L. informa de los siguientes datos:'
     - 'El titular de este sitio web es PRONTOPISO, S.L., con CIF B67037705 y domicilio social en Edificio Palau de Mar, Plaça Pau Vila 1, 1ª planta, Sector AD, 08039 Barcelona, inscrita en el Registro Mercantil de Barcelona, en el Tomo 46003, Folio 64, Hoja número B-506549, inscripción 1a. La dirección de correo electrónico de contacto con la empresa es: info@prontopiso.com.'
@@ -53,6 +54,7 @@ terms:
         - 'ProntoPiso se reserva, asimismo, la facultad de presentar las acciones civiles o penales que considere oportunas por la utilización indebida de su sitio web y contenidos, o por el incumplimiento de las presentes condiciones. La relación entre el usuario y ProntoPiso se regirá e interpretará por la normativa vigente y de aplicación en el territorio español. De surgir cualquier controversia las partes podrán someter sus conflictos a arbitraje o acudir a la jurisdicción ordinaria cumpliendo con las normas sobre jurisdicción y competencia al respecto. ProntoPiso tiene su domicilio en Barcelona, España.'
 
 privacy:
+  title: 'Política de privacidad'
   intro:
     - 'De conformidad con la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal y su normativa de desarrollo, mediante esta política de privacidad, ProntoPiso desea informarle acerca de la política de protección de datos de carácter personal de su sitio web prontopiso.com ("sitio web"), para que determine libre y voluntariamente si desea facilitar a ProntoPiso los datos personales que le podamos requerir o que podamos obtener de usted con ocasión de su acceso y uso del sitio web.'
 
@@ -89,12 +91,12 @@ privacy:
 
 ---
 
-<section class="measure-68-ns mha-ns pt200 pb150 pb320-ns">
+<section class="measure-68-ns mha-ns pt200 pb30 pb200-ns">
 
   <article id="terms" class="{{ page.classes.article }}">
 
     <header class="{{ page.classes.header }}">
-      <h1 class="{{ page.classes.h1 }}">Condiciones de Uso</h1>
+      <h1 class="{{ page.classes.h1 }}">{{ page.terms.title }}</h1>
     </header>
 
   {% for paragraph in page.terms.intro %}
@@ -113,7 +115,7 @@ privacy:
   <article id="policy" class="{{ page.classes.article }}">
 
     <header class="{{ page.classes.header }}">
-      <h1 class="{{ page.classes.h1 }}">Política de privacidad</h1>
+      <h1 class="{{ page.classes.h1 }}">{{ page.privacy.title }}</h1>
     </header>
 
   {% for paragraph in page.privacy.intro %}
