@@ -58,3 +58,7 @@
 <script src="{{ "/assets/vendor/smooth-scroll.polyfills.min.js" | prepend: site.baseurl }}" charset="utf-8"></script>
 <script src="{{ "/assets/vendor/swiper.min.js" | prepend: site.baseurl }}" charset="utf-8"></script>
 <script src="{{ "/assets/scripts/main.js" | prepend: site.baseurl }}" charset="utf-8"></script>
+
+{% for script in page.scripts %}
+<script src="{{ script }}" async defer></script>
+{% endfor %}
