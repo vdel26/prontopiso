@@ -399,7 +399,7 @@ layout: default
     function fillInAddress() {
         // Get the place details from the google_address object.
         var place = google_address.getPlace();
-        var prontopiso_address = [];
+        var prontopiso_address = {};
         // Get each component of the address from the place details
         // and fill the corresponding field on the form.
         for (var i = 0; i < place.address_components.length; i++) {
