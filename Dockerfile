@@ -30,22 +30,29 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt \
   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
 
-RUN mkdir /prontopiso-frontend
-COPY . /prontopiso-frontend
+RUN apt-get update -y \
+  && apt-get -y dist-upgrade \
+  && apt-get install -y nginx
 
-WORKDIR /prontopiso-frontend
+RUN mkdir /var/www/prontopiso-frontend-build
 
-RUN bundle install
-RUN npm install -g gulp
-RUN npm install
-RUN gulp styles
-RUN jekyll build
+ADD package.json /tmp/package.json
+RUN cd /tmp \
+  && npm install \
+  &&  npm install -g gulp
 
-ARG USER=""
-ARG USER_ID=""
+ADD . /var/www/prontopiso-frontend-build
 
-RUN if [ ! -z ${USER_ID} ]; then \
-        useradd -u ${USER_ID} -d /prontopiso-frontend -s /bin/bash ${USER}; \
-    fi
+WORKDIR /var/www/prontopiso-frontend-build
+
+RUN mv /tmp/node_modules .
+
+RUN bundle install \
+  && gulp styles \
+  &&  jekyll build -d ../html
+
+WORKDIR /var/www/html
+
+RUN rm -rf /var/www/prontopiso-frontend-build
 
 CMD ["bash","start.sh"]
