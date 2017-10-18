@@ -406,7 +406,6 @@ layout: default
             var addressType = place.address_components[i].types[0];
             if (componentForm[addressType]) {
                 var val = place.address_components[i][componentForm[addressType]];
-                //document.getElementById(addressType).value = val;
                 prontopiso_address[prontopiso_address_model[addressType]] = val;
             }
         }
