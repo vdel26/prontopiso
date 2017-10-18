@@ -5231,6 +5231,9 @@ img {
 .lh-120 {
   line-height: 1.2; }
 
+.lh-125 {
+  line-height: 1.25; }
+
 .lh-140 {
   line-height: 1.4; }
 
@@ -5254,6 +5257,8 @@ img {
     line-height: 1; }
   .lh-120-ns {
     line-height: 1.2; }
+  .lh-125-ns {
+    line-height: 1.25; }
   .lh-140-ns {
     line-height: 1.4; }
   .lh-150-ns {
@@ -5272,6 +5277,8 @@ img {
     line-height: 1; }
   .lh-120-m {
     line-height: 1.2; }
+  .lh-125-m {
+    line-height: 1.25; }
   .lh-140-m {
     line-height: 1.4; }
   .lh-150-m {
@@ -5290,6 +5297,8 @@ img {
     line-height: 1; }
   .lh-120-l {
     line-height: 1.2; }
+  .lh-125-l {
+    line-height: 1.25; }
   .lh-140-l {
     line-height: 1.4; }
   .lh-150-l {
@@ -17653,6 +17662,9 @@ img {
 .measure-65 {
   max-width: 65em; }
 
+.measure-68 {
+  max-width: 68em; }
+
 .measure-70 {
   max-width: 70em; }
 
@@ -17685,6 +17697,8 @@ img {
     max-width: 40em; }
   .measure-65-ns {
     max-width: 65em; }
+  .measure-68-ns {
+    max-width: 68em; }
   .measure-70-ns {
     max-width: 70em; }
   .indent-ns {
@@ -17712,6 +17726,8 @@ img {
     max-width: 40em; }
   .measure-65-m {
     max-width: 65em; }
+  .measure-68-m {
+    max-width: 68em; }
   .measure-70-m {
     max-width: 70em; }
   .indent-m {
@@ -17739,6 +17755,8 @@ img {
     max-width: 40em; }
   .measure-65-l {
     max-width: 65em; }
+  .measure-68-l {
+    max-width: 68em; }
   .measure-70-l {
     max-width: 70em; }
   .indent-l {
