@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  prontopiso_frontend:
+    container_name: ${API_CONTAINER_NAME}
+    image: ${IMAGE_NAME}
+    build:
+      context: ../..
+      args:
+        SOURCES_MIRROR: ${SOURCES_MIRROR}
+    ports:
+      - "3000:3000"
+    networks:
+      - prontopiso_frontend_build
+
+networks:
+    prontopiso_frontend_build:
