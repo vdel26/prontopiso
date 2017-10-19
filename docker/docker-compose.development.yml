@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  prontopiso_frontend:
+    build: ..
+    ports:
+      - "3000:3000"
+      - "35729:35729"
+    volumes:
+      - ../start.sh:/prontopiso-frontend/start.sh
+      - ../:/prontopiso-frontend/:cached
+      - /prontopiso-frontend/node_modules
+    networks:
+      - prontopiso_frontend_development
+
+networks:
+    prontopiso_frontend_development:
