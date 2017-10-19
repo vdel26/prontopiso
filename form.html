@@ -243,6 +243,7 @@ classes:
 
       <div class="fl-ns w-100 w-third-ns mb20 mb30-ns ph20-ns">
         <input class="{{ page.classes.input.input }}" type="number" name="features-bathrooms" id="features-bathrooms" value="" placeholder="Número de baños">
+        <small id="features-bathrooms-error" class="{{ page.classes.small }}" style="position: relative;">Introduce un número</small>
       </div>
 
       <div class="{{ page.classes.input.wrapper }}">
@@ -258,6 +259,7 @@ classes:
 
       <div class="fl-ns w-100 w-third-ns mb20 mb30-ns ph20-ns">
         <input class="{{ page.classes.input.input }}" type="number" name="features-toilets" id="features-toilets" value="" placeholder="Número de aseos">
+        <small id="features-toilets-error" class="{{ page.classes.small }}" style="position: relative;">Introduce un número</small>
       </div>
 
 
@@ -409,6 +411,8 @@ classes:
           <input class="{{ page.classes.input-radio.input }}" type="radio" name="changing" id="changing-false" value="false" required>
           <label class="{{ page.classes.input.input }} {{ page.classes.input-radio.label }}" for="changing-false">No</label>
         </div>
+
+        <small id="changing-error" class="{{ page.classes.small }} mh20-ns" style="position: relative; bottom: 10px;">Escoge una opción</small>
 
       </div>
 
