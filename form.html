@@ -231,7 +231,14 @@ classes:
       </div>
 
       <div class="{{ page.classes.input.wrapper }}">
-        <span class="{{ page.classes.input.label }}">Baños</span>
+        <span class="hide-child relative {{ page.classes.input.label }}">
+          Baños
+          <span class="dib ml10 v-text-bot">
+            {% include_relative assets/images/info-tooltip.svg %}
+            <span class="bubble child absolute pa15 white bg-blue f12 fw5 br2">Habitación que dispone de lavabo, sanitario y bañera o espacio de ducha</span>
+          </span>
+          <span class="bubble-tail child dib"></span>
+        </span>
       </div>
 
       <div class="fl-ns w-100 w-third-ns mb20 mb30-ns ph20-ns">
@@ -239,7 +246,14 @@ classes:
       </div>
 
       <div class="{{ page.classes.input.wrapper }}">
-        <span class="{{ page.classes.input.label }}">Aseos</span>
+        <span class="hide-child relative {{ page.classes.input.label }}">
+          Aseos
+          <span class="dib ml10 v-text-bot">
+            {% include_relative assets/images/info-tooltip.svg %}
+            <span class="bubble child absolute pa15 white bg-blue f12 fw5 br2">Habitación que dispone de lavabo y sanitario</span>
+          </span>
+          <span class="bubble-tail child dib"></span>
+        </span>
       </div>
 
       <div class="fl-ns w-100 w-third-ns mb20 mb30-ns ph20-ns">
@@ -379,11 +393,32 @@ classes:
     </fieldset>
 
 
+    <fieldset class="{{ page.classes.fieldset }}">
+
+      <!-- legend class="mh20-ns mb20 mb30-ns fw5" -->
+      <legend class="{{ page.classes.legend }}">7. ¿Estás pensando en cambiar de vivienda?</legend>
+
+      <div class="cf fl-ns w-100 w-two-thirds-ns">
+
+        <div class="fl w-50 w-25-ns mb20 mb30-ns pr10 ph20-ns">
+          <input class="{{ page.classes.input-radio.input }}" type="radio" name="changing" id="changing-true" value="true" required>
+          <label class="{{ page.classes.input.input }} {{ page.classes.input-radio.label }}" for="changing-true">Sí</label>
+        </div>
+
+        <div class="fl w-50 w-25-ns mb20 mb30-ns pl10 ph20-ns">
+          <input class="{{ page.classes.input-radio.input }}" type="radio" name="changing" id="changing-false" value="false" required>
+          <label class="{{ page.classes.input.input }} {{ page.classes.input-radio.label }}" for="changing-false">No</label>
+        </div>
+
+      </div>
+
+    </fieldset>
+
 
     <fieldset class="{{ page.classes.fieldset }}">
 
       <!-- legend class="mh20-ns mb20 mb30-ns fw5" -->
-      <legend class="{{ page.classes.legend }}">7. ¿Cuando te gustaría vender tu propiedad?</legend>
+      <legend class="{{ page.classes.legend }}">8. ¿Cuando te gustaría vender tu propiedad?</legend>
 
       <div class="{{ page.classes.input-radio.wrapper }}">
         <input class="{{ page.classes.input-radio.input }}" type="radio" name="sellTime" id="sellTime-1" value="1" required>
