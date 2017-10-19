@@ -29,6 +29,11 @@ classes:
     button: 'input-reset dib w-100 pa15 ph30-ns graphik f16 lh-100 tc ba br2'
     cancel: 'black bg-white b--black-125'
     submit: 'white bg-blue fw5 b--blue'
+  tooltips:
+    wrapper: 'hide-child relative'
+    bubble-wrapper: 'dib ml10 v-text-bot'
+    bubble: 'bubble child absolute pa15 white bg-blue f12 lh-150 fw5 br2'
+    bubble-tail: 'bubble-tail child dib'
 
 ---
 
@@ -169,13 +174,13 @@ classes:
       <legend class="{{ page.classes.legend }}">4. Características principales</legend>
 
       <div class="{{ page.classes.input.wrapper }}">
-        <span class="hide-child relative {{ page.classes.input.label }}">
+        <span class="{{ page.classes.tooltips.wrapper }} {{ page.classes.input.label }}">
           Superfície
-          <span class="dib ml10 v-text-bot">
+          <span class="{{ page.classes.tooltips.bubble-wrapper }}">
             {% include_relative assets/images/info-tooltip.svg %}
-            <span class="bubble child absolute pa15 white bg-blue f12 fw5 br2">Indica la superfície construida en m2</span>
+            <span class="{{ page.classes.tooltips.bubble }}">Indica la superfície construida en m2</span>
           </span>
-          <span class="bubble-tail child dib"></span>
+          <span class="{{ page.classes.tooltips.bubble-tail }}"></span>
         </span>
       </div>
 
@@ -187,13 +192,13 @@ classes:
 
 
       <div class="{{ page.classes.input.wrapper }}">
-        <span class="hide-child relative {{ page.classes.input.label }}">
+        <span class="{{ page.classes.tooltips.wrapper }} {{ page.classes.input.label }}">
           Número de habitaciones
-          <span class="dib ml10 v-text-bot">
+          <span class="{{ page.classes.tooltips.bubble-wrapper }}">
             {% include_relative assets/images/info-tooltip.svg %}
-            <span class="bubble child absolute pa15 white bg-blue f12 fw5 br2">Total de habitaciones, excluyendo cocina, salón, comedor y baños</span>
+            <span class="{{ page.classes.tooltips.bubble }}">Total de habitaciones, excluyendo cocina, salón, comedor y baños</span>
           </span>
-          <span class="bubble-tail child dib"></span>
+          <span class="{{ page.classes.tooltips.bubble-tail }}"></span>
         </span>
       </div>
 
@@ -231,34 +236,36 @@ classes:
       </div>
 
       <div class="{{ page.classes.input.wrapper }}">
-        <span class="hide-child relative {{ page.classes.input.label }}">
+        <span class="{{ page.classes.tooltips.wrapper }} {{ page.classes.input.label }}">
           Baños
-          <span class="dib ml10 v-text-bot">
+          <span class="{{ page.classes.tooltips.bubble-wrapper }}">
             {% include_relative assets/images/info-tooltip.svg %}
-            <span class="bubble child absolute pa15 white bg-blue f12 fw5 br2">Habitación que dispone de lavabo, sanitario y bañera o espacio de ducha</span>
+            <span class="{{ page.classes.tooltips.bubble }}">Habitación que dispone de lavabo, sanitario y bañera o espacio de ducha</span>
           </span>
-          <span class="bubble-tail child dib"></span>
+          <span class="{{ page.classes.tooltips.bubble-tail }}"></span>
         </span>
       </div>
 
       <div class="fl-ns w-100 w-third-ns mb20 mb30-ns ph20-ns">
-        <input class="{{ page.classes.input.input }}" type="number" name="features-bathrooms" id="features-bathrooms" value="" placeholder="Número de baños">
+        <input class="{{ page.classes.input.input }}" min="0" step="1"
+               type="number" name="features-bathrooms" id="features-bathrooms" value="" placeholder="Número de baños" required>
         <small id="features-bathrooms-error" class="{{ page.classes.small }}" style="position: relative;">Introduce un número</small>
       </div>
 
       <div class="{{ page.classes.input.wrapper }}">
-        <span class="hide-child relative {{ page.classes.input.label }}">
+        <span class="{{ page.classes.tooltips.wrapper }} {{ page.classes.input.label }}">
           Aseos
-          <span class="dib ml10 v-text-bot">
+          <span class="{{ page.classes.tooltips.bubble-wrapper }}">
             {% include_relative assets/images/info-tooltip.svg %}
-            <span class="bubble child absolute pa15 white bg-blue f12 fw5 br2">Habitación que dispone de lavabo y sanitario</span>
+            <span class="{{ page.classes.tooltips.bubble }}">Habitación que dispone de lavabo y sanitario</span>
           </span>
-          <span class="bubble-tail child dib"></span>
+          <span class="{{ page.classes.tooltips.bubble-tail }}"></span>
         </span>
       </div>
 
       <div class="fl-ns w-100 w-third-ns mb20 mb30-ns ph20-ns">
-        <input class="{{ page.classes.input.input }}" type="number" name="features-toilets" id="features-toilets" value="" placeholder="Número de aseos">
+        <input class="{{ page.classes.input.input }}" min="0" step="1"
+               type="number" name="features-toilets" id="features-toilets" value="" placeholder="Número de aseos" required>
         <small id="features-toilets-error" class="{{ page.classes.small }}" style="position: relative;">Introduce un número</small>
       </div>
 
@@ -506,7 +513,7 @@ classes:
       <span class="dn dib-ns mr10-ns">Preguntas respondidas</span>
 
       <span class="order-1-ns fw5">
-        <span id="form-current-fields">0</span> / <span id="form-total-fields">8</span>
+        <span id="form-current-fields">0</span> / <span id="form-total-fields">9</span>
       </span>
 
       <span class="dib dn-ns ml5">respondidas</span>
