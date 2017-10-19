@@ -324,7 +324,8 @@ classes:
       <div class="relative fl-ns w-100 w-third-ns mb20 mb40-ns ph20-ns">
         <input class="{{ page.classes.input.input }}"
                type="text" name="buyDate" id="buyDate" value="" placeholder="Selecciona una fecha" required
-               onfocus="(this.type='date')" oonfocus="(this.placeholder='')" oonblur="(this.type='text')">
+               onfocus="(this.type='date')" oonfocus="(this.placeholder='')" oonblur="(this.type='text')"
+               pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
         <div class="{{ page.classes.group }}">
           <small id="buyDate-error" class="{{ page.classes.small }}" style="position: relative;">Escoge una opción</small>
         </div>
@@ -406,7 +407,8 @@ classes:
       <div class="fl-ns w-100 w-two-thirds-ns mb20 mb30-ns ph20-ns">
         <input class="{{ page.classes.input.input }}"
                type="email" name="email" id="email" value="" placeholder="" required
-               title="Introduce tu dirección de correo electrónico">
+               title="Introduce tu dirección de correo electrónico"
+               pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$">
       </div>
 
       <small id="email-error" class="{{ page.classes.small }} mh20-ns" style="position: relative; bottom: 10px;">Introduce tu dirección de correo electrónico</small>
