@@ -49,6 +49,15 @@ function sendResponseObject(response) {
     , url = 'https://staging.prontopiso.com/api/building_surveys'
     , data = JSON.stringify(response);
 
+  // Call a function when the state changes
+  request.onreadystatechange = function() {
+    if (request.readyState == 4 && request.status == 200) {
+      alert(request.responseText);
+    } else {
+      alert(request.responseText);
+    }
+  }
+
   request.open('POST', url, true);
   request.setRequestHeader('Content-type', 'application/json');
   request.send(data);
@@ -59,6 +68,8 @@ function sendResponseObject(response) {
 var forms = document.querySelectorAll('form')
   , fieldsets = document.querySelectorAll('fieldset')
   , inputs = document.querySelectorAll('input')
+  , progressBar = document.querySelector('progress')
+  , currentFieldsNo = document.querySelector('#form-current-fields')
   , response = {};
 
 
@@ -123,5 +134,47 @@ for (i = 0; i < inputs.length; ++i) {
         response[responseAddy[0]][responseAddy[1]] = value;
       }
     }
+
+    // Check if all inputs inside the parent fieldset is valid
+    var parentFieldset = closest(this, 'fieldset', 'form')
+      , siblingInputs = parentFieldset.querySelectorAll('input')
+      , validInputsBool = true
+      , completedFieldsets = 0;
+
+    for (i = 0; i < siblingInputs.length; ++i) {
+      if (!siblingInputs[i].validity.valid) validInputsBool = false;
+    }
+
+    // Toggle fieldsets classes
+    if (validInputsBool) {
+      parentFieldset.classList.add('complete');
+      parentFieldset.classList.remove('incomplete');
+    } else {
+      parentFieldset.classList.add('incomplete');
+      parentFieldset.classList.remove('complete');
+    }
+
+    // Count how many fieldsets are valid
+    for (i = 0; i < fieldsets.length; ++i) {
+      if (fieldsets[i].classList.contains('complete')) ++completedFieldsets;
+    }
+
+    // Set progress bar to completed number
+    progressBar.value = completedFieldsets;
+    currentFieldsNo.innerHTML = completedFieldsets;
   });
+}
+
+function closest(el, selector, stopSelector) {
+  var retval = null;
+  while (el) {
+    if (el.matches(selector)) {
+      retval = el;
+      break
+    } else if (stopSelector && el.matches(stopSelector)) {
+      break
+    }
+    el = el.parentElement;
+  }
+  return retval;
 }
