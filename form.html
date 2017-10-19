@@ -6,8 +6,11 @@ scripts:
   - 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBq4sUlndgBgF-rKYF2R-6XLMptaphHHcM&libraries=places&callback=initAutocomplete'
 
 classes:
+  form: 'measure-65-ns mha-ns pt120 pt200-ns ph36 pb150 pb160-ns f18-ns'
   fieldset: 'cf ma0 mb20 mb30-ns pa0 ph20-ns bn o-30'
   legend: 'mh20-ns mb20 mb40-ns fw5'
+  group: 'input-group cf relative'
+  small: 'cb absolute bottom-n10 db dn red graphik f16 o-100'
   input:
     wrapper: 'cb-ns fl-ns w-100 w-third-ns mb15 mb30-ns ph20-ns'
     label: 'dib w-100 pv0 pv15-ns graphik f16 lh-100 ba b--transparent br2'
@@ -31,7 +34,7 @@ classes:
 
 <section>
 
-  <form id="main-form" class="measure-65-ns mha-ns pt120 pt200-ns ph36 pb150 pb160-ns f18-ns" name="main-form" action="index.html" netlify>
+  <form id="main-form" class="{{ page.classes.form }}" name="main-form" method="POST">
 
     <header class="nh36 mh40-ns mb90 pt45 pt100-ns pb100 pb90-ns">
       <h1 class="mv0 mh36 mh0-ns playfair f25 f50-ns lh-120">Completa este formulario y recibe la tasación previa de tu vivienda en 24h.</h1>
@@ -43,9 +46,14 @@ classes:
 
       <legend class="{{ page.classes.legend }}">1. ¿Cuál es tu código postal?</legend>
 
+
       <div class="fl-ns w-100 w-third-ns mb20 mb40-ns ph20-ns">
-        <input class="{{ page.classes.input.input }}" autofocus
-               type="text" name="address-zipCode" id="address-zipCode" value="" required>
+        <input class="{{ page.classes.input.input }}" minlength="5" maxlength="5" pattern="[0-9]{5}" autofocus
+               type="text" name="address-zipCode" id="address-zipCode" value="" required
+               title="Introduce un código postal válido de 5 cifras">
+        <div class="{{ page.classes.group }}">
+          <small class="{{ page.classes.small }}" style="right: -100%; left: 0; bottom: -40px;">Introduce un código postal válido de 5 cifras</small>
+        </div>
       </div>
 
     </fieldset>
@@ -56,29 +64,40 @@ classes:
 
       <legend class="{{ page.classes.legend }}">2. ¿Podrías especificar el tipo de vivienda?</legend>
 
-      <div class="{{ page.classes.input-radio.wrapper }}">
-        <input class="{{ page.classes.input-radio.input }}" type="radio" name="typeBuilding" id="typeBuilding-1" value="1" required>
-        <label class="{{ page.classes.input.input }} {{ page.classes.input-radio.label }}" for="typeBuilding-1">Piso</label>
-      </div>
+      <div class="{{ page.classes.group }}">
 
-      <div class="{{ page.classes.input-radio.wrapper }}">
-        <input class="{{ page.classes.input-radio.input }}" type="radio" name="typeBuilding" id="typeBuilding-2" value="2" required>
-        <label class="{{ page.classes.input.input }} {{ page.classes.input-radio.label }}" for="typeBuilding-2">Casa o chalet</label>
-      </div>
+        <div class="{{ page.classes.input-radio.wrapper }}">
+          <input class="{{ page.classes.input-radio.input }}" type="radio" name="typeBuilding" id="typeBuilding-1" value="1" required
+                 title="Escoge una opción">
+          <label class="{{ page.classes.input.input }} {{ page.classes.input-radio.label }}" for="typeBuilding-1">Piso</label>
+        </div>
 
-      <div class="{{ page.classes.input-radio.wrapper }}">
-        <input class="{{ page.classes.input-radio.input }}" type="radio" name="typeBuilding" id="typeBuilding-3" value="3" required>
-        <label class="{{ page.classes.input.input }} {{ page.classes.input-radio.label }}" for="typeBuilding-3">Estudio</label>
-      </div>
+        <div class="{{ page.classes.input-radio.wrapper }}">
+          <input class="{{ page.classes.input-radio.input }}" type="radio" name="typeBuilding" id="typeBuilding-2" value="2" required
+                 title="Escoge una opción">
+          <label class="{{ page.classes.input.input }} {{ page.classes.input-radio.label }}" for="typeBuilding-2">Casa o chalet</label>
+        </div>
 
-      <div class="{{ page.classes.input-radio.wrapper }}">
-        <input class="{{ page.classes.input-radio.input }}" type="radio" name="typeBuilding" id="typeBuilding-4" value="4" required>
-        <label class="{{ page.classes.input.input }} {{ page.classes.input-radio.label }}" for="typeBuilding-4">Ático</label>
-      </div>
+        <div class="{{ page.classes.input-radio.wrapper }}">
+          <input class="{{ page.classes.input-radio.input }}" type="radio" name="typeBuilding" id="typeBuilding-3" value="3" required
+                 title="Escoge una opción">
+          <label class="{{ page.classes.input.input }} {{ page.classes.input-radio.label }}" for="typeBuilding-3">Estudio</label>
+        </div>
 
-      <div class="{{ page.classes.input-radio.wrapper }}">
-        <input class="{{ page.classes.input-radio.input }}" type="radio" name="typeBuilding" id="typeBuilding-5" value="5" required>
-        <label class="{{ page.classes.input.input }} {{ page.classes.input-radio.label }}" for="typeBuilding-5">Dúplex</label>
+        <div class="{{ page.classes.input-radio.wrapper }}">
+          <input class="{{ page.classes.input-radio.input }}" type="radio" name="typeBuilding" id="typeBuilding-4" value="4" required
+                 title="Escoge una opción">
+          <label class="{{ page.classes.input.input }} {{ page.classes.input-radio.label }}" for="typeBuilding-4">Ático</label>
+        </div>
+
+        <div class="{{ page.classes.input-radio.wrapper }}">
+          <input class="{{ page.classes.input-radio.input }}" type="radio" name="typeBuilding" id="typeBuilding-5" value="5" required
+                 title="Escoge una opción">
+          <label class="{{ page.classes.input.input }} {{ page.classes.input-radio.label }}" for="typeBuilding-5">Dúplex</label>
+        </div>
+
+        <small class="{{ page.classes.small }} mh20-ns" style="position: relative; bottom: 10px;">Escoge una opción</small>
+
       </div>
 
     </fieldset>
@@ -89,13 +108,16 @@ classes:
 
       <legend class="{{ page.classes.legend }}">3. ¿Cuál es tu dirección?</legend>
 
+
       <div class="{{ page.classes.input.wrapper }}">
         <span class="{{ page.classes.input.label }}">Calle y número</span>
       </div>
 
-      <div class="fl-ns w-100 w-two-thirds-ns mb20 mb30-ns ph20-ns">
+      <div class="fl-ns relative w-100 w-two-thirds-ns mb20 mb30-ns ph20-ns">
         <input class="{{ page.classes.input.input }}"
-               type="text" name="address-street" id="address-street" value="" placeholder="Calle y número" required>
+               type="text" name="address-street" id="address-street" value="" placeholder="Calle y número" required
+               title="Introduce la dirección de tu vivienda">
+        <small class="{{ page.classes.small }}" style="position: relative;">Introduce la dirección de tu vivienda</small>
       </div>
 
 
@@ -105,7 +127,7 @@ classes:
 
       <div class="fl-ns w-100 w-third-ns mb20 mb30-ns ph20-ns">
         <input class="{{ page.classes.input.input }}"
-               type="text" name="address-floor" id="address-floor" value="" placeholder="Selecciona una planta">
+               type="text" name="address-floor" id="address-floor" value="" placeholder="Opcional">
       </div>
 
 
@@ -158,8 +180,9 @@ classes:
       </div>
 
       <div class="fl-ns w-100 w-third-ns mb20 mb30-ns ph20-ns placeholder-m2">
-        <input class="{{ page.classes.input.input }}"
-               type="text" name="features-area" id="features-area" value="" placeholder="" required>
+        <input class="{{ page.classes.input.input }}" min="0" step="1"
+               type="number" name="features-area" id="features-area" value="" placeholder="" required>
+        <small class="{{ page.classes.small }}" style="position: relative;">Introduce un número</small>
       </div>
 
 
@@ -201,6 +224,10 @@ classes:
           <label class="{{ page.classes.input.input }} {{ page.classes.input-radio.label }}" for="features-rooms-5">5 o más</label>
         </div>
 
+        <div class="{{ page.classes.group }}">
+          <small class="{{ page.classes.small }} mh20-ns" style="position: relative; bottom: 20px;">Escoge una opción</small>
+        </div>
+
       </div>
 
 
@@ -221,8 +248,12 @@ classes:
         </div>
 
         <div class="fl w-100 w-50-ns mb20 mb30-ns ph20-ns">
-          <input class="{{ page.classes.input.input }}"
+          <input class="{{ page.classes.input.input }}" min="0" step="1"
                  type="number" name="features-parkingPlaces" id="features-parkingPlaces" value="" placeholder="Número de plazas">
+        </div>
+
+        <div class="{{ page.classes.group }}">
+          <small class="{{ page.classes.small }} mh20-ns" style="position: relative; bottom: 20px;">Escoge una opción</small>
         </div>
 
       </div>
@@ -245,8 +276,12 @@ classes:
         </div>
 
         <div class="fl w-100 w-50-ns mb20 mb30-ns ph20-ns placeholder-m2">
-          <input class="{{ page.classes.input.input }}"
+          <input class="{{ page.classes.input.input }}" min="0" step="1"
                  type="number" name="features-terraceArea" id="features-terraceArea" value="" placeholder="">
+        </div>
+
+        <div class="{{ page.classes.group }}">
+          <small class="{{ page.classes.small }} mh20-ns" style="position: relative; bottom: 20px;">Escoge una opción</small>
         </div>
 
       </div>
@@ -268,6 +303,10 @@ classes:
           <label class="{{ page.classes.input.input }} {{ page.classes.input-radio.label }}" for="features-elevator-false">No</label>
         </div>
 
+        <div class="{{ page.classes.group }}">
+          <small class="{{ page.classes.small }} mh20-ns" style="position: relative; bottom: 20px;">Escoge una opción</small>
+        </div>
+
       </div>
 
     </fieldset>
@@ -282,10 +321,13 @@ classes:
         <span class="{{ page.classes.input.label }}">Fecha de compra</span>
       </div>
 
-      <div class="fl-ns w-100 w-third-ns mb20 mb40-ns ph20-ns">
+      <div class="relative fl-ns w-100 w-third-ns mb20 mb40-ns ph20-ns">
         <input class="{{ page.classes.input.input }}"
                type="text" name="buyDate" id="buyDate" value="" placeholder="Selecciona una fecha" required
                onfocus="(this.type='date')" oonfocus="(this.placeholder='')" oonblur="(this.type='text')">
+        <div class="{{ page.classes.group }}">
+          <small class="{{ page.classes.small }}" style="position: relative;">Escoge una opción</small>
+        </div>
       </div>
 
     </fieldset>
@@ -316,6 +358,8 @@ classes:
         <label class="{{ page.classes.input.input }} {{ page.classes.input-radio.label }}" for="actualStatus-4">Obra nueva</label>
       </div>
 
+      <small class="{{ page.classes.small }} mh20-ns" style="position: relative; bottom: 10px;">Escoge una opción</small>
+
     </fieldset>
 
 
@@ -345,6 +389,28 @@ classes:
         <label class="{{ page.classes.input.input }} {{ page.classes.input-radio.label }}" for="sellTime-4">Sin prisa</label>
       </div>
 
+      <small class="{{ page.classes.small }} mh20-ns" style="position: relative; bottom: 10px;">Escoge una opción</small>
+
+    </fieldset>
+
+
+
+    <fieldset class="{{ page.classes.fieldset }}">
+
+      <legend class="{{ page.classes.legend }}">Ya casi has terminado, ¡Un último paso!</legend>
+
+      <div class="{{ page.classes.input.wrapper }} w-two-thirds-ns">
+        <span class="{{ page.classes.input.label }} f18-ns lh-175" style="padding: 0;">¡Déjanos tu correo y en 24h recibirás un email con una estimación del valor de tu vivienda!</span>
+      </div>
+
+      <div class="fl-ns w-100 w-two-thirds-ns mb20 mb30-ns ph20-ns">
+        <input class="{{ page.classes.input.input }}"
+               type="email" name="email" id="email" value="" placeholder="" required
+               title="Introduce tu dirección de correo electrónico">
+      </div>
+
+      <small class="{{ page.classes.small }} mh20-ns" style="position: relative; bottom: 10px;">Introduce tu dirección de correo electrónico</small>
+
     </fieldset>
 
 
@@ -367,6 +433,10 @@ classes:
 
       </div>
 
+      <div class="fl-ns w-100 w-two-thirds-ns mb20">
+        <p class="mv0 pv15 ph20-ns graphik f16 lh-200 lh-100-ns o-40">Si tienes cualquier pregunta, no dudes en llamarnos a +34 902 734 050.</p>
+      </div>
+
     </fieldset>
 
   </form>
@@ -379,14 +449,14 @@ classes:
       <span class="dn dib-ns mr10-ns">Preguntas respondidas</span>
 
       <span class="order-1-ns fw5">
-        <span id="form-current-fields">1</span> / <span id="form-total-fields">7</span>
+        <span id="form-current-fields">0</span> / <span id="form-total-fields">8</span>
       </span>
 
       <span class="dib dn-ns ml5">respondidas</span>
 
     </p>
 
-    <progress class="dn dib-ns ml36 br2" value="1" max="7">0%</progress>
+    <progress class="dn dib-ns ml36 br2" value="0" max="8">0%</progress>
 
   </footer>
 

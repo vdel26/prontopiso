@@ -326,7 +326,7 @@ input[type="radio"]:checked + label { border-color: #1f8beb; }
 input[type="date"]:not([value=""]):not(:focus):valid:before { content: none; }*/
 .placeholder-m2 { position: relative; }
 .placeholder-m2::after {
-  content: 'm2'; position: absolute; top: 50%; right: 16px; transform: translateY(-50%);
+  content: 'm2'; position: absolute; top: 26px; right: 16px; transform: translateY(-50%);
   font-size: 16px; line-height: 1; color: #b2bcc3;
 } @media screen and (min-width: 30em) {
   .placeholder-m2::after { right: 36px; }

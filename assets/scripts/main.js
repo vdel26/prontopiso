@@ -12,7 +12,7 @@ try {
 
 // ScrollReveal
 window.sr = ScrollReveal();
-sr.reveal('p, h1, h2, h3, h4, h5, h6, img', {
+sr.reveal('p, h1, h2, h3, h4, h5, h6, img, progress', {
   duration: 1000,
   distance: '50px',
 }, 50);

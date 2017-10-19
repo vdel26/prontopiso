@@ -58,3 +58,36 @@ document.addEventListener('wheel', function() {
     elem.querySelectorAll('input')[0].focus();
   }
 }, supportsPassive ? { passive: true } : false);
+
+
+
+/* Form Validation */
+
+// Add the novalidate attribute when the JS loads
+var forms = document.querySelectorAll('form');
+for (var i = 0; i < forms.length; i++) {
+  forms[i].setAttribute('novalidate', true);
+}
+
+var inputs = document.querySelectorAll('input');
+for (i = 0; i < fieldsets.length; ++i) {
+
+  // Attach blur event to inputs
+  inputs[i].addEventListener('blur', function(e) {
+    var validity = this.validity;
+    if( validity.valid ) {
+      console.log( 'OK' );
+    } else {
+      console.log( 'NOT OK' );
+    }
+  }, supportsPassive ? { passive: true } : false);
+
+  // Attach input event to inputs
+  inputs[i].addEventListener('input', function(e) {
+    var validity = this.validity;
+    if( validity.valid ) {
+      // console.log( this );
+    }
+  }, supportsPassive ? { passive: true } : false);
+
+}
