@@ -44,6 +44,16 @@ function fillInAddress() {
   response.address = prontopiso_address;
 }
 
+function sendResponseObject(response) {
+  var request = new XMLHttpRequest()
+    , url = 'https://staging.prontopiso.com/api/building_surveys'
+    , data = JSON.stringify(response);
+
+  request.open('POST', url, true);
+  request.setRequestHeader('Content-type', 'application/json');
+  request.send(data);
+}
+
 
 
 var forms = document.querySelectorAll('form')
@@ -60,6 +70,7 @@ document.addEventListener('wheel', function() {
     for (i = 0; i < fieldsets.length; ++i) {
       fieldsets[i].style.opacity = '';
     } elem.style.opacity = 1;
+    // DON'T DO UNLESS YOU WANT TO RESET RADIOS
     // Focus first input element in current fieldset
     // elem.querySelectorAll('input')[0].focus();
   }
@@ -79,6 +90,7 @@ for (var i = 0; i < forms.length; i++) {
   forms[i].addEventListener('submit', function(e) {
     e.preventDefault();
     console.log( response );
+    sendResponseObject(response);
   }, false);
 }
 
