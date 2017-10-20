@@ -153,8 +153,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  height: 110vh;
+  min-height: 110vh;
 }
 #hero::after {
   content: '';
