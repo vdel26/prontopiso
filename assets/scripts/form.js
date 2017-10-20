@@ -78,6 +78,11 @@ function resetForm(form) {
 }
 
 
+// Set address-zipCode if in URL
+var zipCodeInUrl = window.location.search.split('=')[1]
+  , zipCodeInput = document.getElementById('address-zipCode');
+if (zipCodeInUrl) zipCodeInput.value = zipCodeInUrl;
+
 
 var forms = document.querySelectorAll('form')
   , fieldsets = document.querySelectorAll('fieldset')
