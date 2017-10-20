@@ -17,16 +17,21 @@ var google_address
     };
 
 function initAutocomplete() {
+  var addyInput = document.getElementById('address-street');
   // Create the google_address object
   google_address = new google.maps.places.Autocomplete(
     /** @type {!HTMLInputElement} */
-    document.getElementById('address-street'), {
+    addyInput, {
       types: ['geocode'],
       componentRestrictions: { country: 'es' }
     }
   );
   // When the user selects an address from the dropdown, populate the address fields in the form.
   google_address.addListener('place_changed', fillInAddress);
+  // Prevent ENTER from submitting the form
+  google.maps.event.addDomListener(addyInput, 'keydown', function(event) {
+    if (event.keyCode === 13) event.preventDefault();
+  });
 }
 
 function fillInAddress() {
@@ -52,9 +57,11 @@ function sendResponseObject(response) {
   // Call a function when the state changes
   request.onreadystatechange = function() {
     if (request.readyState == 4 && request.status == 200) {
-      alert(request.responseText);
+      console.log('Status 200 or State 4 aka OK');
+      console.log(request.responseText);
     } else {
-      alert(request.responseText);
+      console.log('NOT OK');
+      console.log(request.responseText);
     }
   }
 
