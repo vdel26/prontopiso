@@ -56,6 +56,7 @@ function sendResponseObject(response) {
 
   // Call a function when the state changes
   request.onreadystatechange = function() {
+    console.log(request);
     if (request.readyState == 4 && request.status == 201) {
       resetForm(this);
       document.getElementById('form-buttons').classList.add('dn');
