@@ -58,10 +58,10 @@ function sendResponseObject(response) {
   request.onreadystatechange = function() {
     if (request.readyState == 4 && request.status == 200) {
       console.log('Status 200 or State 4 aka OK');
-      console.log(request.responseText);
+      console.log(request.response);
     } else {
       console.log('NOT OK');
-      console.log(request.responseText);
+      console.log(request.response);
     }
   }
 
@@ -107,8 +107,14 @@ for (var i = 0; i < forms.length; i++) {
   // Before submitting the form…
   forms[i].addEventListener('submit', function(e) {
     e.preventDefault();
-    console.log( response );
-    sendResponseObject(response);
+    var completeFieldsets = completedFieldsets();
+    // Prevent submitting the form if it hasn't been filled
+    if(completeFieldsets >= (fieldsets.length - 1)) {
+      console.log( response );
+      sendResponseObject(response);
+    } else {
+
+    }
   }, false);
 }
 
@@ -116,8 +122,10 @@ for (var i = 0; i < forms.length; i++) {
 for (i = 0; i < inputs.length; ++i) {
 
   inputs[i].addEventListener('blur', function(e) {
+
     var validity = this.validity
       , error = document.querySelector('#' + this.name + '-error');
+
     if (this.value && validity.valid && error) {
       error.classList.remove('db');
     } else if (error) error.classList.add('db');
@@ -146,7 +154,7 @@ for (i = 0; i < inputs.length; ++i) {
     var parentFieldset = closest(this, 'fieldset', 'form')
       , siblingInputs = parentFieldset.querySelectorAll('input')
       , validInputsBool = true
-      , completedFieldsets = 0;
+      , completeFieldsets = 0;
 
     for (i = 0; i < siblingInputs.length; ++i) {
       if (!siblingInputs[i].validity.valid) validInputsBool = false;
@@ -162,16 +170,91 @@ for (i = 0; i < inputs.length; ++i) {
     }
 
     // Count how many fieldsets are valid
-    for (i = 0; i < fieldsets.length; ++i) {
-      if (fieldsets[i].classList.contains('complete')) ++completedFieldsets;
-    }
+    completeFieldsets = completedFieldsets();
 
     // Set progress bar to completed number
-    progressBar.value = completedFieldsets;
-    currentFieldsNo.innerHTML = completedFieldsets;
+    progressBar.value = completeFieldsets;
+    currentFieldsNo.innerHTML = completeFieldsets;
+
+  });
+
+}
+
+
+
+// Show/hide conditional typeBuilding inputs
+var inputsTypeBuilding = document.querySelectorAll('[name="typeBuilding"]')
+  , inputsTypeBuildingCasaDisables = document.querySelectorAll('#address-floor, #address-block, #address-stair, #address-door');
+for (i = 0; i < inputsTypeBuilding.length; ++i) {
+  inputsTypeBuilding[i].addEventListener('change', function(e) {
+    if (this.id === 'typeBuilding-2') {
+      for (i = 0; i < inputsTypeBuildingCasaDisables.length; ++i) {
+        inputsTypeBuildingCasaDisables[i].classList.add('o-50');
+        inputsTypeBuildingCasaDisables[i].disabled = true;
+      }
+    } else {
+      for (i = 0; i < inputsTypeBuildingCasaDisables.length; ++i) {
+        inputsTypeBuildingCasaDisables[i].classList.remove('o-50');
+        inputsTypeBuildingCasaDisables[i].disabled = false;
+      }
+    }
   });
 }
 
+// Show/hide conditional features-parking inputs
+var inputsFeaturesParking = document.querySelectorAll('[name="features-parking"]')
+  , inputsFeaturesParkingDisables = document.querySelectorAll('#features-parkingPlaces');
+for (i = 0; i < inputsFeaturesParking.length; ++i) {
+  inputsFeaturesParking[i].addEventListener('change', function(e) {
+    if (this.id === 'features-parking-false') {
+      for (i = 0; i < inputsFeaturesParkingDisables.length; ++i) {
+        inputsFeaturesParkingDisables[i].classList.add('o-50');
+        inputsFeaturesParkingDisables[i].disabled = true;
+      }
+    } else {
+      for (i = 0; i < inputsFeaturesParkingDisables.length; ++i) {
+        inputsFeaturesParkingDisables[i].classList.remove('o-50');
+        inputsFeaturesParkingDisables[i].disabled = false;
+      }
+    }
+  });
+}
+
+// Show/hide conditional features-terrace inputs
+var inputsFeaturesTerrace = document.querySelectorAll('[name="features-terrace"]')
+  , inputsFeaturesTerraceDisables = document.querySelectorAll('#features-terraceArea');
+for (i = 0; i < inputsFeaturesTerrace.length; ++i) {
+  inputsFeaturesTerrace[i].addEventListener('change', function(e) {
+    if (this.id === 'features-terrace-false') {
+      for (i = 0; i < inputsFeaturesTerraceDisables.length; ++i) {
+        inputsFeaturesTerraceDisables[i].classList.add('o-50');
+        inputsFeaturesTerraceDisables[i].disabled = true;
+      }
+    } else {
+      for (i = 0; i < inputsFeaturesTerraceDisables.length; ++i) {
+        inputsFeaturesTerraceDisables[i].classList.remove('o-50');
+        inputsFeaturesTerraceDisables[i].disabled = false;
+      }
+    }
+  });
+}
+
+
+
+
+
+/* Helpers */
+
+// Count how many fieldsets are valid
+function completedFieldsets() {
+  var completeFieldsets = 0;
+  for (i = 0; i < fieldsets.length; ++i) {
+    if (fieldsets[i].classList.contains('complete')) ++completeFieldsets;
+  } return completeFieldsets;
+}
+
+
+// Get closest parent to element that matches selector
 function closest(el, selector, stopSelector) {
   var retval = null;
   while (el) {
