@@ -51,7 +51,7 @@ function fillInAddress() {
 
 function sendResponseObject(response) {
   var request = new XMLHttpRequest()
-    , url = 'https://staging.prontopiso.com/api/building_surveys'
+    , url = 'https://api.prontopiso.com/api/building_surveys'
     , data = JSON.stringify(response);
 
   // Call a function when the state changes
