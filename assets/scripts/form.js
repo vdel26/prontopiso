@@ -56,11 +56,14 @@ function sendResponseObject(response) {
 
   // Call a function when the state changes
   request.onreadystatechange = function() {
-    console.log(request);
-    console.log(request.readyState);
-    console.log(request.status);
-    if (request.readyState == 4 && request.status == 200 || request.status == 201) return true;
-    else return false;
+    if (request.readyState == 4 && request.status == 201) {
+      resetForm(this);
+      document.getElementById('form-buttons').classList.add('dn');
+      document.getElementById('form-thanks-message').classList.remove('dn');
+    } else {
+      console.log('Something went wrong and we should probably fix it');
+      // Look at what the error was and do something about it
+    }
   }
 
   request.open('POST', url, true);
@@ -121,21 +124,9 @@ for (var i = 0; i < forms.length; i++) {
 
     // Prevent submitting the form if it hasn't been filled
     if (completeFieldsets >= (fieldsets.length - 1)) {
-
       // Disable submit button while submitting form
       submitButton.disabled = true;
-
       var submitResponse = sendResponseObject(response);
-      console.log(submitResponse);
-
-      if (submitResponse) {
-        resetForm(this);
-        document.getElementById('form-buttons').classList.add('dn');
-        document.getElementById('form-thanks-message').classList.remove('dn');
-      } else {
-        console.log('Something went wrong and we should probably fix it');
-        // Look at what the error was and do something about it
-      }
     } else {
       // Validate and scroll to first fieldset not completed
     }
