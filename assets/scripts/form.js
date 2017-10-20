@@ -98,6 +98,12 @@ document.addEventListener('wheel', function() {
 
 /* Form Validation */
 
+// Set today as max value for date input
+var now = new Date()
+  , maxDate = now.toISOString().substring(0,10)
+  , dateInput = document.getElementById('buyDate');
+dateInput.setAttribute('max', maxDate);
+
 // Add the novalidate attribute when the JS loads
 for (var i = 0; i < forms.length; i++) {
 
