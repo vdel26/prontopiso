@@ -61,6 +61,9 @@ function sendResponseObject(response) {
       resetForm(form_element);
       document.getElementById('form-buttons').classList.add('dn');
       document.getElementById('form-thanks-message').classList.remove('dn');
+    } else if (request.readyState === 4 && request.status === 400) {
+      var error = JSON.parse(request.responseText);
+      console.error(error.detail)
     } else {
       console.info('Waiting...');
       //console.log('Something went wrong and we should probably fix it');
