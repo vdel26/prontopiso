@@ -52,17 +52,18 @@ function fillInAddress() {
 function sendResponseObject(response) {
   var request = new XMLHttpRequest()
     , url = 'https://api.prontopiso.com/api/building_surveys'
-    , data = JSON.stringify(response);
+    , data = JSON.stringify(response)
+    , form_element = document.getElementById('main-form');
 
   // Call a function when the state changes
   request.onreadystatechange = function() {
-    console.log(request);
-    if (request.readyState == 4 && request.status == 201) {
-      resetForm(this);
+    if (request.readyState === 4 && request.status === 201) {
+      resetForm(form_element);
       document.getElementById('form-buttons').classList.add('dn');
       document.getElementById('form-thanks-message').classList.remove('dn');
     } else {
-      console.log('Something went wrong and we should probably fix it');
+      console.info('Waiting...');
+      //console.log('Something went wrong and we should probably fix it');
       // Look at what the error was and do something about it
     }
   }
