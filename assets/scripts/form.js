@@ -49,9 +49,18 @@ function fillInAddress() {
   response.address = prontopiso_address;
 }
 
+function getBaseApiUrl() {
+    if(location.hostname === 'staging-www.prontopiso.com' || location.hostname === 'localhost'){
+        return 'https://staging.prontopiso.com';
+    }
+    else {
+        return 'https://api.prontopiso.com';
+    }
+}
+
 function sendResponseObject(response) {
   var request = new XMLHttpRequest()
-    , url = 'https://api.prontopiso.com/api/building_surveys'
+    , url = getBaseApiUrl() + '/api/building_surveys'
     , data = JSON.stringify(response)
     , form_element = document.getElementById('main-form');
 
@@ -61,6 +70,9 @@ function sendResponseObject(response) {
       resetForm(form_element);
       document.getElementById('form-buttons').classList.add('dn');
       document.getElementById('form-thanks-message').classList.remove('dn');
+    } else if (request.readyState === 4 && request.status === 400) {
+      var error = JSON.parse(request.responseText);
+      console.error(error.detail)
     } else {
       console.info('Waiting...');
       //console.log('Something went wrong and we should probably fix it');
