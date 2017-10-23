@@ -37,7 +37,7 @@ function bodyScrolledEnough() {
     navItemTelefono.classList.remove('dn-ns');
   }
 } bodyScrolledEnough();
-document.addEventListener('wheel', bodyScrolledEnough, supportsPassive ? { passive: true } : false);
+document.addEventListener('scroll', bodyScrolledEnough, supportsPassive ? { passive: true } : false);
 
 
 // Toggle Nav
