@@ -205,67 +205,39 @@ for (i = 0; i < inputs.length; ++i) {
 
 
 // Show/hide conditional typeBuilding inputs
-var inputsTypeBuilding = document.querySelectorAll('[name="typeBuilding"]')
-  , inputsTypeBuildingCasaDisables = document.querySelectorAll('#address-floor, #address-block, #address-stair, #address-door');
-for (i = 0; i < inputsTypeBuilding.length; ++i) {
-  inputsTypeBuilding[i].addEventListener('change', function(e) {
-    if (this.id === 'typeBuilding-2') {
-      for (i = 0; i < inputsTypeBuildingCasaDisables.length; ++i) {
-        inputsTypeBuildingCasaDisables[i].classList.add('o-50');
-        inputsTypeBuildingCasaDisables[i].disabled = true;
-      }
-    } else {
-      for (i = 0; i < inputsTypeBuildingCasaDisables.length; ++i) {
-        inputsTypeBuildingCasaDisables[i].classList.remove('o-50');
-        inputsTypeBuildingCasaDisables[i].disabled = false;
-      }
-    }
-  });
-}
-
+toggleConditionalInputs('[name="typeBuilding"]', '#address-floor, #address-block, #address-stair, #address-door', 'typeBuilding-2');
 // Show/hide conditional features-parking inputs
-var inputsFeaturesParking = document.querySelectorAll('[name="features-parking"]')
-  , inputsFeaturesParkingDisables = document.querySelectorAll('#features-parkingPlaces');
-for (i = 0; i < inputsFeaturesParking.length; ++i) {
-  inputsFeaturesParking[i].addEventListener('change', function(e) {
-    if (this.id === 'features-parking-false') {
-      for (i = 0; i < inputsFeaturesParkingDisables.length; ++i) {
-        inputsFeaturesParkingDisables[i].classList.add('o-50');
-        inputsFeaturesParkingDisables[i].disabled = true;
-      }
-    } else {
-      for (i = 0; i < inputsFeaturesParkingDisables.length; ++i) {
-        inputsFeaturesParkingDisables[i].classList.remove('o-50');
-        inputsFeaturesParkingDisables[i].disabled = false;
-      }
-    }
-  });
-}
-
+toggleConditionalInputs('[name="features-parking"]', '#features-parkingPlaces', 'features-parking-false');
 // Show/hide conditional features-terrace inputs
-var inputsFeaturesTerrace = document.querySelectorAll('[name="features-terrace"]')
-  , inputsFeaturesTerraceDisables = document.querySelectorAll('#features-terraceArea');
-for (i = 0; i < inputsFeaturesTerrace.length; ++i) {
-  inputsFeaturesTerrace[i].addEventListener('change', function(e) {
-    if (this.id === 'features-terrace-false') {
-      for (i = 0; i < inputsFeaturesTerraceDisables.length; ++i) {
-        inputsFeaturesTerraceDisables[i].classList.add('o-50');
-        inputsFeaturesTerraceDisables[i].disabled = true;
-      }
-    } else {
-      for (i = 0; i < inputsFeaturesTerraceDisables.length; ++i) {
-        inputsFeaturesTerraceDisables[i].classList.remove('o-50');
-        inputsFeaturesTerraceDisables[i].disabled = false;
-      }
-    }
-  });
-}
+toggleConditionalInputs('[name="features-terrace"]', '#features-terraceArea', 'features-terrace-false');
 
 
 
 
 
 /* Helpers */
+
+// Show/hide conditional inputs
+function toggleConditionalInputs(toggle, disable, condition) {
+  var toggleInput = document.querySelectorAll(toggle)
+    , inputsToDisable = document.querySelectorAll(disable);
+  for (i = 0; i < toggleInput.length; ++i) {
+    toggleInput[i].addEventListener('change', function(e) {
+      if (this.id === condition) {
+        for (i = 0; i < inputsToDisable.length; ++i) {
+          inputsToDisable[i].classList.add('o-50');
+          inputsToDisable[i].disabled = true;
+        }
+      } else {
+        for (i = 0; i < inputsToDisable.length; ++i) {
+          inputsToDisable[i].classList.remove('o-50');
+          inputsToDisable[i].disabled = false;
+        }
+      }
+    });
+  }
+}
+
 
 // Count how many fieldsets are valid
 function completedFieldsets() {
