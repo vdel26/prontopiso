@@ -8,12 +8,12 @@ var google_address
       postal_code: 'short_name'
     }
   , prontopiso_address_model = {
-      postal_code:'zipCode',
-      street_number:'streetNumber',
-      route:'street',
-      locality:'city',
-      administrative_area_level_2:'province',
-      country:'country'
+      postal_code: 'zipCode',
+      street_number: 'streetNumber',
+      route: 'street',
+      locality: 'city',
+      administrative_area_level_2: 'province',
+      country: 'country'
     };
 
 function initAutocomplete() {
@@ -50,11 +50,10 @@ function fillInAddress() {
 }
 
 function getBaseApiUrl() {
-    if(location.hostname === 'staging-www.prontopiso.com' || location.hostname === 'localhost'){
-        return 'https://staging.prontopiso.com';
-    }
-    else {
-        return 'https://api.prontopiso.com';
+    if (location.hostname === 'staging-www.prontopiso.com' || location.hostname === 'localhost') {
+      return 'https://staging.prontopiso.com';
+    } else {
+      return 'https://api.prontopiso.com';
     }
 }
 
@@ -62,21 +61,24 @@ function sendResponseObject(response) {
   var request = new XMLHttpRequest()
     , url = getBaseApiUrl() + '/api/building_surveys'
     , data = JSON.stringify(response)
-    , form_element = document.getElementById('main-form');
+    , form_element = document.getElementById('main-form')
+    , submitButton = document.getElementById('submit');
 
   // Call a function when the state changes
   request.onreadystatechange = function() {
+    // Disable submit button while waiting on request.status
+    submitButton.disabled = true;
     if (request.readyState === 4 && request.status === 201) {
       resetForm(form_element);
+      submitButton.disabled = false;
       document.getElementById('form-buttons').classList.add('dn');
       document.getElementById('form-thanks-message').classList.remove('dn');
     } else if (request.readyState === 4 && request.status === 400) {
+      submitButton.disabled = false;
       var error = JSON.parse(request.responseText);
       console.error(error.detail)
     } else {
       console.info('Waiting...');
-      //console.log('Something went wrong and we should probably fix it');
-      // Look at what the error was and do something about it
     }
   }
 
@@ -113,9 +115,6 @@ document.addEventListener('wheel', function() {
     for (i = 0; i < fieldsets.length; ++i) {
       fieldsets[i].style.opacity = '';
     } elem.style.opacity = 1;
-    // DON'T DO UNLESS YOU WANT TO RESET RADIOS
-    // Focus first input element in current fieldset
-    // elem.querySelectorAll('input')[0].focus();
   }
 }, supportsPassive ? { passive: true } : false);
 
@@ -138,13 +137,10 @@ for (var i = 0; i < forms.length; i++) {
   // Before submitting the form…
   forms[i].addEventListener('submit', function(e) {
     e.preventDefault();
-    var completeFieldsets = completedFieldsets()
-      , submitButton = document.getElementById('submit');
+    var completeFieldsets = completedFieldsets();
 
     // Prevent submitting the form if it hasn't been filled
     if (completeFieldsets >= (fieldsets.length - 1)) {
-      // Disable submit button while submitting form
-      submitButton.disabled = true;
       var submitResponse = sendResponseObject(response);
     } else {
       // Validate and scroll to first fieldset not completed
@@ -161,7 +157,10 @@ for (i = 0; i < inputs.length; ++i) {
     var validity = this.validity
       , error = document.querySelector('#' + this.name + '-error');
 
-    if (this.value && validity.valid && error) {
+    if (this.id === 'address-street') {
+      if (response.address && response.address.streetNumber) error.classList.remove('db');
+      else error.classList.add('db');
+    } else if (this.value && validity.valid && error) {
       error.classList.remove('db');
     } else if (error) error.classList.add('db');
 
@@ -192,7 +191,11 @@ for (i = 0; i < inputs.length; ++i) {
       , completeFieldsets = 0;
 
     for (i = 0; i < siblingInputs.length; ++i) {
-      if (!siblingInputs[i].validity.valid) validInputsBool = false;
+      if (siblingInputs[i].id === 'address-street' && (!response.address || !response.address.streetNumber)) {
+        validInputsBool = false;
+      } else if (!siblingInputs[i].validity.valid) {
+        validInputsBool = false;
+      }
     }
 
     // Toggle fieldsets classes
