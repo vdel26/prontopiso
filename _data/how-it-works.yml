@@ -1,9 +1,9 @@
 - name: '1'
-  description: 'Completa un breve formulario online y recibe sin compromiso una tasación previa de tu vivienda en 24h.'
+  description: 'Completa un breve formulario online y recibe sin compromiso una valoración inicial de tu vivienda en 24h.'
   icon: assets/images/how-it-works/01.svg
 
 - name: '2'
-  description: 'En un plazo de 48h nos pondremos en contacto contigo para programar la visita de uno de nuestros agentes, que realizará la tasación final de tu vivienda y te ofrecerá un precio mínimo garantizado al momento.'
+  description: 'En un plazo de 48h nos pondremos en contacto contigo para programar la visita de uno de nuestros agentes, que realizará la valoración final de tu vivienda y te ofrecerá un precio mínimo garantizado al momento.'
   icon: assets/images/how-it-works/02.svg
 
 - name: '3'
