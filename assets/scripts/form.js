@@ -206,6 +206,16 @@ for (i = 0; i < inputs.length; ++i) {
       parentFieldset.classList.add('incomplete');
       parentFieldset.classList.remove('complete');
     }
+    
+    // Scroll to next fieldset if current one is complete
+    var scroll = new SmoothScroll();
+    if (parentFieldset.classList.contains('complete')) {
+      var anchor = parentFieldset.nextElementSibling
+        , toggle = undefined;
+      scroll.animateScroll(anchor, toggle, {
+        offset: window.innerHeight / 4,
+      });
+    }
 
     // Count how many fieldsets are valid
     completeFieldsets = completedFieldsets();
