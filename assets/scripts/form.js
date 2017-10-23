@@ -243,7 +243,8 @@ function toggleConditionalInputs(toggle, disable, condition) {
 function completedFieldsets() {
   var completeFieldsets = 0;
   for (i = 0; i < fieldsets.length; ++i) {
-    if (fieldsets[i].classList.contains('complete')) ++completeFieldsets;
+    if (fieldsets[i].classList.contains('complete') && fieldsets[i].classList.contains('mb30-ns'))
+      ++completeFieldsets;
   } return completeFieldsets;
 }
 
