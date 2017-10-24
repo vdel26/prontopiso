@@ -1,3 +1,25 @@
+var forms = document.querySelectorAll('form')
+  , fieldsets = document.querySelectorAll('fieldset')
+  , inputs = document.querySelectorAll('input')
+  , progressBar = document.querySelector('progress')
+  , currentFieldsNo = document.querySelector('#form-current-fields')
+  , response = {};
+  
+
+
+// Set address-zipCode if in URL
+var zipCodeInUrl = window.location.search.split('=')[1]
+  , zipCodeInput = document.getElementById('address-zipCode');
+if (zipCodeInUrl) zipCodeInput.value = zipCodeInUrl;
+
+
+
+// Attach setOpacityCenteredElement to wheel event
+document.addEventListener('wheel', setOpacityCenteredElement, supportsPassive ? { passive: true } : false);
+
+
+
+// Set and init Google Autocomplete for address
 var google_address
   , componentForm = {
       street_number: 'short_name',
@@ -26,11 +48,15 @@ function initAutocomplete() {
       componentRestrictions: { country: 'es' }
     }
   );
+  var event = new Event('build');
   // When the user selects an address from the dropdown, populate the address fields in the form.
   google_address.addListener('place_changed', fillInAddress);
+  // google_address.addEventListener('blur', fillInAddress);
+  // google_address.addEventListener('change', fillInAddress);
   // Prevent ENTER from submitting the form
-  google.maps.event.addDomListener(addyInput, 'keydown', function(event) {
-    if (event.keyCode === 13) event.preventDefault();
+  google.maps.event.addDomListener(addyInput, 'keydown', function(e) {
+    if (event.keyCode === 13) e.preventDefault();
+    // else google.maps.event.trigger(autocomplete, 'place_changed');
   });
 }
 
@@ -49,14 +75,102 @@ function fillInAddress() {
   response.address = prontopiso_address;
 }
 
-function getBaseApiUrl() {
-    if (location.hostname === 'staging-www.prontopiso.com' || location.hostname === 'localhost') {
-      return 'https://staging.prontopiso.com';
+
+
+
+/* Form Validation */
+
+// Add the novalidate attribute when the JS loads
+for (var i = 0; i < forms.length; i++) {
+  // Disable HTML validation if JavaScript is running
+  forms[i].setAttribute('novalidate', true);
+  // Before submitting the form…
+  forms[i].addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    var completeFieldsets = completedFieldsets();
+    // Prevent submitting the form if it hasn't been filled
+    if (completeFieldsets >= (fieldsets.length - 1)) {
+      var submitResponse = sendResponseObject(response);
     } else {
-      return 'https://api.prontopiso.com';
+      
+      // Validate 
+      for (var i = 0; i < inputs.length; i++) {
+        var id = inputs[i].id, name = inputs[i].name
+          , value = inputs[i].value, validity = inputs[i].validity
+          , error = document.querySelector('#' + name + '-error');
+        
+        if (id === 'address-street') {
+          if (response.address && response.address.streetNumber) error.classList.remove('db');
+          else error.classList.add('db');
+        } else if (value && validity.valid && error) {
+          error.classList.remove('db');
+        } else if (error) error.classList.add('db');
+      }
+      
+      // Scroll to first fieldset not completed
+      var firstIncompleteFieldset = document.querySelector('fieldset.incomplete')
+        , scroll = new SmoothScroll()
+        , anchor = firstIncompleteFieldset ? firstIncompleteFieldset : document.querySelector('fieldset')
+        , toggle = document.getElementById('submit');
+      if (anchor) {
+        scroll.animateScroll(anchor, toggle, {
+          offset: window.innerHeight / 4,
+        });
+      }
     }
+  }, false);
 }
 
+
+
+// Set today as max value for date input
+var now = new Date()
+  , maxDate = now.toISOString().substring(0,10)
+  , dateInput = document.getElementById('buyDate');
+dateInput.setAttribute('max', maxDate);
+
+
+
+// Attach blur event to inputs
+for (i = 0; i < inputs.length; ++i) {
+  inputs[i].addEventListener('blur', inputOnInputBlur, true);
+  inputs[i].addEventListener('blur', fieldsetOnInputBlur, true);
+  if (inputs[i].type === 'radio') {
+    inputs[i].addEventListener('change', function() {
+      if (this && this.validity.valid) {
+        var error = document.querySelector('#' + this.name + '-error');
+        error.classList.remove('db');
+      }
+    }, true);
+  }
+}
+
+
+
+// Show/hide conditional typeBuilding inputs
+toggleConditionalInputs('[name="typeBuilding"]', '#address-floor, #address-block, #address-stair, #address-door', 'typeBuilding-2');
+// Show/hide conditional features-parking inputs
+toggleConditionalInputs('[name="features-parking"]', '#features-parkingPlaces', 'features-parking-false');
+// Show/hide conditional features-terrace inputs
+toggleConditionalInputs('[name="features-terrace"]', '#features-terraceArea', 'features-terrace-false');
+
+
+
+
+/* Helpers */
+
+// Get base API url
+function getBaseApiUrl() {
+  if (location.hostname === 'staging-www.prontopiso.com' || location.hostname === 'localhost') {
+    return 'https://staging.prontopiso.com';
+  } else {
+    return 'https://api.prontopiso.com';
+  }
+}
+
+
+// Send response object to API
 function sendResponseObject(response) {
   var request = new XMLHttpRequest()
     , url = getBaseApiUrl() + '/api/building_surveys'
@@ -87,161 +201,13 @@ function sendResponseObject(response) {
   request.send(data);
 }
 
+
+// Reset form and response object
 function resetForm(form) {
   form.reset();
   response = {};
 }
 
-
-// Set address-zipCode if in URL
-var zipCodeInUrl = window.location.search.split('=')[1]
-  , zipCodeInput = document.getElementById('address-zipCode');
-if (zipCodeInUrl) zipCodeInput.value = zipCodeInUrl;
-
-
-var forms = document.querySelectorAll('form')
-  , fieldsets = document.querySelectorAll('fieldset')
-  , inputs = document.querySelectorAll('input')
-  , progressBar = document.querySelector('progress')
-  , currentFieldsNo = document.querySelector('#form-current-fields')
-  , response = {};
-
-
-document.addEventListener('wheel', function() {
-  // Get closest element to window center
-  var elem = document.elementFromPoint( window.innerWidth / 2, window.innerHeight / 2 );
-  if( elem.nodeName == 'FIELDSET' ) {
-    // Reset all fieldsets opacity and set only for current one
-    for (i = 0; i < fieldsets.length; ++i) {
-      fieldsets[i].style.opacity = '';
-    } elem.style.opacity = 1;
-  }
-}, supportsPassive ? { passive: true } : false);
-
-
-
-/* Form Validation */
-
-// Set today as max value for date input
-var now = new Date()
-  , maxDate = now.toISOString().substring(0,10)
-  , dateInput = document.getElementById('buyDate');
-dateInput.setAttribute('max', maxDate);
-
-// Add the novalidate attribute when the JS loads
-for (var i = 0; i < forms.length; i++) {
-
-  // Disable HTML validation if JavaScript is running
-  forms[i].setAttribute('novalidate', true);
-
-  // Before submitting the form…
-  forms[i].addEventListener('submit', function(e) {
-    e.preventDefault();
-    var completeFieldsets = completedFieldsets();
-
-    // Prevent submitting the form if it hasn't been filled
-    if (completeFieldsets >= (fieldsets.length - 1)) {
-      var submitResponse = sendResponseObject(response);
-    } else {
-      // Validate and scroll to first fieldset not completed
-    }
-
-  }, false);
-}
-
-// Attach blur event to inputs
-for (i = 0; i < inputs.length; ++i) {
-
-  inputs[i].addEventListener('blur', function(e) {
-
-    var validity = this.validity
-      , error = document.querySelector('#' + this.name + '-error');
-
-    if (this.id === 'address-street') {
-      if (response.address && response.address.streetNumber) error.classList.remove('db');
-      else error.classList.add('db');
-    } else if (this.value && validity.valid && error) {
-      error.classList.remove('db');
-    } else if (error) error.classList.add('db');
-
-    // Save values in response object
-    if (this.value && this.name !== 'cancel' && this.name !== 'submit') {
-      var responseAddy = this.name.split('-')
-        , value = this.value;
-
-      // Make sure the value is the right type
-      if (value === 'true') value = true;
-      else if (value === 'false') value = false;
-      else if (this.type === 'radio' || this.type === 'number') value = parseInt(value, 10);
-      else if (this.type === 'date') value = value + 'T00:00:00+00:00';
-
-      // Save the value where it belongs to
-      if (responseAddy.length === 1) {
-        response[responseAddy] = value;
-      } else {
-        if (!response[responseAddy[0]]) response[responseAddy[0]] = {};
-        response[responseAddy[0]][responseAddy[1]] = value;
-      }
-    }
-
-    // Check if all inputs inside the parent fieldset is valid
-    var parentFieldset = closest(this, 'fieldset', 'form')
-      , siblingInputs = parentFieldset.querySelectorAll('input')
-      , validInputsBool = true
-      , completeFieldsets = 0;
-
-    for (i = 0; i < siblingInputs.length; ++i) {
-      if (siblingInputs[i].id === 'address-street' && (!response.address || !response.address.streetNumber)) {
-        validInputsBool = false;
-      } else if (!siblingInputs[i].validity.valid) {
-        validInputsBool = false;
-      }
-    }
-
-    // Toggle fieldsets classes
-    if (validInputsBool) {
-      parentFieldset.classList.add('complete');
-      parentFieldset.classList.remove('incomplete');
-    } else {
-      parentFieldset.classList.add('incomplete');
-      parentFieldset.classList.remove('complete');
-    }
-    
-    // Scroll to next fieldset if current one is complete
-    var scroll = new SmoothScroll();
-    if (parentFieldset.classList.contains('complete')) {
-      var anchor = parentFieldset.nextElementSibling
-        , toggle = undefined;
-      scroll.animateScroll(anchor, toggle, {
-        offset: window.innerHeight / 4,
-      });
-    }
-
-    // Count how many fieldsets are valid
-    completeFieldsets = completedFieldsets();
-
-    // Set progress bar to completed number
-    progressBar.value = completeFieldsets;
-    currentFieldsNo.innerHTML = completeFieldsets;
-
-  });
-
-}
-
-
-
-// Show/hide conditional typeBuilding inputs
-toggleConditionalInputs('[name="typeBuilding"]', '#address-floor, #address-block, #address-stair, #address-door', 'typeBuilding-2');
-// Show/hide conditional features-parking inputs
-toggleConditionalInputs('[name="features-parking"]', '#features-parkingPlaces', 'features-parking-false');
-// Show/hide conditional features-terrace inputs
-toggleConditionalInputs('[name="features-terrace"]', '#features-terraceArea', 'features-terrace-false');
-
-
-
-
-
-/* Helpers */
 
 // Show/hide conditional inputs
 function toggleConditionalInputs(toggle, disable, condition) {
@@ -265,6 +231,83 @@ function toggleConditionalInputs(toggle, disable, condition) {
 }
 
 
+// Validate input on blur
+function inputOnInputBlur(e) {
+  
+  var validity = this.validity
+    , value = this.value, type = this.type, name = this.name, id = this.id
+    , error = document.querySelector('#' + name + '-error');
+
+  // Save values in response object
+  if (value && name !== 'cancel' && name !== 'submit') {
+    var responseAddy = name.split('-');
+    // Make sure the value is the right type
+    if (value === 'true') value = true;
+    else if (value === 'false') value = false;
+    else if (type === 'radio' || type === 'number') value = parseInt(value, 10);
+    else if (type === 'date') value = value + 'T00:00:00+00:00';
+    // Save the value where it belongs to
+    if (responseAddy.length === 1) {
+      response[responseAddy] = value;
+    } else {
+      if (!response[responseAddy[0]]) response[responseAddy[0]] = {};
+      response[responseAddy[0]][responseAddy[1]] = value;
+    }
+  }
+  
+  if (id === 'address-street' && response.address && response.address.streetNumber) error.classList.remove('db');
+  else if (value && validity.valid && error) error.classList.remove('db');
+}
+
+// Validate input on blur
+function fieldsetOnInputBlur(e) {
+  
+  var validity = this.validity
+    , value = this.value, type = this.type, name = this.name, id = this.id
+    , error = document.querySelector('#' + name + '-error');
+
+  // Check if all inputs inside the parent fieldset is valid
+  var parentFieldset = closest(this, 'fieldset', 'form')
+    , siblingInputs = parentFieldset.querySelectorAll('input')
+    , validInputsBool = true
+    , completeFieldsets = 0;
+
+  for (i = 0; i < siblingInputs.length; ++i) {
+    if (siblingInputs[i].id === 'address-street' && (!response.address || !response.address.streetNumber)) {
+      validInputsBool = false;
+    } else if (!siblingInputs[i].validity.valid) {
+      validInputsBool = false;
+    }
+  }
+
+  // Toggle fieldsets classes
+  if (validInputsBool) {
+    parentFieldset.classList.add('complete');
+    parentFieldset.classList.remove('incomplete');
+  } else {
+    parentFieldset.classList.add('incomplete');
+    parentFieldset.classList.remove('complete');
+  }
+  
+  // Scroll to next fieldset if current one is complete
+  // var scroll = new SmoothScroll();
+  // if (parentFieldset.classList.contains('complete')) {
+  //   var anchor = parentFieldset.nextElementSibling
+  //     , toggle = undefined;
+  //   scroll.animateScroll(anchor, toggle, {
+  //     offset: window.innerHeight / 4,
+  //   });
+  // }
+
+  // Count how many fieldsets are valid
+  completeFieldsets = completedFieldsets();
+
+  // Set progress bar to completed number
+  progressBar.value = completeFieldsets;
+  currentFieldsNo.innerHTML = completeFieldsets;
+}
+
+
 // Count how many fieldsets are valid
 function completedFieldsets() {
   var completeFieldsets = 0;
@@ -273,6 +316,19 @@ function completedFieldsets() {
       ++completeFieldsets;
   } return completeFieldsets;
 }
+
+
+// Set opacity for element in center of window
+function setOpacityCenteredElement() {
+  // Get closest element to window center
+  var elem = document.elementFromPoint( window.innerWidth / 2, window.innerHeight / 2 );
+  if( elem.nodeName == 'FIELDSET' ) {
+    // Reset all fieldsets opacity and set only for current one
+    for (i = 0; i < fieldsets.length; ++i) {
+      fieldsets[i].style.opacity = '';
+    } elem.style.opacity = 1;
+  }
+} 
 
 
 // Get closest parent to element that matches selector
