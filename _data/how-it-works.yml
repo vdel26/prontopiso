@@ -3,11 +3,11 @@
   icon: assets/images/how-it-works/01.svg
 
 - name: '2'
-  description: 'En un plazo de 48h nos pondremos en contacto contigo para programar la visita de uno de nuestros agentes, que realizará la valoración final de tu vivienda y te ofrecerá un precio mínimo garantizado al momento.'
+  description: 'Si estás interesado, nos pondremos en contacto contigo en 48h para programar la visita de uno de nuestros agentes, que realizará la valoración final de tu vivienda y te ofrecerá un precio mínimo garantizado el mismo día de la visita.'
   icon: assets/images/how-it-works/02.svg
 
 - name: '3'
-  description: 'Nos ocuparemos de la promoción de tu vivienda en los principales portales inmobiliarios y nos encargaremos de organizar visitas con potenciales compradores para obtener el mejor precio.'
+  description: 'Nos ocuparemos de la promoción de tu vivienda, nos encargaremos de realizar las visitas y de aplicar nuestras estrategias comerciales para cerrar la venta al mejor precio.'
   icon: assets/images/how-it-works/03.svg
 
 - name: '4'
