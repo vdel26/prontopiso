@@ -1,17 +1,42 @@
-version: '3'
+version: "3.3"
 
 services:
-  prontopiso_frontend:
-    build: ..
-    ports:
-      - "3000:3000"
-      - "35729:35729"
+
+  mysql:
+    image: mysql:5.7.12
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=prontopiso
+    configs:
+      - source: mysql-default
+        target: /etc/mysql/conf.d/my.cnf
     volumes:
-      - ../start.sh:/prontopiso-frontend/start.sh
-      - ../:/prontopiso-frontend/:cached
-      - /prontopiso-frontend/node_modules
+      - mysql:/var/lib/mysql
     networks:
-      - prontopiso_frontend_development
+      - prontopiso_dev
+
+  redis:
+    image: redis:3.2
+    networks:
+      - prontopiso_dev
+
+  api:
+    image: ${API_PROJECT_IMAGE_LATEST}
+    environment:
+      - DB_HOST=mysql
+    depends_on:
+      - mysql
+    ports:
+      - 8000:8000
+    networks:
+      - prontopiso_dev
+    command: bin/console server:run 0.0.0.0:8000
+
+volumes:
+  mysql:
 
 networks:
-    prontopiso_frontend_development:
+  prontopiso_dev:
+    driver: overlay
+    attachable: true
+
