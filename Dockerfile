@@ -34,6 +34,9 @@ RUN apt-get update -y \
   && apt-get -y dist-upgrade \
   && apt-get install -y nginx
 
+COPY ./docker/build/nginx/production/prontopiso.com.conf /etc/nginx/sites-enabled/prontopiso.com.conf
+COPY ./docker/build/nginx/staging/staging-www.prontopiso.com.conf /etc/nginx/sites-enabled/staging-www.prontopiso.com.conf
+
 RUN mkdir /var/www/prontopiso-frontend-build
 
 ADD package.json /tmp/package.json
@@ -49,10 +52,13 @@ RUN mv /tmp/node_modules .
 
 RUN bundle install \
   && gulp styles \
-  &&  jekyll build -d ../html
+  && jekyll build -d ../html
 
 WORKDIR /var/www/html
 
 RUN rm -rf /var/www/prontopiso-frontend-build
+
+RUN ln -sf /dev/stdout /var/log/nginx/access.log \
+	&& ln -sf /dev/stderr /var/log/nginx/error.log
 
 CMD ["bash","start.sh"]
