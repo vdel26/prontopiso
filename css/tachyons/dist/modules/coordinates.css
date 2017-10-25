@@ -324,6 +324,38 @@
   left: 75px;
   left: 4.6875rem; }
 
+.top-80 {
+  top: 80px;
+  top: 5rem; }
+
+.right-80 {
+  right: 80px;
+  right: 5rem; }
+
+.bottom-80 {
+  bottom: 80px;
+  bottom: 5rem; }
+
+.left-80 {
+  left: 80px;
+  left: 5rem; }
+
+.top-85 {
+  top: 85px;
+  top: 5.3125rem; }
+
+.right-85 {
+  right: 85px;
+  right: 5.3125rem; }
+
+.bottom-85 {
+  bottom: 85px;
+  bottom: 5.3125rem; }
+
+.left-85 {
+  left: 85px;
+  left: 5.3125rem; }
+
 .top-90 {
   top: 90px;
   top: 5.625rem; }
@@ -711,6 +743,30 @@
   .left-75-ns {
     left: 75px;
     left: 4.6875rem; }
+  .top-80-ns {
+    top: 80px;
+    top: 5rem; }
+  .right-80-ns {
+    right: 80px;
+    right: 5rem; }
+  .bottom-80-ns {
+    bottom: 80px;
+    bottom: 5rem; }
+  .left-80-ns {
+    left: 80px;
+    left: 5rem; }
+  .top-85-ns {
+    top: 85px;
+    top: 5.3125rem; }
+  .right-85-ns {
+    right: 85px;
+    right: 5.3125rem; }
+  .bottom-85-ns {
+    bottom: 85px;
+    bottom: 5.3125rem; }
+  .left-85-ns {
+    left: 85px;
+    left: 5.3125rem; }
   .top-90-ns {
     top: 90px;
     top: 5.625rem; }
@@ -1058,6 +1114,30 @@
   .left-75-m {
     left: 75px;
     left: 4.6875rem; }
+  .top-80-m {
+    top: 80px;
+    top: 5rem; }
+  .right-80-m {
+    right: 80px;
+    right: 5rem; }
+  .bottom-80-m {
+    bottom: 80px;
+    bottom: 5rem; }
+  .left-80-m {
+    left: 80px;
+    left: 5rem; }
+  .top-85-m {
+    top: 85px;
+    top: 5.3125rem; }
+  .right-85-m {
+    right: 85px;
+    right: 5.3125rem; }
+  .bottom-85-m {
+    bottom: 85px;
+    bottom: 5.3125rem; }
+  .left-85-m {
+    left: 85px;
+    left: 5.3125rem; }
   .top-90-m {
     top: 90px;
     top: 5.625rem; }
@@ -1405,6 +1485,30 @@
   .left-75-l {
     left: 75px;
     left: 4.6875rem; }
+  .top-80-l {
+    top: 80px;
+    top: 5rem; }
+  .right-80-l {
+    right: 80px;
+    right: 5rem; }
+  .bottom-80-l {
+    bottom: 80px;
+    bottom: 5rem; }
+  .left-80-l {
+    left: 80px;
+    left: 5rem; }
+  .top-85-l {
+    top: 85px;
+    top: 5.3125rem; }
+  .right-85-l {
+    right: 85px;
+    right: 5.3125rem; }
+  .bottom-85-l {
+    bottom: 85px;
+    bottom: 5.3125rem; }
+  .left-85-l {
+    left: 85px;
+    left: 5.3125rem; }
   .top-90-l {
     top: 90px;
     top: 5.625rem; }

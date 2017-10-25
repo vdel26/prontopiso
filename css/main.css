@@ -284,6 +284,24 @@
   #aside { background-position-x: right; }
 }
 
+#about > header {
+  background-image: url('../assets/images/about/00.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} @media screen and (min-width: 30em) {
+  #about > header {
+    background-size: contain;
+  }
+}
+
+#about > footer h1 {
+  background-image: url('../assets/images/about/02.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 
 /* Tooltips */
 .bubble {

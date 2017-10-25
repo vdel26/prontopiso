@@ -1,0 +1,60 @@
+---
+layout: default
+
+copies:
+  header:
+    title: '¿Quiénes somos?'
+    description: 'Somos una agencia inmobiliaria diferente: si no vendemos tu vivienda en 90 días te adelantamos su valor de mercado para que puedas buscar tu nuevo hogar, sin preocupaciones'
+
+  items:
+    - title: 'Proceso de compraventa engorroso'
+      condition:
+        - 'El proceso de compra de una nueva propiedad es un momento cargado de riesgo e inseguridad. El pago de las arras, la firma del contrato en 3 meses… ¿Y si no consigo vender mi vivienda? ¿Cómo haré frente al pago de la nueva propiedad?'
+        
+    - title: 'Nace Prontopiso'
+      condition:
+        - 'ProntoPiso es una agencia inmobiliaria online fundada por profesionales con una larga experiencia en el sector, que pretenden disrumpir la industria transformando el proceso de compraventa de propiedades y convirtiéndolo en un proceso más transparente y eficiente.'
+
+  footer:
+    title: '¿Nuestra misión?'
+    description: 'Nuestra misión es facilitar y acompañar a nuestros clientes en el 
+cambio de vivienda reduciendo su riesgo inmobiliario y generando confianza y transparencia en la operación.'
+
+---
+
+<article id="about" class="pt200 pb150 pb180-ns">
+  
+  <header class="measure-78-ns mha-ns mb90 mb150-ns pt25 pt85-ns ph36 pb15 pb85-ns tc">
+    <h1 class="mt0 mb30 mb50-ns blue playfair f32 f58-ns fw6">{{ page.copies.header.title }}</h1>
+    <p class="measure-32 mv0 mt45-ns mha f16 f20-ns lh-160">{{ page.copies.header.description }}</p>
+  </header>
+  
+
+  <section class="cf df-ns mb40 ph36">
+    
+    <header class="fl-ns w-60-ns nh36 mr0-ns mb80 mb0-ns pr50-ns">
+      <img class="db w-100" src="/assets/images/about/01.svg" />
+    </header>
+    
+    <section class="fl-ns df-ns flex-column-ns justify-evenly-ns w-40-ns pl50-ns">
+    {% for item in page.copies.items %}
+      <article class="mb80 mb30-ns">
+        <h2 class="w-75-ns mt0 mb20 f18 lh-175 fw5 tc tl-ns o-80">{{ item.title }}</h2>
+        {% for paragraph in item.condition %}
+        <p class="w-75-ns mv0 lh-200 tc tl-ns o-50">{{ paragraph }}</p>
+        {% endfor %}
+      </article>
+    {% endfor %}
+    </section>
+
+  </section>
+  
+  
+  <footer class="measure-78-ns mha-ns ph36 blue tc">
+    
+    <h1 class="mv0 mb15-ns pv40 pt70-ns pb60-ns f20 f32-ns fw5">{{ page.copies.footer.title }}</h1>
+    <p class="measure-32 mv0 mha f18 f30-ns lh-160">{{ page.copies.footer.description }}</p>
+
+  </footer>
+
+</article>

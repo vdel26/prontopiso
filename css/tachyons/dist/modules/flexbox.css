@@ -358,6 +358,13 @@
       -ms-flex-pack: distribute;
           justify-content: space-around; }
 
+.justify-evenly {
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+     -moz-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+
 @media screen and (min-width: 30em) {
   .justify-start-ns {
     -webkit-box-pack: start;
@@ -386,7 +393,13 @@
   .justify-around-ns {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
-            justify-content: space-around; } }
+            justify-content: space-around; }
+  .justify-evenly-ns {
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+       -moz-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .justify-start-m {
@@ -416,7 +429,13 @@
   .justify-around-m {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
-            justify-content: space-around; } }
+            justify-content: space-around; }
+  .justify-evenly-m {
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+       -moz-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; } }
 
 @media screen and (min-width: 60em) {
   .justify-start-l {
@@ -446,7 +465,13 @@
   .justify-around-l {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
-            justify-content: space-around; } }
+            justify-content: space-around; }
+  .justify-evenly-l {
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+       -moz-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; } }
 
 /* Align Items */
 .items-start {
