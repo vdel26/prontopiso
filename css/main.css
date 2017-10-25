@@ -168,13 +168,13 @@
   box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.05);
 }
 
-#features header {
+#features > header {
   background-image: url('../assets/images/features/00.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 } @media screen and (min-width: 30em) {
-  #features header {
+  #features > header {
     background-size: contain;
   }
 }
@@ -184,7 +184,7 @@
   overflow: hidden;
   box-shadow: inset 0 5px 10px 0 rgba(0, 0, 0, 0.05);
 }
-#how-it-works header {
+#how-it-works > header {
   background-image: url('../assets/images/how-it-works/00.svg');
   background-repeat: no-repeat;
   background-position: center;
