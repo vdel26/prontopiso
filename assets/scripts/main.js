@@ -54,7 +54,7 @@ navToggle.addEventListener('click', function(e) {
 
 
 // SmoothScroll
-var scroll = new SmoothScroll('[data-scroll]');
+var scroll = new SmoothScroll('#main-header [data-scroll]');
 
 
 // How-It-Works Swiper
@@ -80,8 +80,15 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 
-// Form Progress
-stickybits('#form-progress', {
+
+
+// FAQ
+var faqOffset = mainHeader.offsetHeight + 130
+  , scrollFaq = new SmoothScroll('a[href*="#question"]', {
+    	offset: faqOffset,
+    });
+console.log();
+stickybits('#faq nav', {
   useStickyClasses: true,
-  noStyles: true,
+  stickyBitStickyOffset: faqOffset,
 });

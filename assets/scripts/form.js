@@ -19,6 +19,14 @@ document.addEventListener('wheel', setOpacityCenteredElement, supportsPassive ? 
 
 
 
+// Form Progress
+stickybits('#form-progress', {
+  useStickyClasses: true,
+  noStyles: true,
+});
+
+
+
 // Set and init Google Autocomplete for address
 var google_address
   , componentForm = {
