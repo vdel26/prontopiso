@@ -9,11 +9,11 @@ try {
 
 
 // ScrollReveal
-// window.sr = ScrollReveal();
-// sr.reveal('p, h1, h2, h3, h4, h5, h6, img, progress', {
-//   duration: 1000,
-//   distance: '50px',
-// }, 50);
+window.sr = ScrollReveal();
+sr.reveal('.js-scroll h1, .js-scroll h2, .js-scroll p, .js-scroll img', {
+  duration: 1000,
+  distance: '50px',
+}, 50);
 
 
 // Nav On Scroll

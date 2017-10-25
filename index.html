@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section id="hero" class="relative pt120 pt200-ns ph36 pb140 pb240-ns tc overflow-hidden">
+<section id="hero" class="relative pt120 pt200-ns ph36 pb140 pb240-ns tc overflow-hidden js-scroll">
 
   <div class="measure-40-ns mha-ns">
 
@@ -26,14 +26,14 @@ layout: default
 
 
 
-<section id="features" class="measure-70-ns mha-ns pb20 pb70-ns tc">
+<section id="features" class="measure-70-ns mha-ns pb20 pb70-ns tc js-scroll">
 
   <header class="mb100 mb120-ns pt70 pt160-ns ph36 pb36 pb60-ns blue">
     <h1 class="mt0 mb30 f20 f32-ns fw5">¿Buscas cambiar de vivienda?</h1>
     <p class="mv0 mt45-ns f18 f30-ns lh-140 lh-160-ns">Te pagamos entre un 92% y un 97% del valor de tu casa cuando lo necesites, y el resto cuando se venda.</p>
   </header>
 
-  <div class="cf ph36">
+  <div class="cf ph36 js-scroll">
   {% for item in site.data.features %}
     <article class="fl-ns w-third-ns mb90 ph40-ns">
       <img class="dib h48 mb30" src="{{ item.icon }}">
