@@ -1,0 +1,39 @@
+header:
+  title: 'Comisiones justas<br>y transparentes'
+
+
+features:
+  - name: 'Aseguramos tu venta al mejor precio posible'
+    description: 'Nuestro objetivo es el mismo que el tuyo, vender al mayor precio posible. No cobraremos la totalidad de nuestra comisión si no alcanzamos vender tu vivienda a valor de mercado.'
+    icon: '/assets/images/features/01-fast.svg'
+
+  - name: 'Buscamos un precio que se ajuste a tus necesidades'
+    description: 'Nuestra comisión se encuentra entre el 2-6%. Varía enfunción del precio mínimo garantizado que escojas y el precio de venta final de la propiedad.'
+    icon: '/assets/images/features/03-strings.svg'
+
+  - name: 'Precio de venta garantizado sin costes adicionales'
+    description: 'Te garantizamos un precio mínimo de venta sin costes adicionales. El cobro de las comisiones no se realizará hasta que se haga efectiva la venta.'
+    icon: '/assets/images/features/02-price.svg'
+
+  
+calculator:
+  header:
+    title: 'Calcula cuánto te llevas por<br>la venta de tu propiedad'
+    
+  input:
+    label: 'Introduce el valor de tu propiedad:'
+    call-to-action: 'Si quieres conocer el valor de tu propiedad puedes pedirnos una valoración online en 24 horas <span class="fw5">aquí</span>.'
+    small: 'ProntoPiso siempre estará incentivado a <span class="fw5">vender tu propiedad por el mayor precio posible</span>, dado que nuestra comisión es menor si no conseguimos vender tu vivienda por <span class="fw5">el 100% de la valoración</span>.'
+    
+  slider:
+    title: 'Selecciona un precio de venta final:'
+    lo:
+      description: 'Precio mínimo garantizado <span class="dn di">(94% de la valoración)</span>'
+      tip: 'Si se vendiera por debajo del precio garantizado <span class="fw5">ProntoPiso cubre la diferencia</span>. ¡Duerme tranquilo sabiendo que tienes una oferta mínima en firme!'
+    mid:
+      description: 'Precio final de venta'
+    hi:
+      description: '100% de la valoración'
+      tip: 'Si se vendiera por encima del 100% de la valoración, <span class="fw5">el sobreprecio también te lo llevas tú</span>.'
+  
+  footer: 'Y si en 90 días no se ha vendido tu propiedad, <span class="fw5">¡te adelantamos el precio mínimo garantizado para que puedas hacer frente al pago de tu siguiente vivienda!</span> ¡Y nosotros nos seguimos encargando de vender la anterior!'

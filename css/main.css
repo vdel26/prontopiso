@@ -313,6 +313,17 @@
   }
 }
 
+#pricing > header {
+  background-image: url('../assets/images/pricing/00.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} @media screen and (min-width: 30em) {
+  #pricing > header {
+    background-size: contain;
+  }
+}
+
 
 /* Tooltips */
 .bubble {
