@@ -1,0 +1,16 @@
+header:
+  title: '¿Quiénes somos?'
+  description: 'Somos una agencia inmobiliaria diferente: si no vendemos tu vivienda en 90 días te adelantamos su valor de mercado para que puedas buscar tu nuevo hogar, sin preocupaciones'
+
+items:
+  - title: 'Proceso de compraventa engorroso'
+    condition:
+      - 'El proceso de compra de una nueva propiedad es un momento cargado de riesgo e inseguridad. El pago de las arras, la firma del contrato en 3 meses… ¿Y si no consigo vender mi vivienda? ¿Cómo haré frente al pago de la nueva propiedad?'
+      
+  - title: 'Nace Prontopiso'
+    condition:
+      - 'ProntoPiso es una agencia inmobiliaria online fundada por profesionales con una larga experiencia en el sector, que pretenden disrumpir la industria transformando el proceso de compraventa de propiedades y convirtiéndolo en un proceso más transparente y eficiente.'
+
+footer:
+  title: '¿Nuestra misión?'
+  description: 'Nuestra misión es facilitar y acompañar a nuestros clientes en el cambio de vivienda reduciendo su riesgo inmobiliario y generando confianza y transparencia en la operación.'
