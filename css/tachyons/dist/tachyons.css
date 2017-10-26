@@ -4898,6 +4898,15 @@ img {
      -l  = large
 
 */
+.h0 {
+  height: 0; }
+
+.min-h0 {
+  min-height: 0; }
+
+.max-h0 {
+  max-height: 0; }
+
 .h48 {
   height: 48px;
   height: 3rem; }
@@ -4921,6 +4930,18 @@ img {
 .max-h100 {
   max-height: 100px;
   max-height: 6.25rem; }
+
+.h1000 {
+  height: 1000px;
+  height: 62.5rem; }
+
+.min-h1000 {
+  min-height: 1000px;
+  min-height: 62.5rem; }
+
+.max-h1000 {
+  max-height: 1000px;
+  max-height: 62.5rem; }
 
 .h-25 {
   height: 25%; }
@@ -5022,6 +5043,12 @@ img {
   max-height: none; }
 
 @media screen and (min-width: 30em) {
+  .h0-ns {
+    height: 0; }
+  .min-h0-ns {
+    min-height: 0; }
+  .max-h0-ns {
+    max-height: 0; }
   .h48-ns {
     height: 48px;
     height: 3rem; }
@@ -5040,6 +5067,15 @@ img {
   .max-h100-ns {
     max-height: 100px;
     max-height: 6.25rem; }
+  .h1000-ns {
+    height: 1000px;
+    height: 62.5rem; }
+  .min-h1000-ns {
+    min-height: 1000px;
+    min-height: 62.5rem; }
+  .max-h1000-ns {
+    max-height: 1000px;
+    max-height: 62.5rem; }
   .h-25-ns {
     height: 25%; }
   .min-h-25-ns {
@@ -5108,6 +5144,12 @@ img {
     max-height: none; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
+  .h0-m {
+    height: 0; }
+  .min-h0-m {
+    min-height: 0; }
+  .max-h0-m {
+    max-height: 0; }
   .h48-m {
     height: 48px;
     height: 3rem; }
@@ -5126,6 +5168,15 @@ img {
   .max-h100-m {
     max-height: 100px;
     max-height: 6.25rem; }
+  .h1000-m {
+    height: 1000px;
+    height: 62.5rem; }
+  .min-h1000-m {
+    min-height: 1000px;
+    min-height: 62.5rem; }
+  .max-h1000-m {
+    max-height: 1000px;
+    max-height: 62.5rem; }
   .h-25-m {
     height: 25%; }
   .min-h-25-m {
@@ -5194,6 +5245,12 @@ img {
     max-height: none; } }
 
 @media screen and (min-width: 60em) {
+  .h0-l {
+    height: 0; }
+  .min-h0-l {
+    min-height: 0; }
+  .max-h0-l {
+    max-height: 0; }
   .h48-l {
     height: 48px;
     height: 3rem; }
@@ -5212,6 +5269,15 @@ img {
   .max-h100-l {
     max-height: 100px;
     max-height: 6.25rem; }
+  .h1000-l {
+    height: 1000px;
+    height: 62.5rem; }
+  .min-h1000-l {
+    min-height: 1000px;
+    min-height: 62.5rem; }
+  .max-h1000-l {
+    max-height: 1000px;
+    max-height: 62.5rem; }
   .h-25-l {
     height: 25%; }
   .min-h-25-l {

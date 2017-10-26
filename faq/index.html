@@ -119,9 +119,9 @@ copies:
     <article class="fl-ns w-two-thirds-ns pl20-ns">
       <dl class="mv0">
       {% for item in page.copies.questions %}
-        <dt id="question-{{ forloop.index }}" class="mt0 mb20 blue f16 lh-200 fw5">{{ item.question }}</dt>
+        <dt id="question-{{ forloop.index }}" class="mt0 mb20 blue blue-ns f16 lh-200 fw5 fw5-ns o-100-ns">{{ item.question }}</dt>
         {% for paragraph in item.answer %}
-        <dd class="mt0 mb30 ml0 lh-200 o-80">{{ paragraph }}</dd>
+        <dd class="mt0 mb30 mb30-ns ml0 lh-200 o-80">{{ paragraph }}</dd>
         {% endfor %}
       {% endfor %}
       </dl>

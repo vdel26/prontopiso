@@ -322,8 +322,10 @@ $widths: (
 // Use spacing variables
 $heights: (
 /* Height Scale */
+  h0: 0,
   h48: 48px 3rem,
   h100: 100px 6.25rem,
+  h1000: 1000px 62.5rem,
 
 /* Height Percentages - Based off of height of parent */
   h-25: 25%,
