@@ -9,7 +9,7 @@ url: "" # the base hostname & protocol for your site
 markdown: kramdown
 
 # Exclude this stuff
-exclude: [node_modules, gulpfile.js]
+exclude: [node_modules, gulpfile.js, docker, Dockerfile, Makefile, .dockerignore]
 
 # Gems
 gems:
