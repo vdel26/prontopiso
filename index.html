@@ -6,11 +6,10 @@ layout: default
 
   <div class="measure-40-ns mha-ns">
 
-    <header class="mb30">
-      <h1 class="mv0 playfair f32 f58-ns lh-120">Garantizamos la venta de tu vivienda</h1>
+    <header class="mb60">
+      <h1 class="mt0 mb30 playfair f32 f58-ns lh-120">{{ site.data.home.hero.header.title }}</h1>
+      <p class="mv0 f20-ns">{{ site.data.home.hero.header.description }}</p>
     </header>
-
-    <p class="mt0 mb60 f20-ns">Somos una agencia inmobiliaria diferente: si no vendemos tu vivienda en 90 días te adelantamos el dinero para que puedas buscar tu nuevo hogar, sin preocupaciones.</p>
 
     <form class="cf pa10 bg-white ba br2" action="form.html" methodd="post"
           style="box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1); border: solid 1px #f0f0f0;">
@@ -29,12 +28,12 @@ layout: default
 <section id="features" class="measure-70-ns mha-ns pb20 pb70-ns tc js-scroll">
 
   <header class="mb100 mb120-ns pt70 pt160-ns ph36 pb36 pb60-ns blue">
-    <h1 class="mt0 mb30 f20 f32-ns fw5">¿Buscas cambiar de vivienda?</h1>
-    <p class="mv0 mt45-ns f18 f30-ns lh-140 lh-160-ns">Te pagamos entre un 92% y un 97% del valor de tu casa cuando lo necesites, y el resto cuando se venda.</p>
+    <h1 class="mt0 mb30 f20 f32-ns fw5">{{ site.data.home.features.header.title }}</h1>
+    <p class="mv0 mt45-ns f18 f30-ns lh-140 lh-160-ns">{{ site.data.home.features.header.description }}</p>
   </header>
 
   <div class="cf ph36 js-scroll">
-  {% for item in site.data.features %}
+  {% for item in site.data.home.features.items %}
     <article class="fl-ns w-third-ns mb90 ph40-ns">
       <img class="dib h48 mb30" src="{{ item.icon }}">
       <h2 class="mt0 mb20 f18 lh-175 fw5">{{ item.name }}</h2>
@@ -50,15 +49,14 @@ layout: default
 <section id="how-it-works" class="relative tc">
 
   <header class="mb90 pt120 pt200-ns ph36 pb70 pb90-ns blue">
-    <h1 class="mv0 f20 f32-ns fw5">¿Cómo funciona?</h1>
+    <h1 class="mv0 f20 f32-ns fw5">{{ site.data.home.how-it-works.header.title }}</h1>
   </header>
 
   <section class="z-0 swiper-container mb120 mb240-ns overflow-visible">
     <div class="swiper-wrapper">
-    {% for item in site.data.how-it-works %}
+    {% for item in site.data.home.how-it-works.items %}
       <div class="swiper-slide relative-ns df-ns w-auto ph36{{ item.extra-classes }}">
         {% include_relative {{ item.icon }} %}
-        <!-- <img class="db w100 mha mb10" src="{{ item.icon }}"> -->
         <h2 class="relative absolute-ns mt0 mb90 blue f16 lh-175 fw5">{{ item.name }}</h2>
         <p class="measure-24-ns mv0 ml36-ns f16 lh-200 tl-ns">{{ item.description }}</p>
       </div>

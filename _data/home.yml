@@ -1,0 +1,54 @@
+hero:
+  header:
+    title: 'Garantizamos la venta de tu vivienda'
+    description: 'Somos una agencia inmobiliaria diferente: si no vendemos tu vivienda en 90 días te adelantamos el dinero para que puedas buscar tu nuevo hogar, sin preocupaciones.'
+
+
+features:
+  header:
+    title: '¿Buscas cambiar de vivienda?'
+    description: 'Te pagamos entre un 92% y un 97% del valor de tu casa cuando lo necesites, y el resto cuando se venda.'
+  
+  items:
+    - name: 'Valoramos tu casa de forma rápida y fiable'
+      description: 'Recibe una primera estimación en 24 horas y un experto se pondrá en contacto contigo para determinar el valor de mercado de tu vivienda.'
+      icon: assets/images/features/01-fast.svg
+
+    - name: 'Nuestro precio mínimo garantizado te da seguridad'
+      description: 'Garantizamos un precio de venta mínimo entre 92% - 97% del valor de mercado. Nuestro objetivo será venderla al menos por el 100%.'
+      icon: assets/images/features/02-price.svg
+
+    - name: 'Cambia de casa sin ataduras en 90 días'
+      description: 'Facilitamos la compra de tu próxima vivienda. Si no vendemos la propiedad en 90 días, te anticipamos el precio mínimo garantizado.'
+      icon: assets/images/features/03-strings.svg
+
+
+how-it-works:
+  header:
+    title: '¿Cómo funciona?'
+  
+  items:
+    - name: '1'
+      description: 'Completa un breve formulario online y recibe sin compromiso una valoración inicial de tu vivienda en 24h.'
+      icon: assets/images/how-it-works/01.svg
+
+    - name: '2'
+      description: 'Si estás interesado, nos pondremos en contacto contigo en 48h para programar la visita de uno de nuestros agentes, que realizará la valoración final de tu vivienda y te ofrecerá un precio mínimo garantizado el mismo día de la visita.'
+      icon: assets/images/how-it-works/02.svg
+
+    - name: '3'
+      description: 'Nos ocuparemos de la promoción de tu vivienda, nos encargaremos de realizar las visitas y de aplicar nuestras estrategias comerciales para cerrar la venta al mejor precio.'
+      icon: assets/images/how-it-works/03.svg
+
+    - name: '4'
+      description: 'Si llegado el día 90 no hemos vendido tu vivienda, te anticiparemos el precio mínimo garantizado de manera gratuita, para que puedas hacer frente a la compra de tu siguiente propiedad.'
+      icon: assets/images/how-it-works/04.svg
+
+    - name: '5'
+      description: 'ProntoPiso se encargará del proceso de venta de la vivienda, intermediando en la negociación y gestionando la formalización de la compraventa.'
+      icon: assets/images/how-it-works/05.svg
+
+    - name: '6'
+      description: 'Relájate y dedícate a buscar tu vivienda soñada, <span class="fw5">¡ProntoPiso se encarga del resto!</span>'
+      icon: assets/images/how-it-works/06.svg
+      extra-classes: ' blue'
