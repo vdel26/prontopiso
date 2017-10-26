@@ -59,12 +59,9 @@ function initAutocomplete() {
   var event = new Event('build');
   // When the user selects an address from the dropdown, populate the address fields in the form.
   google_address.addListener('place_changed', fillInAddress);
-  // google_address.addEventListener('blur', fillInAddress);
-  // google_address.addEventListener('change', fillInAddress);
   // Prevent ENTER from submitting the form
   google.maps.event.addDomListener(addyInput, 'keydown', function(e) {
     if (event.keyCode === 13) e.preventDefault();
-    // else google.maps.event.trigger(autocomplete, 'place_changed');
   });
 }
 
@@ -101,7 +98,6 @@ for (var i = 0; i < forms.length; i++) {
     if (completeFieldsets >= (fieldsets.length - 1)) {
       var submitResponse = sendResponseObject(response);
     } else {
-      
       // Validate 
       for (var i = 0; i < inputs.length; i++) {
         var id = inputs[i].id, name = inputs[i].name
@@ -156,11 +152,9 @@ for (i = 0; i < inputs.length; ++i) {
 
 
 
-// Show/hide conditional typeBuilding inputs
+// Show/hide conditional inputs
 toggleConditionalInputs('[name="typeBuilding"]', '#address-floor, #address-block, #address-stair, #address-door', 'typeBuilding-2');
-// Show/hide conditional features-parking inputs
 toggleConditionalInputs('[name="features-parking"]', '#features-parkingPlaces', 'features-parking-false');
-// Show/hide conditional features-terrace inputs
 toggleConditionalInputs('[name="features-terrace"]', '#features-terraceArea', 'features-terrace-false');
 
 
