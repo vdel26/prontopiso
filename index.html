@@ -32,15 +32,7 @@ layout: default
     <p class="mv0 mt45-ns f18 f30-ns lh-140 lh-160-ns">{{ site.data.home.features.header.description }}</p>
   </header>
 
-  <div class="cf ph36 js-scroll">
-  {% for item in site.data.home.features.items %}
-    <article class="fl-ns w-third-ns mb90 ph40-ns">
-      <img class="dib h48 mb30" src="{{ item.icon }}">
-      <h2 class="mt0 mb20 f18 lh-175 fw5">{{ item.name }}</h2>
-      <p class="mv0 f16 o-50 lh-200">{{ item.description }}</p>
-    </article>
-  {% endfor %}
-  </div>
+  {% include features.html data=site.data.home.features.items %}
 
 </section>
 
