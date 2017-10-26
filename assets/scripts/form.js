@@ -61,7 +61,7 @@ function initAutocomplete() {
   google_address.addListener('place_changed', fillInAddress);
   // Prevent ENTER from submitting the form
   google.maps.event.addDomListener(addyInput, 'keydown', function(e) {
-    if (event.keyCode === 13) e.preventDefault();
+    if (e.keyCode === 13) e.preventDefault();
   });
 }
 
