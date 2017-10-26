@@ -112,10 +112,12 @@ for (i = 0; i < answers.length; ++i) {
   });
 }
 
-questions[0].classList.add('blue', 'fw5');
-questions[0].classList.remove('o-50');
-for (i = 0; i < togglingClasses.length; ++i) {
-  answers[0].classList.toggle(togglingClasses[i]);
+if (questions.length && answers.length) {
+  questions[0].classList.add('blue', 'fw5');
+  questions[0].classList.remove('o-50');
+  for (i = 0; i < togglingClasses.length; ++i) {
+    answers[0].classList.toggle(togglingClasses[i]);
+  }
 }
 
 
