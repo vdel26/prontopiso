@@ -30,11 +30,13 @@ calculator:
     lo:
       description: 'Precio mínimo garantizado <span class="dn db-ns">(94% de la valoración)</span>'
       tip: 'Si se vendiera por debajo del precio garantizado <span class="fw5">ProntoPiso cubre la diferencia</span>. ¡Duerme tranquilo sabiendo que tienes una oferta mínima en firme!'
+      tip-clean: 'Si se vendiera por debajo del precio garantizado ProntoPiso cubre la diferencia. ¡Duerme tranquilo sabiendo que tienes una oferta mínima en firme!'
     mid:
       description: 'Precio final de venta'
     hi:
       description: '100% de la valoración'
       tip: 'Si se vendiera por encima del 100% de la valoración, <span class="fw5">el sobreprecio también te lo llevas tú</span>.'
+      tip-clean: 'Si se vendiera por encima del 100% de la valoración, el sobreprecio también te lo llevas tú.'
     results:
       get: 'Recibes'
       value: '324.054€'

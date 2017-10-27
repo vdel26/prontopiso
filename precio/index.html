@@ -26,7 +26,7 @@ layout: default
 
         <fieldset class="w-50-ns mh0 mb30 mb0-ns pa0 ph20-ns bn">
           <label class="db mb20 f18 fw5">{{ site.data.pricing.calculator.input.label }}</label>
-          <input class="input-reset dib w-100 mb20 pv12 ph15 white bg-blue graphik f16 lh-100 fw5 ba b--blue br2"
+          <input class="input-reset dib w-100 mb20 pv12 ph15 white bg-blue ph-white graphik f16 lh-100 fw5 ba b--blue br2"
                  type="number" value="" placeholder="350.000€" required>
           <a class="link inherit db pa15 f14 lh-160 lh-150-ns ba b--blue br2" href="/form.html">{{ site.data.pricing.calculator.input.call-to-action }}</a>
         </fieldset>
@@ -43,18 +43,30 @@ layout: default
       <h1 class="mv0 f18 lh-150 lh-175-ns fw5">{{ site.data.pricing.calculator.slider.title }}</h1>
     </header>
 
-    <div class="mb60">
+    <div class="mb50 mb60-ns">
+
+      <div class="df items-center mb60">
+        <span id="input-left" title="{{ site.data.pricing.calculator.slider.lo.tip-clean }}" onclick="tippy(this)"
+              class="bg-red" style="width: 100px; height: 15px;"></span>
+        <input id="input-range" class="w-100" type="range">
+        <span id="input-right" title="{{ site.data.pricing.calculator.slider.hi.tip-clean }}" onclick="tippy(this)"
+              class="bg-red" style="width: 100px; height: 15px;"></span>
+      </div>
 
       <div class="">
         <input class="w-100" type="range">
         <div class="df justify-between">
-          <p class="mt0 mb20">{{ site.data.pricing.calculator.slider.lo.description }}</p>
-          <p class="mt0 mb20">{{ site.data.pricing.calculator.slider.mid.description }}</p>
-          <p class="mt0 mb20">{{ site.data.pricing.calculator.slider.hi.description }}</p>
+          <p class="mt0 mb20 f12 f14-ns lh-150">
+            <small class="db f12 f14-ns lh-150">{{ site.data.pricing.calculator.slider.lo.description }}</small>
+          </p>
+          <p class="mt0 mb20 f12 f14-ns lh-150 fw5">{{ site.data.pricing.calculator.slider.mid.description }}</p>
+          <p class="mt0 mb20 f12 f14-ns lh-150">
+            <small class="db f12 f14-ns lh-150">{{ site.data.pricing.calculator.slider.hi.description }}</small>
+          </p>
         </div>
       </div>
 
-      <div class="nh36 nh55-ns pt30 ph36 pb20 bg-blue-dark f12 lh-165">
+      <div class="dn-ns nh36 nh135-ns pt30 ph36 pb20 bg-blue-dark f12 lh-165">
         <p class="mt0 mb20">{{ site.data.pricing.calculator.slider.hi.tip }}</p>
         <p class="mt0 mb20">{{ site.data.pricing.calculator.slider.lo.tip }}</p>
       </div>

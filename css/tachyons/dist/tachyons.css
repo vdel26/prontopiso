@@ -21477,6 +21477,19 @@ img {
   Add custom styles here.
 
 */
+/* Placeholder */
+.ph-white::-webkit-input-placeholder {
+  color: #fff; }
+
+.ph-white::-moz-placeholder {
+  color: #fff; }
+
+.ph-white:-ms-input-placeholder {
+  color: #fff; }
+
+.ph-white:-moz-placeholder {
+  color: #fff; }
+
 /* Debugging */
 /*
 
