@@ -42,6 +42,15 @@
 .blue {
   color: #1f8beb; }
 
+.blue-light {
+  color: #84c1f5; }
+
+.blue-mid {
+  color: #116be1; }
+
+.blue-dark {
+  color: #0439b0; }
+
 .red {
   color: #fe5f5f; }
 
@@ -68,6 +77,12 @@
     color: rgba(255, 255, 255, 0.1); }
   .blue-ns {
     color: #1f8beb; }
+  .blue-light-ns {
+    color: #84c1f5; }
+  .blue-mid-ns {
+    color: #116be1; }
+  .blue-dark-ns {
+    color: #0439b0; }
   .red-ns {
     color: #fe5f5f; } }
 
@@ -94,6 +109,12 @@
     color: rgba(255, 255, 255, 0.1); }
   .blue-m {
     color: #1f8beb; }
+  .blue-light-m {
+    color: #84c1f5; }
+  .blue-mid-m {
+    color: #116be1; }
+  .blue-dark-m {
+    color: #0439b0; }
   .red-m {
     color: #fe5f5f; } }
 
@@ -120,6 +141,12 @@
     color: rgba(255, 255, 255, 0.1); }
   .blue-l {
     color: #1f8beb; }
+  .blue-light-l {
+    color: #84c1f5; }
+  .blue-mid-l {
+    color: #116be1; }
+  .blue-dark-l {
+    color: #0439b0; }
   .red-l {
     color: #fe5f5f; } }
 
@@ -157,6 +184,15 @@
 .bg-blue {
   background-color: #1f8beb; }
 
+.bg-blue-light {
+  background-color: #84c1f5; }
+
+.bg-blue-mid {
+  background-color: #116be1; }
+
+.bg-blue-dark {
+  background-color: #0439b0; }
+
 .bg-red {
   background-color: #fe5f5f; }
 
@@ -183,6 +219,12 @@
     background-color: rgba(255, 255, 255, 0.1); }
   .bg-blue-ns {
     background-color: #1f8beb; }
+  .bg-blue-light-ns {
+    background-color: #84c1f5; }
+  .bg-blue-mid-ns {
+    background-color: #116be1; }
+  .bg-blue-dark-ns {
+    background-color: #0439b0; }
   .bg-red-ns {
     background-color: #fe5f5f; } }
 
@@ -209,6 +251,12 @@
     background-color: rgba(255, 255, 255, 0.1); }
   .bg-blue-m {
     background-color: #1f8beb; }
+  .bg-blue-light-m {
+    background-color: #84c1f5; }
+  .bg-blue-mid-m {
+    background-color: #116be1; }
+  .bg-blue-dark-m {
+    background-color: #0439b0; }
   .bg-red-m {
     background-color: #fe5f5f; } }
 
@@ -235,5 +283,11 @@
     background-color: rgba(255, 255, 255, 0.1); }
   .bg-blue-l {
     background-color: #1f8beb; }
+  .bg-blue-light-l {
+    background-color: #84c1f5; }
+  .bg-blue-mid-l {
+    background-color: #116be1; }
+  .bg-blue-dark-l {
+    background-color: #0439b0; }
   .bg-red-l {
     background-color: #fe5f5f; } }

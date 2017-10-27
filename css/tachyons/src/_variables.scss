@@ -33,6 +33,7 @@ $font-sizes: (
   32: 32px 2rem, /* 32/16 */
   50: 50px 3.125rem,
   58: 58px 3.625rem,
+  60: 60px 3.75rem,
 );
 
 $line-heights: (
@@ -42,6 +43,7 @@ $line-heights: (
   140: 1.4,
   150: 1.5,
   160: 1.6,
+  165: 1.65,
   175: 1.75,
   185: 1.85,
   200: 2,
@@ -135,14 +137,17 @@ $spacings: (
   40: 40px 2.5rem,
   45: 45px 2.8125rem,
   50: 50px 3.125rem,
+  55: 55px 3.4375rem,
   60: 60px 3.75rem,
   70: 70px 4.375rem,
   75: 75px 4.6875rem,
+  n75: -75px -4.6875rem,
   80: 80px 5rem,
   85: 85px 5.3125rem,
   90: 90px 5.625rem,
   100: 100px 6.25rem,
   120: 120px 7.5rem,
+  135: 135px 8.4375rem,
   140: 140px 8.75rem,
   150: 150px 9.375rem,
   160: 160px 10rem,
@@ -390,6 +395,9 @@ $colors: (
   white: #fff,
   white-10: rgba(255,255,255,.1),
   blue: #1f8beb,
+  blue-light: #84c1f5,
+  blue-mid: #116be1,
+  blue-dark: #0439b0,
   red: #fe5f5f,
 );
 

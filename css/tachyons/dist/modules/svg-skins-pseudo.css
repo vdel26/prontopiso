@@ -67,6 +67,18 @@
 .hover-fill-blue:focus {
   fill: #1f8beb; }
 
+.hover-fill-blue-light:hover,
+.hover-fill-blue-light:focus {
+  fill: #84c1f5; }
+
+.hover-fill-blue-mid:hover,
+.hover-fill-blue-mid:focus {
+  fill: #116be1; }
+
+.hover-fill-blue-dark:hover,
+.hover-fill-blue-dark:focus {
+  fill: #0439b0; }
+
 .hover-fill-red:hover,
 .hover-fill-red:focus {
   fill: #fe5f5f; }
@@ -105,6 +117,15 @@
   .hover-fill-blue-ns:hover,
   .hover-fill-blue-ns:focus {
     fill: #1f8beb; }
+  .hover-fill-blue-light-ns:hover,
+  .hover-fill-blue-light-ns:focus {
+    fill: #84c1f5; }
+  .hover-fill-blue-mid-ns:hover,
+  .hover-fill-blue-mid-ns:focus {
+    fill: #116be1; }
+  .hover-fill-blue-dark-ns:hover,
+  .hover-fill-blue-dark-ns:focus {
+    fill: #0439b0; }
   .hover-fill-red-ns:hover,
   .hover-fill-red-ns:focus {
     fill: #fe5f5f; } }
@@ -143,6 +164,15 @@
   .hover-fill-blue-m:hover,
   .hover-fill-blue-m:focus {
     fill: #1f8beb; }
+  .hover-fill-blue-light-m:hover,
+  .hover-fill-blue-light-m:focus {
+    fill: #84c1f5; }
+  .hover-fill-blue-mid-m:hover,
+  .hover-fill-blue-mid-m:focus {
+    fill: #116be1; }
+  .hover-fill-blue-dark-m:hover,
+  .hover-fill-blue-dark-m:focus {
+    fill: #0439b0; }
   .hover-fill-red-m:hover,
   .hover-fill-red-m:focus {
     fill: #fe5f5f; } }
@@ -181,6 +211,15 @@
   .hover-fill-blue-l:hover,
   .hover-fill-blue-l:focus {
     fill: #1f8beb; }
+  .hover-fill-blue-light-l:hover,
+  .hover-fill-blue-light-l:focus {
+    fill: #84c1f5; }
+  .hover-fill-blue-mid-l:hover,
+  .hover-fill-blue-mid-l:focus {
+    fill: #116be1; }
+  .hover-fill-blue-dark-l:hover,
+  .hover-fill-blue-dark-l:focus {
+    fill: #0439b0; }
   .hover-fill-red-l:hover,
   .hover-fill-red-l:focus {
     fill: #fe5f5f; } }
@@ -230,6 +269,18 @@
 .hover-stroke-blue:focus {
   stroke: #1f8beb; }
 
+.hover-stroke-blue-light:hover,
+.hover-stroke-blue-light:focus {
+  stroke: #84c1f5; }
+
+.hover-stroke-blue-mid:hover,
+.hover-stroke-blue-mid:focus {
+  stroke: #116be1; }
+
+.hover-stroke-blue-dark:hover,
+.hover-stroke-blue-dark:focus {
+  stroke: #0439b0; }
+
 .hover-stroke-red:hover,
 .hover-stroke-red:focus {
   stroke: #fe5f5f; }
@@ -268,6 +319,15 @@
   .hover-stroke-blue-ns:hover,
   .hover-stroke-blue-ns:focus {
     stroke: #1f8beb; }
+  .hover-stroke-blue-light-ns:hover,
+  .hover-stroke-blue-light-ns:focus {
+    stroke: #84c1f5; }
+  .hover-stroke-blue-mid-ns:hover,
+  .hover-stroke-blue-mid-ns:focus {
+    stroke: #116be1; }
+  .hover-stroke-blue-dark-ns:hover,
+  .hover-stroke-blue-dark-ns:focus {
+    stroke: #0439b0; }
   .hover-stroke-red-ns:hover,
   .hover-stroke-red-ns:focus {
     stroke: #fe5f5f; } }
@@ -306,6 +366,15 @@
   .hover-stroke-blue-m:hover,
   .hover-stroke-blue-m:focus {
     stroke: #1f8beb; }
+  .hover-stroke-blue-light-m:hover,
+  .hover-stroke-blue-light-m:focus {
+    stroke: #84c1f5; }
+  .hover-stroke-blue-mid-m:hover,
+  .hover-stroke-blue-mid-m:focus {
+    stroke: #116be1; }
+  .hover-stroke-blue-dark-m:hover,
+  .hover-stroke-blue-dark-m:focus {
+    stroke: #0439b0; }
   .hover-stroke-red-m:hover,
   .hover-stroke-red-m:focus {
     stroke: #fe5f5f; } }
@@ -344,6 +413,15 @@
   .hover-stroke-blue-l:hover,
   .hover-stroke-blue-l:focus {
     stroke: #1f8beb; }
+  .hover-stroke-blue-light-l:hover,
+  .hover-stroke-blue-light-l:focus {
+    stroke: #84c1f5; }
+  .hover-stroke-blue-mid-l:hover,
+  .hover-stroke-blue-mid-l:focus {
+    stroke: #116be1; }
+  .hover-stroke-blue-dark-l:hover,
+  .hover-stroke-blue-dark-l:focus {
+    stroke: #0439b0; }
   .hover-stroke-red-l:hover,
   .hover-stroke-red-l:focus {
     stroke: #fe5f5f; } }
@@ -428,6 +506,11 @@
   stroke-width: 50px;
   stroke-width: 3.125rem; }
 
+.hover-sw55:hover,
+.hover-sw55:focus {
+  stroke-width: 55px;
+  stroke-width: 3.4375rem; }
+
 .hover-sw60:hover,
 .hover-sw60:focus {
   stroke-width: 60px;
@@ -442,6 +525,11 @@
 .hover-sw75:focus {
   stroke-width: 75px;
   stroke-width: 4.6875rem; }
+
+.hover-swn75:hover,
+.hover-swn75:focus {
+  stroke-width: -75px;
+  stroke-width: -4.6875rem; }
 
 .hover-sw80:hover,
 .hover-sw80:focus {
@@ -467,6 +555,11 @@
 .hover-sw120:focus {
   stroke-width: 120px;
   stroke-width: 7.5rem; }
+
+.hover-sw135:hover,
+.hover-sw135:focus {
+  stroke-width: 135px;
+  stroke-width: 8.4375rem; }
 
 .hover-sw140:hover,
 .hover-sw140:focus {
@@ -566,6 +659,10 @@
   .hover-sw50-ns:focus {
     stroke-width: 50px;
     stroke-width: 3.125rem; }
+  .hover-sw55-ns:hover,
+  .hover-sw55-ns:focus {
+    stroke-width: 55px;
+    stroke-width: 3.4375rem; }
   .hover-sw60-ns:hover,
   .hover-sw60-ns:focus {
     stroke-width: 60px;
@@ -578,6 +675,10 @@
   .hover-sw75-ns:focus {
     stroke-width: 75px;
     stroke-width: 4.6875rem; }
+  .hover-swn75-ns:hover,
+  .hover-swn75-ns:focus {
+    stroke-width: -75px;
+    stroke-width: -4.6875rem; }
   .hover-sw80-ns:hover,
   .hover-sw80-ns:focus {
     stroke-width: 80px;
@@ -598,6 +699,10 @@
   .hover-sw120-ns:focus {
     stroke-width: 120px;
     stroke-width: 7.5rem; }
+  .hover-sw135-ns:hover,
+  .hover-sw135-ns:focus {
+    stroke-width: 135px;
+    stroke-width: 8.4375rem; }
   .hover-sw140-ns:hover,
   .hover-sw140-ns:focus {
     stroke-width: 140px;
@@ -690,6 +795,10 @@
   .hover-sw50-m:focus {
     stroke-width: 50px;
     stroke-width: 3.125rem; }
+  .hover-sw55-m:hover,
+  .hover-sw55-m:focus {
+    stroke-width: 55px;
+    stroke-width: 3.4375rem; }
   .hover-sw60-m:hover,
   .hover-sw60-m:focus {
     stroke-width: 60px;
@@ -702,6 +811,10 @@
   .hover-sw75-m:focus {
     stroke-width: 75px;
     stroke-width: 4.6875rem; }
+  .hover-swn75-m:hover,
+  .hover-swn75-m:focus {
+    stroke-width: -75px;
+    stroke-width: -4.6875rem; }
   .hover-sw80-m:hover,
   .hover-sw80-m:focus {
     stroke-width: 80px;
@@ -722,6 +835,10 @@
   .hover-sw120-m:focus {
     stroke-width: 120px;
     stroke-width: 7.5rem; }
+  .hover-sw135-m:hover,
+  .hover-sw135-m:focus {
+    stroke-width: 135px;
+    stroke-width: 8.4375rem; }
   .hover-sw140-m:hover,
   .hover-sw140-m:focus {
     stroke-width: 140px;
@@ -814,6 +931,10 @@
   .hover-sw50-l:focus {
     stroke-width: 50px;
     stroke-width: 3.125rem; }
+  .hover-sw55-l:hover,
+  .hover-sw55-l:focus {
+    stroke-width: 55px;
+    stroke-width: 3.4375rem; }
   .hover-sw60-l:hover,
   .hover-sw60-l:focus {
     stroke-width: 60px;
@@ -826,6 +947,10 @@
   .hover-sw75-l:focus {
     stroke-width: 75px;
     stroke-width: 4.6875rem; }
+  .hover-swn75-l:hover,
+  .hover-swn75-l:focus {
+    stroke-width: -75px;
+    stroke-width: -4.6875rem; }
   .hover-sw80-l:hover,
   .hover-sw80-l:focus {
     stroke-width: 80px;
@@ -846,6 +971,10 @@
   .hover-sw120-l:focus {
     stroke-width: 120px;
     stroke-width: 7.5rem; }
+  .hover-sw135-l:hover,
+  .hover-sw135-l:focus {
+    stroke-width: 135px;
+    stroke-width: 8.4375rem; }
   .hover-sw140-l:hover,
   .hover-sw140-l:focus {
     stroke-width: 140px;

@@ -2,33 +2,82 @@
 layout: default
 ---
 
-<section id="features" class="measure-78-ns mha-ns mb90 mb150-ns pt200 tc">
-  
+<section id="features" class="measure-78-ns mha-ns mb150-ns pt200 tc">
+
   <header class="mb90 mb150-ns pt60 pt85-ns ph36 pb90 pb85-ns tc">
-    <h1 class="mt0 mb30 mb50-ns blue playfair f32 f58-ns lh-120-ns fw6">{{ site.data.pricing.header.title }}</h1>
+    <h1 class="mv0 mb50-ns blue playfair f32 f58-ns lh-120-ns fw6">{{ site.data.pricing.header.title }}</h1>
   </header>
-  
+
   {% include features.html data=site.data.pricing.features %}
-  
+
 </section>
 
 
 
-<section id="calculator" class="">
-  
-  <header class="mb120 pv45 pv60-ns ph36 tc">
-    <h1 class="mv0 blue f20 f30-ns lh-160 lh-120-ns fw5">{{ site.data.pricing.calculator.header.title }}</h1>
-  </header>
-  
-  <fieldset class="mh0 mb60 pv0 ph36 blue bn">
-    <label class="db mb20">{{ site.data.pricing.calculator.input.label }}</label>
-    <input class="input-reset dib w-100 mb20 pv10 ph15 white bg-blue graphik f16 lh-100 fw5 ba b--blue br2"
-           type="number" value="" placeholder="350.000€" required>
-    <a class="link inherit db mb30 pa15 f14 lh-160 ba b--blue br2" href="/form.html">{{ site.data.pricing.calculator.input.call-to-action }}</a>
-    <small class="db f16 lh-160">{{ site.data.pricing.calculator.input.small }}</small>
-  </fieldset>
-  
-</section>
+<article id="calculator-dd" class="measure-70 mha mb120 mb160-ns bg-blue br2-ns" style="box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);">
+
+  <section id="calculator" class="relative-ns top-n75-ns measure-65 mha mh55-ns pt50 ph80-ns pb60 blue bg-white br2-ns" style="box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);">
+
+      <header class="mb50 pt30 pt60-ns pb40 pb60-ns tc">
+        <h1 class="mv0 f20 f30-ns lh-160 lh-120-ns fw5">{{ site.data.pricing.calculator.header.title }}</h1>
+      </header>
+
+      <div class="df-ns items-end-ns nh20-ns ph36">
+
+        <fieldset class="w-50-ns mh0 mb30 mb0-ns pa0 ph20-ns bn">
+          <label class="db mb20 f18 fw5">{{ site.data.pricing.calculator.input.label }}</label>
+          <input class="input-reset dib w-100 mb20 pv12 ph15 white bg-blue graphik f16 lh-100 fw5 ba b--blue br2"
+                 type="number" value="" placeholder="350.000€" required>
+          <a class="link inherit db pa15 f14 lh-160 lh-150-ns ba b--blue br2" href="/form.html">{{ site.data.pricing.calculator.input.call-to-action }}</a>
+        </fieldset>
+
+        <small class="db w-50-ns ph20-ns f16 lh-160 lh-185-ns">{{ site.data.pricing.calculator.input.small }}</small>
+
+      </div>
+
+  </section>
+
+  <section class="nt25-ns pv50 pv0-ns ph36 ph135-ns white">
+
+    <header class="mb20 tc tl-ns">
+      <h1 class="mv0 f18 lh-150 lh-175-ns fw5">{{ site.data.pricing.calculator.slider.title }}</h1>
+    </header>
+
+    <div class="mb60">
+
+      <div class="">
+        <input class="w-100" type="range">
+        <div class="df justify-between">
+          <p class="mt0 mb20">{{ site.data.pricing.calculator.slider.lo.description }}</p>
+          <p class="mt0 mb20">{{ site.data.pricing.calculator.slider.mid.description }}</p>
+          <p class="mt0 mb20">{{ site.data.pricing.calculator.slider.hi.description }}</p>
+        </div>
+      </div>
+
+      <div class="nh36 nh55-ns pt30 ph36 pb20 bg-blue-dark f12 lh-165">
+        <p class="mt0 mb20">{{ site.data.pricing.calculator.slider.hi.tip }}</p>
+        <p class="mt0 mb20">{{ site.data.pricing.calculator.slider.lo.tip }}</p>
+      </div>
+
+    </div>
+
+    <footer class="nh135-ns pv45-ns bg-blue-mid-ns tc-ns">
+      <p class="mv0 mb10-ns">
+        <span class="db f32 lh-120">{{ site.data.pricing.calculator.slider.results.get }}</span>
+        <span class="db f60 f65-ns lh-120">{{ site.data.pricing.calculator.slider.results.value }}</span>
+      </p>
+      <p class="mv0">
+        <small class="db f18 fw5 lh-120">{{ site.data.pricing.calculator.slider.results.comision }}</small>
+      </p>
+    </footer>
+
+  </section>
+
+  <footer class="pv30-ns ph36 pb60 white blue-ns bg-blue bg-white-ns f16 f18-ns lh-185 lh-165-ns"
+    >{{ site.data.pricing.calculator.footer }}
+  </footer>
+
+</article>
 
 
 {% include aside.html %}

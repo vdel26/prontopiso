@@ -60,6 +60,10 @@
   font-size: 58px;
   font-size: 3.625rem; }
 
+.f60 {
+  font-size: 60px;
+  font-size: 3.75rem; }
+
 @media screen and (min-width: 30em) {
   .f12-ns {
     font-size: 12px;
@@ -90,7 +94,10 @@
     font-size: 3.125rem; }
   .f58-ns {
     font-size: 58px;
-    font-size: 3.625rem; } }
+    font-size: 3.625rem; }
+  .f60-ns {
+    font-size: 60px;
+    font-size: 3.75rem; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .f12-m {
@@ -122,7 +129,10 @@
     font-size: 3.125rem; }
   .f58-m {
     font-size: 58px;
-    font-size: 3.625rem; } }
+    font-size: 3.625rem; }
+  .f60-m {
+    font-size: 60px;
+    font-size: 3.75rem; } }
 
 @media screen and (min-width: 60em) {
   .f12-l {
@@ -154,4 +164,7 @@
     font-size: 3.125rem; }
   .f58-l {
     font-size: 58px;
-    font-size: 3.625rem; } }
+    font-size: 3.625rem; }
+  .f60-l {
+    font-size: 60px;
+    font-size: 3.75rem; } }
