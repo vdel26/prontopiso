@@ -1,17 +1,19 @@
 ---
 layout: default
+scripts:
+  - '/assets/scripts/faq.js'
 ---
 
 <article id="faq" class="measure-70-ns mha-ns pt200 pb150 pb180-ns">
-  
+
   <header class="mb90 mb150-ns pt25 pt85-ns ph36 pb15 pb85-ns tc">
     <h1 class="mt0 mb30 mb50-ns blue playfair f32 f58-ns fw6">{{ site.data.faq.header.title }}</h1>
     <p class="measure-32 mv0 mt45-ns mha f16 f20-ns lh-160">{{ site.data.faq.header.description }}</p>
   </header>
-  
+
 
   <section class="cf ph36">
-  
+
     <nav class="dn db-ns fl-ns w-third-ns pr20-ns">
       <dl class="mv0">
       {% for item in site.data.faq.questions %}
@@ -21,7 +23,7 @@ layout: default
       {% endfor %}
       </dl>
     </nav>
-    
+
     <article class="fl-ns w-two-thirds-ns pl20-ns">
       <dl class="mv0">
       {% for item in site.data.faq.questions %}
