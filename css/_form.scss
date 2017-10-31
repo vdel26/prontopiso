@@ -1,0 +1,158 @@
+/* Form Page CSS */
+
+#main-form header {
+  background-image: url('../assets/images/form/00.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (min-width: 30em) {
+    background-size: contain;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: #b2bcc3;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #b2bcc3;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #b2bcc3;
+  opacity: 1;
+}
+
+:-moz-placeholder {
+  color: #b2bcc3;
+  opacity: 1;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1f8beb;
+}
+
+input[type="radio"]:checked + label {
+  border-color: #1f8beb;
+}
+
+.placeholder-m2 {
+  position: relative;
+}
+
+.placeholder-m2::after {
+  content: 'm2';
+  position: absolute;
+  top: 26px;
+  right: 16px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  line-height: 1;
+  color: #b2bcc3;
+  @media screen and (min-width: 30em) {
+    right: 36px;
+  }
+}
+
+fieldset:focus-within {
+  opacity: 1;
+}
+/* Autocomplete */
+.pac-container {
+  z-index: initial;
+  margin-top: -1px;
+  margin-top: -.0625rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.02), 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.pac-container::after {
+  padding: 0 12px 12px;
+  background-origin: content-box;
+}
+
+.pac-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1;
+}
+
+.hdpi .pac-icon,
+.pac-icon {
+  width: 12px;
+  height: 17px;
+  min-width: 12px;
+  min-height: 17px;
+  margin-top: 0;
+  margin-right: 30px;
+  margin-right: 1.875rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='17' viewBox='0 0 12 17'%3E%3Cpath fill='%23B2B2B2' fill-rule='evenodd' d='M6 0C2.683 0 0 2.66 0 5.95 0 10.412 6 17 6 17s6-6.588 6-11.05C12 2.66 9.317 0 6 0zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4z'/%3E%3C/svg%3E");
+}
+
+.pac-item-selected .pac-icon {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='17' viewBox='0 0 12 17'%3E%3Cpath fill='%231f8beb' fill-rule='evenodd' d='M6 0C2.683 0 0 2.66 0 5.95 0 10.412 6 17 6 17s6-6.588 6-11.05C12 2.66 9.317 0 6 0zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4z'/%3E%3C/svg%3E");
+}
+
+.pac-item-query {
+  padding-right: 5px;
+  padding-right: 0.3125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+.pac-matched {
+  font-weight: 500;
+}
+
+
+/* Progress Bar */
+
+progress {
+  z-index: 2;
+  width: 100%;
+  max-width: 200px;
+  max-width: 12.5rem;
+  height: 8px;
+  height: 0.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: #7f7f7f;
+  color: #1f8ceb;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+  border-radius: 2px;
+  border-radius: 0.125rem;
+  transition: all 0.5s ease-in-out;
+}
+
+progress::-webkit-progress-value {
+  background-color: #1f8ceb;
+  border-radius: 2px;
+  border-radius: 0.125rem;
+  transition: all 0.5s ease-in-out;
+}
+
+progress::-moz-progress-bar {
+  background-color: #1f8ceb;
+  border-radius: 2px;
+  border-radius: 0.125rem;
+  transition: all 0.5s ease-in-out;
+}

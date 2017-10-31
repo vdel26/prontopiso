@@ -1,0 +1,33 @@
+---
+---
+
+@import 'fonts';
+@import 'home';
+@import 'form';
+@import 'about';
+@import 'faq';
+@import 'pricing';
+
+
+/* Tooltips */
+
+.bubble {
+  right: 20px;
+  bottom: 42px;
+  left: 20px;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,0.20);
+}
+
+.bubble-tail::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  position: absolute;
+  bottom: 32px;
+  transform: translateX(-20px);
+  border-style: solid;
+  border-width: 10px 8px 0 8px;
+  border-color: #1f8beb transparent transparent transparent;
+}

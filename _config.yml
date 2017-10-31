@@ -7,6 +7,8 @@ url: "" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+sass:
+  sass_dir: css
 
 # Exclude this stuff
 exclude: [node_modules, gulpfile.js, docker, Dockerfile, Makefile, .dockerignore]
