@@ -39,7 +39,6 @@ calculator:
       tip-clean: 'Si se vendiera por encima del 100% de la valoración, el sobreprecio también te lo llevas tú.'
     results:
       get: 'Recibes'
-      value: '324.054€'
-      comision: 'Comisión resultante del 4,7%'
+      comision: 'Comisión resultante del'
 
   footer: 'Y si en 90 días no se ha vendido tu propiedad, <span class="fw5">¡te adelantamos el precio mínimo garantizado para que puedas hacer frente al pago de tu siguiente vivienda!</span> ¡Y nosotros nos seguimos encargando de vender la anterior!'

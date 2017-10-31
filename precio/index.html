@@ -1,5 +1,7 @@
 ---
 layout: default
+scripts:
+  - '/assets/scripts/pricing.js'
 ---
 
 <section id="features" class="measure-78-ns mha-ns mb150-ns pt200 tc">
@@ -27,7 +29,8 @@ layout: default
         <fieldset class="w-50-ns mh0 mb30 mb0-ns pa0 ph20-ns bn">
           <label class="db mb20 f18 fw5">{{ site.data.pricing.calculator.input.label }}</label>
           <input class="input-reset dib w-100 mb20 pv12 ph15 white bg-blue ph-white graphik f16 lh-100 fw5 ba b--blue br2"
-                 type="number" value="" placeholder="350.000€" required>
+                 id="calculator-input" min="0" max="10000000" step="100000" lang="es-ES"
+                 type="number" value="450000" placeholder="450.000€" required>
           <a class="link inherit db pa15 f14 lh-160 lh-150-ns ba b--blue br2" href="/form.html">{{ site.data.pricing.calculator.input.call-to-action }}</a>
         </fieldset>
 
@@ -39,28 +42,43 @@ layout: default
 
   <section class="nt25-ns pv50 pv0-ns ph36 ph135-ns white">
 
-    <header class="mb20 tc tl-ns">
+    <header class="mb20 mb15-ns tc tl-ns">
       <h1 class="mv0 f18 lh-150 lh-175-ns fw5">{{ site.data.pricing.calculator.slider.title }}</h1>
     </header>
 
     <div class="mb50 mb60-ns">
 
-      <div class="df items-center mb60">
-        <span id="input-left" title="{{ site.data.pricing.calculator.slider.lo.tip-clean }}" onclick="tippy(this)"
-              class="bg-red" style="width: 100px; height: 15px;"></span>
-        <input id="input-range" class="w-100" type="range">
+      <span id="tooltip-left" class="relative dib pv12 ph15 white bg-blue-dark f12 lh-165 br2" style="width: 280px;"
+        >{{ site.data.pricing.calculator.slider.lo.tip }}
+      </span>
+
+      <span id="tooltip-right" class="relative dib pv12 ph15 white bg-blue-dark f12 lh-165 br2" style="width: 240px;"
+        >{{ site.data.pricing.calculator.slider.hi.tip }}
+      </span>
+
+      <img class="db mha nb10" src="/assets/images/pricing/02.svg" alt="">
+
+      <div class="df items-center mb15">
+        <span id="input-left"
+              class="bg-blue-dark br-pill br--left" style="width: 100px; height: 15px;"></span>
+        <input id="calculator-range" class="w-100"
+               type="range" value="97" min="94" max="100" step="0.25">
         <span id="input-right" title="{{ site.data.pricing.calculator.slider.hi.tip-clean }}" onclick="tippy(this)"
-              class="bg-red" style="width: 100px; height: 15px;"></span>
+              class="bg-blue-dark br-pill br--right" style="width: 100px; height: 15px;"></span>
       </div>
 
       <div class="">
-        <input class="w-100" type="range">
-        <div class="df justify-between">
+        <div class="df justify-between tc">
           <p class="mt0 mb20 f12 f14-ns lh-150">
+            <small id="calculator-min" class="db f12 f14-ns lh-150 fw5">423.000 €</small>
             <small class="db f12 f14-ns lh-150">{{ site.data.pricing.calculator.slider.lo.description }}</small>
           </p>
-          <p class="mt0 mb20 f12 f14-ns lh-150 fw5">{{ site.data.pricing.calculator.slider.mid.description }}</p>
           <p class="mt0 mb20 f12 f14-ns lh-150">
+            <small id="calculator-mid" class="db f12 f14-ns lh-150 fw5">436.500 €</small>
+            <small class="db f12 f14-ns lh-150">{{ site.data.pricing.calculator.slider.mid.description }}</small>
+          </p>
+          <p class="mt0 mb20 f12 f14-ns lh-150">
+            <small id="calculator-max" class="db f12 f14-ns lh-150 fw5">450.000 €</small>
             <small class="db f12 f14-ns lh-150">{{ site.data.pricing.calculator.slider.hi.description }}</small>
           </p>
         </div>
@@ -76,10 +94,11 @@ layout: default
     <footer class="nh135-ns pv45-ns bg-blue-mid-ns tc-ns">
       <p class="mv0 mb10-ns">
         <span class="db f32 lh-120">{{ site.data.pricing.calculator.slider.results.get }}</span>
-        <span class="db f60 f65-ns lh-120">{{ site.data.pricing.calculator.slider.results.value }}</span>
+        <span id="calculator-result" class="db f60 f65-ns lh-120">416.312 €</span>
       </p>
       <p class="mv0">
-        <small class="db f18 fw5 lh-120">{{ site.data.pricing.calculator.slider.results.comision }}</small>
+        <small class="dib f18 fw5 lh-120">{{ site.data.pricing.calculator.slider.results.comision }} </small>
+        <small id="calculator-comission" class="dib f18 fw5 lh-120">4,6%</small>
       </p>
     </footer>
 
