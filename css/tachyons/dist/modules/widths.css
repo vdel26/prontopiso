@@ -39,6 +39,18 @@
      -l  = large
 
 */
+.w36 {
+  width: 36px;
+  width: 2.25rem; }
+
+.min-w36 {
+  min-width: 36px;
+  min-width: 2.25rem; }
+
+.max-w36 {
+  max-width: 36px;
+  max-width: 2.25rem; }
+
 .w48 {
   width: 48px;
   width: 3rem; }
@@ -229,6 +241,15 @@
   max-width: none; }
 
 @media screen and (min-width: 30em) {
+  .w36-ns {
+    width: 36px;
+    width: 2.25rem; }
+  .min-w36-ns {
+    min-width: 36px;
+    min-width: 2.25rem; }
+  .max-w36-ns {
+    max-width: 36px;
+    max-width: 2.25rem; }
   .w48-ns {
     width: 48px;
     width: 3rem; }
@@ -363,6 +384,15 @@
     max-width: none; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
+  .w36-m {
+    width: 36px;
+    width: 2.25rem; }
+  .min-w36-m {
+    min-width: 36px;
+    min-width: 2.25rem; }
+  .max-w36-m {
+    max-width: 36px;
+    max-width: 2.25rem; }
   .w48-m {
     width: 48px;
     width: 3rem; }
@@ -497,6 +527,15 @@
     max-width: none; } }
 
 @media screen and (min-width: 60em) {
+  .w36-l {
+    width: 36px;
+    width: 2.25rem; }
+  .min-w36-l {
+    min-width: 36px;
+    min-width: 2.25rem; }
+  .max-w36-l {
+    max-width: 36px;
+    max-width: 2.25rem; }
   .w48-l {
     width: 48px;
     width: 3rem; }

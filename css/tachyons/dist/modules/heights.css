@@ -39,6 +39,18 @@
 .max-h0 {
   max-height: 0; }
 
+.h15 {
+  height: 15px;
+  height: 0.9375rem; }
+
+.min-h15 {
+  min-height: 15px;
+  min-height: 0.9375rem; }
+
+.max-h15 {
+  max-height: 15px;
+  max-height: 0.9375rem; }
+
 .h48 {
   height: 48px;
   height: 3rem; }
@@ -181,6 +193,15 @@
     min-height: 0; }
   .max-h0-ns {
     max-height: 0; }
+  .h15-ns {
+    height: 15px;
+    height: 0.9375rem; }
+  .min-h15-ns {
+    min-height: 15px;
+    min-height: 0.9375rem; }
+  .max-h15-ns {
+    max-height: 15px;
+    max-height: 0.9375rem; }
   .h48-ns {
     height: 48px;
     height: 3rem; }
@@ -282,6 +303,15 @@
     min-height: 0; }
   .max-h0-m {
     max-height: 0; }
+  .h15-m {
+    height: 15px;
+    height: 0.9375rem; }
+  .min-h15-m {
+    min-height: 15px;
+    min-height: 0.9375rem; }
+  .max-h15-m {
+    max-height: 15px;
+    max-height: 0.9375rem; }
   .h48-m {
     height: 48px;
     height: 3rem; }
@@ -383,6 +413,15 @@
     min-height: 0; }
   .max-h0-l {
     max-height: 0; }
+  .h15-l {
+    height: 15px;
+    height: 0.9375rem; }
+  .min-h15-l {
+    min-height: 15px;
+    min-height: 0.9375rem; }
+  .max-h15-l {
+    max-height: 15px;
+    max-height: 0.9375rem; }
   .h48-l {
     height: 48px;
     height: 3rem; }

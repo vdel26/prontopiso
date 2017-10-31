@@ -438,6 +438,11 @@
   stroke-width: 240px;
   stroke-width: 15rem; }
 
+.swthird {
+  stroke-width: -webkit-calc(100% / 3);
+  stroke-width: -moz-calc(100% / 3);
+  stroke-width: calc(100% / 3); }
+
 .swa {
   stroke-width: auto; }
 
@@ -540,6 +545,10 @@
   .sw240-ns {
     stroke-width: 240px;
     stroke-width: 15rem; }
+  .swthird-ns {
+    stroke-width: -webkit-calc(100% / 3);
+    stroke-width: -moz-calc(100% / 3);
+    stroke-width: calc(100% / 3); }
   .swa-ns {
     stroke-width: auto; } }
 
@@ -642,6 +651,10 @@
   .sw240-m {
     stroke-width: 240px;
     stroke-width: 15rem; }
+  .swthird-m {
+    stroke-width: -webkit-calc(100% / 3);
+    stroke-width: -moz-calc(100% / 3);
+    stroke-width: calc(100% / 3); }
   .swa-m {
     stroke-width: auto; } }
 
@@ -744,5 +757,9 @@
   .sw240-l {
     stroke-width: 240px;
     stroke-width: 15rem; }
+  .swthird-l {
+    stroke-width: -webkit-calc(100% / 3);
+    stroke-width: -moz-calc(100% / 3);
+    stroke-width: calc(100% / 3); }
   .swa-l {
     stroke-width: auto; } }

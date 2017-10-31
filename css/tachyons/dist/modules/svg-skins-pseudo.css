@@ -591,6 +591,12 @@
   stroke-width: 240px;
   stroke-width: 15rem; }
 
+.hover-swthird:hover,
+.hover-swthird:focus {
+  stroke-width: -webkit-calc(100% / 3);
+  stroke-width: -moz-calc(100% / 3);
+  stroke-width: calc(100% / 3); }
+
 .hover-swa:hover,
 .hover-swa:focus {
   stroke-width: auto; }
@@ -727,6 +733,11 @@
   .hover-sw240-ns:focus {
     stroke-width: 240px;
     stroke-width: 15rem; }
+  .hover-swthird-ns:hover,
+  .hover-swthird-ns:focus {
+    stroke-width: -webkit-calc(100% / 3);
+    stroke-width: -moz-calc(100% / 3);
+    stroke-width: calc(100% / 3); }
   .hover-swa-ns:hover,
   .hover-swa-ns:focus {
     stroke-width: auto; } }
@@ -863,6 +874,11 @@
   .hover-sw240-m:focus {
     stroke-width: 240px;
     stroke-width: 15rem; }
+  .hover-swthird-m:hover,
+  .hover-swthird-m:focus {
+    stroke-width: -webkit-calc(100% / 3);
+    stroke-width: -moz-calc(100% / 3);
+    stroke-width: calc(100% / 3); }
   .hover-swa-m:hover,
   .hover-swa-m:focus {
     stroke-width: auto; } }
@@ -999,6 +1015,11 @@
   .hover-sw240-l:focus {
     stroke-width: 240px;
     stroke-width: 15rem; }
+  .hover-swthird-l:hover,
+  .hover-swthird-l:focus {
+    stroke-width: -webkit-calc(100% / 3);
+    stroke-width: -moz-calc(100% / 3);
+    stroke-width: calc(100% / 3); }
   .hover-swa-l:hover,
   .hover-swa-l:focus {
     stroke-width: auto; } }

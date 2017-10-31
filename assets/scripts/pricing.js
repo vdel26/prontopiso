@@ -21,6 +21,21 @@ const tipLeft = tippy('#input-left', {
 const elLeft = document.querySelector('#input-left');
 const popperLeft = tipLeft.getPopperElement(elLeft);
 
+const tipMiddle = tippy('#calculator-range', {
+  position: 'top',
+  html: document.querySelector('#tooltip-middle'),
+  offset: '0, 25',
+  popperOptions: {
+    modifiers: {
+      flip: {
+        enabled: false
+      }
+    }
+  }
+});
+const elMiddle = document.querySelector('#calculator-range');
+const popperMiddle = tipMiddle.getPopperElement(elMiddle);
+
 const tipRight = tippy('#input-right', {
   position: 'top-start',
   html: document.querySelector('#tooltip-right'),
@@ -37,6 +52,7 @@ const elRight = document.querySelector('#input-right');
 const popperRight = tipRight.getPopperElement(elRight);
 
 tipLeft.show(popperLeft);
+tipMiddle.show(popperMiddle);
 tipRight.show(popperRight);
 
 // const breakpoint = window.matchMedia('screen and (min-width: 30em)');
@@ -60,6 +76,7 @@ tipRight.show(popperRight);
 // Calculator
 var calculatorInput = document.querySelector('#calculator-input')
   , calculatorRange = document.querySelector('#calculator-range')
+  , tooltipMiddle = document.querySelector('#tooltip-middle')
   , calculatorMin = document.querySelector('#calculator-min')
   , calculatorMid = document.querySelector('#calculator-mid')
   , calculatorMax = document.querySelector('#calculator-max')
@@ -79,6 +96,7 @@ function updateCalculator() {
     , calculatorComVal = baseFee + (incentiveFee / (calculatorInputVal - calculatorMinVal) * (calculatorMidVal - calculatorMinVal))
     , calculatorResVal = calculatorMidVal * (1 - calculatorComVal);
 
+  tooltipMiddle.innerHTML = formatCurrencyValue(Math.round(calculatorMidVal));
   calculatorMin.innerHTML = formatCurrencyValue(Math.round(calculatorMinVal));
   calculatorMid.innerHTML = formatCurrencyValue(Math.round(calculatorMidVal));
   calculatorMax.innerHTML = formatCurrencyValue(Math.round(calculatorMaxVal));

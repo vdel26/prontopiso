@@ -154,6 +154,7 @@ $spacings: (
   180: 180px 11.25rem,
   200: 200px 12.5rem,
   240: 240px 15rem,
+  third: calc(100% / 3),
   a: auto,
 );
 
@@ -288,6 +289,7 @@ $margins: (
 // Use spacing variables
 $widths: (
 /* Width Scale */
+  w36: 36px 2.25rem,
   w48: 48px 3rem,
   w100: 100px 6.25rem,
 
@@ -328,6 +330,7 @@ $widths: (
 $heights: (
 /* Height Scale */
   h0: 0,
+  h15: 15px .9375rem,
   h48: 48px 3rem,
   h100: 100px 6.25rem,
   h1000: 1000px 62.5rem,

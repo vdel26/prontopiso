@@ -548,6 +548,26 @@
   left: 240px;
   left: 15rem; }
 
+.top-third {
+  top: -webkit-calc(100% / 3);
+  top: -moz-calc(100% / 3);
+  top: calc(100% / 3); }
+
+.right-third {
+  right: -webkit-calc(100% / 3);
+  right: -moz-calc(100% / 3);
+  right: calc(100% / 3); }
+
+.bottom-third {
+  bottom: -webkit-calc(100% / 3);
+  bottom: -moz-calc(100% / 3);
+  bottom: calc(100% / 3); }
+
+.left-third {
+  left: -webkit-calc(100% / 3);
+  left: -moz-calc(100% / 3);
+  left: calc(100% / 3); }
+
 .top-a {
   top: auto; }
 
@@ -959,6 +979,22 @@
   .left-240-ns {
     left: 240px;
     left: 15rem; }
+  .top-third-ns {
+    top: -webkit-calc(100% / 3);
+    top: -moz-calc(100% / 3);
+    top: calc(100% / 3); }
+  .right-third-ns {
+    right: -webkit-calc(100% / 3);
+    right: -moz-calc(100% / 3);
+    right: calc(100% / 3); }
+  .bottom-third-ns {
+    bottom: -webkit-calc(100% / 3);
+    bottom: -moz-calc(100% / 3);
+    bottom: calc(100% / 3); }
+  .left-third-ns {
+    left: -webkit-calc(100% / 3);
+    left: -moz-calc(100% / 3);
+    left: calc(100% / 3); }
   .top-a-ns {
     top: auto; }
   .right-a-ns {
@@ -1366,6 +1402,22 @@
   .left-240-m {
     left: 240px;
     left: 15rem; }
+  .top-third-m {
+    top: -webkit-calc(100% / 3);
+    top: -moz-calc(100% / 3);
+    top: calc(100% / 3); }
+  .right-third-m {
+    right: -webkit-calc(100% / 3);
+    right: -moz-calc(100% / 3);
+    right: calc(100% / 3); }
+  .bottom-third-m {
+    bottom: -webkit-calc(100% / 3);
+    bottom: -moz-calc(100% / 3);
+    bottom: calc(100% / 3); }
+  .left-third-m {
+    left: -webkit-calc(100% / 3);
+    left: -moz-calc(100% / 3);
+    left: calc(100% / 3); }
   .top-a-m {
     top: auto; }
   .right-a-m {
@@ -1773,6 +1825,22 @@
   .left-240-l {
     left: 240px;
     left: 15rem; }
+  .top-third-l {
+    top: -webkit-calc(100% / 3);
+    top: -moz-calc(100% / 3);
+    top: calc(100% / 3); }
+  .right-third-l {
+    right: -webkit-calc(100% / 3);
+    right: -moz-calc(100% / 3);
+    right: calc(100% / 3); }
+  .bottom-third-l {
+    bottom: -webkit-calc(100% / 3);
+    bottom: -moz-calc(100% / 3);
+    bottom: calc(100% / 3); }
+  .left-third-l {
+    left: -webkit-calc(100% / 3);
+    left: -moz-calc(100% / 3);
+    left: calc(100% / 3); }
   .top-a-l {
     top: auto; }
   .right-a-l {
