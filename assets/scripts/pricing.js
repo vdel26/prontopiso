@@ -55,22 +55,6 @@ tipLeft.show(popperLeft);
 tipMiddle.show(popperMiddle);
 tipRight.show(popperRight);
 
-// const breakpoint = window.matchMedia('screen and (min-width: 30em)');
-// const breakpointChecker = function() {
-//   if ( breakpoint.matches === false ) {
-//     tipLeft.destroy(popperLeft);
-//     tipRight.destroy(popperRight);
-//     return;
-//   } else if ( breakpoint.matches === true ) {
-//     tipLeft.show(popperLeft);
-//     tipRight.show(popperRight);
-//     return;
-//   }
-// };
-//
-// breakpoint.addListener(breakpointChecker);
-// breakpointChecker();
-
 
 
 // Calculator
@@ -86,6 +70,7 @@ var calculatorInput = document.querySelector('#calculator-input')
 
 calculatorInput.addEventListener('input', updateCalculator, true);
 calculatorRange.addEventListener('input', updateCalculator, true);
+calculatorRange.addEventListener('input', moveTooltip, true);
 
 function updateCalculator() {
   var calculatorInputVal = calculatorInput.value
@@ -104,6 +89,30 @@ function updateCalculator() {
   calculatorCom.innerHTML = formatPercentageValue(calculatorComVal);
 };
 
+var rangeEdges = calculatorRange.getBoundingClientRect()
+  , tooltip = document.querySelector('#tippy-tooltip-2')
+  , tooltipEdges = tooltip.getBoundingClientRect()
+  , rangeThumbWidth = 30;
+
+tooltip.style.zIndex = 2;
+
+function moveTooltip(e) {
+  var value = Number(e.target.value)
+    , movement = (value - calculatorRange.min) / (calculatorRange.max - calculatorRange.min)
+    , newPos = movement * rangeEdges.width
+    , newPosNormalized = mapRange(newPos, 0, rangeEdges.width, rangeEdges.left + rangeThumbWidth / 2, rangeEdges.right - rangeThumbWidth / 2)
+    , leftEdge = newPosNormalized - (tooltipEdges.width / 2)
+    , [x, y, z] = get3dValues(tooltip.style.transform);
+
+  requestAnimationFrame(function () {
+    tooltip.style.transform = get3dString(leftEdge, y, z)
+  })
+};
+
+
+
+// Helpers
+
 function formatCurrencyValue(val) {
   return val.toLocaleString('es-ES', {
     style: 'currency',
@@ -120,3 +129,16 @@ function formatPercentageValue(val) {
     maximumFractionDigits: 1
   });
 };
+
+function get3dValues (transform3d) {
+  let matches = transform3d.match(/\((\d+)px,\s?(\d+)px,\s?(\d+)px\)/)
+  return [matches[1], matches[2], matches[3]]
+}
+
+function get3dString (x, y, z) {
+  return`translate3d(${x}px, ${y}px, ${z}px)`
+}
+
+function mapRange (val, inMin, inMax, outMin, outMax) {
+  return (val - inMin) * (outMax - outMin) / (inMax - inMin) + outMin
+}
