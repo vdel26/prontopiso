@@ -22020,16 +22020,16 @@ img {
 */
 /* Placeholder */
 .ph-white::-webkit-input-placeholder {
-  color: #fff; }
+  color: rgba(255, 255, 255, 0.4); }
 
 .ph-white::-moz-placeholder {
-  color: #fff; }
+  color: rgba(255, 255, 255, 0.4); }
 
 .ph-white:-ms-input-placeholder {
-  color: #fff; }
+  color: rgba(255, 255, 255, 0.4); }
 
 .ph-white:-moz-placeholder {
-  color: #fff; }
+  color: rgba(255, 255, 255, 0.4); }
 
 /* Debugging */
 /*
