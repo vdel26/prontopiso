@@ -226,11 +226,15 @@ function toggleConditionalInputs(toggle, disable, condition) {
         for (i = 0; i < inputsToDisable.length; ++i) {
           inputsToDisable[i].classList.add('o-50');
           inputsToDisable[i].disabled = true;
+          inputsToDisable[i].required = false;
+          inputsToDisable[i].placeholder = 'Desactivado';
         }
       } else {
         for (i = 0; i < inputsToDisable.length; ++i) {
           inputsToDisable[i].classList.remove('o-50');
           inputsToDisable[i].disabled = false;
+          inputsToDisable[i].required = true;
+          inputsToDisable[i].placeholder = inputsToDisable[i].getAttribute('data-placeholder');
         }
       }
     });
@@ -240,7 +244,7 @@ function toggleConditionalInputs(toggle, disable, condition) {
 
 // Validate input on blur
 function inputOnInputBlur(e) {
-  
+
   var validity = this.validity
     , value = this.value, type = this.type, name = this.name, id = this.id
     , error = document.querySelector('#' + name + '-error');
