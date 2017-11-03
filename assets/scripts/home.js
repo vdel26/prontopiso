@@ -1,5 +1,22 @@
 /* Home */
 
+// Scroll to How-It-Works if coming from a different page
+var hash = window.location.hash;
+if (hash && hash === '#how-it-works') {
+  var scroll = new SmoothScroll()
+    , anchor = document.querySelector('#how-it-works');
+  setTimeout(function() {
+    scroll.animateScroll(anchor);
+  }, 500);
+}
+
+var scroll = new SmoothScroll()
+  , anchor = document.querySelector('#how-it-works')
+  , toggle = document.getElementById('a[href="#how-it-works"]');
+if (anchor) {
+  scroll.animateScroll(anchor, toggle);
+}
+
 // How-It-Works Swiper
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 'auto',
