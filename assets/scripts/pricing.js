@@ -95,10 +95,10 @@ var rangeEdges = calculatorRange.getBoundingClientRect()
   , rangeThumbWidth = 30;
 
 tooltip.style.zIndex = 2;
+document.body.classList.add('overflow-x-hidden');
 
-function moveTooltip(e) {
-  var value = Number(e.target.value)
-    , movement = (value - calculatorRange.min) / (calculatorRange.max - calculatorRange.min)
+function moveTooltip() {
+  var movement = (calculatorRange.value - calculatorRange.min) / (calculatorRange.max - calculatorRange.min)
     , newPos = movement * rangeEdges.width
     , newPosNormalized = mapRange(newPos, 0, rangeEdges.width, rangeEdges.left + rangeThumbWidth / 2, rangeEdges.right - rangeThumbWidth / 2)
     , leftEdge = newPosNormalized - (tooltipEdges.width / 2)
@@ -109,6 +109,12 @@ function moveTooltip(e) {
   })
 };
 
+window.addEventListener('resize', function() {
+  rangeEdges = calculatorRange.getBoundingClientRect();
+  tooltipEdges = tooltip.getBoundingClientRect();
+  moveTooltip();
+}, supportsPassive ? { passive: true } : false);
+
 
 
 // Helpers
@@ -118,7 +124,7 @@ function formatCurrencyValue(val) {
     style: 'currency',
     currency: 'EUR',
     minimumFractionDigits: 0,
-    maximumFractionDigits: 0
+    maximumFractionDigits: 0,
   });
 };
 
@@ -126,19 +132,19 @@ function formatPercentageValue(val) {
   return val.toLocaleString('es-ES', {
     style: 'percent',
     minimumFractionDigits: 0,
-    maximumFractionDigits: 1
+    maximumFractionDigits: 1,
   });
 };
 
-function get3dValues (transform3d) {
-  let matches = transform3d.match(/\((\d+)px,\s?(\d+)px,\s?(\d+)px\)/)
-  return [matches[1], matches[2], matches[3]]
+function get3dValues(transform3d) {
+  var matches = transform3d.match(/\((\d+)px,\s?(\d+)px,\s?(\d+)px\)/);
+  if (matches) return [matches[1], matches[2], matches[3]];
 }
 
-function get3dString (x, y, z) {
-  return`translate3d(${x}px, ${y}px, ${z}px)`
+function get3dString(x, y, z) {
+  return `translate3d(${x}px, ${y}px, ${z}px)`;
 }
 
-function mapRange (val, inMin, inMax, outMin, outMax) {
-  return (val - inMin) * (outMax - outMin) / (inMax - inMin) + outMin
+function mapRange(val, inMin, inMax, outMin, outMax) {
+  return (val - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
 }

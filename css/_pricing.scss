@@ -121,7 +121,12 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 
-/* Tooltip Triangles */
+/* Tooltips */
+.tippy-popper,
+.tippy-tooltip {
+  transition-duration: 0s !important;
+}
+
 .triangle::before {
   content: '';
   position: absolute;
