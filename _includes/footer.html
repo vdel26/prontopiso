@@ -56,11 +56,12 @@
 </footer>
 
 
-<script src="{{ "/assets/vendor/scrollreveal.min.js" | prepend: site.baseurl }}" charset="utf-8"></script>
-<script src="{{ "/assets/vendor/stickybits.min.js" | prepend: site.baseurl }}" charset="utf-8"></script>
+<script src="/assets/vendor/scrollreveal.min.js" charset="utf-8"></script>
+<script src="/assets/vendor/stickybits.min.js" charset="utf-8"></script>
+<!-- <script src="/assets/vendor/focus-ring.js" charset="utf-8"></script> -->
 
 {% for script in page.scripts %}
-<script src="{{ script }}" charset="utf-8" async defer></script>
+<script src="{{ script }}" charset="utf-8"></script>
 {% endfor %}
 
-<script src="{{ "/assets/scripts/main.js" | prepend: site.baseurl }}" charset="utf-8"></script>
+<script src="/assets/scripts/main.js" charset="utf-8"></script>

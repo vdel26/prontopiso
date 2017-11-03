@@ -9,6 +9,14 @@
 @import 'pricing';
 
 
+
+/* General */
+
+:focus {
+  outline: none;
+}
+
+
 /* Tooltips */
 
 .bubble {
