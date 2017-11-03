@@ -4,7 +4,7 @@ var forms = document.querySelectorAll('form')
   , progressBar = document.querySelector('progress')
   , currentFieldsNo = document.querySelector('#form-current-fields')
   , response = {};
-  
+
 
 
 // Set address-zipCode if in URL
@@ -92,18 +92,18 @@ for (var i = 0; i < forms.length; i++) {
   // Before submitting the form…
   forms[i].addEventListener('submit', function(e) {
     e.preventDefault();
-    
+
     var completeFieldsets = completedFieldsets();
     // Prevent submitting the form if it hasn't been filled
     if (completeFieldsets >= (fieldsets.length - 1)) {
       var submitResponse = sendResponseObject(response);
     } else {
-      // Validate 
+      // Validate
       for (var i = 0; i < inputs.length; i++) {
         var id = inputs[i].id, name = inputs[i].name
           , value = inputs[i].value, validity = inputs[i].validity
           , error = document.querySelector('#' + name + '-error');
-        
+
         if (id === 'address-street') {
           if (response.address && response.address.streetNumber) error.classList.remove('db');
           else error.classList.add('db');
@@ -111,7 +111,7 @@ for (var i = 0; i < forms.length; i++) {
           error.classList.remove('db');
         } else if (error) error.classList.add('db');
       }
-      
+
       // Scroll to first fieldset not completed
       var firstIncompleteFieldset = document.querySelector('fieldset.incomplete')
         , scroll = new SmoothScroll()
@@ -148,6 +148,11 @@ for (i = 0; i < inputs.length; ++i) {
       }
     }, true);
   }
+}
+
+// Attach blur event to fieldsets
+for (i = 0; i < fieldsets.length; ++i) {
+  fieldsets[i].addEventListener('click', fieldsetOnClick);
 }
 
 
@@ -256,14 +261,14 @@ function inputOnInputBlur(e) {
       response[responseAddy[0]][responseAddy[1]] = value;
     }
   }
-  
+
   if (id === 'address-street' && response.address && response.address.streetNumber) error.classList.remove('db');
   else if (value && validity.valid && error) error.classList.remove('db');
 }
 
 // Validate input on blur
 function fieldsetOnInputBlur(e) {
-  
+
   var validity = this.validity
     , value = this.value, type = this.type, name = this.name, id = this.id
     , error = document.querySelector('#' + name + '-error');
@@ -290,16 +295,16 @@ function fieldsetOnInputBlur(e) {
     parentFieldset.classList.add('incomplete');
     parentFieldset.classList.remove('complete');
   }
-  
+
   // Scroll to next fieldset if current one is complete
-  // var scroll = new SmoothScroll();
-  // if (parentFieldset.classList.contains('complete')) {
-  //   var anchor = parentFieldset.nextElementSibling
-  //     , toggle = undefined;
-  //   scroll.animateScroll(anchor, toggle, {
-  //     offset: window.innerHeight / 4,
-  //   });
-  // }
+  var scroll = new SmoothScroll();
+  if (parentFieldset.classList.contains('complete')) {
+    var anchor = parentFieldset.nextElementSibling
+      , toggle = undefined;
+    scroll.animateScroll(anchor, toggle, {
+      offset: window.innerHeight / 4,
+    });
+  }
 
   // Count how many fieldsets are valid
   completeFieldsets = completedFieldsets();
@@ -307,6 +312,25 @@ function fieldsetOnInputBlur(e) {
   // Set progress bar to completed number
   progressBar.value = completeFieldsets;
   currentFieldsNo.innerHTML = completeFieldsets;
+}
+
+
+// Scroll to fieldset on click
+function fieldsetOnClick() {
+  if (this.style.opacity == 1) {
+    return;
+  } else {
+    for (i = 0; i < fieldsets.length; ++i) {
+      fieldsets[i].style.opacity = '';
+    } this.style.opacity = 1;
+    var scroll = new SmoothScroll()
+      , anchor = this
+      , toggle = undefined;
+    scroll.animateScroll(anchor, toggle, {
+      offset: window.innerHeight / 4,
+    });
+    return;
+  }
 }
 
 
@@ -330,7 +354,7 @@ function setOpacityCenteredElement() {
       fieldsets[i].style.opacity = '';
     } elem.style.opacity = 1;
   }
-} 
+}
 
 
 // Get closest parent to element that matches selector
