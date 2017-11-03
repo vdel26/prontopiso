@@ -34,7 +34,7 @@ calculator:
     mid:
       description: 'Precio final de venta'
     hi:
-      description: '100% de la valoración'
+      description: '106% de la valoración'
       tip: 'Si se vendiera por encima del 100% de la valoración, <span class="fw5">el sobreprecio también te lo llevas tú</span>.'
       tip-clean: 'Si se vendiera por encima del 100% de la valoración, el sobreprecio también te lo llevas tú.'
     results:

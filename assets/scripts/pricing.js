@@ -92,9 +92,10 @@ function updateCalculator() {
     , calculatorRangeVal = calculatorRange.value
     , calculatorMinVal = calculatorInputVal * 0.94
     , calculatorMidVal = calculatorInputVal * (calculatorRangeVal / 100)
-    , calculatorMaxVal = calculatorInputVal * 1.00
-    , calculatorComVal = baseFee + (incentiveFee / (calculatorInputVal - calculatorMinVal) * (calculatorMidVal - calculatorMinVal))
-    , calculatorResVal = calculatorMidVal * (1 - calculatorComVal);
+    , calculatorMaxVal = calculatorInputVal * 1.06
+    , calculatorComVal = baseFee + (incentiveFee / (calculatorInputVal - calculatorMinVal) * (calculatorMidVal - calculatorMinVal));
+    calculatorComVal = (calculatorComVal > .06)? .06 : calculatorComVal;
+  var calculatorResVal = calculatorMidVal * (1 - calculatorComVal);
 
   tooltipMiddle.innerHTML = formatCurrencyValue(Math.round(calculatorMidVal));
   calculatorMin.innerHTML = formatCurrencyValue(Math.round(calculatorMinVal));
