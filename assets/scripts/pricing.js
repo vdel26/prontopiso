@@ -82,6 +82,7 @@ function updateCalculator() {
     calculatorComVal = (calculatorComVal > .06)? .06 : calculatorComVal;
   var calculatorResVal = calculatorMidVal * (1 - calculatorComVal);
 
+
   tooltipMiddle.innerHTML = formatCurrencyValue(Math.round(calculatorMidVal));
   calculatorMin.innerHTML = formatCurrencyValue(Math.round(calculatorMinVal));
   calculatorMid.innerHTML = formatCurrencyValue(Math.round(calculatorMidVal));
@@ -133,7 +134,7 @@ function formatPercentageValue(val) {
   return val.toLocaleString('es-ES', {
     style: 'percent',
     minimumFractionDigits: 0,
-    maximumFractionDigits: 1,
+    maximumFractionDigits: 2
   });
 };
 
