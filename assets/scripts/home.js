@@ -10,13 +10,6 @@ if (hash && hash === '#how-it-works') {
   }, 500);
 }
 
-var scroll = new SmoothScroll()
-  , anchor = document.querySelector('#how-it-works')
-  , toggle = document.getElementById('a[href="#how-it-works"]');
-if (anchor) {
-  scroll.animateScroll(anchor, toggle);
-}
-
 // How-It-Works Swiper
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 'auto',
