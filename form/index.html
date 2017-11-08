@@ -8,7 +8,7 @@ scripts:
 
 classes:
   form: 'measure-65-ns mha-ns pt120 pt200-ns ph36 pb150 pb160-ns f18-ns'
-  fieldset: 'cf ma0 mb20 mb30-ns pa0 ph20-ns bn o-30'
+  fieldset: 'cf ma0 mb20 mb30-ns pa0 ph20-ns bn o-30 incomplete'
   legend: 'mh20-ns mb20 mb40-ns fw5'
   group: 'input-group cf cb relative'
   small: 'cb absolute bottom-n10 dn red graphik f16 o-100'
@@ -362,9 +362,8 @@ classes:
       </div>
 
       <div class="relative fl-ns w-100 w-third-ns mb20 mb40-ns ph20-ns">
-        <input class="{{ page.classes.input.input }}"
-               type="text" name="buyDate" id="buyDate" value="" placeholder="Selecciona una fecha" required
-               onfocus="(this.type='date')" oonfocus="(this.placeholder='')" oonblur="(this.type='text')"
+        <input class="{{ page.classes.input.input }}" data-placeholder="Selecciona una fecha"
+               type="date" name="buyDate" id="buyDate" placeholder="Selecciona una fecha" required
                pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
         <div class="{{ page.classes.group }}">
           <small id="buyDate-error" class="{{ page.classes.small }}" style="position: relative;">Escoge una opción</small>

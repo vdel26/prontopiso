@@ -3,7 +3,17 @@ var forms = document.querySelectorAll('form')
   , inputs = document.querySelectorAll('input')
   , progressBar = document.querySelector('progress')
   , currentFieldsNo = document.querySelector('#form-current-fields')
-  , response = {};
+  , mediaQueryList = window.matchMedia('screen and (min-width: 30em)')
+  , verticalOffset, response = {};
+
+
+
+// Set mediaQueryList for different breakpoints
+function handleMediaQueries(mql) {
+  if (mql) verticalOffset = window.innerHeight / 3; // Desktop
+  else verticalOffset = window.innerHeight / 4; // Mobile
+} handleMediaQueries(mediaQueryList);
+mediaQueryList.addListener(handleMediaQueries);
 
 
 
@@ -15,7 +25,7 @@ if (zipCodeInUrl) zipCodeInput.value = zipCodeInUrl;
 
 
 // Attach setOpacityCenteredElement to wheel event
-document.addEventListener('wheel', setOpacityCenteredElement, supportsPassive ? { passive: true } : false);
+document.addEventListener('scroll', setOpacityCenteredElement, supportsPassive ? { passive: true } : false);
 
 
 
@@ -118,8 +128,9 @@ for (var i = 0; i < forms.length; i++) {
         , anchor = firstIncompleteFieldset ? firstIncompleteFieldset : document.querySelector('fieldset')
         , toggle = document.getElementById('submit');
       if (anchor) {
+        resetFieldsetsOpacity(anchor);
         scroll.animateScroll(anchor, toggle, {
-          offset: window.innerHeight / 4,
+          offset: verticalOffset,
         });
       }
     }
@@ -140,6 +151,7 @@ dateInput.setAttribute('max', maxDate);
 for (i = 0; i < inputs.length; ++i) {
   inputs[i].addEventListener('blur', inputOnInputBlur, true);
   inputs[i].addEventListener('blur', fieldsetOnInputBlur, true);
+  inputs[i].addEventListener('change', fieldsetOnInputBlur, true);
   if (inputs[i].type === 'radio') {
     inputs[i].addEventListener('change', function() {
       if (this && this.validity.valid) {
@@ -151,9 +163,9 @@ for (i = 0; i < inputs.length; ++i) {
 }
 
 // Attach blur event to fieldsets
-for (i = 0; i < fieldsets.length; ++i) {
-  fieldsets[i].addEventListener('click', fieldsetOnClick);
-}
+// for (i = 0; i < fieldsets.length; ++i) {
+//   fieldsets[i].addEventListener('click', fieldsetOnClick);
+// }
 
 
 
@@ -305,14 +317,18 @@ function fieldsetOnInputBlur(e) {
   }
 
   // Scroll to next fieldset if current one is complete
-  // var scroll = new SmoothScroll();
-  // if (parentFieldset.classList.contains('complete')) {
-  //   var anchor = parentFieldset.nextElementSibling
-  //     , toggle = undefined;
-  //   scroll.animateScroll(anchor, toggle, {
-  //     offset: window.innerHeight / 4,
-  //   });
-  // }
+  var scroll = new SmoothScroll();
+  if (parentFieldset.classList.contains('complete')) {
+    var anchor = parentFieldset.nextElementSibling
+      , toggle = undefined;
+    scroll.animateScroll(anchor, toggle, {
+      offset: verticalOffset,
+    });
+    setOpacityCenteredElement();
+    // Focus first input of centered fieldset
+    var firstInputInside = anchor.querySelector('input');
+    firstInputInside.focus();
+  }
 
   // Count how many fieldsets are valid
   completeFieldsets = completedFieldsets();
@@ -328,17 +344,21 @@ function fieldsetOnClick() {
   if (this.style.opacity == 1) {
     return;
   } else {
-    for (i = 0; i < fieldsets.length; ++i) {
-      fieldsets[i].style.opacity = '';
-    } this.style.opacity = 1;
+    resetFieldsetsOpacity(this);
     var scroll = new SmoothScroll()
       , anchor = this
       , toggle = undefined;
     scroll.animateScroll(anchor, toggle, {
-      offset: window.innerHeight / 4,
+      offset: verticalOffset,
     });
     return;
   }
+}
+
+function resetFieldsetsOpacity(elem) {
+  for (i = 0; i < fieldsets.length; ++i) {
+    fieldsets[i].style.opacity = '';
+  } elem.style.opacity = 1;
 }
 
 
@@ -355,12 +375,13 @@ function completedFieldsets() {
 // Set opacity for element in center of window
 function setOpacityCenteredElement() {
   // Get closest element to window center
-  var elem = document.elementFromPoint( window.innerWidth / 2, window.innerHeight / 2 );
+  var elem = document.elementFromPoint( window.innerWidth / 2, verticalOffset );
   if( elem.nodeName == 'FIELDSET' ) {
     // Reset all fieldsets opacity and set only for current one
-    for (i = 0; i < fieldsets.length; ++i) {
-      fieldsets[i].style.opacity = '';
-    } elem.style.opacity = 1;
+    resetFieldsetsOpacity(elem);
+    // Don't // Focus first input of centered fieldset // to prevent the browser from auto-scrolling to it
+    // var firstInputInside = elem.querySelector('input');
+    // firstInputInside.focus();
   }
 }
 
