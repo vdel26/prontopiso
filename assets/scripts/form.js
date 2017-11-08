@@ -224,17 +224,21 @@ function toggleConditionalInputs(toggle, disable, condition) {
     toggleInput[i].addEventListener('change', function(e) {
       if (this.id === condition) {
         for (i = 0; i < inputsToDisable.length; ++i) {
+          var inputPlaceholder = inputsToDisable[i].getAttribute('data-placeholder');
           inputsToDisable[i].classList.add('o-50');
-          inputsToDisable[i].disabled = true;
-          // inputsToDisable[i].required = false;
           inputsToDisable[i].placeholder = 'Desactivado';
+          inputsToDisable[i].disabled = true;
+          if (!inputPlaceholder.includes('Opcional'))
+            inputsToDisable[i].required = false;
         }
       } else {
         for (i = 0; i < inputsToDisable.length; ++i) {
+          var inputPlaceholder = inputsToDisable[i].getAttribute('data-placeholder');
           inputsToDisable[i].classList.remove('o-50');
+          inputsToDisable[i].placeholder = inputPlaceholder;
           inputsToDisable[i].disabled = false;
-          // inputsToDisable[i].required = true;
-          inputsToDisable[i].placeholder = inputsToDisable[i].getAttribute('data-placeholder');
+          if (!inputPlaceholder.includes('Opcional'))
+            inputsToDisable[i].required = true;
         }
       }
     });
