@@ -4934,24 +4934,33 @@ img {
 .playfair {
   font-family: "Playfair Display", serif; }
 
+.muli {
+  font-family: Muli, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
+
 .graphik {
   font-family: Graphik, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
 
 @media screen and (min-width: 30em) {
   .playfair-ns {
     font-family: "Playfair Display", serif; }
+  .muli-ns {
+    font-family: Muli, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
   .graphik-ns {
     font-family: Graphik, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .playfair-m {
     font-family: "Playfair Display", serif; }
+  .muli-m {
+    font-family: Muli, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
   .graphik-m {
     font-family: Graphik, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; } }
 
 @media screen and (min-width: 60em) {
   .playfair-l {
     font-family: "Playfair Display", serif; }
+  .muli-l {
+    font-family: Muli, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
   .graphik-l {
     font-family: Graphik, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; } }
 
@@ -5058,6 +5067,9 @@ img {
 .fw5 {
   font-weight: 500; }
 
+.fw6 {
+  font-weight: 600; }
+
 .fw7 {
   font-weight: 700; }
 
@@ -5072,6 +5084,8 @@ img {
     font-weight: 400; }
   .fw5-ns {
     font-weight: 500; }
+  .fw6-ns {
+    font-weight: 600; }
   .fw7-ns {
     font-weight: 700; } }
 
@@ -5086,6 +5100,8 @@ img {
     font-weight: 400; }
   .fw5-m {
     font-weight: 500; }
+  .fw6-m {
+    font-weight: 600; }
   .fw7-m {
     font-weight: 700; } }
 
@@ -5100,6 +5116,8 @@ img {
     font-weight: 400; }
   .fw5-l {
     font-weight: 500; }
+  .fw6-l {
+    font-weight: 600; }
   .fw7-l {
     font-weight: 700; } }
 
@@ -21130,6 +21148,10 @@ img {
   font-size: 50px;
   font-size: 3.125rem; }
 
+.f56 {
+  font-size: 56px;
+  font-size: 3.5rem; }
+
 .f58 {
   font-size: 58px;
   font-size: 3.625rem; }
@@ -21166,6 +21188,9 @@ img {
   .f50-ns {
     font-size: 50px;
     font-size: 3.125rem; }
+  .f56-ns {
+    font-size: 56px;
+    font-size: 3.5rem; }
   .f58-ns {
     font-size: 58px;
     font-size: 3.625rem; }
@@ -21201,6 +21226,9 @@ img {
   .f50-m {
     font-size: 50px;
     font-size: 3.125rem; }
+  .f56-m {
+    font-size: 56px;
+    font-size: 3.5rem; }
   .f58-m {
     font-size: 58px;
     font-size: 3.625rem; }
@@ -21236,6 +21264,9 @@ img {
   .f50-l {
     font-size: 50px;
     font-size: 3.125rem; }
+  .f56-l {
+    font-size: 56px;
+    font-size: 3.5rem; }
   .f58-l {
     font-size: 58px;
     font-size: 3.625rem; }

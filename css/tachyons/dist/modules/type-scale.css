@@ -56,6 +56,10 @@
   font-size: 50px;
   font-size: 3.125rem; }
 
+.f56 {
+  font-size: 56px;
+  font-size: 3.5rem; }
+
 .f58 {
   font-size: 58px;
   font-size: 3.625rem; }
@@ -92,6 +96,9 @@
   .f50-ns {
     font-size: 50px;
     font-size: 3.125rem; }
+  .f56-ns {
+    font-size: 56px;
+    font-size: 3.5rem; }
   .f58-ns {
     font-size: 58px;
     font-size: 3.625rem; }
@@ -127,6 +134,9 @@
   .f50-m {
     font-size: 50px;
     font-size: 3.125rem; }
+  .f56-m {
+    font-size: 56px;
+    font-size: 3.5rem; }
   .f58-m {
     font-size: 58px;
     font-size: 3.625rem; }
@@ -162,6 +172,9 @@
   .f50-l {
     font-size: 50px;
     font-size: 3.125rem; }
+  .f56-l {
+    font-size: 56px;
+    font-size: 3.5rem; }
   .f58-l {
     font-size: 58px;
     font-size: 3.625rem; }
