@@ -10,8 +10,9 @@ var forms = document.querySelectorAll('form')
 
 // Set mediaQueryList for different breakpoints
 function handleMediaQueries(mql) {
-  if (mql) verticalOffset = window.innerHeight / 3; // Desktop
-  else verticalOffset = window.innerHeight / 4; // Mobile
+  console.log(mql);
+  if (mql.matches) verticalOffset = window.innerHeight / 3; // Desktop
+  else verticalOffset = window.innerHeight / 5; // Mobile
 } handleMediaQueries(mediaQueryList);
 mediaQueryList.addListener(handleMediaQueries);
 
