@@ -226,14 +226,14 @@ function toggleConditionalInputs(toggle, disable, condition) {
         for (i = 0; i < inputsToDisable.length; ++i) {
           inputsToDisable[i].classList.add('o-50');
           inputsToDisable[i].disabled = true;
-          inputsToDisable[i].required = false;
+          // inputsToDisable[i].required = false;
           inputsToDisable[i].placeholder = 'Desactivado';
         }
       } else {
         for (i = 0; i < inputsToDisable.length; ++i) {
           inputsToDisable[i].classList.remove('o-50');
           inputsToDisable[i].disabled = false;
-          inputsToDisable[i].required = true;
+          // inputsToDisable[i].required = true;
           inputsToDisable[i].placeholder = inputsToDisable[i].getAttribute('data-placeholder');
         }
       }
@@ -301,14 +301,14 @@ function fieldsetOnInputBlur(e) {
   }
 
   // Scroll to next fieldset if current one is complete
-  var scroll = new SmoothScroll();
-  if (parentFieldset.classList.contains('complete')) {
-    var anchor = parentFieldset.nextElementSibling
-      , toggle = undefined;
-    scroll.animateScroll(anchor, toggle, {
-      offset: window.innerHeight / 4,
-    });
-  }
+  // var scroll = new SmoothScroll();
+  // if (parentFieldset.classList.contains('complete')) {
+  //   var anchor = parentFieldset.nextElementSibling
+  //     , toggle = undefined;
+  //   scroll.animateScroll(anchor, toggle, {
+  //     offset: window.innerHeight / 4,
+  //   });
+  // }
 
   // Count how many fieldsets are valid
   completeFieldsets = completedFieldsets();
