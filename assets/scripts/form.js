@@ -10,7 +10,6 @@ var forms = document.querySelectorAll('form')
 
 // Set mediaQueryList for different breakpoints
 function handleMediaQueries(mql) {
-  console.log(mql);
   if (mql.matches) verticalOffset = window.innerHeight / 3; // Desktop
   else verticalOffset = window.innerHeight / 5; // Mobile
 } handleMediaQueries(mediaQueryList);
@@ -21,7 +20,11 @@ mediaQueryList.addListener(handleMediaQueries);
 // Set address-zipCode if in URL
 var zipCodeInUrl = window.location.search.split('=')[1]
   , zipCodeInput = document.getElementById('address-zipCode');
-if (zipCodeInUrl) zipCodeInput.value = zipCodeInUrl;
+if (zipCodeInUrl) {
+  zipCodeInput.value = zipCodeInUrl;
+  zipCodeInput.dispatchEvent(new Event('change'));
+  zipCodeInput.blur();
+}
 
 
 
@@ -152,7 +155,8 @@ dateInput.setAttribute('max', maxDate);
 for (i = 0; i < inputs.length; ++i) {
   inputs[i].addEventListener('blur', inputOnInputBlur, true);
   inputs[i].addEventListener('blur', fieldsetOnInputBlur, true);
-  inputs[i].addEventListener('change', fieldsetOnInputBlur, true);
+  if (inputs[i].type !== 'date')
+    inputs[i].addEventListener('change', fieldsetOnInputBlur, true);
   if (inputs[i].type === 'radio') {
     inputs[i].addEventListener('change', function() {
       if (this && this.validity.valid) {
@@ -376,7 +380,7 @@ function completedFieldsets() {
 // Set opacity for element in center of window
 function setOpacityCenteredElement() {
   // Get closest element to window center
-  var elem = document.elementFromPoint( window.innerWidth / 2, verticalOffset );
+  var elem = document.elementFromPoint( window.innerWidth / 2, window.innerHeight / 2 );
   if( elem.nodeName == 'FIELDSET' ) {
     // Reset all fieldsets opacity and set only for current one
     resetFieldsetsOpacity(elem);
