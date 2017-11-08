@@ -107,6 +107,13 @@ for (var i = 0; i < forms.length; i++) {
   forms[i].addEventListener('submit', function(e) {
     e.preventDefault();
 
+    // Remove required attribute from optional inputs
+    for (i = 0; i < inputs.length; ++i) {
+      var inputPlaceholder = inputs[i].getAttribute('data-placeholder');
+      if (inputPlaceholder && inputPlaceholder.includes('Opcional'))
+        inputs[i].required = false;
+    }
+
     var completeFieldsets = completedFieldsets();
     // Prevent submitting the form if it hasn't been filled
     if (completeFieldsets >= (fieldsets.length - 1)) {
@@ -245,8 +252,7 @@ function toggleConditionalInputs(toggle, disable, condition) {
           inputsToDisable[i].classList.add('o-50');
           inputsToDisable[i].placeholder = 'Desactivado';
           inputsToDisable[i].disabled = true;
-          if (!inputPlaceholder.includes('Opcional'))
-            inputsToDisable[i].required = false;
+          inputsToDisable[i].required = false;
         }
       } else {
         for (i = 0; i < inputsToDisable.length; ++i) {
@@ -254,8 +260,7 @@ function toggleConditionalInputs(toggle, disable, condition) {
           inputsToDisable[i].classList.remove('o-50');
           inputsToDisable[i].placeholder = inputPlaceholder;
           inputsToDisable[i].disabled = false;
-          if (!inputPlaceholder.includes('Opcional'))
-            inputsToDisable[i].required = true;
+          inputsToDisable[i].required = true;
         }
       }
     });
@@ -324,9 +329,8 @@ function fieldsetOnInputBlur(e) {
   // Scroll to next fieldset if current one is complete
   var scroll = new SmoothScroll();
   if (parentFieldset.classList.contains('complete')) {
-    var anchor = parentFieldset.nextElementSibling
-      , toggle = undefined;
-    scroll.animateScroll(anchor, toggle, {
+    var anchor = parentFieldset.nextElementSibling;
+    scroll.animateScroll(anchor, {
       offset: verticalOffset,
     });
     setOpacityCenteredElement();
