@@ -354,8 +354,9 @@ function fieldsetOnInputBlur(e) {
     parentFieldset.classList.remove('complete');
   }
 
-  // Scroll to first incomplete fieldset
-  scrollToFirstIncompleteFieldset();
+  // Scroll to next fieldset if parent is complete
+  if (parentFieldset.classList.contains('complete'))
+    scrollToNextFieldset(parentFieldset);
 
   // Count how many fieldsets are valid
   completeFieldsets = completedFieldsets();
@@ -424,6 +425,21 @@ function scrollToFirstIncompleteFieldset() {
       offset: verticalOffset,
     });
   }
+}
+
+
+// Scroll to next fieldset
+function scrollToNextFieldset(parentFieldset) {
+  var scroll = new SmoothScroll()
+    , anchor = parentFieldset.nextElementSibling
+    , toggle = document.getElementById('submit');
+  scroll.animateScroll(anchor, toggle, {
+    offset: verticalOffset,
+  });
+  setOpacityCenteredElement();
+  // Focus first input of centered fieldset
+  var firstInputInside = anchor.querySelector('input');
+  firstInputInside.focus();
 }
 
 
