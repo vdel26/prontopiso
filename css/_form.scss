@@ -57,9 +57,14 @@ input[type="radio"]:checked + label {
   }
 }
 
-fieldset:focus-within {
+// fieldset:focus-within {
+//   opacity: 1;
+// }
+
+fieldset {
   opacity: 1;
 }
+
 /* Autocomplete */
 .pac-container {
   z-index: initial;
