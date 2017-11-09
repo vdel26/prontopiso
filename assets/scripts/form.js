@@ -439,7 +439,9 @@ function scrollToNextFieldset(parentFieldset) {
   setOpacityCenteredElement();
   // Focus first input of centered fieldset
   var firstInputInside = anchor.querySelector('input');
-  firstInputInside.focus();
+  setTimeout(function() {
+    firstInputInside.focus();
+  }, 750);
 }
 
 
