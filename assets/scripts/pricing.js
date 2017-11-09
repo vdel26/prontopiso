@@ -5,18 +5,14 @@ tippy.Defaults.zIndex = 1;
 tippy.Defaults.arrow = true;
 tippy.Defaults.trigger = 'manual';
 tippy.Defaults.hideOnClick = false;
+tippy.Defaults.popperOptions = {
+  modifiers: { flip: { enabled: false } }
+};
 
 const tipLeft = tippy('#input-left', {
   position: 'top-end',
   html: document.querySelector('#tooltip-left'),
   offset: '80, 25',
-  popperOptions: {
-    modifiers: {
-      flip: {
-        enabled: false
-      }
-    }
-  }
 });
 const elLeft = document.querySelector('#input-left');
 const popperLeft = tipLeft.getPopperElement(elLeft);
@@ -26,11 +22,7 @@ const tipMiddle = tippy('#calculator-range', {
   html: document.querySelector('#tooltip-middle'),
   offset: '0, 25',
   popperOptions: {
-    modifiers: {
-      flip: {
-        enabled: false
-      }
-    }
+    eventsEnabled: false,
   }
 });
 const elMiddle = document.querySelector('#calculator-range');
@@ -40,13 +32,6 @@ const tipRight = tippy('#input-right', {
   position: 'top-start',
   html: document.querySelector('#tooltip-right'),
   offset: '-80, 25',
-  popperOptions: {
-    modifiers: {
-      flip: {
-        enabled: false
-      }
-    }
-  }
 });
 const elRight = document.querySelector('#input-right');
 const popperRight = tipRight.getPopperElement(elRight);
