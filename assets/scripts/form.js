@@ -9,12 +9,12 @@ var forms = document.querySelectorAll('form')
 
 
 // Set mediaQueryList for different breakpoints
-function handleMediaQueries(mql) {
-  if (mql.matches) verticalOffset = window.innerHeight / 3; // Desktop
+function handleMediaQueries() {
+  if (mediaQueryList.matches) verticalOffset = window.innerHeight / 3; // Desktop
   else verticalOffset = window.innerHeight / 5; // Mobile
 } handleMediaQueries(mediaQueryList);
 mediaQueryList.addListener(handleMediaQueries);
-
+window.addEventListener('resize', handleMediaQueries, supportsPassive ? { passive: true } : false);
 
 
 // Set address-zipCode if in URL
@@ -169,17 +169,9 @@ for (var i = 0; i < forms.length; i++) {
         } else if (error) error.classList.add('db');
       }
 
-      // Scroll to first fieldset not completed
-      var firstIncompleteFieldset = document.querySelector('fieldset.incomplete')
-        , scroll = new SmoothScroll()
-        , anchor = firstIncompleteFieldset ? firstIncompleteFieldset : document.querySelector('fieldset')
-        , toggle = document.getElementById('submit');
-      if (anchor) {
-        resetFieldsetsOpacity(anchor);
-        scroll.animateScroll(anchor, toggle, {
-          offset: verticalOffset,
-        });
-      }
+      // Scroll to first incomplete fieldset
+      scrollToFirstIncompleteFieldset();
+
     }
   }, false);
 }
@@ -362,18 +354,8 @@ function fieldsetOnInputBlur(e) {
     parentFieldset.classList.remove('complete');
   }
 
-  // Scroll to next fieldset if current one is complete
-  var scroll = new SmoothScroll();
-  if (parentFieldset.classList.contains('complete')) {
-    var anchor = parentFieldset.nextElementSibling;
-    scroll.animateScroll(anchor, {
-      offset: verticalOffset,
-    });
-    setOpacityCenteredElement();
-    // Focus first input of centered fieldset
-    var firstInputInside = anchor.querySelector('input');
-    firstInputInside.focus();
-  }
+  // Scroll to first incomplete fieldset
+  scrollToFirstIncompleteFieldset();
 
   // Count how many fieldsets are valid
   completeFieldsets = completedFieldsets();
@@ -391,9 +373,8 @@ function fieldsetOnClick() {
   } else {
     resetFieldsetsOpacity(this);
     var scroll = new SmoothScroll()
-      , anchor = this
-      , toggle = undefined;
-    scroll.animateScroll(anchor, toggle, {
+      , anchor = this;
+    scroll.animateScroll(anchor, {
       offset: verticalOffset,
     });
     return;
@@ -427,6 +408,21 @@ function setOpacityCenteredElement() {
     // Don't // Focus first input of centered fieldset // to prevent the browser from auto-scrolling to it
     // var firstInputInside = elem.querySelector('input');
     // firstInputInside.focus();
+  }
+}
+
+
+// Scroll to first incomplete fieldset
+function scrollToFirstIncompleteFieldset() {
+  var firstIncompleteFieldset = document.querySelector('fieldset.incomplete')
+    , scroll = new SmoothScroll()
+    , anchor = firstIncompleteFieldset ? firstIncompleteFieldset : document.querySelector('fieldset')
+    , toggle = document.getElementById('submit');
+  if (anchor) {
+    resetFieldsetsOpacity(anchor);
+    scroll.animateScroll(anchor, toggle, {
+      offset: verticalOffset,
+    });
   }
 }
 
