@@ -385,8 +385,59 @@ function saveFieldset (fieldset) {
   inputs.forEach(saveInputValue)
 }
 
+/* end building the response */
+
+/* sending the response to the API */
+
+// Get base API url
+function getBaseApiUrl() {
+  if (location.hostname === 'staging-www.prontopiso.com' || location.hostname === 'localhost') {
+    return 'https://staging.prontopiso.com'
+  }
+  else {
+    return 'https://api.prontopiso.com'
+  }
+}
+
+// Send response object to API
+function sendResponseObject (response) {
+  var request = new XMLHttpRequest()
+  var url = getBaseApiUrl() + '/api/building_surveys'
+  var data = JSON.stringify(response)
+  var form_element = document.getElementById('main-form')
+  var submitButton = document.getElementById('submit')
+
+  // Call a function when the state changes
+  request.onreadystatechange = function() {
+    // Disable submit button while waiting on request.status
+    submitButton.disabled = true
+    if (request.readyState === 4 && request.status === 201) {
+      resetForm(form_element)
+      submitButton.disabled = false
+      document.getElementById('form-buttons').classList.add('dn')
+      document.getElementById('form-thanks-message').classList.remove('dn')
+    }
+    else if (request.readyState === 4 && request.status === 400) {
+      submitButton.disabled = false
+      var error = JSON.parse(request.responseText)
+      console.error(error.detail)
+    }
+    else {
+      console.info('Waiting...')
+    }
+  }
+
+  request.open('POST', url, true)
+  request.setRequestHeader('Content-type', 'application/json')
+  request.send(data)
+}
 
 
+// Reset form and response object
+function resetForm (form) {
+  form.reset()
+  response = {}
+}
 
 ////////////////////////////// entry point //////////////////////////////
 
@@ -428,7 +479,7 @@ function onFormSubmit (evt) {
   validateAndSaveEmailFieldset()
   if (completeFieldsets >= (fieldsets.length - 1)) {
     console.log('everything OK, submitting')
-    // var submitResponse = sendResponseObject(response);
+    var submitResponse = sendResponseObject(response);
   }
   else {
     fieldsets.forEach(validateFieldset)
