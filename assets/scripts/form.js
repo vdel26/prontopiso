@@ -26,7 +26,6 @@ var scroller = new SmoothScroll('*', {
 var questions = {
   current: 0,
   total: fieldsets.length,
-  // errors: [],
 
   initialize: function (scroll) {
     console.log('initialize')
@@ -100,6 +99,23 @@ function focusFirstElement (fieldset) {
   fieldset.querySelectorAll('input')[0].focus()
 }
 
+function markFieldsetAsComplete (fieldset) {
+  fieldset.classList.add('complete')
+  fieldset.classList.remove('incomplete')
+  updateProgressBar()
+}
+
+function markFieldsetAsIncomplete (fieldset) {
+  fieldset.classList.add('incomplete')
+  fieldset.classList.remove('complete')
+  updateProgressBar()
+}
+
+function validateEmailFieldset () {
+  var email = document.querySelector('#email-fieldset')
+  validateFieldset(email)
+}
+
 // set as active the fieldset that's closest to 1/3 of the window height
 function setOpacityCenteredElement () {
   // skip if movement didnt start from a scroll event
@@ -108,7 +124,18 @@ function setOpacityCenteredElement () {
   if (elem.nodeName === 'FIELDSET') {
     var idx = getFieldsetIndex(elem)
     questions.setActive(idx)
+    updateProgressBar()
   }
+}
+
+function updateProgressBar () {
+  console.log('updateProgressBar')
+  // Count how many fieldsets are valid
+  var completeFieldsets = completedFieldsets()
+
+  // Set progress bar to completed number
+  progressBar.value = completeFieldsets
+  currentFieldsNo.innerHTML = completeFieldsets
 }
 
 // check if fieldset is ready to go to next one. Ready means *one of these two*
@@ -122,7 +149,7 @@ function fieldsetReady (fieldset) {
   // case 1
   if (button) {
     button.addEventListener('click', function () {
-      // TODO: call validations
+      validateFieldset(fieldset)
       questions.goForward(true)
     })
   }
@@ -132,80 +159,18 @@ function fieldsetReady (fieldset) {
     var radios = fieldset.querySelectorAll('input[type=radio]')
     Array.from(radios).forEach(function (r) {
       r.addEventListener('change', function () {
-        questions.goForward(true)
+        if (this && this.validity.valid) {
+          markFieldsetAsComplete(fieldset)
+          var error = document.querySelector('#' + this.name + '-error')
+          error.classList.remove('db')
+          questions.goForward(true)
+        }
       })
     })
   }
 }
 
-/* validations */
-// strategy:
-//  - validate multi inputs when button is clicked
-//  -
-// validate date
-// validate multi
-// validate radio
-
-
-////// entry point //////
-
-// set address-zipCode if in URL
-var zipCodeInUrl = window.location.search.split('=')[1]
-var zipCodeInput = document.getElementById('address-zipCode')
-if (zipCodeInUrl) zipCodeInput.value = zipCodeInUrl
-
-// form Progress bar
-stickybits('#form-progress', {
-  useStickyClasses: true,
-  noStyles: true,
-})
-
-questions.initialize()
-document.addEventListener('scroll', throttle(setOpacityCenteredElement, 50), false)
-
-
-// attach events for moving forward between fieldsets
-for (i = 0; i < fieldsets.length; i++) {
-  fieldsetReady(fieldsets[i])
-}
-
-////////////////////////////////////////////////////////////////////////////////
-
-
-
-// // Set mediaQueryList for different breakpoints
-// function handleMediaQueries(mql) {
-//   console.log(mql);
-//   if (mql.matches) verticalOffset = window.innerHeight / 3; // Desktop
-//   else verticalOffset = window.innerHeight / 5; // Mobile
-// } handleMediaQueries(mediaQueryList);
-// mediaQueryList.addListener(handleMediaQueries);
-
-
-
-// // Set address-zipCode if in URL
-// var zipCodeInUrl = window.location.search.split('=')[1]
-//   , zipCodeInput = document.getElementById('address-zipCode');
-// if (zipCodeInUrl) zipCodeInput.value = zipCodeInUrl;
-//
-//
-//
-// // Attach setOpacityCenteredElement to wheel event
-// document.addEventListener('scroll', setOpacityCenteredElement, supportsPassive ? { passive: true } : false);
-//
-//
-//
-// // Form Progress
-// stickybits('#form-progress', {
-//   useStickyClasses: true,
-//   noStyles: true,
-// });
-//
-//
-//
-
-
-
+/* google autocomplete code */
 
 // Set and init Google Autocomplete for address
 var google_address
@@ -259,6 +224,240 @@ function fillInAddress() {
   }
   response.address = prontopiso_address;
 }
+
+/* end google autocomplete code */
+
+// set today as max value for date input
+function setMaxDate () {
+  var now = new Date()
+  var maxDate = now.toISOString().substring(0,10)
+  var dateInput = document.getElementById('buyDate')
+  dateInput.setAttribute('max', maxDate)
+}
+
+// Count how many fieldsets are valid
+function completedFieldsets() {
+  var completeFieldsets = 0;
+  for (i = 0; i < fieldsets.length; ++i) {
+    if (fieldsets[i].classList.contains('complete') && fieldsets[i].classList.contains('mb30-ns'))
+      ++completeFieldsets;
+  }
+  return completeFieldsets;
+}
+
+
+function toggleConditionalInputs(toggle, disable, condition) {
+  var toggleInput = document.querySelectorAll(toggle)
+    , inputsToDisable = document.querySelectorAll(disable);
+  for (i = 0; i < toggleInput.length; ++i) {
+    toggleInput[i].addEventListener('change', function(e) {
+      if (this.id === condition) {
+        for (i = 0; i < inputsToDisable.length; ++i) {
+          var inputPlaceholder = inputsToDisable[i].getAttribute('data-placeholder');
+          inputsToDisable[i].classList.add('o-50');
+          inputsToDisable[i].placeholder = 'Desactivado';
+          inputsToDisable[i].disabled = true;
+          if (!inputPlaceholder.includes('Opcional'))
+            inputsToDisable[i].required = false;
+        }
+      } else {
+        for (i = 0; i < inputsToDisable.length; ++i) {
+          var inputPlaceholder = inputsToDisable[i].getAttribute('data-placeholder');
+          inputsToDisable[i].classList.remove('o-50');
+          inputsToDisable[i].placeholder = inputPlaceholder;
+          inputsToDisable[i].disabled = false;
+          if (!inputPlaceholder.includes('Opcional'))
+            inputsToDisable[i].required = true;
+        }
+      }
+    });
+  }
+}
+
+/* validations */
+// strategy:
+//  - validate multi inputs when button is clicked
+//  - validate radio input on change event
+//  - on form submission:
+//      - validate everthing again (in case someone has scrolled instead of clicking button)
+//      - hide error messages as user corrects his mistakes
+
+function validateFieldset (fieldset) {
+  var inputs = fieldset.querySelectorAll('input')
+  var fieldsetValid = true
+  inputs.forEach(function (el) {
+    var error = document.querySelector('#' + el.name + '-error')
+    if (el.id === 'address-street' && (!response.address || !response.address.streetNumber)) {
+      fieldsetValid = false
+      error.classList.add('db')
+    }
+    else if (!el.validity.valid && error) {
+      fieldsetValid = false
+      error.classList.add('db')
+    }
+    else if (el.value && el.validity.valid && error) {
+      error.classList.remove('db')
+    }
+  })
+
+  // Toggle fieldsets classes
+  if (fieldsetValid) {
+    markFieldsetAsComplete(fieldset)
+  } else {
+    markFieldsetAsIncomplete(fieldset)
+  }
+}
+
+////////////////////////////// entry point //////////////////////////////
+
+// set address-zipCode if in URL
+var zipCodeInUrl = window.location.search.split('=')[1]
+var zipCodeInput = document.getElementById('address-zipCode')
+if (zipCodeInUrl) zipCodeInput.value = zipCodeInUrl
+
+// form Progress bar
+stickybits('#form-progress', {
+  useStickyClasses: true,
+  noStyles: true,
+})
+
+questions.initialize()
+document.addEventListener('scroll', throttle(setOpacityCenteredElement, 50), false)
+
+// set max date to today on date input
+setMaxDate()
+
+// attach events for moving forward between fieldsets
+for (i = 0; i < fieldsets.length; i++) {
+  fieldsetReady(fieldsets[i])
+}
+
+// show/hide conditional inputs
+toggleConditionalInputs('[name="typeBuilding"]', '#address-floor, #address-block, #address-stair, #address-door', 'typeBuilding-2');
+toggleConditionalInputs('[name="features-parking"]', '#features-parkingPlaces', 'features-parking-false');
+toggleConditionalInputs('[name="features-terrace"]', '#features-terraceArea', 'features-terrace-false');
+
+
+/* Form Validation */
+
+function onFormSubmit (evt) {
+  evt.preventDefault();
+
+  var completeFieldsets = completedFieldsets();
+  // Prevent submitting the form if it hasn't been filled
+  console.log(completeFieldsets)
+  validateEmailFieldset()
+  if (completeFieldsets >= (fieldsets.length - 1)) {
+    console.log('everything OK, submitting')
+    // var submitResponse = sendResponseObject(response);
+  }
+  else {
+    fieldsets.forEach(validateFieldset)
+
+    // Scroll to first fieldset not completed
+    var firstIncompleteFieldset = document.querySelector('fieldset.incomplete')
+    var firstIncompleteFieldsetIdx = getFieldsetIndex(firstIncompleteFieldset)
+    questions.setActive(firstIncompleteFieldsetIdx, true)
+  }
+}
+
+// Add the novalidate attribute when the JS loads
+for (var i = 0; i < forms.length; i++) {
+  // Disable HTML validation if JavaScript is running
+  forms[i].setAttribute('novalidate', true);
+  forms[i].addEventListener('submit', onFormSubmit, false);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+// // Set mediaQueryList for different breakpoints
+// function handleMediaQueries(mql) {
+//   console.log(mql);
+//   if (mql.matches) verticalOffset = window.innerHeight / 3; // Desktop
+//   else verticalOffset = window.innerHeight / 5; // Mobile
+// } handleMediaQueries(mediaQueryList);
+// mediaQueryList.addListener(handleMediaQueries);
+
+
+
+// // Set address-zipCode if in URL
+// var zipCodeInUrl = window.location.search.split('=')[1]
+//   , zipCodeInput = document.getElementById('address-zipCode');
+// if (zipCodeInUrl) zipCodeInput.value = zipCodeInUrl;
+//
+//
+//
+// // Attach setOpacityCenteredElement to wheel event
+// document.addEventListener('scroll', setOpacityCenteredElement, supportsPassive ? { passive: true } : false);
+//
+//
+//
+// // Form Progress
+// stickybits('#form-progress', {
+//   useStickyClasses: true,
+//   noStyles: true,
+// });
+//
+//
+//
+
+
+
+
+// // Set and init Google Autocomplete for address
+// var google_address
+//   , componentForm = {
+//       street_number: 'short_name',
+//       route: 'long_name',
+//       locality: 'long_name',
+//       administrative_area_level_2: 'long_name',
+//       country: 'long_name',
+//       postal_code: 'short_name'
+//     }
+//   , prontopiso_address_model = {
+//       postal_code: 'zipCode',
+//       street_number: 'streetNumber',
+//       route: 'street',
+//       locality: 'city',
+//       administrative_area_level_2: 'province',
+//       country: 'country'
+//     };
+//
+// function initAutocomplete() {
+//   var addyInput = document.getElementById('address-street');
+//   // Create the google_address object
+//   google_address = new google.maps.places.Autocomplete(
+//     /** @type {!HTMLInputElement} */
+//     addyInput, {
+//       types: ['geocode'],
+//       componentRestrictions: { country: 'es' }
+//     }
+//   );
+//   var event = new Event('build');
+//   // When the user selects an address from the dropdown, populate the address fields in the form.
+//   google_address.addListener('place_changed', fillInAddress);
+//   // Prevent ENTER from submitting the form
+//   google.maps.event.addDomListener(addyInput, 'keydown', function(e) {
+//     if (e.keyCode === 13) e.preventDefault();
+//   });
+// }
+//
+// function fillInAddress() {
+//   // Get the place details from the google_address object.
+//   var place = google_address.getPlace()
+//     , prontopiso_address = {};
+//   // Get each component of the address from the place details and fill the corresponding field on the form.
+//   for (var i = 0; i < place.address_components.length; i++) {
+//     var addressType = place.address_components[i].types[0];
+//     if (componentForm[addressType]) {
+//       var val = place.address_components[i][componentForm[addressType]];
+//       prontopiso_address[prontopiso_address_model[addressType]] = val;
+//     }
+//   }
+//   response.address = prontopiso_address;
+// }
 //
 //
 //
