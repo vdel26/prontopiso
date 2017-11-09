@@ -22,8 +22,8 @@ var zipCodeInUrl = window.location.search.split('=')[1]
   , zipCodeInput = document.getElementById('address-zipCode');
 if (zipCodeInUrl) {
   zipCodeInput.value = zipCodeInUrl;
-  zipCodeInput.dispatchEvent(new Event('change'));
-  zipCodeInput.blur();
+  var parentFieldset = closest(zipCodeInput, 'fieldset', 'form');
+  scrollToNextFieldset(parentFieldset);
 }
 
 
