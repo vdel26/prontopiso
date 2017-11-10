@@ -177,42 +177,6 @@ function fieldsetReady (fieldset) {
 
 /* google autocomplete code */
 
-// Tippy Tooltips
-tippy.Defaults.zIndex = 1;
-tippy.Defaults.position = 'top';
-tippy.Defaults.offset = '0, 12';
-tippy.Defaults.trigger = 'click';
-tippy.Defaults.hideOnClick = true;
-tippy.Defaults.popperOptions = {
-  modifiers: { flip: { enabled: false } }
-};
-
-const tipFeaturesArea = tippy('#anchor-features-area', {
-  html: document.querySelector('#tooltip-features-area'),
-  appendTo: document.querySelector('#tooltip-features-area').parentNode,
-})  , elFeaturesArea = document.querySelector('#anchor-features-area')
-    , popperFeaturesArea = tipFeaturesArea.getPopperElement(elFeaturesArea);
-
-const tipFeaturesRooms = tippy('#anchor-features-rooms', {
-  html: document.querySelector('#tooltip-features-rooms'),
-  appendTo: document.querySelector('#tooltip-features-rooms').parentNode,
-})  , elFeaturesRooms = document.querySelector('#anchor-features-rooms')
-    , popperFeaturesRooms = tipFeaturesRooms.getPopperElement(elFeaturesRooms);
-
-const tipFeaturesBathrooms = tippy('#anchor-features-bathrooms', {
-  html: document.querySelector('#tooltip-features-bathrooms'),
-  appendTo: document.querySelector('#tooltip-features-bathrooms').parentNode,
-})  , elFeaturesBathrooms = document.querySelector('#anchor-features-bathrooms')
-    , popperFeaturesBathrooms = tipFeaturesBathrooms.getPopperElement(elFeaturesBathrooms);
-
-const tipFeaturesToilets = tippy('#anchor-features-toilets', {
-  html: document.querySelector('#tooltip-features-toilets'),
-  appendTo: document.querySelector('#tooltip-features-toilets').parentNode,
-})  , elFeaturesToilets = document.querySelector('#anchor-features-toilets')
-    , popperFeaturesToilets = tipFeaturesToilets.getPopperElement(elFeaturesToilets);
-
-
-
 // Set and init Google Autocomplete for address
 var google_address
   , componentForm = {
@@ -267,6 +231,44 @@ function fillInAddress() {
 }
 
 /* end google autocomplete code */
+
+/* tooltips */
+
+// Tippy Tooltips
+tippy.Defaults.zIndex = 1;
+tippy.Defaults.position = 'top';
+tippy.Defaults.offset = '0, 12';
+tippy.Defaults.trigger = 'click';
+tippy.Defaults.hideOnClick = true;
+tippy.Defaults.popperOptions = {
+  modifiers: { flip: { enabled: false } }
+};
+
+const tipFeaturesArea = tippy('#anchor-features-area', {
+  html: document.querySelector('#tooltip-features-area'),
+  appendTo: document.querySelector('#tooltip-features-area').parentNode,
+})  , elFeaturesArea = document.querySelector('#anchor-features-area')
+    , popperFeaturesArea = tipFeaturesArea.getPopperElement(elFeaturesArea);
+
+const tipFeaturesRooms = tippy('#anchor-features-rooms', {
+  html: document.querySelector('#tooltip-features-rooms'),
+  appendTo: document.querySelector('#tooltip-features-rooms').parentNode,
+})  , elFeaturesRooms = document.querySelector('#anchor-features-rooms')
+    , popperFeaturesRooms = tipFeaturesRooms.getPopperElement(elFeaturesRooms);
+
+const tipFeaturesBathrooms = tippy('#anchor-features-bathrooms', {
+  html: document.querySelector('#tooltip-features-bathrooms'),
+  appendTo: document.querySelector('#tooltip-features-bathrooms').parentNode,
+})  , elFeaturesBathrooms = document.querySelector('#anchor-features-bathrooms')
+    , popperFeaturesBathrooms = tipFeaturesBathrooms.getPopperElement(elFeaturesBathrooms);
+
+const tipFeaturesToilets = tippy('#anchor-features-toilets', {
+  html: document.querySelector('#tooltip-features-toilets'),
+  appendTo: document.querySelector('#tooltip-features-toilets').parentNode,
+})  , elFeaturesToilets = document.querySelector('#anchor-features-toilets')
+    , popperFeaturesToilets = tipFeaturesToilets.getPopperElement(elFeaturesToilets);
+
+/* end tooltips */
 
 // set today as max value for date input
 function setMaxDate () {
@@ -391,11 +393,11 @@ function saveFieldset (fieldset) {
 
 // Get base API url
 function getBaseApiUrl() {
-  if (location.hostname === 'staging-www.prontopiso.com' || location.hostname === 'localhost') {
-    return 'https://staging.prontopiso.com'
+  if (location.hostname === 'prontopiso.com') {
+    return 'https://api.prontopiso.com'
   }
   else {
-    return 'https://api.prontopiso.com'
+    return 'https://staging.prontopiso.com'
   }
 }
 
@@ -472,18 +474,18 @@ toggleConditionalInputs('[name="features-terrace"]', '#features-terraceArea', 'f
 /* Form Validation */
 
 function onFormSubmit (evt) {
+  console.log('onFormSubmit')
   evt.preventDefault()
+  validateAndSaveEmailFieldset()
   var completeFieldsets = completedFieldsets()
 
-  // Prevent submitting the form if it hasn't been filled
-  validateAndSaveEmailFieldset()
   if (completeFieldsets >= (fieldsets.length - 1)) {
-    console.log('everything OK, submitting')
     var submitResponse = sendResponseObject(response);
   }
   else {
-    fieldsets.forEach(validateFieldset)
+    // Prevent submitting the form if it hasn't been filled
 
+    fieldsets.forEach(validateFieldset)
     // Scroll to first fieldset not completed
     var firstIncompleteFieldset = document.querySelector('fieldset.incomplete')
     var firstIncompleteFieldsetIdx = getFieldsetIndex(firstIncompleteFieldset)
