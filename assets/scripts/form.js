@@ -17,7 +17,7 @@ var scroller = new SmoothScroll('*', {
     // wait 50ms for scrolling to settle
     setTimeout(function () {
       if (autoscrolling) autoscrolling = false
-      focusFirstElement(target)
+      if (target.nodeName) focusFirstElement(target)
     }, 50)
   }
 })
@@ -463,6 +463,33 @@ function isZipFilled () {
   return false
 }
 
+/* handle form submission */
+
+function onFormSubmit (evt) {
+  console.log('onFormSubmit')
+  evt.preventDefault()
+  validateAndSaveEmailFieldset()
+
+  fieldsets.forEach(validateFieldset)
+  // overwrite response when user sends — this will catch the case where
+  // the user might have fixed errors in text input fields but not committed
+  // them with the confirmation button
+  fieldsets.forEach(saveFieldset)
+
+  var completeFieldsets = completedFieldsets()
+  if (completeFieldsets >= (fieldsets.length - 1)) {
+    // send response to the API — TODO: handle HTTP errors
+    var submitResponse = sendResponseObject(response)
+  }
+  else {
+    // Prevent submitting the form if it hasn't been filled
+    // Scroll to first fieldset not completed
+    var firstIncompleteFieldset = document.querySelector('fieldset.incomplete')
+    var firstIncompleteFieldsetIdx = getFieldsetIndex(firstIncompleteFieldset)
+    questions.setActive(firstIncompleteFieldsetIdx, true)
+  }
+}
+
 ////////////////////////////// entry point //////////////////////////////
 
 
@@ -487,29 +514,6 @@ for (i = 0; i < fieldsets.length; i++) {
 toggleConditionalInputs('[name="typeBuilding"]', '#address-floor, #address-block, #address-stair, #address-door', 'typeBuilding-2');
 toggleConditionalInputs('[name="features-parking"]', '#features-parkingPlaces', 'features-parking-false');
 toggleConditionalInputs('[name="features-terrace"]', '#features-terraceArea', 'features-terrace-false');
-
-
-/* Form Validation */
-
-function onFormSubmit (evt) {
-  console.log('onFormSubmit')
-  evt.preventDefault()
-  validateAndSaveEmailFieldset()
-  var completeFieldsets = completedFieldsets()
-
-  if (completeFieldsets >= (fieldsets.length - 1)) {
-    var submitResponse = sendResponseObject(response);
-  }
-  else {
-    // Prevent submitting the form if it hasn't been filled
-
-    fieldsets.forEach(validateFieldset)
-    // Scroll to first fieldset not completed
-    var firstIncompleteFieldset = document.querySelector('fieldset.incomplete')
-    var firstIncompleteFieldsetIdx = getFieldsetIndex(firstIncompleteFieldset)
-    questions.setActive(firstIncompleteFieldsetIdx, true)
-  }
-}
 
 // Add the novalidate attribute when the JS loads
 for (var i = 0; i < forms.length; i++) {
