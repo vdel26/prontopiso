@@ -29,9 +29,20 @@ var questions = {
 
   initialize: function (scroll) {
     console.log('initialize')
-    fieldsets[this.current].classList.remove('o-30')
-    focusFirstElement(fieldsets[this.current])
-    if (scroll) questions.autoscroll(100) // CHANGE: value should depend on screen height
+    if (isZipFilled()) {
+      var emailFieldset = fieldsets[0]
+      saveFieldset(emailFieldset)
+      validateFieldset(emailFieldset)
+      this.setActive(1, true)
+    }
+    else {
+      fieldsets[this.current].classList.remove('o-30')
+      focusFirstElement(fieldsets[this.current])
+      if (scroll) {
+        autoscrolling = true
+        scroller.animateScroll(60) // CHANGE: value should depend on screen height
+      }
+    }
   },
   autoscroll: function (next) {
     autoscrolling = true
@@ -441,12 +452,19 @@ function resetForm (form) {
   response = {}
 }
 
+// set address-zipCode if in URL
+function isZipFilled () {
+  var zipCodeInUrl = window.location.search.split('=')[1]
+  var zipCodeInput = document.getElementById('address-zipCode')
+  if (zipCodeInUrl) {
+    zipCodeInput.value = zipCodeInUrl
+    return true
+  }
+  return false
+}
+
 ////////////////////////////// entry point //////////////////////////////
 
-// set address-zipCode if in URL
-var zipCodeInUrl = window.location.search.split('=')[1]
-var zipCodeInput = document.getElementById('address-zipCode')
-if (zipCodeInUrl) zipCodeInput.value = zipCodeInUrl
 
 // form Progress bar
 stickybits('#form-progress', {
@@ -454,7 +472,7 @@ stickybits('#form-progress', {
   noStyles: true,
 })
 
-questions.initialize()
+questions.initialize(true)
 document.addEventListener('scroll', throttle(setOpacityCenteredElement, 50), false)
 
 // set max date to today on date input
