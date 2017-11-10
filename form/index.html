@@ -42,9 +42,16 @@ classes:
 
   <form id="main-form" class="{{ page.classes.form }}" name="main-form" method="POST">
 
-    <header class="nh36 mh40-ns mb90 pt45 pt100-ns pb100 pb90-ns">
-      <h1 class="mv0 mh36 mh0-ns playfair f25 f50-ns lh-120">Completa este formulario y recibe la valoración inicial de tu vivienda en 24h.</h1>
-    </header>
+    {%
+      include section-header.html
+      header-margins="nh36 mh40-ns mb90"
+      header-paddings="pt45 pt70-ns pb100 pb120-ns"
+      header-textAlign="tl"
+      h1="Completa este formulario y recibe la valoración inicial de tu vivienda en 24h."
+      h1-margins="mv0 mh36 mh0-ns"
+      h1-color="black"
+      h1-fontSize="f24 f50-ns"
+    %}
 
 
 

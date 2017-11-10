@@ -7,9 +7,11 @@ scripts:
 
 <section id="features" class="measure-78-ns mha-ns mb150-ns pt200 tc">
 
-  <header class="mb90 mb150-ns pt60 pt85-ns ph36 pb90 pb85-ns tc">
-    <h1 class="mv0 mb50-ns blue muli f30 f56-ns lh-120-ns fw6">{{ site.data.pricing.header.title }}</h1>
-  </header>
+  {% include section-header.html
+    header-paddings="pt60 pt85-ns ph36 pb90 pb85-ns"
+    h1=site.data.pricing.header.title
+    h1-fontSize="f30 f44-ns"
+  %}
 
   {% include features.html data=site.data.pricing.features %}
 
