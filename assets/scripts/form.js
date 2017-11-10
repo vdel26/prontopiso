@@ -447,15 +447,17 @@ function scrollToNextFieldset(parentFieldset) {
   var scroll = new SmoothScroll()
     , anchor = parentFieldset.nextElementSibling
     , toggle = document.getElementById('submit');
-  scroll.animateScroll(anchor, toggle, {
-    offset: verticalOffset,
-  });
-  setOpacityCenteredElement();
-  // Focus first input of centered fieldset
-  var firstInputInside = anchor.querySelector('input');
-  setTimeout(function() {
-    firstInputInside.focus();
-  }, 750);
+  if (anchor) {
+    scroll.animateScroll(anchor, toggle, {
+      offset: verticalOffset,
+    });
+    setOpacityCenteredElement();
+    // Focus first input of centered fieldset
+    var firstInputInside = anchor.querySelector('input');
+    setTimeout(function() {
+      firstInputInside.focus();
+    }, 750);
+  }
 }
 
 
