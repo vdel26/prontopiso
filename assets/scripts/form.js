@@ -501,6 +501,10 @@ stickybits('#form-progress', {
 
 questions.initialize(true)
 document.addEventListener('scroll', throttle(setOpacityCenteredElement, 50), false)
+document.addEventListener('keydown', function (evt) {
+  // dont submit form on enter
+  if (evt.keyCode === 13) evt.preventDefault()
+})
 
 // set max date to today on date input
 setMaxDate()
