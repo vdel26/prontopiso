@@ -202,6 +202,13 @@ for (i = 0; i < inputs.length; ++i) {
   }
 }
 
+// Force scrolling to next fieldset after bluring doorInput
+var doorInput = document.querySelector('#address-door');
+doorInput.addEventListener('blur', function() {
+  var doorFieldset = closest(doorInput, 'fieldset', 'form');
+  scrollToNextFieldset(doorFieldset);
+}, true);
+
 // Attach blur event to fieldsets
 // for (i = 0; i < fieldsets.length; ++i) {
 //   fieldsets[i].addEventListener('click', fieldsetOnClick);
@@ -338,8 +345,15 @@ function fieldsetOnInputBlur(e) {
     , completeFieldsets = 0;
 
   for (i = 0; i < siblingInputs.length; ++i) {
-    if (siblingInputs[i].id === 'address-street' && (!response.address || !response.address.streetNumber)) {
-      validInputsBool = false;
+    if (siblingInputs[i].id === 'address-street') {
+      if (!response.address || !response.address.streetNumber)
+        validInputsBool = false;
+    } else if (siblingInputs[i].id === 'address-block') {
+      if (!siblingInputs[i].validity.valid && !siblingInputs[i].validity.valueMissing)
+        validInputsBool = false;
+    } else if (siblingInputs[i].id === 'address-stair') {
+      if (!siblingInputs[i].validity.valid && !siblingInputs[i].validity.valueMissing)
+        validInputsBool = false;
     } else if (!siblingInputs[i].validity.valid) {
       validInputsBool = false;
     }
