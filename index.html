@@ -9,10 +9,13 @@ scripts:
 
   <div class="measure-40-ns mha-ns">
 
-    <header class="mb60">
-      <h1 class="mt0 mb30 playfair f32 f58-ns lh-120">{{ site.data.home.hero.header.title }}</h1>
-      <p class="mv0 f20-ns">{{ site.data.home.hero.header.description }}</p>
-    </header>
+    {% include section-header.html
+      header-margins="mb60"
+      header-paddings="pa0"
+      h1=site.data.home.hero.header.title
+      h1-color="black"
+      p=site.data.home.hero.header.description
+    %}
 
     <form class="cf df pa10 bg-white ba br2" action="/form"
           style="box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1); border: solid 1px #f0f0f0;">

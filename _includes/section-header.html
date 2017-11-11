@@ -1,0 +1,10 @@
+<header class="{{ include.header-measure }} {{ include.header-margins | default: 'mb90 mb150-ns' }} {{ include.header-paddings | default: 'pt25 pt85-ns pb15 pb85-ns' }} {{ include.header-textAlign | default: 'tc' }}">
+{% if include.h1 %}
+  <h1 class="{{ include.h1-margins | default: 'mv0' }} {{ include.h1-color | default: 'blue' }} muli {{ include.h1-fontSize | default: 'f30 f56-ns' }} lh-135 fw6"
+    >{{ include.h1 }}</h1>
+{% endif %}
+{% if include.p %}
+  <p class="{{ include.p-measure }} {{ include.p-margins | default: 'mt20 mb0' }} {{ include.p-fontSize | default: 'f16 f20-ns' }} lh-160"
+    >{{ include.p }}</p>
+{% endif %}
+</header>

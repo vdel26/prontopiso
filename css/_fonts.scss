@@ -2,10 +2,10 @@
 
 @font-face {
   font-family: 'Graphik';
-  src: url('../assets/fonts/Graphik-Medium-Web.eot');
-  src: url('../assets/fonts/Graphik-Medium-Web.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/Graphik-Medium-Web.woff2') format('woff2'),
-       url('../assets/fonts/Graphik-Medium-Web.woff') format('woff');
+  src: url('../assets/fonts/graphik/Graphik-Medium-Web.eot');
+  src: url('../assets/fonts/graphik/Graphik-Medium-Web.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/graphik/Graphik-Medium-Web.woff2') format('woff2'),
+       url('../assets/fonts/graphik/Graphik-Medium-Web.woff') format('woff');
   font-weight:  500;
   font-style:   normal;
   font-stretch: normal;
@@ -13,83 +13,193 @@
 
 @font-face {
   font-family: 'Graphik';
-  src: url('../assets/fonts/Graphik-Regular-Web.eot');
-  src: url('../assets/fonts/Graphik-Regular-Web.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/Graphik-Regular-Web.woff2') format('woff2'),
-       url('../assets/fonts/Graphik-Regular-Web.woff') format('woff');
+  src: url('../assets/fonts/graphik/Graphik-Regular-Web.eot');
+  src: url('../assets/fonts/graphik/Graphik-Regular-Web.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/graphik/Graphik-Regular-Web.woff2') format('woff2'),
+       url('../assets/fonts/graphik/Graphik-Regular-Web.woff') format('woff');
   font-weight:  400;
   font-style:   normal;
   font-stretch: normal;
 }
 
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../assets/fonts/muli/muli-v11-latin-200.eot');
+  src: local('Muli ExtraLight'), local('Muli-ExtraLight'),
+       url('../assets/fonts/muli/muli-v11-latin-200.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/muli/muli-v11-latin-200.woff2') format('woff2'),
+       url('../assets/fonts/muli/muli-v11-latin-200.woff') format('woff'),
+       url('../assets/fonts/muli/muli-v11-latin-200.ttf') format('truetype'),
+       url('../assets/fonts/muli/muli-v11-latin-200.svg#Muli') format('svg');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: italic;
+  font-weight: 200;
+  src: url('../assets/fonts/muli/muli-v11-latin-200italic.eot');
+  src: local('Muli ExtraLight Italic'), local('Muli-ExtraLightItalic'),
+       url('../assets/fonts/muli/muli-v11-latin-200italic.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/muli/muli-v11-latin-200italic.woff2') format('woff2'),
+       url('../assets/fonts/muli/muli-v11-latin-200italic.woff') format('woff'),
+       url('../assets/fonts/muli/muli-v11-latin-200italic.ttf') format('truetype'),
+       url('../assets/fonts/muli/muli-v11-latin-200italic.svg#Muli') format('svg');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../assets/fonts/muli/muli-v11-latin-300.eot');
+  src: local('Muli Light'), local('Muli-Light'),
+       url('../assets/fonts/muli/muli-v11-latin-300.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/muli/muli-v11-latin-300.woff2') format('woff2'),
+       url('../assets/fonts/muli/muli-v11-latin-300.woff') format('woff'),
+       url('../assets/fonts/muli/muli-v11-latin-300.ttf') format('truetype'),
+       url('../assets/fonts/muli/muli-v11-latin-300.svg#Muli') format('svg');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: italic;
+  font-weight: 300;
+  src: url('../assets/fonts/muli/muli-v11-latin-300italic.eot');
+  src: local('Muli Light Italic'), local('Muli-LightItalic'),
+       url('../assets/fonts/muli/muli-v11-latin-300italic.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/muli/muli-v11-latin-300italic.woff2') format('woff2'),
+       url('../assets/fonts/muli/muli-v11-latin-300italic.woff') format('woff'),
+       url('../assets/fonts/muli/muli-v11-latin-300italic.ttf') format('truetype'),
+       url('../assets/fonts/muli/muli-v11-latin-300italic.svg#Muli') format('svg');
+}
+
+@font-face {
+  font-family: 'Muli';
   font-style: normal;
   font-weight: 400;
-  src: url('../assets/fonts/playfair-display-v11-latin-regular.eot');
-  src: url('../assets/fonts/playfair-display-v11-latin-regular.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/playfair-display-v11-latin-regular.woff2') format('woff2'),
-       url('../assets/fonts/playfair-display-v11-latin-regular.woff') format('woff'),
-       url('../assets/fonts/playfair-display-v11-latin-regular.ttf') format('truetype'),
-       url('../assets/fonts/playfair-display-v11-latin-regular.svg#PlayfairDisplay') format('svg');
+  src: url('../assets/fonts/muli/muli-v11-latin-regular.eot');
+  src: local('Muli Regular'), local('Muli-Regular'),
+       url('../assets/fonts/muli/muli-v11-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/muli/muli-v11-latin-regular.woff2') format('woff2'),
+       url('../assets/fonts/muli/muli-v11-latin-regular.woff') format('woff'),
+       url('../assets/fonts/muli/muli-v11-latin-regular.ttf') format('truetype'),
+       url('../assets/fonts/muli/muli-v11-latin-regular.svg#Muli') format('svg');
 }
 
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: 'Muli';
   font-style: italic;
   font-weight: 400;
-  src: url('../assets/fonts/playfair-display-v11-latin-italic.eot');
-  src: url('../assets/fonts/playfair-display-v11-latin-italic.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/playfair-display-v11-latin-italic.woff2') format('woff2'),
-       url('../assets/fonts/playfair-display-v11-latin-italic.woff') format('woff'),
-       url('../assets/fonts/playfair-display-v11-latin-italic.ttf') format('truetype'),
-       url('../assets/fonts/playfair-display-v11-latin-italic.svg#PlayfairDisplay') format('svg');
+  src: url('../assets/fonts/muli/muli-v11-latin-italic.eot');
+  src: local('Muli Italic'), local('Muli-Italic'),
+       url('../assets/fonts/muli/muli-v11-latin-italic.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/muli/muli-v11-latin-italic.woff2') format('woff2'),
+       url('../assets/fonts/muli/muli-v11-latin-italic.woff') format('woff'),
+       url('../assets/fonts/muli/muli-v11-latin-italic.ttf') format('truetype'),
+       url('../assets/fonts/muli/muli-v11-latin-italic.svg#Muli') format('svg');
 }
 
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/muli/muli-v11-latin-600.eot');
+  src: local('Muli SemiBold'), local('Muli-SemiBold'),
+       url('../assets/fonts/muli/muli-v11-latin-600.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/muli/muli-v11-latin-600.woff2') format('woff2'),
+       url('../assets/fonts/muli/muli-v11-latin-600.woff') format('woff'),
+       url('../assets/fonts/muli/muli-v11-latin-600.ttf') format('truetype'),
+       url('../assets/fonts/muli/muli-v11-latin-600.svg#Muli') format('svg');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: italic;
+  font-weight: 600;
+  src: url('../assets/fonts/muli/muli-v11-latin-600italic.eot');
+  src: local('Muli SemiBold Italic'), local('Muli-SemiBoldItalic'),
+       url('../assets/fonts/muli/muli-v11-latin-600italic.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/muli/muli-v11-latin-600italic.woff2') format('woff2'),
+       url('../assets/fonts/muli/muli-v11-latin-600italic.woff') format('woff'),
+       url('../assets/fonts/muli/muli-v11-latin-600italic.ttf') format('truetype'),
+       url('../assets/fonts/muli/muli-v11-latin-600italic.svg#Muli') format('svg');
+}
+
+@font-face {
+  font-family: 'Muli';
   font-style: normal;
   font-weight: 700;
-  src: url('../assets/fonts/playfair-display-v11-latin-700.eot');
-  src: url('../assets/fonts/playfair-display-v11-latin-700.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/playfair-display-v11-latin-700.woff2') format('woff2'),
-       url('../assets/fonts/playfair-display-v11-latin-700.woff') format('woff'),
-       url('../assets/fonts/playfair-display-v11-latin-700.ttf') format('truetype'),
-       url('../assets/fonts/playfair-display-v11-latin-700.svg#PlayfairDisplay') format('svg');
+  src: url('../assets/fonts/muli/muli-v11-latin-700.eot');
+  src: local('Muli Bold'), local('Muli-Bold'),
+       url('../assets/fonts/muli/muli-v11-latin-700.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/muli/muli-v11-latin-700.woff2') format('woff2'),
+       url('../assets/fonts/muli/muli-v11-latin-700.woff') format('woff'),
+       url('../assets/fonts/muli/muli-v11-latin-700.ttf') format('truetype'),
+       url('../assets/fonts/muli/muli-v11-latin-700.svg#Muli') format('svg');
 }
 
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: 'Muli';
   font-style: italic;
   font-weight: 700;
-  src: url('../assets/fonts/playfair-display-v11-latin-700italic.eot');
-  src: url('../assets/fonts/playfair-display-v11-latin-700italic.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/playfair-display-v11-latin-700italic.woff2') format('woff2'),
-       url('../assets/fonts/playfair-display-v11-latin-700italic.woff') format('woff'),
-       url('../assets/fonts/playfair-display-v11-latin-700italic.ttf') format('truetype'),
-       url('../assets/fonts/playfair-display-v11-latin-700italic.svg#PlayfairDisplay') format('svg');
+  src: url('../assets/fonts/muli/muli-v11-latin-700italic.eot');
+  src: local('Muli Bold Italic'), local('Muli-BoldItalic'),
+       url('../assets/fonts/muli/muli-v11-latin-700italic.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/muli/muli-v11-latin-700italic.woff2') format('woff2'),
+       url('../assets/fonts/muli/muli-v11-latin-700italic.woff') format('woff'),
+       url('../assets/fonts/muli/muli-v11-latin-700italic.ttf') format('truetype'),
+       url('../assets/fonts/muli/muli-v11-latin-700italic.svg#Muli') format('svg');
 }
 
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../assets/fonts/muli/muli-v11-latin-800.eot');
+  src: local('Muli ExtraBold'), local('Muli-ExtraBold'),
+       url('../assets/fonts/muli/muli-v11-latin-800.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/muli/muli-v11-latin-800.woff2') format('woff2'),
+       url('../assets/fonts/muli/muli-v11-latin-800.woff') format('woff'),
+       url('../assets/fonts/muli/muli-v11-latin-800.ttf') format('truetype'),
+       url('../assets/fonts/muli/muli-v11-latin-800.svg#Muli') format('svg');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: italic;
+  font-weight: 800;
+  src: url('../assets/fonts/muli/muli-v11-latin-800italic.eot');
+  src: local('Muli ExtraBold Italic'), local('Muli-ExtraBoldItalic'),
+       url('../assets/fonts/muli/muli-v11-latin-800italic.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/muli/muli-v11-latin-800italic.woff2') format('woff2'),
+       url('../assets/fonts/muli/muli-v11-latin-800italic.woff') format('woff'),
+       url('../assets/fonts/muli/muli-v11-latin-800italic.ttf') format('truetype'),
+       url('../assets/fonts/muli/muli-v11-latin-800italic.svg#Muli') format('svg');
+}
+
+@font-face {
+  font-family: 'Muli';
   font-style: normal;
   font-weight: 900;
-  src: url('../assets/fonts/playfair-display-v11-latin-900.eot');
-  src: url('../assets/fonts/playfair-display-v11-latin-900.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/playfair-display-v11-latin-900.woff2') format('woff2'),
-       url('../assets/fonts/playfair-display-v11-latin-900.woff') format('woff'),
-       url('../assets/fonts/playfair-display-v11-latin-900.ttf') format('truetype'),
-       url('../assets/fonts/playfair-display-v11-latin-900.svg#PlayfairDisplay') format('svg');
+  src: url('../assets/fonts/muli/muli-v11-latin-900.eot');
+  src: local('Muli Black'), local('Muli-Black'),
+       url('../assets/fonts/muli/muli-v11-latin-900.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/muli/muli-v11-latin-900.woff2') format('woff2'),
+       url('../assets/fonts/muli/muli-v11-latin-900.woff') format('woff'),
+       url('../assets/fonts/muli/muli-v11-latin-900.ttf') format('truetype'),
+       url('../assets/fonts/muli/muli-v11-latin-900.svg#Muli') format('svg');
 }
 
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: 'Muli';
   font-style: italic;
   font-weight: 900;
-  src: url('../assets/fonts/playfair-display-v11-latin-900italic.eot');
-  src: url('../assets/fonts/playfair-display-v11-latin-900italic.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/playfair-display-v11-latin-900italic.woff2') format('woff2'),
-       url('../assets/fonts/playfair-display-v11-latin-900italic.woff') format('woff'),
-       url('../assets/fonts/playfair-display-v11-latin-900italic.ttf') format('truetype'),
-       url('../assets/fonts/playfair-display-v11-latin-900italic.svg#PlayfairDisplay') format('svg');
+  src: url('../assets/fonts/muli/muli-v11-latin-900italic.eot');
+  src: local('Muli Black Italic'), local('Muli-BlackItalic'),
+       url('../assets/fonts/muli/muli-v11-latin-900italic.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/muli/muli-v11-latin-900italic.woff2') format('woff2'),
+       url('../assets/fonts/muli/muli-v11-latin-900italic.woff') format('woff'),
+       url('../assets/fonts/muli/muli-v11-latin-900italic.ttf') format('truetype'),
+       url('../assets/fonts/muli/muli-v11-latin-900italic.svg#Muli') format('svg');
 }

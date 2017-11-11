@@ -4934,24 +4934,33 @@ img {
 .playfair {
   font-family: "Playfair Display", serif; }
 
+.muli {
+  font-family: Muli, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
+
 .graphik {
   font-family: Graphik, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
 
 @media screen and (min-width: 30em) {
   .playfair-ns {
     font-family: "Playfair Display", serif; }
+  .muli-ns {
+    font-family: Muli, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
   .graphik-ns {
     font-family: Graphik, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .playfair-m {
     font-family: "Playfair Display", serif; }
+  .muli-m {
+    font-family: Muli, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
   .graphik-m {
     font-family: Graphik, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; } }
 
 @media screen and (min-width: 60em) {
   .playfair-l {
     font-family: "Playfair Display", serif; }
+  .muli-l {
+    font-family: Muli, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
   .graphik-l {
     font-family: Graphik, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; } }
 
@@ -5058,6 +5067,9 @@ img {
 .fw5 {
   font-weight: 500; }
 
+.fw6 {
+  font-weight: 600; }
+
 .fw7 {
   font-weight: 700; }
 
@@ -5072,6 +5084,8 @@ img {
     font-weight: 400; }
   .fw5-ns {
     font-weight: 500; }
+  .fw6-ns {
+    font-weight: 600; }
   .fw7-ns {
     font-weight: 700; } }
 
@@ -5086,6 +5100,8 @@ img {
     font-weight: 400; }
   .fw5-m {
     font-weight: 500; }
+  .fw6-m {
+    font-weight: 600; }
   .fw7-m {
     font-weight: 700; } }
 
@@ -5100,6 +5116,8 @@ img {
     font-weight: 400; }
   .fw5-l {
     font-weight: 500; }
+  .fw6-l {
+    font-weight: 600; }
   .fw7-l {
     font-weight: 700; } }
 
@@ -5858,6 +5876,9 @@ img {
 .lh-125 {
   line-height: 1.25; }
 
+.lh-135 {
+  line-height: 1.35; }
+
 .lh-140 {
   line-height: 1.4; }
 
@@ -5886,6 +5907,8 @@ img {
     line-height: 1.2; }
   .lh-125-ns {
     line-height: 1.25; }
+  .lh-135-ns {
+    line-height: 1.35; }
   .lh-140-ns {
     line-height: 1.4; }
   .lh-150-ns {
@@ -5908,6 +5931,8 @@ img {
     line-height: 1.2; }
   .lh-125-m {
     line-height: 1.25; }
+  .lh-135-m {
+    line-height: 1.35; }
   .lh-140-m {
     line-height: 1.4; }
   .lh-150-m {
@@ -5930,6 +5955,8 @@ img {
     line-height: 1.2; }
   .lh-125-l {
     line-height: 1.25; }
+  .lh-135-l {
+    line-height: 1.35; }
   .lh-140-l {
     line-height: 1.4; }
   .lh-150-l {
@@ -21114,6 +21141,10 @@ img {
   font-size: 20px;
   font-size: 1.25rem; }
 
+.f24 {
+  font-size: 24px;
+  font-size: 1.5rem; }
+
 .f25 {
   font-size: 25px;
   font-size: 1.5625rem; }
@@ -21126,9 +21157,17 @@ img {
   font-size: 32px;
   font-size: 2rem; }
 
+.f44 {
+  font-size: 44px;
+  font-size: 2.75rem; }
+
 .f50 {
   font-size: 50px;
   font-size: 3.125rem; }
+
+.f56 {
+  font-size: 56px;
+  font-size: 3.5rem; }
 
 .f58 {
   font-size: 58px;
@@ -21154,6 +21193,9 @@ img {
   .f20-ns {
     font-size: 20px;
     font-size: 1.25rem; }
+  .f24-ns {
+    font-size: 24px;
+    font-size: 1.5rem; }
   .f25-ns {
     font-size: 25px;
     font-size: 1.5625rem; }
@@ -21163,9 +21205,15 @@ img {
   .f32-ns {
     font-size: 32px;
     font-size: 2rem; }
+  .f44-ns {
+    font-size: 44px;
+    font-size: 2.75rem; }
   .f50-ns {
     font-size: 50px;
     font-size: 3.125rem; }
+  .f56-ns {
+    font-size: 56px;
+    font-size: 3.5rem; }
   .f58-ns {
     font-size: 58px;
     font-size: 3.625rem; }
@@ -21189,6 +21237,9 @@ img {
   .f20-m {
     font-size: 20px;
     font-size: 1.25rem; }
+  .f24-m {
+    font-size: 24px;
+    font-size: 1.5rem; }
   .f25-m {
     font-size: 25px;
     font-size: 1.5625rem; }
@@ -21198,9 +21249,15 @@ img {
   .f32-m {
     font-size: 32px;
     font-size: 2rem; }
+  .f44-m {
+    font-size: 44px;
+    font-size: 2.75rem; }
   .f50-m {
     font-size: 50px;
     font-size: 3.125rem; }
+  .f56-m {
+    font-size: 56px;
+    font-size: 3.5rem; }
   .f58-m {
     font-size: 58px;
     font-size: 3.625rem; }
@@ -21224,6 +21281,9 @@ img {
   .f20-l {
     font-size: 20px;
     font-size: 1.25rem; }
+  .f24-l {
+    font-size: 24px;
+    font-size: 1.5rem; }
   .f25-l {
     font-size: 25px;
     font-size: 1.5625rem; }
@@ -21233,9 +21293,15 @@ img {
   .f32-l {
     font-size: 32px;
     font-size: 2rem; }
+  .f44-l {
+    font-size: 44px;
+    font-size: 2.75rem; }
   .f50-l {
     font-size: 50px;
     font-size: 3.125rem; }
+  .f56-l {
+    font-size: 56px;
+    font-size: 3.5rem; }
   .f58-l {
     font-size: 58px;
     font-size: 3.625rem; }

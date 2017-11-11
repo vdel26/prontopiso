@@ -19,6 +19,7 @@ $breakpoints: (
 
 $font-families: (
   playfair: '"Playfair Display", serif',
+  muli: 'Muli, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif',
   graphik: 'Graphik, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif',
 );
 
@@ -28,10 +29,13 @@ $font-sizes: (
   16: 16px 1rem, /* 16/16 */
   18: 18px 1.125rem, /* 18/16 */
   20: 20px 1.25rem, /* 20/16 */
+  24: 24px 1.5rem,
   25: 25px 1.5625rem,
   30: 30px 1.875rem,
   32: 32px 2rem, /* 32/16 */
+  44: 44px 2.75rem,
   50: 50px 3.125rem,
+  56: 56px 3.5rem,
   58: 58px 3.625rem,
   60: 60px 3.75rem,
 );
@@ -40,6 +44,7 @@ $line-heights: (
   100: 1,
   120: 1.2,
   125: 1.25,
+  135: 1.35,
   140: 1.4,
   150: 1.5,
   160: 1.6,
@@ -69,6 +74,7 @@ $font-weights: (
   i: inherit,
   4: 400,
   5: 500,
+  6: 600,
   7: 700,
 );
 
