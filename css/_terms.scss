@@ -1,0 +1,15 @@
+/* Terms and Privacy Page CSS */
+
+#privacy, #legal{
+  a{
+    text-decoration: none;
+    color: #1f8beb;
+  }
+  table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+  table, th, td {
+      border: 1px solid black;
+  }
+}
