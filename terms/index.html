@@ -12,35 +12,16 @@ classes:
 
 <article class="measure-68-ns mha-ns pt200 pb30 pb200-ns js-scroll">
 
-  <section id="terms" class="{{ page.classes.article }}">
+  <section id="legal" class="{{ page.classes.article }}">
 
     <header class="{{ page.classes.header }}">
-      <h1 class="{{ page.classes.h1 }}">{{ site.data.terms.terms.title }}</h1>
+      <h1 class="{{ page.classes.h1 }}">{{ site.data.terms.legal.title }}</h1>
     </header>
 
-  {% for paragraph in site.data.terms.terms.intro %}
+  <!-- {% for paragraph in site.data.terms.legal.intro %}
     <p class="{{ page.classes.p }}">{{ paragraph }}</p>
-  {% endfor %}
-  {% for item in site.data.terms.terms.items %}
-    <h2 class="{{ page.classes.h2 }}">{{ item.title }}</h2>
-    {% for paragraph in item.condition %}
-    <p class="{{ page.classes.p }}">{{ paragraph }}</p>
-    {% endfor %}
-  {% endfor %}
-
-  </section>
-
-
-  <section id="policy" class="{{ page.classes.article }}">
-
-    <header class="{{ page.classes.header }}">
-      <h1 class="{{ page.classes.h1 }}">{{ site.data.terms.privacy.title }}</h1>
-    </header>
-
-  {% for paragraph in site.data.terms.privacy.intro %}
-    <p class="{{ page.classes.p }}">{{ paragraph }}</p>
-  {% endfor %}
-  {% for item in site.data.terms.privacy.items %}
+  {% endfor %} -->
+  {% for item in site.data.terms.legal.items %}
     <h2 class="{{ page.classes.h2 }}">{{ item.title }}</h2>
     {% for paragraph in item.condition %}
     <p class="{{ page.classes.p }}">{{ paragraph }}</p>

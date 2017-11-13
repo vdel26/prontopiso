@@ -40,6 +40,10 @@
   font-size: 20px;
   font-size: 1.25rem; }
 
+.f24 {
+  font-size: 24px;
+  font-size: 1.5rem; }
+
 .f25 {
   font-size: 25px;
   font-size: 1.5625rem; }
@@ -52,9 +56,17 @@
   font-size: 32px;
   font-size: 2rem; }
 
+.f44 {
+  font-size: 44px;
+  font-size: 2.75rem; }
+
 .f50 {
   font-size: 50px;
   font-size: 3.125rem; }
+
+.f56 {
+  font-size: 56px;
+  font-size: 3.5rem; }
 
 .f58 {
   font-size: 58px;
@@ -80,6 +92,9 @@
   .f20-ns {
     font-size: 20px;
     font-size: 1.25rem; }
+  .f24-ns {
+    font-size: 24px;
+    font-size: 1.5rem; }
   .f25-ns {
     font-size: 25px;
     font-size: 1.5625rem; }
@@ -89,9 +104,15 @@
   .f32-ns {
     font-size: 32px;
     font-size: 2rem; }
+  .f44-ns {
+    font-size: 44px;
+    font-size: 2.75rem; }
   .f50-ns {
     font-size: 50px;
     font-size: 3.125rem; }
+  .f56-ns {
+    font-size: 56px;
+    font-size: 3.5rem; }
   .f58-ns {
     font-size: 58px;
     font-size: 3.625rem; }
@@ -115,6 +136,9 @@
   .f20-m {
     font-size: 20px;
     font-size: 1.25rem; }
+  .f24-m {
+    font-size: 24px;
+    font-size: 1.5rem; }
   .f25-m {
     font-size: 25px;
     font-size: 1.5625rem; }
@@ -124,9 +148,15 @@
   .f32-m {
     font-size: 32px;
     font-size: 2rem; }
+  .f44-m {
+    font-size: 44px;
+    font-size: 2.75rem; }
   .f50-m {
     font-size: 50px;
     font-size: 3.125rem; }
+  .f56-m {
+    font-size: 56px;
+    font-size: 3.5rem; }
   .f58-m {
     font-size: 58px;
     font-size: 3.625rem; }
@@ -150,6 +180,9 @@
   .f20-l {
     font-size: 20px;
     font-size: 1.25rem; }
+  .f24-l {
+    font-size: 24px;
+    font-size: 1.5rem; }
   .f25-l {
     font-size: 25px;
     font-size: 1.5625rem; }
@@ -159,9 +192,15 @@
   .f32-l {
     font-size: 32px;
     font-size: 2rem; }
+  .f44-l {
+    font-size: 44px;
+    font-size: 2.75rem; }
   .f50-l {
     font-size: 50px;
     font-size: 3.125rem; }
+  .f56-l {
+    font-size: 56px;
+    font-size: 3.5rem; }
   .f58-l {
     font-size: 58px;
     font-size: 3.625rem; }

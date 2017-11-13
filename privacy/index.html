@@ -1,0 +1,33 @@
+---
+layout: default
+
+classes:
+  article: 'cf mb120 ph36'
+  header: 'mb40'
+  h1: 'mv0 f32 lh-125 fw5 blue'
+  h2: 'mt40 mb20 blue f16 f18-ns lh-175 fw5'
+  p: 'mt0 mb20 f14 f16-ns lh-200 o-80'
+
+---
+
+<article class="measure-68-ns mha-ns pt200 pb30 pb200-ns js-scroll">
+
+  <section id="privacy" class="{{ page.classes.article }}">
+
+    <header class="{{ page.classes.header }}">
+      <h1 class="{{ page.classes.h1 }}">{{ site.data.privacy.legal.title }}</h1>
+    </header>
+
+  <!-- {% for paragraph in site.data.privacy.legal.intro %}
+    <p class="{{ page.classes.p }}">{{ paragraph }}</p>
+  {% endfor %} -->
+  {% for item in site.data.privacy.legal.items %}
+    <h2 class="{{ page.classes.h2 }}">{{ item.title }}</h2>
+    {% for paragraph in item.condition %}
+    <p class="{{ page.classes.p }}">{{ paragraph }}</p>
+    {% endfor %}
+  {% endfor %}
+
+  </section>
+
+</article>

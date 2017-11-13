@@ -18,6 +18,9 @@
 .lh-125 {
   line-height: 1.25; }
 
+.lh-135 {
+  line-height: 1.35; }
+
 .lh-140 {
   line-height: 1.4; }
 
@@ -46,6 +49,8 @@
     line-height: 1.2; }
   .lh-125-ns {
     line-height: 1.25; }
+  .lh-135-ns {
+    line-height: 1.35; }
   .lh-140-ns {
     line-height: 1.4; }
   .lh-150-ns {
@@ -68,6 +73,8 @@
     line-height: 1.2; }
   .lh-125-m {
     line-height: 1.25; }
+  .lh-135-m {
+    line-height: 1.35; }
   .lh-140-m {
     line-height: 1.4; }
   .lh-150-m {
@@ -90,6 +97,8 @@
     line-height: 1.2; }
   .lh-125-l {
     line-height: 1.25; }
+  .lh-135-l {
+    line-height: 1.35; }
   .lh-140-l {
     line-height: 1.4; }
   .lh-150-l {

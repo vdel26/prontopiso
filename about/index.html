@@ -3,19 +3,25 @@ layout: default
 ---
 
 <article id="about" class="pt200 pb150 pb180-ns">
-  
-  <header class="measure-78-ns mha-ns mb90 mb150-ns pt25 pt85-ns ph36 pb15 pb85-ns tc">
-    <h1 class="mt0 mb30 mb50-ns blue playfair f32 f58-ns fw6">{{ site.data.about.header.title }}</h1>
-    <p class="measure-32 mv0 mt45-ns mha f16 f20-ns lh-160">{{ site.data.about.header.description }}</p>
-  </header>
-  
+
+  {%
+    include section-header.html
+    header-measure="measure-78-ns mha-ns"
+    header-paddings="pt25 pt85-ns ph36 pb15 pb85-ns"
+    h1=site.data.about.header.title
+    p=site.data.about.header.description
+    p-measure="measure-32 mha"
+    p-margins="mt30 mt50-ns mb0"
+    p-fontSize=""
+  %}
+
 
   <section class="cf df-ns mb40 mb150-ns ph36">
-    
+
     <header class="fl-ns w-60-ns nh36 mr0-ns mb80 mb0-ns pr50-ns">
       <img class="db w-100" src="/assets/images/about/01.jpg" />
     </header>
-    
+
     <section class="fl-ns df-ns flex-column-ns justify-evenly-ns w-40-ns pl50-ns">
     {% for item in site.data.about.items %}
       <article class="mb80 mb30-ns">
@@ -28,10 +34,10 @@ layout: default
     </section>
 
   </section>
-  
-  
+
+
   <footer class="measure-78-ns mha-ns ph36 blue tc">
-    
+
     <h1 class="mv0 mb15-ns pv40 pt70-ns pb60-ns f20 f32-ns fw5">{{ site.data.about.footer.title }}</h1>
     <p class="measure-32 mv0 mha f18 f30-ns lh-160">{{ site.data.about.footer.description }}</p>
 
