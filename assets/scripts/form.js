@@ -1,4 +1,5 @@
 var forms = document.querySelectorAll('form')
+  , header = document.querySelector('header')
   , fieldsets = document.querySelectorAll('fieldset')
   , inputs = document.querySelectorAll('input')
   , progressBar = document.querySelector('progress')
@@ -6,76 +7,184 @@ var forms = document.querySelectorAll('form')
   , mediaQueryList = window.matchMedia('screen and (min-width: 30em)')
   , verticalOffset, response = {};
 
+// scroller
+var autoscrolling = false
+var scroller = new SmoothScroll('*', {
+  header: 'header',
+  speed: 600,
+  offset: 100, // CHANGE: value should depend on screen height
+  after: function (target) {
+    // wait 50ms for scrolling to settle
+    setTimeout(function () {
+      if (autoscrolling) autoscrolling = false
+      if (target.nodeName) focusFirstElement(target)
+    }, 50)
+  }
+})
 
+// global state
+var questions = {
+  current: 0,
+  total: fieldsets.length,
 
-// Set mediaQueryList for different breakpoints
-function handleMediaQueries() {
-  if (mediaQueryList.matches) verticalOffset = window.innerHeight / 3; // Desktop
-  else verticalOffset = window.innerHeight / 5; // Mobile
-} handleMediaQueries(mediaQueryList);
-mediaQueryList.addListener(handleMediaQueries);
-window.addEventListener('resize', handleMediaQueries, supportsPassive ? { passive: true } : false);
-
-
-// Set address-zipCode if in URL
-var zipCodeInUrl = window.location.search.split('=')[1]
-  , zipCodeInput = document.getElementById('address-zipCode');
-if (zipCodeInUrl) {
-  zipCodeInput.value = zipCodeInUrl;
-  var parentFieldset = closest(zipCodeInput, 'fieldset', 'form');
-  scrollToNextFieldset(parentFieldset);
+  initialize: function (scroll) {
+    // console.log('initialize')
+    if (isZipFilled()) {
+      var emailFieldset = fieldsets[0]
+      saveFieldset(emailFieldset)
+      validateFieldset(emailFieldset)
+      this.setActive(1, true)
+    }
+    else {
+      fieldsets[this.current].classList.remove('o-30')
+      focusFirstElement(fieldsets[this.current])
+      if (scroll) {
+        autoscrolling = true
+        scroller.animateScroll(60) // CHANGE: value should depend on screen height
+      }
+    }
+  },
+  autoscroll: function (next) {
+    autoscrolling = true
+    scroller.animateScroll(fieldsets[this.current])
+  },
+  setActive: function (next, scroll) {
+    // console.log('setActive', this.current)
+    if (next < 0 || next > this.total) return
+    fieldsets[this.current].classList.add('o-30')
+    fieldsets[next].classList.remove('o-30')
+    this.current = next
+    if (scroll) questions.autoscroll(fieldsets[this.current])
+  },
+  goForward: function (scroll) {
+    // console.log('goForward')
+    if (this.current === this.total) return
+    fieldsets[this.current].classList.add('o-30')
+    fieldsets[++this.current].classList.remove('o-30')
+    if (scroll) questions.autoscroll(fieldsets[this.current])
+  },
+  goBack: function (scroll) {
+    // console.log('goBack')
+    if (this.current === 0) return
+    fieldsets[this.current].classList.add('o-30')
+    fieldsets[--this.current].classList.remove('o-30')
+    if (scroll) questions.autoscroll(fieldsets[this.current])
+  }
 }
 
+// returns a function that will call *func* every *wait* miliseconds at most
+function throttle (func, wait) {
+  var context, args, timeout, result
+  var previous = 0
+  var later = function () {
+    previous = new Date()
+    timeout = null
+    result = func.apply(context, args)
+  }
+  return function () {
+    var now = new Date()
+    var remaining = wait - (now - previous)
+    context = this
+    args = arguments
+    if (remaining <= 0) {
+      clearTimeout(timeout)
+      timeout = null
+      previous = now
+      result = func.apply(context, args)
+    } else if (!timeout) {
+      timeout = setTimeout(later, remaining)
+    }
+    return result
+  }
+}
 
+// find index of a fieldset
+function getFieldsetIndex (fieldset) {
+  return Array.from(fieldsets).findIndex(function (el) {
+    return el === fieldset
+  })
+}
 
-// Attach setOpacityCenteredElement to wheel event
-document.addEventListener('scroll', setOpacityCenteredElement, supportsPassive ? { passive: true } : false);
+// focus on the first input of a fieldset
+function focusFirstElement (fieldset) {
+  fieldset.querySelectorAll('input')[0].focus()
+}
 
+function markFieldsetAsComplete (fieldset) {
+  fieldset.classList.add('complete')
+  fieldset.classList.remove('incomplete')
+  updateProgressBar()
+}
 
+function markFieldsetAsIncomplete (fieldset) {
+  fieldset.classList.add('incomplete')
+  fieldset.classList.remove('complete')
+  updateProgressBar()
+}
 
-// Form Progress
-stickybits('#form-progress', {
-  useStickyClasses: true,
-  noStyles: true,
-});
+function validateAndSaveEmailFieldset () {
+  var email = document.querySelector('#email-fieldset')
+  saveFieldset(email)
+  validateFieldset(email)
+}
 
+// set as active the fieldset that's closest to 1/3 of the window height
+function setOpacityCenteredElement () {
+  // skip if movement didnt start from a scroll event
+  if (autoscrolling) return
+  var elem = document.elementFromPoint(window.innerWidth / 2, (window.innerHeight / 2) - 100) // CHANGE: value should depend on screen height
+  if (elem.nodeName === 'FIELDSET') {
+    var idx = getFieldsetIndex(elem)
+    questions.setActive(idx)
+    updateProgressBar()
+  }
+}
 
+function updateProgressBar () {
+  // Count how many fieldsets are valid
+  var completeFieldsets = completedFieldsets()
 
-// Tippy Tooltips
-tippy.Defaults.zIndex = 1;
-tippy.Defaults.position = 'top';
-tippy.Defaults.offset = '0, 12';
-tippy.Defaults.trigger = 'click';
-tippy.Defaults.hideOnClick = true;
-tippy.Defaults.popperOptions = {
-  modifiers: { flip: { enabled: false } }
-};
+  // Set progress bar to completed number
+  progressBar.value = completeFieldsets
+  currentFieldsNo.innerHTML = completeFieldsets
+}
 
-const tipFeaturesArea = tippy('#anchor-features-area', {
-  html: document.querySelector('#tooltip-features-area'),
-  appendTo: document.querySelector('#tooltip-features-area').parentNode,
-})  , elFeaturesArea = document.querySelector('#anchor-features-area')
-    , popperFeaturesArea = tipFeaturesArea.getPopperElement(elFeaturesArea);
+// check if fieldset is ready to go to next one. Ready means *one of these two*
+// conditions is met:
+//   Case 1. Button is clicked (for fieldsets that have at least one text / date / number input)
+//   Case 2. Choice is clicked (for fieldsets that just have radio inputs)
+function fieldsetReady (fieldset) {
+  var button = fieldset.querySelector('.js-next')
 
-const tipFeaturesRooms = tippy('#anchor-features-rooms', {
-  html: document.querySelector('#tooltip-features-rooms'),
-  appendTo: document.querySelector('#tooltip-features-rooms').parentNode,
-})  , elFeaturesRooms = document.querySelector('#anchor-features-rooms')
-    , popperFeaturesRooms = tipFeaturesRooms.getPopperElement(elFeaturesRooms);
+  // case 1
+  if (button) {
+    button.addEventListener('click', function () {
+      // always save inputs, they will be overwritten by the user later
+      // in case they are not valid
+      saveFieldset(fieldset)
+      validateFieldset(fieldset)
+      questions.goForward(true)
+    })
+  }
 
-const tipFeaturesBathrooms = tippy('#anchor-features-bathrooms', {
-  html: document.querySelector('#tooltip-features-bathrooms'),
-  appendTo: document.querySelector('#tooltip-features-bathrooms').parentNode,
-})  , elFeaturesBathrooms = document.querySelector('#anchor-features-bathrooms')
-    , popperFeaturesBathrooms = tipFeaturesBathrooms.getPopperElement(elFeaturesBathrooms);
+  // case 2
+  else {
+    var radios = fieldset.querySelectorAll('input[type=radio]')
+    Array.from(radios).forEach(function (r) {
+      r.addEventListener('change', function () {
+        if (this && this.validity.valid) {
+          saveInputValue(this)
+          markFieldsetAsComplete(fieldset)
+          var error = document.querySelector('#' + this.name + '-error')
+          error.classList.remove('db')
+          questions.goForward(true)
+        }
+      })
+    })
+  }
+}
 
-const tipFeaturesToilets = tippy('#anchor-features-toilets', {
-  html: document.querySelector('#tooltip-features-toilets'),
-  appendTo: document.querySelector('#tooltip-features-toilets').parentNode,
-})  , elFeaturesToilets = document.querySelector('#anchor-features-toilets')
-    , popperFeaturesToilets = tipFeaturesToilets.getPopperElement(elFeaturesToilets);
-
-
+/* google autocomplete code */
 
 // Set and init Google Autocomplete for address
 var google_address
@@ -130,152 +239,65 @@ function fillInAddress() {
   response.address = prontopiso_address;
 }
 
+/* end google autocomplete code */
 
+/* tooltips */
 
+// Tippy Tooltips
+tippy.Defaults.zIndex = 1;
+tippy.Defaults.position = 'top';
+tippy.Defaults.offset = '0, 12';
+tippy.Defaults.trigger = 'click';
+tippy.Defaults.hideOnClick = true;
+tippy.Defaults.popperOptions = {
+  modifiers: { flip: { enabled: false } }
+};
 
-/* Form Validation */
+const tipFeaturesArea = tippy('#anchor-features-area', {
+  html: document.querySelector('#tooltip-features-area'),
+  appendTo: document.querySelector('#tooltip-features-area').parentNode,
+})  , elFeaturesArea = document.querySelector('#anchor-features-area')
+    , popperFeaturesArea = tipFeaturesArea.getPopperElement(elFeaturesArea);
 
-// Add the novalidate attribute when the JS loads
-for (var i = 0; i < forms.length; i++) {
-  // Disable HTML validation if JavaScript is running
-  forms[i].setAttribute('novalidate', true);
-  // Before submitting the form…
-  forms[i].addEventListener('submit', function(e) {
-    e.preventDefault();
+const tipFeaturesRooms = tippy('#anchor-features-rooms', {
+  html: document.querySelector('#tooltip-features-rooms'),
+  appendTo: document.querySelector('#tooltip-features-rooms').parentNode,
+})  , elFeaturesRooms = document.querySelector('#anchor-features-rooms')
+    , popperFeaturesRooms = tipFeaturesRooms.getPopperElement(elFeaturesRooms);
 
-    // Remove required attribute from optional inputs
-    for (i = 0; i < inputs.length; ++i) {
-      var inputPlaceholder = inputs[i].getAttribute('data-placeholder');
-      if (inputPlaceholder && inputPlaceholder.includes('Opcional'))
-        inputs[i].required = false;
-    }
+const tipFeaturesBathrooms = tippy('#anchor-features-bathrooms', {
+  html: document.querySelector('#tooltip-features-bathrooms'),
+  appendTo: document.querySelector('#tooltip-features-bathrooms').parentNode,
+})  , elFeaturesBathrooms = document.querySelector('#anchor-features-bathrooms')
+    , popperFeaturesBathrooms = tipFeaturesBathrooms.getPopperElement(elFeaturesBathrooms);
 
-    var completeFieldsets = completedFieldsets();
-    // Prevent submitting the form if it hasn't been filled
-    if (completeFieldsets >= (fieldsets.length - 1)) {
-      var submitResponse = sendResponseObject(response);
-    } else {
-      // Validate
-      for (var i = 0; i < inputs.length; i++) {
-        var id = inputs[i].id, name = inputs[i].name
-          , value = inputs[i].value, validity = inputs[i].validity
-          , error = document.querySelector('#' + name + '-error');
+const tipFeaturesToilets = tippy('#anchor-features-toilets', {
+  html: document.querySelector('#tooltip-features-toilets'),
+  appendTo: document.querySelector('#tooltip-features-toilets').parentNode,
+})  , elFeaturesToilets = document.querySelector('#anchor-features-toilets')
+    , popperFeaturesToilets = tipFeaturesToilets.getPopperElement(elFeaturesToilets);
 
-        if (id === 'address-street') {
-          if (response.address && response.address.streetNumber) error.classList.remove('db');
-          else error.classList.add('db');
-        } else if (value && validity.valid && error) {
-          error.classList.remove('db');
-        } else if (error) error.classList.add('db');
-      }
+/* end tooltips */
 
-      // Scroll to first incomplete fieldset
-      scrollToFirstIncompleteFieldset();
-
-    }
-  }, false);
+// set today as max value for date input
+function setMaxDate () {
+  var now = new Date()
+  var maxDate = now.toISOString().substring(0,10)
+  var dateInput = document.getElementById('buyDate')
+  dateInput.setAttribute('max', maxDate)
 }
 
-
-
-// Set today as max value for date input
-var now = new Date()
-  , maxDate = now.toISOString().substring(0,10)
-  , dateInput = document.getElementById('buyDate');
-dateInput.setAttribute('max', maxDate);
-
-
-
-// Attach blur event to inputs
-for (i = 0; i < inputs.length; ++i) {
-  inputs[i].addEventListener('blur', inputOnInputBlur, true);
-  inputs[i].addEventListener('blur', fieldsetOnInputBlur, true);
-  if (inputs[i].type !== 'date')
-    inputs[i].addEventListener('change', fieldsetOnInputBlur, true);
-  if (inputs[i].type === 'radio') {
-    inputs[i].addEventListener('change', function() {
-      if (this && this.validity.valid) {
-        var error = document.querySelector('#' + this.name + '-error');
-        error.classList.remove('db');
-      }
-    }, true);
+// Count how many fieldsets are valid
+function completedFieldsets() {
+  var completeFieldsets = 0;
+  for (i = 0; i < fieldsets.length; ++i) {
+    if (fieldsets[i].classList.contains('complete') && fieldsets[i].classList.contains('mb30-ns'))
+      ++completeFieldsets;
   }
-}
-
-// Force scrolling to next fieldset after bluring doorInput
-var doorInput = document.querySelector('#address-door');
-doorInput.addEventListener('blur', function() {
-  var doorFieldset = closest(doorInput, 'fieldset', 'form');
-  scrollToNextFieldset(doorFieldset);
-}, true);
-
-// Attach blur event to fieldsets
-// for (i = 0; i < fieldsets.length; ++i) {
-//   fieldsets[i].addEventListener('click', fieldsetOnClick);
-// }
-
-
-
-// Show/hide conditional inputs
-toggleConditionalInputs('[name="typeBuilding"]', '#address-floor, #address-block, #address-stair, #address-door', 'typeBuilding-2');
-toggleConditionalInputs('[name="features-parking"]', '#features-parkingPlaces', 'features-parking-false');
-toggleConditionalInputs('[name="features-terrace"]', '#features-terraceArea', 'features-terrace-false');
-
-
-
-
-/* Helpers */
-
-// Get base API url
-function getBaseApiUrl() {
-  if (location.hostname === 'staging-www.prontopiso.com' || location.hostname === 'localhost') {
-    return 'https://staging.prontopiso.com';
-  } else {
-    return 'https://api.prontopiso.com';
-  }
+  return completeFieldsets;
 }
 
 
-// Send response object to API
-function sendResponseObject(response) {
-  var request = new XMLHttpRequest()
-    , url = getBaseApiUrl() + '/api/building_surveys'
-    , data = JSON.stringify(response)
-    , form_element = document.getElementById('main-form')
-    , submitButton = document.getElementById('submit');
-
-  // Call a function when the state changes
-  request.onreadystatechange = function() {
-    // Disable submit button while waiting on request.status
-    submitButton.disabled = true;
-    if (request.readyState === 4 && request.status === 201) {
-      resetForm(form_element);
-      submitButton.disabled = false;
-      document.getElementById('form-buttons').classList.add('dn');
-      document.getElementById('form-thanks-message').classList.remove('dn');
-    } else if (request.readyState === 4 && request.status === 400) {
-      submitButton.disabled = false;
-      var error = JSON.parse(request.responseText);
-      console.error(error.detail)
-    } else {
-      console.info('Waiting...');
-    }
-  }
-
-  request.open('POST', url, true);
-  request.setRequestHeader('Content-type', 'application/json');
-  request.send(data);
-}
-
-
-// Reset form and response object
-function resetForm(form) {
-  form.reset();
-  response = {};
-}
-
-
-// Show/hide conditional inputs
 function toggleConditionalInputs(toggle, disable, condition) {
   var toggleInput = document.querySelectorAll(toggle)
     , inputsToDisable = document.querySelectorAll(disable);
@@ -287,7 +309,8 @@ function toggleConditionalInputs(toggle, disable, condition) {
           inputsToDisable[i].classList.add('o-50');
           inputsToDisable[i].placeholder = 'Desactivado';
           inputsToDisable[i].disabled = true;
-          inputsToDisable[i].required = false;
+          if (!inputPlaceholder.includes('Opcional'))
+            inputsToDisable[i].required = false;
         }
       } else {
         for (i = 0; i < inputsToDisable.length; ++i) {
@@ -295,183 +318,212 @@ function toggleConditionalInputs(toggle, disable, condition) {
           inputsToDisable[i].classList.remove('o-50');
           inputsToDisable[i].placeholder = inputPlaceholder;
           inputsToDisable[i].disabled = false;
-          inputsToDisable[i].required = true;
+          if (!inputPlaceholder.includes('Opcional'))
+            inputsToDisable[i].required = true;
         }
       }
     });
   }
 }
 
+/* validations */
+// strategy:
+//  - validate multi inputs when button is clicked
+//  - validate radio input on change event
+//  - on form submission:
+//      - validate everthing again (in case someone has scrolled instead of clicking button)
+//      - hide error messages as user corrects his mistakes
 
-// Validate input on blur
-function inputOnInputBlur(e) {
+function validateFieldset (fieldset) {
+  var inputs = fieldset.querySelectorAll('input')
+  var fieldsetValid = true
+  inputs.forEach(function (el) {
+    var error = document.querySelector('#' + el.name + '-error')
+    if (el.id === 'address-street' && (!response.address || !response.address.streetNumber)) {
+      fieldsetValid = false
+      error.classList.add('db')
+    }
+    else if (!el.validity.valid && error) {
+      fieldsetValid = false
+      error.classList.add('db')
+    }
+    else if (el.value && el.validity.valid && error) {
+      error.classList.remove('db')
+    }
+  })
 
-  var validity = this.validity
-    , value = this.value, type = this.type, name = this.name, id = this.id
-    , error = document.querySelector('#' + name + '-error');
+  // Toggle fieldsets classes
+  if (fieldsetValid) {
+    markFieldsetAsComplete(fieldset)
+  } else {
+    markFieldsetAsIncomplete(fieldset)
+  }
+}
+
+/* end validation */
+
+/* building the response */
+// - radio inputs invoke on change
+// - rest of inputs on button click
+
+function saveInputValue (input) {
+  var value = input.value
+  var type = input.type
+  var name = input.name
+  var error = document.querySelector('#' + name + '-error')
 
   // Save values in response object
   if (value && name !== 'cancel' && name !== 'submit') {
-    var responseAddy = name.split('-');
+    var responseAddy = name.split('-')
     // Make sure the value is the right type
-    if (value === 'true') value = true;
-    else if (value === 'false') value = false;
-    else if (type === 'radio' || type === 'number') value = parseInt(value, 10);
-    else if (type === 'date') value = value + 'T00:00:00+00:00';
+    if (value === 'true') value = true
+    else if (value === 'false') value = false
+    else if (type === 'radio' || type === 'number') value = parseInt(value, 10)
+    else if (type === 'date') value = value + 'T00:00:00+00:00'
     // Save the value where it belongs to
     if (responseAddy.length === 1) {
-      response[responseAddy] = value;
-    } else {
-      if (!response[responseAddy[0]]) response[responseAddy[0]] = {};
-      response[responseAddy[0]][responseAddy[1]] = value;
+      response[responseAddy] = value
+    }
+    else {
+      if (!response[responseAddy[0]]) response[responseAddy[0]] = {}
+      response[responseAddy[0]][responseAddy[1]] = value
+    }
+  }
+}
+
+function saveFieldset (fieldset) {
+  var inputs = fieldset.querySelectorAll('input')
+  var fieldsetValid = true
+  inputs.forEach(function (input) {
+    // only save those radio inputs that are checked
+    if (input.type === 'radio' && !input.checked) return
+    saveInputValue(input)
+  })
+}
+
+/* end building the response */
+
+/* sending the response to the API */
+
+// Get base API url
+function getBaseApiUrl() {
+  if (location.hostname === 'prontopiso.com') {
+    return 'https://api.prontopiso.com'
+  }
+  else {
+    return 'https://staging.prontopiso.com'
+  }
+}
+
+// Send response object to API
+function sendResponseObject (response) {
+  var request = new XMLHttpRequest()
+  var url = getBaseApiUrl() + '/api/building_surveys'
+  var data = JSON.stringify(response)
+  var form_element = document.getElementById('main-form')
+  var submitButton = document.getElementById('submit')
+
+  // Call a function when the state changes
+  request.onreadystatechange = function() {
+    // Disable submit button while waiting on request.status
+    submitButton.disabled = true
+    if (request.readyState === 4 && request.status === 201) {
+      resetForm(form_element)
+      submitButton.disabled = false
+      document.getElementById('form-buttons').classList.add('dn')
+      document.getElementById('form-thanks-message').classList.remove('dn')
+    }
+    else if (request.readyState === 4 && request.status === 400) {
+      submitButton.disabled = false
+      var error = JSON.parse(request.responseText)
+      console.error(error.detail)
+    }
+    else {
+      console.info('Waiting...')
     }
   }
 
-  if (id === 'address-street' && response.address && response.address.streetNumber) error.classList.remove('db');
-  else if (value && validity.valid && error) error.classList.remove('db');
-}
-
-// Validate input on blur
-function fieldsetOnInputBlur(e) {
-
-  var validity = this.validity
-    , value = this.value, type = this.type, name = this.name, id = this.id
-    , error = document.querySelector('#' + name + '-error');
-
-  // Check if all inputs inside the parent fieldset is valid
-  var parentFieldset = closest(this, 'fieldset', 'form')
-    , siblingInputs = parentFieldset.querySelectorAll('input')
-    , validInputsBool = true
-    , completeFieldsets = 0;
-
-  for (i = 0; i < siblingInputs.length; ++i) {
-    if (siblingInputs[i].id === 'address-street') {
-      if (!response.address || !response.address.streetNumber)
-        validInputsBool = false;
-    } else if (siblingInputs[i].id === 'address-block') {
-      if (!siblingInputs[i].validity.valid && !siblingInputs[i].validity.valueMissing)
-        validInputsBool = false;
-    } else if (siblingInputs[i].id === 'address-stair') {
-      if (!siblingInputs[i].validity.valid && !siblingInputs[i].validity.valueMissing)
-        validInputsBool = false;
-    } else if (!siblingInputs[i].validity.valid) {
-      validInputsBool = false;
-    }
-  }
-
-  // Toggle fieldsets classes
-  if (validInputsBool) {
-    parentFieldset.classList.add('complete');
-    parentFieldset.classList.remove('incomplete');
-  } else {
-    parentFieldset.classList.add('incomplete');
-    parentFieldset.classList.remove('complete');
-  }
-
-  // Scroll to next fieldset if parent is complete
-  if (parentFieldset.classList.contains('complete'))
-    scrollToNextFieldset(parentFieldset);
-
-  // Count how many fieldsets are valid
-  completeFieldsets = completedFieldsets();
-
-  // Set progress bar to completed number
-  progressBar.value = completeFieldsets;
-  currentFieldsNo.innerHTML = completeFieldsets;
+  request.open('POST', url, true)
+  request.setRequestHeader('Content-type', 'application/json')
+  request.send(data)
 }
 
 
-// Scroll to fieldset on click
-function fieldsetOnClick() {
-  if (this.style.opacity == 1) {
-    return;
-  } else {
-    resetFieldsetsOpacity(this);
-    var scroll = new SmoothScroll()
-      , anchor = this;
-    scroll.animateScroll(anchor, {
-      offset: verticalOffset,
-    });
-    return;
+// Reset form and response object
+function resetForm (form) {
+  form.reset()
+  response = {}
+}
+
+// set address-zipCode if in URL
+function isZipFilled () {
+  var zipCodeInUrl = window.location.search.split('=')[1]
+  var zipCodeInput = document.getElementById('address-zipCode')
+  if (zipCodeInUrl) {
+    zipCodeInput.value = zipCodeInUrl
+    return true
+  }
+  return false
+}
+
+/* handle form submission */
+
+function onFormSubmit (evt) {
+  evt.preventDefault()
+  validateAndSaveEmailFieldset()
+
+  fieldsets.forEach(validateFieldset)
+  // overwrite response when user sends — this will catch the case where
+  // the user might have fixed errors in text input fields but not committed
+  // them with the confirmation button
+  fieldsets.forEach(saveFieldset)
+
+  var completeFieldsets = completedFieldsets()
+  if (completeFieldsets >= (fieldsets.length - 1)) {
+    // send response to the API — TODO: handle HTTP errors
+    var submitResponse = sendResponseObject(response)
+  }
+  else {
+    // Prevent submitting the form if it hasn't been filled
+    // Scroll to first fieldset not completed
+    var firstIncompleteFieldset = document.querySelector('fieldset.incomplete')
+    var firstIncompleteFieldsetIdx = getFieldsetIndex(firstIncompleteFieldset)
+    questions.setActive(firstIncompleteFieldsetIdx, true)
   }
 }
 
-function resetFieldsetsOpacity(elem) {
-  for (i = 0; i < fieldsets.length; ++i) {
-    fieldsets[i].style.opacity = '';
-  } elem.style.opacity = 1;
+////////////////////////////// entry point //////////////////////////////
+
+
+// form Progress bar
+stickybits('#form-progress', {
+  useStickyClasses: true,
+  noStyles: true,
+})
+
+questions.initialize(true)
+document.addEventListener('scroll', throttle(setOpacityCenteredElement, 50), false)
+document.addEventListener('keydown', function (evt) {
+  // dont submit form on enter
+  if (evt.keyCode === 13) evt.preventDefault()
+})
+
+// set max date to today on date input
+setMaxDate()
+
+// attach events for moving forward between fieldsets
+for (i = 0; i < fieldsets.length; i++) {
+  fieldsetReady(fieldsets[i])
 }
 
+// show/hide conditional inputs
+toggleConditionalInputs('[name="typeBuilding"]', '#address-floor, #address-block, #address-stair, #address-door', 'typeBuilding-2');
+toggleConditionalInputs('[name="features-parking"]', '#features-parkingPlaces', 'features-parking-false');
+toggleConditionalInputs('[name="features-terrace"]', '#features-terraceArea', 'features-terrace-false');
 
-// Count how many fieldsets are valid
-function completedFieldsets() {
-  var completeFieldsets = 0;
-  for (i = 0; i < fieldsets.length; ++i) {
-    if (fieldsets[i].classList.contains('complete') && fieldsets[i].classList.contains('mb30-ns'))
-      ++completeFieldsets;
-  } return completeFieldsets;
-}
-
-
-// Set opacity for element in center of window
-function setOpacityCenteredElement() {
-  // Get closest element to window center
-  var elem = document.elementFromPoint( window.innerWidth / 2, window.innerHeight / 2 );
-  if( elem.nodeName == 'FIELDSET' ) {
-    // Reset all fieldsets opacity and set only for current one
-    resetFieldsetsOpacity(elem);
-    // Don't // Focus first input of centered fieldset // to prevent the browser from auto-scrolling to it
-    // var firstInputInside = elem.querySelector('input');
-    // firstInputInside.focus();
-  }
-}
-
-
-// Scroll to first incomplete fieldset
-function scrollToFirstIncompleteFieldset() {
-  var firstIncompleteFieldset = document.querySelector('fieldset.incomplete')
-    , scroll = new SmoothScroll()
-    , anchor = firstIncompleteFieldset ? firstIncompleteFieldset : document.querySelector('fieldset')
-    , toggle = document.getElementById('submit');
-  if (anchor) {
-    resetFieldsetsOpacity(anchor);
-    scroll.animateScroll(anchor, toggle, {
-      offset: verticalOffset,
-    });
-  }
-}
-
-
-// Scroll to next fieldset
-function scrollToNextFieldset(parentFieldset) {
-  var scroll = new SmoothScroll()
-    , anchor = parentFieldset.nextElementSibling
-    , toggle = document.getElementById('submit');
-  if (anchor) {
-    scroll.animateScroll(anchor, toggle, {
-      offset: verticalOffset,
-    });
-    setOpacityCenteredElement();
-    // Focus first input of centered fieldset
-    var firstInputInside = anchor.querySelector('input');
-    setTimeout(function() {
-      firstInputInside.focus();
-    }, 750);
-  }
-}
-
-
-// Get closest parent to element that matches selector
-function closest(el, selector, stopSelector) {
-  var retval = null;
-  while (el) {
-    if (el.matches(selector)) {
-      retval = el;
-      break
-    } else if (stopSelector && el.matches(stopSelector)) {
-      break
-    }
-    el = el.parentElement;
-  }
-  return retval;
+// Add the novalidate attribute when the JS loads
+for (var i = 0; i < forms.length; i++) {
+  // Disable HTML validation if JavaScript is running
+  forms[i].setAttribute('novalidate', true);
+  forms[i].addEventListener('submit', onFormSubmit, false);
 }
