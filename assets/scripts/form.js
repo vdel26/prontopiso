@@ -28,7 +28,7 @@ var questions = {
   total: fieldsets.length,
 
   initialize: function (scroll) {
-    console.log('initialize')
+    // console.log('initialize')
     if (isZipFilled()) {
       var emailFieldset = fieldsets[0]
       saveFieldset(emailFieldset)
@@ -49,7 +49,7 @@ var questions = {
     scroller.animateScroll(fieldsets[this.current])
   },
   setActive: function (next, scroll) {
-    console.log('setActive', this.current)
+    // console.log('setActive', this.current)
     if (next < 0 || next > this.total) return
     fieldsets[this.current].classList.add('o-30')
     fieldsets[next].classList.remove('o-30')
@@ -57,14 +57,14 @@ var questions = {
     if (scroll) questions.autoscroll(fieldsets[this.current])
   },
   goForward: function (scroll) {
-    console.log('goForward')
+    // console.log('goForward')
     if (this.current === this.total) return
     fieldsets[this.current].classList.add('o-30')
     fieldsets[++this.current].classList.remove('o-30')
     if (scroll) questions.autoscroll(fieldsets[this.current])
   },
   goBack: function (scroll) {
-    console.log('goBack')
+    // console.log('goBack')
     if (this.current === 0) return
     fieldsets[this.current].classList.add('o-30')
     fieldsets[--this.current].classList.remove('o-30')
@@ -141,7 +141,6 @@ function setOpacityCenteredElement () {
 }
 
 function updateProgressBar () {
-  console.log('updateProgressBar')
   // Count how many fieldsets are valid
   var completeFieldsets = completedFieldsets()
 
@@ -155,7 +154,6 @@ function updateProgressBar () {
 //   Case 1. Button is clicked (for fieldsets that have at least one text / date / number input)
 //   Case 2. Choice is clicked (for fieldsets that just have radio inputs)
 function fieldsetReady (fieldset) {
-  console.log('attaching events to fieldset')
   var button = fieldset.querySelector('.js-next')
 
   // case 1
@@ -395,7 +393,11 @@ function saveInputValue (input) {
 function saveFieldset (fieldset) {
   var inputs = fieldset.querySelectorAll('input')
   var fieldsetValid = true
-  inputs.forEach(saveInputValue)
+  inputs.forEach(function (input) {
+    // only save those radio inputs that are checked
+    if (input.type === 'radio' && !input.checked) return
+    saveInputValue(input)
+  })
 }
 
 /* end building the response */
@@ -466,7 +468,6 @@ function isZipFilled () {
 /* handle form submission */
 
 function onFormSubmit (evt) {
-  console.log('onFormSubmit')
   evt.preventDefault()
   validateAndSaveEmailFieldset()
 
