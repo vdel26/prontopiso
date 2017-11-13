@@ -376,7 +376,8 @@ function saveInputValue (input) {
   if (value && name !== 'cancel' && name !== 'submit') {
     var responseAddy = name.split('-')
     // Make sure the value is the right type
-    if (value === 'true' || value === 'false') value = !!value
+    if (value === 'true') value = true
+    else if (value === 'false') value = false
     else if (type === 'radio' || type === 'number') value = parseInt(value, 10)
     else if (type === 'date') value = value + 'T00:00:00+00:00'
     // Save the value where it belongs to
