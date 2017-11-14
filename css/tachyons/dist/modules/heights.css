@@ -63,6 +63,18 @@
   max-height: 15px;
   max-height: 0.9375rem; }
 
+.h16 {
+  height: 16px;
+  height: 1rem; }
+
+.min-h16 {
+  min-height: 16px;
+  min-height: 1rem; }
+
+.max-h16 {
+  max-height: 16px;
+  max-height: 1rem; }
+
 .h19 {
   height: 19px;
   height: 1.1875rem; }
@@ -235,6 +247,15 @@
   .max-h15-ns {
     max-height: 15px;
     max-height: 0.9375rem; }
+  .h16-ns {
+    height: 16px;
+    height: 1rem; }
+  .min-h16-ns {
+    min-height: 16px;
+    min-height: 1rem; }
+  .max-h16-ns {
+    max-height: 16px;
+    max-height: 1rem; }
   .h19-ns {
     height: 19px;
     height: 1.1875rem; }
@@ -363,6 +384,15 @@
   .max-h15-m {
     max-height: 15px;
     max-height: 0.9375rem; }
+  .h16-m {
+    height: 16px;
+    height: 1rem; }
+  .min-h16-m {
+    min-height: 16px;
+    min-height: 1rem; }
+  .max-h16-m {
+    max-height: 16px;
+    max-height: 1rem; }
   .h19-m {
     height: 19px;
     height: 1.1875rem; }
@@ -491,6 +521,15 @@
   .max-h15-l {
     max-height: 15px;
     max-height: 0.9375rem; }
+  .h16-l {
+    height: 16px;
+    height: 1rem; }
+  .min-h16-l {
+    min-height: 16px;
+    min-height: 1rem; }
+  .max-h16-l {
+    max-height: 16px;
+    max-height: 1rem; }
   .h19-l {
     height: 19px;
     height: 1.1875rem; }

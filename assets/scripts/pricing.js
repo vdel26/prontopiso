@@ -47,6 +47,7 @@ var calculatorInput = document.querySelector('#calculator-input')
   , calculatorMin = document.querySelector('#calculator-min')
   , calculatorMid = document.querySelector('#calculator-mid')
   , calculatorMax = document.querySelector('#calculator-max')
+  , calculatorTot = document.querySelector('#calculator-total')
   , calculatorRes = document.querySelector('#calculator-result')
   , calculatorCom = document.querySelector('#calculator-comission')
   , baseFee = .0325, incentiveFee = .0275;
@@ -60,16 +61,16 @@ function updateCalculator() {
     , calculatorRangeVal = calculatorRange.value
     , calculatorMinVal = calculatorInputVal * 0.94
     , calculatorMidVal = calculatorInputVal * (calculatorRangeVal / 100)
-    , calculatorMaxVal = calculatorInputVal * 1.06
+    , calculatorMaxVal = calculatorInputVal * 1.10
     , calculatorComVal = baseFee + (incentiveFee / (calculatorInputVal - calculatorMinVal) * (calculatorMidVal - calculatorMinVal));
-    calculatorComVal = (calculatorComVal > .06)? .06 : calculatorComVal;
+
+  calculatorComVal = (calculatorComVal > .10) ? .10 : calculatorComVal;
   var calculatorResVal = calculatorMidVal * (1 - calculatorComVal);
 
-
-  tooltipMiddle.innerHTML = formatCurrencyValue(Math.round(calculatorMidVal));
   calculatorMin.innerHTML = formatCurrencyValue(Math.round(calculatorMinVal));
   calculatorMid.innerHTML = formatCurrencyValue(Math.round(calculatorMidVal));
   calculatorMax.innerHTML = formatCurrencyValue(Math.round(calculatorMaxVal));
+  calculatorTot.innerHTML = formatCurrencyValue(Math.round(calculatorMidVal));
   calculatorRes.innerHTML = formatCurrencyValue(Math.round(calculatorResVal));
   calculatorCom.innerHTML = formatPercentageValue(calculatorComVal);
 };

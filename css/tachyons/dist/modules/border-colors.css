@@ -47,6 +47,9 @@
 .b--white-10 {
   border-color: rgba(255, 255, 255, 0.1); }
 
+.b--pale-gray {
+  border-color: #e6edf2; }
+
 .b--blue {
   border-color: #1f8beb; }
 
@@ -83,6 +86,8 @@
     border-color: #fff; }
   .b--white-10-ns {
     border-color: rgba(255, 255, 255, 0.1); }
+  .b--pale-gray-ns {
+    border-color: #e6edf2; }
   .b--blue-ns {
     border-color: #1f8beb; }
   .b--blue-light-ns {
@@ -115,6 +120,8 @@
     border-color: #fff; }
   .b--white-10-m {
     border-color: rgba(255, 255, 255, 0.1); }
+  .b--pale-gray-m {
+    border-color: #e6edf2; }
   .b--blue-m {
     border-color: #1f8beb; }
   .b--blue-light-m {
@@ -147,6 +154,8 @@
     border-color: #fff; }
   .b--white-10-l {
     border-color: rgba(255, 255, 255, 0.1); }
+  .b--pale-gray-l {
+    border-color: #e6edf2; }
   .b--blue-l {
     border-color: #1f8beb; }
   .b--blue-light-l {

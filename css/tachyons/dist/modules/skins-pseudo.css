@@ -47,6 +47,10 @@
 .hover-white-10:focus {
   color: rgba(255, 255, 255, 0.1); }
 
+.hover-pale-gray:hover,
+.hover-pale-gray:focus {
+  color: #e6edf2; }
+
 .hover-blue:hover,
 .hover-blue:focus {
   color: #1f8beb; }
@@ -98,6 +102,9 @@
   .hover-white-10-ns:hover,
   .hover-white-10-ns:focus {
     color: rgba(255, 255, 255, 0.1); }
+  .hover-pale-gray-ns:hover,
+  .hover-pale-gray-ns:focus {
+    color: #e6edf2; }
   .hover-blue-ns:hover,
   .hover-blue-ns:focus {
     color: #1f8beb; }
@@ -145,6 +152,9 @@
   .hover-white-10-m:hover,
   .hover-white-10-m:focus {
     color: rgba(255, 255, 255, 0.1); }
+  .hover-pale-gray-m:hover,
+  .hover-pale-gray-m:focus {
+    color: #e6edf2; }
   .hover-blue-m:hover,
   .hover-blue-m:focus {
     color: #1f8beb; }
@@ -192,6 +202,9 @@
   .hover-white-10-l:hover,
   .hover-white-10-l:focus {
     color: rgba(255, 255, 255, 0.1); }
+  .hover-pale-gray-l:hover,
+  .hover-pale-gray-l:focus {
+    color: #e6edf2; }
   .hover-blue-l:hover,
   .hover-blue-l:focus {
     color: #1f8beb; }
@@ -249,6 +262,10 @@
 .hover-bg-white-10:focus {
   background-color: rgba(255, 255, 255, 0.1); }
 
+.hover-bg-pale-gray:hover,
+.hover-bg-pale-gray:focus {
+  background-color: #e6edf2; }
+
 .hover-bg-blue:hover,
 .hover-bg-blue:focus {
   background-color: #1f8beb; }
@@ -300,6 +317,9 @@
   .hover-bg-white-10-ns:hover,
   .hover-bg-white-10-ns:focus {
     background-color: rgba(255, 255, 255, 0.1); }
+  .hover-bg-pale-gray-ns:hover,
+  .hover-bg-pale-gray-ns:focus {
+    background-color: #e6edf2; }
   .hover-bg-blue-ns:hover,
   .hover-bg-blue-ns:focus {
     background-color: #1f8beb; }
@@ -347,6 +367,9 @@
   .hover-bg-white-10-m:hover,
   .hover-bg-white-10-m:focus {
     background-color: rgba(255, 255, 255, 0.1); }
+  .hover-bg-pale-gray-m:hover,
+  .hover-bg-pale-gray-m:focus {
+    background-color: #e6edf2; }
   .hover-bg-blue-m:hover,
   .hover-bg-blue-m:focus {
     background-color: #1f8beb; }
@@ -394,6 +417,9 @@
   .hover-bg-white-10-l:hover,
   .hover-bg-white-10-l:focus {
     background-color: rgba(255, 255, 255, 0.1); }
+  .hover-bg-pale-gray-l:hover,
+  .hover-bg-pale-gray-l:focus {
+    background-color: #e6edf2; }
   .hover-bg-blue-l:hover,
   .hover-bg-blue-l:focus {
     background-color: #1f8beb; }

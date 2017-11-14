@@ -19,96 +19,101 @@ scripts:
 
 
 
-<article id="calculator-dd" class="measure-70 mha mb120 mb160-ns bg-blue br2-ns" style="box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);">
+<section id="calculator-dd" class="measure-70 mha mb120 mb160-ns bg-blue br2-ns" style="box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);">
 
-  <section id="calculator" class="relative-ns top-n75-ns measure-65 mha mh55-ns pt50 ph80-ns pb60 blue bg-white br2-ns" style="box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);">
+  <article id="calculator" class="relative-ns top-n75-ns measure-65 mha mh40-ns pt50 pt45-ns ph36 pb0 pb40-ns white blue-ns bg-blue bg-white-ns br2-ns" style="box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);">
 
-      <header class="mb50 pt30 pt60-ns pb40 pb60-ns tc">
-        <h1 class="mv0 f20 f30-ns lh-160 lh-120-ns fw5">{{ site.data.pricing.calculator.header.title }}</h1>
+    <section class="mb50">
+
+      <header class="db mb30 mb15-ns ph20-ns">
+        <h1 class="mv0 f18 lh-120 fw5">{{ site.data.pricing.calculator.input.label }}</h1>
       </header>
 
-      <div class="df-ns items-end-ns nh20-ns ph36">
+      <div class="df-ns">
 
-        <fieldset class="flex-grow-0 flex-shrink-0 w-50-ns mh0 mb30 mb0-ns pa0 ph20-ns bn">
-          <label class="db mb20 f18 fw5">{{ site.data.pricing.calculator.input.label }}</label>
-          <input class="input-reset dib w-100 mb20 pv12 ph15 white bg-blue ph-white graphik f16 lh-100 fw5 ba b--blue br2"
+        <fieldset class="w-50-ns mt10-ns mh0 mb30 mb0-ns pa0 ph20-ns bn">
+          <input class="input-reset dib w-100 mb30 mb20-ns pv12 ph15 blue white-ns bg-white bg-blue-ns ph-white graphik f16 lh-100 fw5 ba b--white b--blue-ns br2"
                  id="calculator-input" min="0" max="10000000" step="100000" lang="es-ES"
                  type="number" value="450000" placeholder="450.000€" required>
-          <a class="link inherit db pa15 f14 lh-160 lh-150-ns ba b--blue br2" href="/form.html">{{ site.data.pricing.calculator.input.call-to-action }}</a>
+          <a class="link inherit db pa15 pa0-ns f14 lh-160 ba bn-ns b--white br2" href="/form.html"
+            >{{ site.data.pricing.calculator.input.call-to-action }}</a>
         </fieldset>
 
-        <small class="db flex-grow-0 flex-shrink-0 w-50-ns ph20-ns f16 lh-160 lh-185-ns">{{ site.data.pricing.calculator.input.small }}</small>
+        <small class="db w-50-ns mb30 mb0-ns ph20-ns f16 lh-160 lh-185-ns">{{ site.data.pricing.calculator.input.small }}</small>
 
       </div>
 
-  </section>
+    </section>
 
-  <section class="nt25-ns pv50 pv0-ns ph36 ph135-ns white">
+    <section class="">
 
-    <header class="mb30 mb15-ns tc tl-ns">
-      <h1 class="mv0 f18 lh-150 lh-175-ns fw5">{{ site.data.pricing.calculator.slider.title }}</h1>
-    </header>
+      <header class="db mb30 mb25-ns ph20-ns">
+        <h1 class="mv0 f18 lh-120 fw5">{{ site.data.pricing.calculator.slider.title }}</h1>
+      </header>
 
-    <div class="relative mb50 mb60-ns">
+      <div class="relative">
 
-      <span id="tooltip-left" class="relative dn dib-ns pv12 ph15 white bg-blue-dark f12 lh-165 br2" style="width: 280px;"
-        >{{ site.data.pricing.calculator.slider.lo.tip }}</span>
+        <span id="tooltip-left" class="relative dn dib-ns pv12 ph15 blue bg-white f12 lh-165 ba b--blue br2" style="width: 280px;"
+          >{{ site.data.pricing.calculator.slider.lo.tip }}</span>
 
-      <span id="tooltip-middle" class="relative dib pv12 ph15 blue bg-white f14 f16-ns lh-165 fw5 br2 triangle triangle-white"
-        >450.000 €</span>
+        <span id="tooltip-middle" class="relative dib pv12 ph15 blue white-ns bg-white bg-blue-ns f14 f16-ns lh-165 tc br2 triangle triangle-white triangle-blue-ns">
+          <p class="mv0 f15 f17-ns lh-120">
+            <span id="calculator-total" class="dib f12 f14-ns lh-130 fw5">450.000 €</span>
+          </p>
+          <p class="mv0 f12 f14-ns lh-130">
+            <span class="dib f12 f14-ns lh-130">{{ site.data.pricing.calculator.slider.results.get }}</span>
+            <span id="calculator-result" class="dib f12 f14-ns lh-130">423.000 €</span>
+          </p>
+          <p class="mv0 f12 f14-ns lh-130">
+            <small class="dib f12 f14-ns lh-130">{{ site.data.pricing.calculator.slider.results.comision }} </small>
+            <small id="calculator-comission" class="dib f12 f14-ns lh-130">6 %</small>
+          </p>
+        </span>
 
-      <span id="tooltip-right" class="relative dn dib-ns pv12 ph15 white bg-blue-dark f12 lh-165 br2" style="width: 200px;"
-        >{{ site.data.pricing.calculator.slider.hi.tip }}</span>
+        <span id="tooltip-right" class="relative dn dib-ns pv12 ph15 blue bg-white f12 lh-165 ba b--blue br2" style="width: 200px;"
+          >{{ site.data.pricing.calculator.slider.hi.tip }}</span>
 
-      <img class="db mha nb10" src="/assets/images/pricing/02.svg" alt="">
+        <img class="dn db-ns mha nb10" src="/assets/images/pricing/01.svg" alt="">
+        <img class="db dn-ns mha nb10" src="/assets/images/pricing/02.svg" alt="">
 
-      <div class="df items-center nh36 mh0-ns mb15">
-        <span id="input-left" class="relative-ns h15 w36 w100-ns flex-grow-0 flex-shrink-0 bg-blue-dark br-pill-ns br--left-ns triangle triangle-blue-dark"></span>
-        <input id="calculator-range" class="w-100"
-               type="range" value="100" min="94" max="106" step="0.25">
-        <span id="input-right" class="relative-ns h15 w36 w100-ns flex-grow-0 flex-shrink-0 bg-blue-dark br-pill-ns br--right-ns triangle triangle-blue-dark"></span>
+        <div class="df items-center nh36 mh80-ns mb15 overflow-hidden">
+          <span id="input-left" class="relative-ns h16 w36 w100-ns flex-grow-0 flex-shrink-0 bg-pale-gray br-pill-ns br--left-ns triangle triangle-blue"></span>
+          <input id="calculator-range" class="w-100 bg-transparent overflow-hidden"
+                 type="range" value="100" min="94" max="110" step="0.25">
+          <span id="input-right" class="relative-ns h16 w36 w100-ns flex-grow-0 flex-shrink-0 bg-blue-light br-pill-ns br--right-ns triangle triangle-blue"></span>
+        </div>
+
+        <div class="df justify-between mh80-ns mb60 mb0-ns">
+          <p class="w-25 mv0 f12 f14-ns lh-150 tl tc-ns">
+            <small id="calculator-min" class="absolute top-55 right-a left-0 static-ns db f12 f14-ns lh-150 fw5">423.000 €</small>
+            <small class="db f12 f14-ns lh-150 fw5 fw4-ns">{{ site.data.pricing.calculator.slider.lo.description }}</small>
+          </p>
+          <p class="w-50 mv0 f12 f14-ns lh-150 tc">
+            <small id="calculator-mid" class="absolute top-55 right-third left-third static-ns dn f12 f14-ns lh-150 fw5">450.000 €</small>
+            <small class="db f12 f14-ns lh-150 fw5">{{ site.data.pricing.calculator.slider.mid.description }}</small>
+          </p>
+          <p class="w-25 mv0 f12 f14-ns lh-150 tr tc-ns">
+            <small id="calculator-max" class="absolute top-55 right-0 left-a static-ns db f12 f14-ns lh-150 fw5">495.000 €</small>
+            <small class="db f12 f14-ns lh-150 fw5 fw4-ns">{{ site.data.pricing.calculator.slider.hi.description }}</small>
+          </p>
+        </div>
+
+        <div class="dn-ns nh36 nh135-ns pt30 ph36 pb20 bg-blue-dark f12 lh-165">
+          <p class="mt0 mb20">{{ site.data.pricing.calculator.slider.lo.tip }}</p>
+          <p class="mt0 mb20">{{ site.data.pricing.calculator.slider.hi.tip }}</p>
+        </div>
+
       </div>
 
-      <div class="df justify-between mb60">
-        <p class="w-third mv0 f12 f14-ns lh-150 tl tc-ns">
-          <small id="calculator-min" class="absolute top-55 right-a left-0 static-ns db f12 f14-ns lh-150 fw5">423.000 €</small>
-          <small class="db f12 f14-ns lh-150 fw5 fw4-ns">{{ site.data.pricing.calculator.slider.lo.description }}</small>
-        </p>
-        <p class="w-third mv0 f12 f14-ns lh-150 tc">
-          <small id="calculator-mid" class="absolute top-55 right-third left-third static-ns dn f12 f14-ns lh-150 fw5">450.000 €</small>
-          <small class="db f12 f14-ns lh-150 fw5">{{ site.data.pricing.calculator.slider.mid.description }}</small>
-        </p>
-        <p class="w-third mv0 f12 f14-ns lh-150 tr tc-ns">
-          <small id="calculator-max" class="absolute top-55 right-0 left-a static-ns db f12 f14-ns lh-150 fw5">477.000 €</small>
-          <small class="db f12 f14-ns lh-150 fw5 fw4-ns">{{ site.data.pricing.calculator.slider.hi.description }}</small>
-        </p>
-      </div>
+    </section>
 
-      <div class="dn-ns nh36 nh135-ns pt30 ph36 pb20 bg-blue-dark f12 lh-165">
-        <p class="mt0 mb20">{{ site.data.pricing.calculator.slider.hi.tip }}</p>
-        <p class="mt0 mb20">{{ site.data.pricing.calculator.slider.lo.tip }}</p>
-      </div>
+  </article>
 
-    </div>
-
-    <footer class="nh135-ns pv45-ns bg-blue-mid-ns tc-ns">
-      <p class="mv0 mb10-ns">
-        <span class="db f32 lh-120">{{ site.data.pricing.calculator.slider.results.get }}</span>
-        <span id="calculator-result" class="db f60 f65-ns lh-120">423.000 €</span>
-      </p>
-      <p class="mv0">
-        <small class="dib f18 fw5 lh-120">{{ site.data.pricing.calculator.slider.results.comision }} </small>
-        <small id="calculator-comission" class="dib f18 fw5 lh-120">6 %</small>
-      </p>
-    </footer>
-
-  </section>
-
-  <footer class="pv30-ns ph36 pb60 white blue-ns bg-blue bg-white-ns f16 f18-ns lh-185 lh-165-ns"
+  <footer class="nt75-ns pv40 pt30-ns ph36 ph40-ns pb50-ns white f16 f18-ns lh-185 lh-155-ns"
     >{{ site.data.pricing.calculator.footer }}
   </footer>
 
-</article>
+</section>
 
 
 {% include aside.html %}

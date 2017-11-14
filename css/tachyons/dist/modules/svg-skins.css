@@ -53,6 +53,9 @@
 .fill-white-10 {
   fill: rgba(255, 255, 255, 0.1); }
 
+.fill-pale-gray {
+  fill: #e6edf2; }
+
 .fill-blue {
   fill: #1f8beb; }
 
@@ -89,6 +92,8 @@
     fill: #fff; }
   .fill-white-10-ns {
     fill: rgba(255, 255, 255, 0.1); }
+  .fill-pale-gray-ns {
+    fill: #e6edf2; }
   .fill-blue-ns {
     fill: #1f8beb; }
   .fill-blue-light-ns {
@@ -121,6 +126,8 @@
     fill: #fff; }
   .fill-white-10-m {
     fill: rgba(255, 255, 255, 0.1); }
+  .fill-pale-gray-m {
+    fill: #e6edf2; }
   .fill-blue-m {
     fill: #1f8beb; }
   .fill-blue-light-m {
@@ -153,6 +160,8 @@
     fill: #fff; }
   .fill-white-10-l {
     fill: rgba(255, 255, 255, 0.1); }
+  .fill-pale-gray-l {
+    fill: #e6edf2; }
   .fill-blue-l {
     fill: #1f8beb; }
   .fill-blue-light-l {
@@ -195,6 +204,9 @@
 .stroke-white-10 {
   stroke: rgba(255, 255, 255, 0.1); }
 
+.stroke-pale-gray {
+  stroke: #e6edf2; }
+
 .stroke-blue {
   stroke: #1f8beb; }
 
@@ -231,6 +243,8 @@
     stroke: #fff; }
   .stroke-white-10-ns {
     stroke: rgba(255, 255, 255, 0.1); }
+  .stroke-pale-gray-ns {
+    stroke: #e6edf2; }
   .stroke-blue-ns {
     stroke: #1f8beb; }
   .stroke-blue-light-ns {
@@ -263,6 +277,8 @@
     stroke: #fff; }
   .stroke-white-10-m {
     stroke: rgba(255, 255, 255, 0.1); }
+  .stroke-pale-gray-m {
+    stroke: #e6edf2; }
   .stroke-blue-m {
     stroke: #1f8beb; }
   .stroke-blue-light-m {
@@ -295,6 +311,8 @@
     stroke: #fff; }
   .stroke-white-10-l {
     stroke: rgba(255, 255, 255, 0.1); }
+  .stroke-pale-gray-l {
+    stroke: #e6edf2; }
   .stroke-blue-l {
     stroke: #1f8beb; }
   .stroke-blue-light-l {

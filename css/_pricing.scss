@@ -1,5 +1,4 @@
 /* Pricing Page CSS */
-
 #pricing > header {
   background-image: url("../assets/images/pricing/00.svg");
   background-repeat: no-repeat;
@@ -19,60 +18,67 @@
     background-size: contain;
   }
 }
-
-
 /* Input Range */
+$range-shadow: 0 0 0 -8px #84c1f5, 2px 0 0 -8px #84c1f5, 4px 0 0 -8px #84c1f5, 6px 0 0 -8px #84c1f5, 8px 0 0 -8px #84c1f5, 10px 0 0 -8px #84c1f5, 12px 0 0 -8px #84c1f5, 14px 0 0 -8px #84c1f5, 16px 0 0 -8px #84c1f5, 18px 0 0 -8px #84c1f5, 20px 0 0 -8px #84c1f5, 22px 0 0 -8px #84c1f5, 24px 0 0 -8px #84c1f5, 26px 0 0 -8px #84c1f5, 28px 0 0 -8px #84c1f5, 30px 0 0 -8px #84c1f5, 32px 0 0 -8px #84c1f5, 34px 0 0 -8px #84c1f5, 36px 0 0 -8px #84c1f5, 38px 0 0 -8px #84c1f5, 40px 0 0 -8px #84c1f5, 42px 0 0 -8px #84c1f5, 44px 0 0 -8px #84c1f5, 46px 0 0 -8px #84c1f5, 48px 0 0 -8px #84c1f5, 50px 0 0 -8px #84c1f5, 52px 0 0 -8px #84c1f5, 54px 0 0 -8px #84c1f5, 56px 0 0 -8px #84c1f5, 58px 0 0 -8px #84c1f5, 60px 0 0 -8px #84c1f5, 62px 0 0 -8px #84c1f5, 64px 0 0 -8px #84c1f5, 66px 0 0 -8px #84c1f5, 68px 0 0 -8px #84c1f5, 70px 0 0 -8px #84c1f5, 72px 0 0 -8px #84c1f5, 74px 0 0 -8px #84c1f5, 76px 0 0 -8px #84c1f5, 78px 0 0 -8px #84c1f5, 80px 0 0 -8px #84c1f5, 82px 0 0 -8px #84c1f5, 84px 0 0 -8px #84c1f5, 86px 0 0 -8px #84c1f5, 88px 0 0 -8px #84c1f5, 90px 0 0 -8px #84c1f5, 92px 0 0 -8px #84c1f5, 94px 0 0 -8px #84c1f5, 96px 0 0 -8px #84c1f5, 98px 0 0 -8px #84c1f5, 100px 0 0 -8px #84c1f5, 102px 0 0 -8px #84c1f5, 104px 0 0 -8px #84c1f5, 106px 0 0 -8px #84c1f5, 108px 0 0 -8px #84c1f5, 110px 0 0 -8px #84c1f5, 112px 0 0 -8px #84c1f5, 114px 0 0 -8px #84c1f5, 116px 0 0 -8px #84c1f5, 118px 0 0 -8px #84c1f5, 120px 0 0 -8px #84c1f5, 122px 0 0 -8px #84c1f5, 124px 0 0 -8px #84c1f5, 126px 0 0 -8px #84c1f5, 128px 0 0 -8px #84c1f5, 130px 0 0 -8px #84c1f5, 132px 0 0 -8px #84c1f5, 134px 0 0 -8px #84c1f5, 136px 0 0 -8px #84c1f5, 138px 0 0 -8px #84c1f5, 140px 0 0 -8px #84c1f5, 142px 0 0 -8px #84c1f5, 144px 0 0 -8px #84c1f5, 146px 0 0 -8px #84c1f5, 148px 0 0 -8px #84c1f5, 150px 0 0 -8px #84c1f5, 152px 0 0 -8px #84c1f5, 154px 0 0 -8px #84c1f5, 156px 0 0 -8px #84c1f5, 158px 0 0 -8px #84c1f5, 160px 0 0 -8px #84c1f5, 162px 0 0 -8px #84c1f5, 164px 0 0 -8px #84c1f5, 166px 0 0 -8px #84c1f5, 168px 0 0 -8px #84c1f5, 170px 0 0 -8px #84c1f5, 172px 0 0 -8px #84c1f5, 174px 0 0 -8px #84c1f5, 176px 0 0 -8px #84c1f5, 178px 0 0 -8px #84c1f5, 180px 0 0 -8px #84c1f5, 182px 0 0 -8px #84c1f5, 184px 0 0 -8px #84c1f5, 186px 0 0 -8px #84c1f5, 188px 0 0 -8px #84c1f5, 190px 0 0 -8px #84c1f5, 192px 0 0 -8px #84c1f5, 194px 0 0 -8px #84c1f5, 196px 0 0 -8px #84c1f5, 198px 0 0 -8px #84c1f5, 200px 0 0 -8px #84c1f5, 202px 0 0 -8px #84c1f5, 204px 0 0 -8px #84c1f5, 206px 0 0 -8px #84c1f5, 208px 0 0 -8px #84c1f5, 210px 0 0 -8px #84c1f5, 212px 0 0 -8px #84c1f5, 214px 0 0 -8px #84c1f5, 216px 0 0 -8px #84c1f5, 218px 0 0 -8px #84c1f5, 220px 0 0 -8px #84c1f5, 222px 0 0 -8px #84c1f5, 224px 0 0 -8px #84c1f5, 226px 0 0 -8px #84c1f5, 228px 0 0 -8px #84c1f5, 230px 0 0 -8px #84c1f5, 232px 0 0 -8px #84c1f5, 234px 0 0 -8px #84c1f5, 236px 0 0 -8px #84c1f5, 238px 0 0 -8px #84c1f5, 240px 0 0 -8px #84c1f5, 242px 0 0 -8px #84c1f5, 244px 0 0 -8px #84c1f5, 246px 0 0 -8px #84c1f5, 248px 0 0 -8px #84c1f5, 250px 0 0 -8px #84c1f5, 252px 0 0 -8px #84c1f5, 254px 0 0 -8px #84c1f5, 256px 0 0 -8px #84c1f5, 258px 0 0 -8px #84c1f5, 260px 0 0 -8px #84c1f5, 262px 0 0 -8px #84c1f5, 264px 0 0 -8px #84c1f5, 266px 0 0 -8px #84c1f5, 268px 0 0 -8px #84c1f5, 270px 0 0 -8px #84c1f5, 272px 0 0 -8px #84c1f5, 274px 0 0 -8px #84c1f5, 276px 0 0 -8px #84c1f5, 278px 0 0 -8px #84c1f5, 280px 0 0 -8px #84c1f5, 282px 0 0 -8px #84c1f5, 284px 0 0 -8px #84c1f5, 286px 0 0 -8px #84c1f5, 288px 0 0 -8px #84c1f5, 290px 0 0 -8px #84c1f5, 292px 0 0 -8px #84c1f5, 294px 0 0 -8px #84c1f5, 296px 0 0 -8px #84c1f5, 298px 0 0 -8px #84c1f5, 300px 0 0 -8px #84c1f5, 302px 0 0 -8px #84c1f5, 304px 0 0 -8px #84c1f5, 306px 0 0 -8px #84c1f5, 308px 0 0 -8px #84c1f5, 310px 0 0 -8px #84c1f5, 312px 0 0 -8px #84c1f5, 314px 0 0 -8px #84c1f5, 316px 0 0 -8px #84c1f5, 318px 0 0 -8px #84c1f5, 320px 0 0 -8px #84c1f5, 322px 0 0 -8px #84c1f5, 324px 0 0 -8px #84c1f5, 326px 0 0 -8px #84c1f5, 328px 0 0 -8px #84c1f5, 330px 0 0 -8px #84c1f5, 332px 0 0 -8px #84c1f5, 334px 0 0 -8px #84c1f5, 336px 0 0 -8px #84c1f5, 338px 0 0 -8px #84c1f5, 340px 0 0 -8px #84c1f5, 342px 0 0 -8px #84c1f5, 344px 0 0 -8px #84c1f5, 346px 0 0 -8px #84c1f5, 348px 0 0 -8px #84c1f5, 350px 0 0 -8px #84c1f5, 352px 0 0 -8px #84c1f5, 354px 0 0 -8px #84c1f5, 356px 0 0 -8px #84c1f5, 358px 0 0 -8px #84c1f5, 360px 0 0 -8px #84c1f5, 362px 0 0 -8px #84c1f5, 364px 0 0 -8px #84c1f5, 366px 0 0 -8px #84c1f5, 368px 0 0 -8px #84c1f5, 370px 0 0 -8px #84c1f5, 372px 0 0 -8px #84c1f5, 374px 0 0 -8px #84c1f5, 376px 0 0 -8px #84c1f5, 378px 0 0 -8px #84c1f5, 380px 0 0 -8px #84c1f5, 382px 0 0 -8px #84c1f5, 384px 0 0 -8px #84c1f5, 386px 0 0 -8px #84c1f5, 388px 0 0 -8px #84c1f5, 390px 0 0 -8px #84c1f5, 392px 0 0 -8px #84c1f5, 394px 0 0 -8px #84c1f5, 396px 0 0 -8px #84c1f5, 398px 0 0 -8px #84c1f5, 400px 0 0 -8px #84c1f5, 402px 0 0 -8px #84c1f5, 404px 0 0 -8px #84c1f5, 406px 0 0 -8px #84c1f5, 408px 0 0 -8px #84c1f5, 410px 0 0 -8px #84c1f5, 412px 0 0 -8px #84c1f5, 414px 0 0 -8px #84c1f5, 416px 0 0 -8px #84c1f5, 418px 0 0 -8px #84c1f5, 420px 0 0 -8px #84c1f5, 422px 0 0 -8px #84c1f5, 424px 0 0 -8px #84c1f5, 426px 0 0 -8px #84c1f5, 428px 0 0 -8px #84c1f5, 430px 0 0 -8px #84c1f5, 432px 0 0 -8px #84c1f5, 434px 0 0 -8px #84c1f5, 436px 0 0 -8px #84c1f5, 438px 0 0 -8px #84c1f5, 440px 0 0 -8px #84c1f5, 442px 0 0 -8px #84c1f5, 444px 0 0 -8px #84c1f5, 446px 0 0 -8px #84c1f5, 448px 0 0 -8px #84c1f5, 450px 0 0 -8px #84c1f5, 452px 0 0 -8px #84c1f5, 454px 0 0 -8px #84c1f5, 456px 0 0 -8px #84c1f5, 458px 0 0 -8px #84c1f5, 460px 0 0 -8px #84c1f5, 462px 0 0 -8px #84c1f5, 464px 0 0 -8px #84c1f5, 466px 0 0 -8px #84c1f5, 468px 0 0 -8px #84c1f5, 470px 0 0 -8px #84c1f5, 472px 0 0 -8px #84c1f5, 474px 0 0 -8px #84c1f5, 476px 0 0 -8px #84c1f5, 478px 0 0 -8px #84c1f5, 480px 0 0 -8px #84c1f5, 482px 0 0 -8px #84c1f5, 484px 0 0 -8px #84c1f5, 486px 0 0 -8px #84c1f5, 488px 0 0 -8px #84c1f5, 490px 0 0 -8px #84c1f5, 492px 0 0 -8px #84c1f5, 494px 0 0 -8px #84c1f5, 496px 0 0 -8px #84c1f5, 498px 0 0 -8px #84c1f5, 500px 0 0 -8px #84c1f5, 502px 0 0 -8px #84c1f5, 504px 0 0 -8px #84c1f5, 506px 0 0 -8px #84c1f5, 508px 0 0 -8px #84c1f5, 510px 0 0 -8px #84c1f5, 512px 0 0 -8px #84c1f5, 514px 0 0 -8px #84c1f5, 516px 0 0 -8px #84c1f5, 518px 0 0 -8px #84c1f5, 520px 0 0 -8px #84c1f5, 522px 0 0 -8px #84c1f5, 524px 0 0 -8px #84c1f5, 526px 0 0 -8px #84c1f5, 528px 0 0 -8px #84c1f5, 530px 0 0 -8px #84c1f5, 532px 0 0 -8px #84c1f5, 534px 0 0 -8px #84c1f5, 536px 0 0 -8px #84c1f5, 538px 0 0 -8px #84c1f5, 540px 0 0 -8px #84c1f5, 542px 0 0 -8px #84c1f5, 544px 0 0 -8px #84c1f5, 546px 0 0 -8px #84c1f5, 548px 0 0 -8px #84c1f5, 550px 0 0 -8px #84c1f5, 552px 0 0 -8px #84c1f5, 554px 0 0 -8px #84c1f5, 556px 0 0 -8px #84c1f5, 558px 0 0 -8px #84c1f5, 560px 0 0 -8px #84c1f5, 562px 0 0 -8px #84c1f5, 564px 0 0 -8px #84c1f5, 566px 0 0 -8px #84c1f5, 568px 0 0 -8px #84c1f5, 570px 0 0 -8px #84c1f5, 572px 0 0 -8px #84c1f5, 574px 0 0 -8px #84c1f5, 576px 0 0 -8px #84c1f5, 578px 0 0 -8px #84c1f5, 580px 0 0 -8px #84c1f5, 582px 0 0 -8px #84c1f5, 584px 0 0 -8px #84c1f5, 586px 0 0 -8px #84c1f5, 588px 0 0 -8px #84c1f5, 590px 0 0 -8px #84c1f5, 592px 0 0 -8px #84c1f5, 594px 0 0 -8px #84c1f5, 596px 0 0 -8px #84c1f5, 598px 0 0 -8px #84c1f5, 600px 0 0 -8px #84c1f5, 602px 0 0 -8px #84c1f5, 604px 0 0 -8px #84c1f5, 606px 0 0 -8px #84c1f5;
+
 input[type=range] {
   -webkit-appearance: none;
   width: 100%;
-  margin: 7.5px 0;
+  height: 40px;
+  padding: 8px 0;
 }
 
-input[type=range]:focus {
+input[type=range] *,
+input[type=range]:focus,
+input[type=range]:focus-within {
   outline: none;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
-  height: 15px;
+  height: 16px;
   cursor: pointer;
-  box-shadow: 0 0 0 #84c1f5, 0 0 0 #9ccdf7;
-  background: #84c1f5;
+  box-shadow: 0 0 0 #0342ad, 0 0 0 #034cc6;
+  background: #0342ad;
   border-radius: 0;
-  border: 0 solid #84c1f5;
+  border: 0 solid #0342ad;
 }
 
 input[type=range]::-webkit-slider-thumb {
-  box-shadow: 0 0 0 #84c1f5, 0 0 0 #9ccdf7;
-  border: 3px solid #84c1f5;
-  height: 30px;
-  width: 30px;
+  transform: translateZ(0);
+  box-shadow: 0 0 0 #0342ad, 0 0 0 #034cc6;
+  box-shadow: $range-shadow;
+  border: 4px solid #0342ad;
+  height: 32px;
+  width: 32px;
   border-radius: 50px;
   background: #ffffff;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -7.5px;
+  margin-top: -8px;
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #97cbf7;
+  background: #0342ad;
 }
 
 input[type=range]::-moz-range-track {
   width: 100%;
-  height: 15px;
+  height: 16px;
   cursor: pointer;
-  box-shadow: 0 0 0 #84c1f5, 0 0 0 #9ccdf7;
-  background: #84c1f5;
+  box-shadow: 0 0 0 #0342ad, 0 0 0 #034cc6;
+  background: #0342ad;
   border-radius: 0;
-  border: 0 solid #84c1f5;
+  border: 0 solid #0342ad;
 }
 
 input[type=range]::-moz-range-thumb {
-  box-shadow: 0 0 0 #84c1f5, 0 0 0 #9ccdf7;
-  border: 3px solid #84c1f5;
-  height: 30px;
-  width: 30px;
+  transform: translateZ(0);
+  box-shadow: 0 0 0 #0342ad, 0 0 0 #034cc6;
+  box-shadow: $range-shadow;
+  border: 4px solid #0342ad;
+  height: 32px;
+  width: 32px;
   border-radius: 50px;
   background: #ffffff;
   cursor: pointer;
@@ -80,7 +86,7 @@ input[type=range]::-moz-range-thumb {
 
 input[type=range]::-ms-track {
   width: 100%;
-  height: 15px;
+  height: 16px;
   cursor: pointer;
   background: transparent;
   border-color: transparent;
@@ -88,39 +94,95 @@ input[type=range]::-ms-track {
 }
 
 input[type=range]::-ms-fill-lower {
-  background: #71b7f3;
-  border: 0 solid #84c1f5;
+  background: #0342ad;
+  border: 0 solid #0342ad;
   border-radius: 0;
-  box-shadow: 0 0 0 #84c1f5, 0 0 0 #9ccdf7;
+  box-shadow: 0 0 0 #0342ad, 0 0 0 #034cc6;
 }
 
 input[type=range]::-ms-fill-upper {
-  background: #84c1f5;
-  border: 0 solid #84c1f5;
+  background: #0342ad;
+  border: 0 solid #0342ad;
   border-radius: 0;
-  box-shadow: 0 0 0 #84c1f5, 0 0 0 #9ccdf7;
+  box-shadow: 0 0 0 #0342ad, 0 0 0 #034cc6;
 }
 
 input[type=range]::-ms-thumb {
-  box-shadow: 0 0 0 #84c1f5, 0 0 0 #9ccdf7;
-  border: 3px solid #84c1f5;
-  height: 30px;
-  width: 30px;
+  transform: translateZ(0);
+  box-shadow: 0 0 0 #0342ad, 0 0 0 #034cc6;
+  box-shadow: $range-shadow;
+  border: 4px solid #0342ad;
+  height: 32px;
+  width: 32px;
   border-radius: 50px;
   background: #ffffff;
   cursor: pointer;
-  height: 15px;
+  height: 16px;
 }
 
 input[type=range]:focus::-ms-fill-lower {
-  background: #84c1f5;
+  background: #0342ad;
 }
 
 input[type=range]:focus::-ms-fill-upper {
-  background: #97cbf7;
+  background: #0342ad;
 }
 
+@media screen and (min-width: 30em) {
+  input[type=range]::-webkit-slider-runnable-track {
+    box-shadow: 0 0 0 #1f8beb, 0 0 0 #3697ed;
+    background: #1f8beb;
+    border: 0 solid #1f8beb;
+  }
 
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0 0 0 #1f8beb, 0 0 0 #3697ed;
+    box-shadow: $range-shadow;
+    border: 4px solid #1f8beb;
+  }
+
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #1f8beb;
+  }
+
+  input[type=range]::-moz-range-track {
+    box-shadow: 0 0 0 #1f8beb, 0 0 0 #3697ed;
+    background: #1f8beb;
+    border: 0 solid #1f8beb;
+  }
+
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0 0 0 #1f8beb, 0 0 0 #3697ed;
+    box-shadow: $range-shadow;
+    border: 4px solid #1f8beb;
+  }
+
+  input[type=range]::-ms-fill-lower {
+    background: #1f8beb;
+    border: 0 solid #1f8beb;
+    box-shadow: 0 0 0 #1f8beb, 0 0 0 #3697ed;
+  }
+
+  input[type=range]::-ms-fill-upper {
+    background: #1f8beb;
+    border: 0 solid #1f8beb;
+    box-shadow: 0 0 0 #1f8beb, 0 0 0 #3697ed;
+  }
+
+  input[type=range]::-ms-thumb {
+    box-shadow: 0 0 0 #1f8beb, 0 0 0 #3697ed;
+    box-shadow: $range-shadow;
+    border: 4px solid #1f8beb;
+  }
+
+  input[type=range]:focus::-ms-fill-lower {
+    background: #1f8beb;
+  }
+
+  input[type=range]:focus::-ms-fill-upper {
+    background: #1f8beb;
+  }
+}
 /* Tooltips */
 .tippy-popper,
 .tippy-tooltip {
@@ -130,7 +192,7 @@ input[type=range]:focus::-ms-fill-upper {
 .triangle::before {
   content: '';
   position: absolute;
-  top: -26px;
+  top: -25px;
   left: 50%;
   transform: translateX(-50%);
   display: inline-block;
@@ -148,12 +210,14 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 
+.triangle-blue::before {
+  border-top-color: #1f8beb;
+}
+
 .triangle-white::before {
-  top: 100%;
   border-top-color: #ffffff;
 }
 
-.triangle-blue::before {
+#tooltip-middle::before {
   top: 100%;
-  border-top-color: #1f8beb;
 }

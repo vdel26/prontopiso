@@ -63,6 +63,10 @@
 .hover-fill-white-10:focus {
   fill: rgba(255, 255, 255, 0.1); }
 
+.hover-fill-pale-gray:hover,
+.hover-fill-pale-gray:focus {
+  fill: #e6edf2; }
+
 .hover-fill-blue:hover,
 .hover-fill-blue:focus {
   fill: #1f8beb; }
@@ -114,6 +118,9 @@
   .hover-fill-white-10-ns:hover,
   .hover-fill-white-10-ns:focus {
     fill: rgba(255, 255, 255, 0.1); }
+  .hover-fill-pale-gray-ns:hover,
+  .hover-fill-pale-gray-ns:focus {
+    fill: #e6edf2; }
   .hover-fill-blue-ns:hover,
   .hover-fill-blue-ns:focus {
     fill: #1f8beb; }
@@ -161,6 +168,9 @@
   .hover-fill-white-10-m:hover,
   .hover-fill-white-10-m:focus {
     fill: rgba(255, 255, 255, 0.1); }
+  .hover-fill-pale-gray-m:hover,
+  .hover-fill-pale-gray-m:focus {
+    fill: #e6edf2; }
   .hover-fill-blue-m:hover,
   .hover-fill-blue-m:focus {
     fill: #1f8beb; }
@@ -208,6 +218,9 @@
   .hover-fill-white-10-l:hover,
   .hover-fill-white-10-l:focus {
     fill: rgba(255, 255, 255, 0.1); }
+  .hover-fill-pale-gray-l:hover,
+  .hover-fill-pale-gray-l:focus {
+    fill: #e6edf2; }
   .hover-fill-blue-l:hover,
   .hover-fill-blue-l:focus {
     fill: #1f8beb; }
@@ -265,6 +278,10 @@
 .hover-stroke-white-10:focus {
   stroke: rgba(255, 255, 255, 0.1); }
 
+.hover-stroke-pale-gray:hover,
+.hover-stroke-pale-gray:focus {
+  stroke: #e6edf2; }
+
 .hover-stroke-blue:hover,
 .hover-stroke-blue:focus {
   stroke: #1f8beb; }
@@ -316,6 +333,9 @@
   .hover-stroke-white-10-ns:hover,
   .hover-stroke-white-10-ns:focus {
     stroke: rgba(255, 255, 255, 0.1); }
+  .hover-stroke-pale-gray-ns:hover,
+  .hover-stroke-pale-gray-ns:focus {
+    stroke: #e6edf2; }
   .hover-stroke-blue-ns:hover,
   .hover-stroke-blue-ns:focus {
     stroke: #1f8beb; }
@@ -363,6 +383,9 @@
   .hover-stroke-white-10-m:hover,
   .hover-stroke-white-10-m:focus {
     stroke: rgba(255, 255, 255, 0.1); }
+  .hover-stroke-pale-gray-m:hover,
+  .hover-stroke-pale-gray-m:focus {
+    stroke: #e6edf2; }
   .hover-stroke-blue-m:hover,
   .hover-stroke-blue-m:focus {
     stroke: #1f8beb; }
@@ -410,6 +433,9 @@
   .hover-stroke-white-10-l:hover,
   .hover-stroke-white-10-l:focus {
     stroke: rgba(255, 255, 255, 0.1); }
+  .hover-stroke-pale-gray-l:hover,
+  .hover-stroke-pale-gray-l:focus {
+    stroke: #e6edf2; }
   .hover-stroke-blue-l:hover,
   .hover-stroke-blue-l:focus {
     stroke: #1f8beb; }
