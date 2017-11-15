@@ -71,20 +71,22 @@ function updateCalculator() {
   calculatorMid.innerHTML = formatCurrencyValue(Math.round(calculatorMidVal));
   calculatorMax.innerHTML = formatCurrencyValue(Math.round(calculatorMaxVal));
   calculatorTot.innerHTML = formatCurrencyValue(Math.round(calculatorMidVal));
-  calculatorRes.innerHTML = formatCurrencyValue(Math.round(calculatorResVal));
-  calculatorCom.innerHTML = formatPercentageValue(calculatorComVal);
+  calculatorRes.innerHTML = calculatorResVal ? formatCurrencyValue(Math.round(calculatorResVal)) : '0 €';
+  calculatorCom.innerHTML = calculatorComVal ? formatPercentageValue(calculatorComVal) : '0 %';
+
+  moveTooltip();
 };
 
-var rangeEdges = calculatorRange.getBoundingClientRect()
-  , tooltip = document.querySelector('#tippy-tooltip-2')
-  , tooltipEdges = tooltip.getBoundingClientRect()
+var tooltip = document.querySelector('#tippy-tooltip-2')
   , rangeThumbWidth = 30;
 
 tooltip.style.zIndex = 2;
 document.body.classList.add('overflow-x-hidden');
 
 function moveTooltip() {
-  var movement = (calculatorRange.value - calculatorRange.min) / (calculatorRange.max - calculatorRange.min)
+  var rangeEdges = calculatorRange.getBoundingClientRect()
+    , tooltipEdges = tooltip.getBoundingClientRect()
+    , movement = (calculatorRange.value - calculatorRange.min) / (calculatorRange.max - calculatorRange.min)
     , newPos = movement * rangeEdges.width
     , newPosNormalized = mapRange(newPos, 0, rangeEdges.width, rangeEdges.left + rangeThumbWidth / 2, rangeEdges.right - rangeThumbWidth / 2)
     , leftEdge = newPosNormalized - (tooltipEdges.width / 2)
@@ -92,12 +94,10 @@ function moveTooltip() {
 
   requestAnimationFrame(function () {
     tooltip.style.transform = get3dString(leftEdge, y, z)
-  })
+  });
 };
 
 window.addEventListener('resize', function() {
-  rangeEdges = calculatorRange.getBoundingClientRect();
-  tooltipEdges = tooltip.getBoundingClientRect();
   moveTooltip();
 }, supportsPassive ? { passive: true } : false);
 
