@@ -13,8 +13,14 @@
 
 /* General */
 
-:focus {
+* {
   outline: none !important;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
