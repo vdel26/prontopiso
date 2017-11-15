@@ -21,6 +21,7 @@ const tipMiddle = tippy('#calculator-range', {
   position: 'top',
   html: document.querySelector('#tooltip-middle'),
   offset: '0, 25',
+  onShown: moveTooltip,
   popperOptions: {
     eventsEnabled: false,
   }
