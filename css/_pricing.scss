@@ -199,6 +199,12 @@ input[type=range]:focus::-ms-fill-upper {
   transition-duration: 0s !important;
 }
 
+#tooltip-left,
+#tooltip-middle,
+#tooltip-right {
+  transition: opacity .25s ease-in-out;
+}
+
 .triangle::before {
   content: '';
   position: absolute;
@@ -211,6 +217,11 @@ input[type=range]:focus::-ms-fill-upper {
   border-style: solid;
   border-width: 6px 6px 0 6px;
   border-color: transparent transparent transparent transparent;
+  transition: opacity .25s ease-in-out;
+}
+
+.triangle-o-0::before {
+  opacity: 0;
 }
 
 .triangle-blue-dark::before {
@@ -230,4 +241,10 @@ input[type=range]:focus::-ms-fill-upper {
 
 #tooltip-middle::before {
   top: 100%;
+}
+
+@media screen and (min-width: 30em) {
+  .triangle-blue-ns::before {
+    border-top-color: #1f8beb;
+  }
 }
