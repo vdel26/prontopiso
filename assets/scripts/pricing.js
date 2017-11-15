@@ -13,7 +13,7 @@ tippy.Defaults.popperOptions = {
 const tipLeft = tippy('#input-left', {
   position: 'top-end',
   html: document.querySelector('#tooltip-left'),
-  offset: '80, 25',
+  offset: '76, 25',
 })  , elLeft = document.querySelector('#input-left')
     , popperLeft = tipLeft.getPopperElement(elLeft);
 
@@ -31,7 +31,7 @@ const tipMiddle = tippy('#calculator-range', {
 const tipRight = tippy('#input-right', {
   position: 'top-start',
   html: document.querySelector('#tooltip-right'),
-  offset: '-80, 25',
+  offset: '-76, 25',
 })  , elRight = document.querySelector('#input-right')
     , popperRight = tipRight.getPopperElement(elRight);
 

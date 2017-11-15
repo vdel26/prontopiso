@@ -516,6 +516,22 @@
   left: 160px;
   left: 10rem; }
 
+.top-175 {
+  top: 175px;
+  top: 10.9375rem; }
+
+.right-175 {
+  right: 175px;
+  right: 10.9375rem; }
+
+.bottom-175 {
+  bottom: 175px;
+  bottom: 10.9375rem; }
+
+.left-175 {
+  left: 175px;
+  left: 10.9375rem; }
+
 .top-180 {
   top: 180px;
   top: 11.25rem; }
@@ -971,6 +987,18 @@
   .left-160-ns {
     left: 160px;
     left: 10rem; }
+  .top-175-ns {
+    top: 175px;
+    top: 10.9375rem; }
+  .right-175-ns {
+    right: 175px;
+    right: 10.9375rem; }
+  .bottom-175-ns {
+    bottom: 175px;
+    bottom: 10.9375rem; }
+  .left-175-ns {
+    left: 175px;
+    left: 10.9375rem; }
   .top-180-ns {
     top: 180px;
     top: 11.25rem; }
@@ -1406,6 +1434,18 @@
   .left-160-m {
     left: 160px;
     left: 10rem; }
+  .top-175-m {
+    top: 175px;
+    top: 10.9375rem; }
+  .right-175-m {
+    right: 175px;
+    right: 10.9375rem; }
+  .bottom-175-m {
+    bottom: 175px;
+    bottom: 10.9375rem; }
+  .left-175-m {
+    left: 175px;
+    left: 10.9375rem; }
   .top-180-m {
     top: 180px;
     top: 11.25rem; }
@@ -1841,6 +1881,18 @@
   .left-160-l {
     left: 160px;
     left: 10rem; }
+  .top-175-l {
+    top: 175px;
+    top: 10.9375rem; }
+  .right-175-l {
+    right: 175px;
+    right: 10.9375rem; }
+  .bottom-175-l {
+    bottom: 175px;
+    bottom: 10.9375rem; }
+  .left-175-l {
+    left: 175px;
+    left: 10.9375rem; }
   .top-180-l {
     top: 180px;
     top: 11.25rem; }

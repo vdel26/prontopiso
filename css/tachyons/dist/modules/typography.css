@@ -18,6 +18,9 @@
 .measure-40 {
   max-width: 40em; }
 
+.measure-50 {
+  max-width: 50em; }
+
 .measure-65 {
   max-width: 65em; }
 
@@ -53,6 +56,8 @@
     max-width: 32em; }
   .measure-40-ns {
     max-width: 40em; }
+  .measure-50-ns {
+    max-width: 50em; }
   .measure-65-ns {
     max-width: 65em; }
   .measure-68-ns {
@@ -80,6 +85,8 @@
     max-width: 32em; }
   .measure-40-m {
     max-width: 40em; }
+  .measure-50-m {
+    max-width: 50em; }
   .measure-65-m {
     max-width: 65em; }
   .measure-68-m {
@@ -107,6 +114,8 @@
     max-width: 32em; }
   .measure-40-l {
     max-width: 40em; }
+  .measure-50-l {
+    max-width: 50em; }
   .measure-65-l {
     max-width: 65em; }
   .measure-68-l {

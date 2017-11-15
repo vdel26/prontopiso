@@ -5,10 +5,11 @@ scripts:
   - '/assets/scripts/pricing.js'
 ---
 
-<section id="features" class="measure-78-ns mha-ns mb150-ns pt200 tc">
+<section id="pricing" class="measure-78-ns mha-ns mb175-ns pt200 tc">
 
   {% include section-header.html
-    header-margins="mb90 mb65-ns"
+    header-measure="measure-50"
+    header-margins="mha mb90 mb65-ns"
     header-paddings="pt60 pt40-ns ph36 pb55 pb40-ns"
     h1=site.data.pricing.header.title
     h1-fontSize="f30 f44-ns"
@@ -74,27 +75,27 @@ scripts:
         <span id="tooltip-right" class="relative dn dib-ns pv12 ph15 blue bg-white f12 lh-165 ba b--blue br2" style="width: 200px;"
           >{{ site.data.pricing.calculator.slider.hi.tip }}</span>
 
-        <img class="dn db-ns mha nb10" src="/assets/images/pricing/01.svg" alt="">
-        <img class="db dn-ns mha nb10" src="/assets/images/pricing/02.svg" alt="">
+        <img id="image-desktop" class="dn db-ns mha nb10" src="/assets/images/pricing/01.svg" alt="">
+        <img id="image-mobile" class="db dn-ns nh36 nb10" src="/assets/images/pricing/02.svg" alt="">
 
-        <div class="df items-center nh36 mh80-ns mb15 overflow-hidden">
+        <div class="df items-center nh36 mh100-ns mb15-ns">
           <span id="input-left" class="relative-ns h16 w36 w100-ns flex-grow-0 flex-shrink-0 bg-pale-gray br-pill-ns br--left-ns triangle triangle-blue"></span>
-          <input id="calculator-range" class="w-100 bg-transparent overflow-hidden"
+          <input id="calculator-range" class="w-100 bg-transparent overflow-x-hidden"
                  type="range" value="100" min="94" max="110" step="0.25">
           <span id="input-right" class="relative-ns h16 w36 w100-ns flex-grow-0 flex-shrink-0 bg-blue-light br-pill-ns br--right-ns triangle triangle-blue"></span>
         </div>
 
         <div class="df justify-between mh80-ns">
           <p class="w-third w-25-ns mv0 f12 f14-ns lh-150 tl tc-ns">
-            <small id="calculator-min" class="absolute top-55 right-a left-0 static-ns db f12 f14-ns lh-150 fw5">423.000 €</small>
+            <small id="calculator-min" class="absolute top-80 right-a left-0 static-ns db f12 f14-ns lh-150 fw5">423.000 €</small>
             <small class="db f12 f14-ns lh-150 fw5 fw4-ns">{{ site.data.pricing.calculator.slider.lo.description }}</small>
           </p>
           <p class="w-third w-50-ns mv0 f12 f14-ns lh-150 tc">
-            <small id="calculator-mid" class="absolute top-55 right-third left-third static-ns dn f12 f14-ns lh-150 fw5">450.000 €</small>
+            <small id="calculator-mid" class="absolute top-80 right-third left-third static-ns dn f12 f14-ns lh-150 fw5">450.000 €</small>
             <small class="db f12 f14-ns lh-150 fw5">{{ site.data.pricing.calculator.slider.mid.description }}</small>
           </p>
           <p class="w-third w-25-ns mv0 f12 f14-ns lh-150 tr tc-ns">
-            <small id="calculator-max" class="absolute top-55 right-0 left-a static-ns db f12 f14-ns lh-150 fw5">495.000 €</small>
+            <small id="calculator-max" class="absolute top-80 right-0 left-a static-ns db f12 f14-ns lh-150 fw5">495.000 €</small>
             <small class="db f12 f14-ns lh-150 fw5 fw4-ns">{{ site.data.pricing.calculator.slider.hi.description }}</small>
           </p>
         </div>
