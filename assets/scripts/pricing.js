@@ -124,7 +124,7 @@ function formatPercentageValue(val) {
 };
 
 function get3dValues(transform3d) {
-  var matches = transform3d.match(/\((\d+)px,\s?(\d+)px,\s?(\d+)px\)/);
+  var matches = transform3d.match(/\((\d*\.?\d*)px,\s?(\d*\.?\d*)px,\s?(\d*\.?\d*)px\)/);
   if (matches) return [matches[1], matches[2], matches[3]];
 }
 
