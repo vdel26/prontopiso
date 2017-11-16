@@ -69,7 +69,7 @@ function updateCalculator () {
   var calculatorMaxVal = calculatorInputVal * 1.10
   var calculatorComVal = baseFee + (incentiveFee / (calculatorInputVal - calculatorMinVal) * (calculatorMidVal - calculatorMinVal))
 
-  calculatorComVal = (calculatorComVal > 0.10) ? 0.10 : calculatorComVal
+  calculatorComVal = (calculatorComVal > 0.06) ? 0.06 : calculatorComVal
   var calculatorResVal = calculatorMidVal * (1 - calculatorComVal)
 
   calculatorMin.innerHTML = formatCurrencyValue(Math.round(calculatorMinVal))
