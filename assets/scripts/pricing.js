@@ -78,7 +78,7 @@ function updateCalculator() {
   calculatorRes.innerHTML = calculatorResVal ? formatCurrencyValue(Math.round(calculatorResVal)) : '0 €';
   calculatorCom.innerHTML = calculatorComVal ? formatPercentageValue(calculatorComVal) : '0 %';
 
-  // moveTooltip();
+  moveTooltip()
 };
 
 var tooltip = document.querySelector('#tippy-tooltip-2')
