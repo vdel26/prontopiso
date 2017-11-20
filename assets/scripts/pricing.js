@@ -47,7 +47,6 @@ tipRight.show(popperRight)
 // Calculator
 var calculatorInput = document.querySelector('#calculator-input')
 var calculatorRange = document.querySelector('#calculator-range')
-var tooltipMiddle = document.querySelector('#tooltip-middle')
 var calculatorMin = document.querySelector('#calculator-min')
 var calculatorMid = document.querySelector('#calculator-mid')
 var calculatorMax = document.querySelector('#calculator-max')
@@ -84,8 +83,8 @@ function updateCalculator () {
 
 var tooltip = document.querySelector('#tippy-tooltip-2')
 var tooltipLeft = document.querySelector('#tooltip-left')
-var tooltipLeftEdges = tooltipLeft.getBoundingClientRect()
 var tooltipRight = document.querySelector('#tooltip-right')
+var tooltipLeftEdges = tooltipLeft.getBoundingClientRect()
 var tooltipRightEdges = tooltipRight.getBoundingClientRect()
 var rangeThumbWidth = 30
 
@@ -93,6 +92,9 @@ tooltip.style.zIndex = 2
 document.body.classList.add('overflow-x-hidden')
 
 function moveTooltip () {
+  tooltipLeftEdges = tooltipLeft.getBoundingClientRect()
+  tooltipRightEdges = tooltipRight.getBoundingClientRect()
+
   var rangeEdges = calculatorRange.getBoundingClientRect()
   var tooltipEdges = tooltip.getBoundingClientRect()
   var movement = (calculatorRange.value - calculatorRange.min) / (calculatorRange.max - calculatorRange.min)
@@ -106,22 +108,24 @@ function moveTooltip () {
     tooltip.style.transform = get3dString(leftEdge, y, z)
   })
 
-  var paddingsAndBorders = 24
-  var tooltipLeftDistance = tooltipLeftEdges.x + tooltipLeftEdges.width + paddingsAndBorders
-  var tooltipRightDistance = 2 * tooltipRightEdges.x + tooltipRightEdges.width + paddingsAndBorders
+  var tooltipLeftDistance = tooltipLeftEdges.x + tooltipLeftEdges.width
+  var tooltipRightDistance = tooltipRightEdges.x
   var inputLeft = document.querySelector('#input-left')
   var inputRight = document.querySelector('#input-right')
 
   if (leftEdge < tooltipLeftDistance) {
     tooltipLeft.classList.add('o-0')
     inputLeft.classList.add('triangle-o-0')
-  } else if (rightEdge > tooltipRightDistance) {
+  } else {
+    tooltipLeft.classList.remove('o-0')
+    inputLeft.classList.remove('triangle-o-0')
+  }
+
+  if (rightEdge > tooltipRightDistance) {
     tooltipRight.classList.add('o-0')
     inputRight.classList.add('triangle-o-0')
   } else {
-    tooltipLeft.classList.remove('o-0')
     tooltipRight.classList.remove('o-0')
-    inputLeft.classList.remove('triangle-o-0')
     inputRight.classList.remove('triangle-o-0')
   }
 };
