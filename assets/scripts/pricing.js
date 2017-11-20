@@ -104,9 +104,10 @@ function moveTooltip () {
   var rightEdge = newPosNormalized + (tooltipEdges.width / 2)
   var [x, y, z] = get3dValues(tooltip.style.transform)
 
-  requestAnimationFrame(function () {
+  tooltip.style.transform = get3dString(leftEdge, y, z)
+  setTimeout(function () {
     tooltip.style.transform = get3dString(leftEdge, y, z)
-  })
+  }, 1)
 
   var tooltipLeftDistance = tooltipLeftEdges.x + tooltipLeftEdges.width
   var tooltipRightDistance = tooltipRightEdges.x
