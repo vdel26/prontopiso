@@ -1,5 +1,5 @@
 /* Pricing */
-/* global tippy supportsPassive requestAnimationFrame */
+/* global tippy supportsPassive */
 
 // Tippy Tooltips
 tippy.Defaults.zIndex = 1
