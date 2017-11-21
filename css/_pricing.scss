@@ -72,7 +72,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 32px;
   width: 32px;
   border-radius: 50px;
-  background: #ffffff;
+  background: #fff;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -8px;
@@ -101,7 +101,7 @@ input[type=range]::-moz-range-thumb {
   height: 32px;
   width: 32px;
   border-radius: 50px;
-  background: #ffffff;
+  background: #fff;
   cursor: pointer;
 }
 
@@ -135,9 +135,8 @@ input[type=range]::-ms-thumb {
   height: 32px;
   width: 32px;
   border-radius: 50px;
-  background: #ffffff;
+  background: #fff;
   cursor: pointer;
-  height: 16px;
 }
 
 input[type=range]:focus::-ms-fill-lower {
@@ -149,10 +148,19 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 @media screen and (min-width: 30em) {
+  input[type=range]::after {
+    border-radius: 9999px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
   input[type=range]::-webkit-slider-runnable-track {
     box-shadow: 0 0 0 #1f8beb, 0 0 0 #3697ed;
     background: #1f8beb;
     border: 0 solid #1f8beb;
+    border-radius: 9999px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   input[type=range]::-webkit-slider-thumb {
@@ -168,6 +176,9 @@ input[type=range]:focus::-ms-fill-upper {
     box-shadow: 0 0 0 #1f8beb, 0 0 0 #3697ed;
     background: #1f8beb;
     border: 0 solid #1f8beb;
+    border-radius: 9999px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   input[type=range]::-moz-range-thumb {
@@ -185,6 +196,9 @@ input[type=range]:focus::-ms-fill-upper {
     background: #1f8beb;
     border: 0 solid #1f8beb;
     box-shadow: 0 0 0 #1f8beb, 0 0 0 #3697ed;
+    border-radius: 9999px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   input[type=range]::-ms-thumb {
@@ -200,6 +214,7 @@ input[type=range]:focus::-ms-fill-upper {
     background: #1f8beb;
   }
 }
+
 /* Tooltips */
 .tippy-popper,
 .tippy-tooltip {
@@ -209,7 +224,7 @@ input[type=range]:focus::-ms-fill-upper {
 #tooltip-left,
 #tooltip-middle,
 #tooltip-right {
-  transition: opacity .25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
 }
 
 .triangle::before {
@@ -222,9 +237,9 @@ input[type=range]:focus::-ms-fill-upper {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 6px 6px 0 6px;
-  border-color: transparent transparent transparent transparent;
-  transition: opacity .25s ease-in-out;
+  border-width: 6px 6px 0;
+  border-color: transparent;
+  transition: opacity 0.25s ease-in-out;
 }
 
 .triangle-o-0::before {
@@ -243,7 +258,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .triangle-white::before {
-  border-top-color: #ffffff;
+  border-top-color: #fff;
 }
 
 #tooltip-middle::before {
