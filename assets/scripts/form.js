@@ -36,7 +36,7 @@ var questions = {
       this.setActive(1, true)
     }
     else {
-      fieldsets[this.current].classList.remove('o-30')
+      // fieldsets[this.current].classList.remove('o-30')
       focusFirstElement(fieldsets[this.current])
       if (scroll) {
         autoscrolling = true
@@ -51,23 +51,25 @@ var questions = {
   setActive: function (next, scroll) {
     // console.log('setActive', this.current)
     if (next < 0 || next > this.total) return
-    fieldsets[this.current].classList.add('o-30')
-    fieldsets[next].classList.remove('o-30')
+    // fieldsets[this.current].classList.add('o-30')
+    // fieldsets[next].classList.remove('o-30')
     this.current = next
     if (scroll) questions.autoscroll(fieldsets[this.current])
   },
   goForward: function (scroll) {
     // console.log('goForward')
     if (this.current === this.total) return
-    fieldsets[this.current].classList.add('o-30')
-    fieldsets[++this.current].classList.remove('o-30')
+    // fieldsets[this.current].classList.add('o-30')
+    // fieldsets[++this.current].classList.remove('o-30')
+    ++this.current
     if (scroll) questions.autoscroll(fieldsets[this.current])
   },
   goBack: function (scroll) {
     // console.log('goBack')
     if (this.current === 0) return
-    fieldsets[this.current].classList.add('o-30')
-    fieldsets[--this.current].classList.remove('o-30')
+    // fieldsets[this.current].classList.add('o-30')
+    // fieldsets[--this.current].classList.remove('o-30')
+    --this.current
     if (scroll) questions.autoscroll(fieldsets[this.current])
   }
 }
