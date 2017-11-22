@@ -2,6 +2,7 @@
 layout: default
 scripts:
   - '/assets/vendor/tippy.min.js'
+  - '/assets/vendor/autoNumeric.min.js'
   - '/assets/scripts/pricing.js'
 ---
 
@@ -35,8 +36,8 @@ scripts:
 
         <fieldset class="w-50-ns mt10-ns mh0 mb30 mb0-ns pa0 ph20-ns bn">
           <input class="input-reset dib w-100 mb30 mb20-ns pv12 ph15 blue white-ns bg-white bg-blue-ns ph-white graphik f16 lh-100 fw5 ba b--white b--blue-ns br2"
-                 id="calculator-input" min="0" max="10000000" step="100000" lang="es-ES"
-                 type="number" value="450000" placeholder="450.000€" required>
+                 id="calculator-input"
+                 type="text" value="450000" placeholder="450.000€" required>
           <a class="link inherit db pa15 pa0-ns f14 lh-160 ba bn-ns b--white br2" href="/form.html"
             >{{ site.data.pricing.calculator.input.call-to-action }}</a>
         </fieldset>

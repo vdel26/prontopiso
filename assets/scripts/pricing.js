@@ -1,5 +1,5 @@
 /* Pricing */
-/* global tippy supportsPassive */
+/* global tippy AutoNumeric supportsPassive */
 
 // Tippy Tooltips
 tippy.Defaults.zIndex = 1
@@ -56,12 +56,37 @@ var calculatorCom = document.querySelector('#calculator-comission')
 var baseFee = 0.0325
 var incentiveFee = 0.0275
 
+calculatorInput.addEventListener('keydown', anArrowKeys, true)
 calculatorInput.addEventListener('input', updateCalculator, true)
 calculatorRange.addEventListener('input', updateCalculator, true)
 calculatorRange.addEventListener('input', moveTooltip, true)
 
+var anCalculatorInput = new AutoNumeric(calculatorInput, {
+  currencySymbol: ' €',
+  decimalCharacter: ',',
+  digitGroupSeparator: '.',
+  decimalPlaces: 0,
+  modifyValueOnWheel: false,
+  minimumValue: 0,
+  maximumValue: 10000000,
+  currencySymbolPlacement: AutoNumeric.options.currencySymbolPlacement.suffix
+})
+
+function anArrowKeys (event) {
+  var code = event.code
+  var key = event.key
+  var keyCode = event.keyCode
+  if (code === 'ArrowDown' || key === 'ArrowDown' || keyCode === 40) {
+    anCalculatorInput.set(parseInt(anCalculatorInput.rawValue) - 100000)
+    updateCalculator()
+  } else if (code === 'ArrowUp' || key === 'ArrowUp' || keyCode === 38) {
+    anCalculatorInput.set(parseInt(anCalculatorInput.rawValue) + 100000)
+    updateCalculator()
+  }
+}
+
 function updateCalculator () {
-  var calculatorInputVal = calculatorInput.value
+  var calculatorInputVal = anCalculatorInput.rawValue
   var calculatorRangeVal = calculatorRange.value
   var calculatorMinVal = calculatorInputVal * 0.94
   var calculatorMidVal = calculatorInputVal * (calculatorRangeVal / 100)
@@ -79,7 +104,7 @@ function updateCalculator () {
   calculatorCom.innerHTML = calculatorComVal ? formatPercentageValue(calculatorComVal) : '0 %'
 
   moveTooltip()
-};
+}
 
 var tooltip = document.querySelector('#tippy-tooltip-2')
 var tooltipLeft = document.querySelector('#tooltip-left')
@@ -129,7 +154,7 @@ function moveTooltip () {
     tooltipRight.classList.remove('o-0')
     inputRight.classList.remove('triangle-o-0')
   }
-};
+}
 
 window.addEventListener('resize', function () {
   moveTooltip()
@@ -144,7 +169,7 @@ function formatCurrencyValue (val) {
     minimumFractionDigits: 0,
     maximumFractionDigits: 0
   })
-};
+}
 
 function formatPercentageValue (val) {
   return val.toLocaleString('es-ES', {
@@ -152,7 +177,7 @@ function formatPercentageValue (val) {
     minimumFractionDigits: 0,
     maximumFractionDigits: 2
   })
-};
+}
 
 function get3dValues (transform3d) {
   var matches = transform3d.match(/\((\d*\.?\d*)px,\s?(\d*\.?\d*)px,\s?(\d*\.?\d*)px\)/)
