@@ -33,8 +33,6 @@ classes:
   tooltips:
     wrapper: 'hide-child relative'
     bubble-wrapper: 'dib ml10 v-text-bot'
-    bubble: 'bubble child absolute pa15 white bg-blue f12 lh-150 fw5 br2'
-    bubble-tail: 'bubble-tail child dib'
 
 ---
 
@@ -198,7 +196,8 @@ classes:
         <span class="{{ page.classes.tooltips.wrapper }} {{ page.classes.input.label }}">
           Superfície
           {% include tooltip.html id="features-area"
-             display="dib" color="white" bg-color="bg-blue" font-weight="fw5" triangle="triangle triangle-blue" width="350px"
+             display="dib" color="white" bg-color="bg-blue" font-weight="fw5"
+             triangle="triangle triangle-blue" width="350px"
              text="Indica la superfície construida en m2" %}
           <span id="anchor-features-area" class="{{ page.classes.tooltips.bubble-wrapper }}">
             {% include info-tooltip.svg %}
@@ -217,7 +216,8 @@ classes:
         <span class="{{ page.classes.tooltips.wrapper }} {{ page.classes.input.label }}">
           Número de habitaciones
           {% include tooltip.html id="features-rooms"
-             display="dib" color="white" bg-color="bg-blue" font-weight="fw5" triangle="triangle triangle-blue" width="350px"
+             display="dib" color="white" bg-color="bg-blue" font-weight="fw5"
+             triangle="triangle triangle-blue" width="350px"
              text="Total de habitaciones, excluyendo cocina, salón, comedor y baños" %}
           <span id="anchor-features-rooms" class="{{ page.classes.tooltips.bubble-wrapper }}">
             {% include info-tooltip.svg %}
@@ -262,7 +262,8 @@ classes:
         <span class="{{ page.classes.tooltips.wrapper }} {{ page.classes.input.label }}">
           Baños
           {% include tooltip.html id="features-bathrooms"
-             display="dib" color="white" bg-color="bg-blue" font-weight="fw5" triangle="triangle triangle-blue" width="350px"
+             display="dib" color="white" bg-color="bg-blue" font-weight="fw5"
+             triangle="triangle triangle-blue" width="350px"
              text="Habitación que dispone de lavabo, sanitario y bañera o espacio de ducha" %}
           <span id="anchor-features-bathrooms" class="{{ page.classes.tooltips.bubble-wrapper }}">
             {% include info-tooltip.svg %}
@@ -280,7 +281,8 @@ classes:
         <span class="{{ page.classes.tooltips.wrapper }} {{ page.classes.input.label }}">
           Aseos
           {% include tooltip.html id="features-toilets"
-             display="dib" color="white" bg-color="bg-blue" font-weight="fw5" triangle="triangle triangle-blue" width="350px"
+             display="dib" color="white" bg-color="bg-blue" font-weight="fw5"
+             triangle="triangle triangle-blue" width="350px"
              text="Habitación que dispone de lavabo y sanitario" %}
           <span id="anchor-features-toilets" class="{{ page.classes.tooltips.bubble-wrapper }}">
             {% include info-tooltip.svg %}
