@@ -30,7 +30,7 @@
 .cn {
   clear: none; }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 50.75em) {
   .cr-ns {
     clear: right; }
   .cl-ns {
@@ -38,24 +38,4 @@
   .cb-ns {
     clear: both; }
   .cn-ns {
-    clear: none; } }
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-  .cr-m {
-    clear: right; }
-  .cl-m {
-    clear: left; }
-  .cb-m {
-    clear: both; }
-  .cn-m {
-    clear: none; } }
-
-@media screen and (min-width: 60em) {
-  .cr-l {
-    clear: right; }
-  .cl-l {
-    clear: left; }
-  .cb-l {
-    clear: both; }
-  .cn-l {
     clear: none; } }

@@ -65,7 +65,7 @@
 .b--red {
   border-color: #fe5f5f; }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 50.75em) {
   .b--inherit-ns {
     border-color: inherit; }
   .b--initial-ns {
@@ -97,72 +97,4 @@
   .b--blue-dark-ns {
     border-color: #0439b0; }
   .b--red-ns {
-    border-color: #fe5f5f; } }
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-  .b--inherit-m {
-    border-color: inherit; }
-  .b--initial-m {
-    border-color: initial; }
-  .b--current-m {
-    border-color: currentColor; }
-  .b--transparent-m {
-    border-color: transparent; }
-  .b--black-m {
-    border-color: #000; }
-  .b--black-85-m {
-    border-color: rgba(0, 0, 0, 0.85); }
-  .b--black-50-m {
-    border-color: rgba(0, 0, 0, 0.5); }
-  .b--black-125-m {
-    border-color: rgba(0, 0, 0, 0.125); }
-  .b--white-m {
-    border-color: #fff; }
-  .b--white-10-m {
-    border-color: rgba(255, 255, 255, 0.1); }
-  .b--pale-gray-m {
-    border-color: #e6edf2; }
-  .b--blue-m {
-    border-color: #1f8beb; }
-  .b--blue-light-m {
-    border-color: #84c1f5; }
-  .b--blue-mid-m {
-    border-color: #116be1; }
-  .b--blue-dark-m {
-    border-color: #0439b0; }
-  .b--red-m {
-    border-color: #fe5f5f; } }
-
-@media screen and (min-width: 60em) {
-  .b--inherit-l {
-    border-color: inherit; }
-  .b--initial-l {
-    border-color: initial; }
-  .b--current-l {
-    border-color: currentColor; }
-  .b--transparent-l {
-    border-color: transparent; }
-  .b--black-l {
-    border-color: #000; }
-  .b--black-85-l {
-    border-color: rgba(0, 0, 0, 0.85); }
-  .b--black-50-l {
-    border-color: rgba(0, 0, 0, 0.5); }
-  .b--black-125-l {
-    border-color: rgba(0, 0, 0, 0.125); }
-  .b--white-l {
-    border-color: #fff; }
-  .b--white-10-l {
-    border-color: rgba(255, 255, 255, 0.1); }
-  .b--pale-gray-l {
-    border-color: #e6edf2; }
-  .b--blue-l {
-    border-color: #1f8beb; }
-  .b--blue-light-l {
-    border-color: #84c1f5; }
-  .b--blue-mid-l {
-    border-color: #116be1; }
-  .b--blue-dark-l {
-    border-color: #0439b0; }
-  .b--red-l {
     border-color: #fe5f5f; } }

@@ -35,7 +35,7 @@
   -o-object-position: left;
      object-position: left; }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 50.75em) {
   .op-inherit-ns {
     -o-object-position: inherit;
        object-position: inherit; }
@@ -58,57 +58,5 @@
     -o-object-position: bottom;
        object-position: bottom; }
   .op-left-ns {
-    -o-object-position: left;
-       object-position: left; } }
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-  .op-inherit-m {
-    -o-object-position: inherit;
-       object-position: inherit; }
-  .op-initial-m {
-    -o-object-position: initial;
-       object-position: initial; }
-  .op-unset-m {
-    -o-object-position: unset;
-       object-position: unset; }
-  .op-center-m {
-    -o-object-position: center;
-       object-position: center; }
-  .op-top-m {
-    -o-object-position: top;
-       object-position: top; }
-  .op-right-m {
-    -o-object-position: right;
-       object-position: right; }
-  .op-bottom-m {
-    -o-object-position: bottom;
-       object-position: bottom; }
-  .op-left-m {
-    -o-object-position: left;
-       object-position: left; } }
-
-@media screen and (min-width: 60em) {
-  .op-inherit-l {
-    -o-object-position: inherit;
-       object-position: inherit; }
-  .op-initial-l {
-    -o-object-position: initial;
-       object-position: initial; }
-  .op-unset-l {
-    -o-object-position: unset;
-       object-position: unset; }
-  .op-center-l {
-    -o-object-position: center;
-       object-position: center; }
-  .op-top-l {
-    -o-object-position: top;
-       object-position: top; }
-  .op-right-l {
-    -o-object-position: right;
-       object-position: right; }
-  .op-bottom-l {
-    -o-object-position: bottom;
-       object-position: bottom; }
-  .op-left-l {
     -o-object-position: left;
        object-position: left; } }

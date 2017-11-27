@@ -13,26 +13,10 @@
 .graphik {
   font-family: Graphik, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 50.75em) {
   .playfair-ns {
     font-family: "Playfair Display", serif; }
   .muli-ns {
     font-family: Muli, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
   .graphik-ns {
-    font-family: Graphik, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; } }
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-  .playfair-m {
-    font-family: "Playfair Display", serif; }
-  .muli-m {
-    font-family: Muli, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
-  .graphik-m {
-    font-family: Graphik, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; } }
-
-@media screen and (min-width: 60em) {
-  .playfair-l {
-    font-family: "Playfair Display", serif; }
-  .muli-l {
-    font-family: Muli, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
-  .graphik-l {
     font-family: Graphik, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; } }

@@ -71,7 +71,7 @@
 .fill-red {
   fill: #fe5f5f; }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 50.75em) {
   .fill-inherit-ns {
     fill: inherit; }
   .fill-initial-ns {
@@ -103,74 +103,6 @@
   .fill-blue-dark-ns {
     fill: #0439b0; }
   .fill-red-ns {
-    fill: #fe5f5f; } }
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-  .fill-inherit-m {
-    fill: inherit; }
-  .fill-initial-m {
-    fill: initial; }
-  .fill-current-m {
-    fill: currentColor; }
-  .fill-transparent-m {
-    fill: transparent; }
-  .fill-black-m {
-    fill: #000; }
-  .fill-black-85-m {
-    fill: rgba(0, 0, 0, 0.85); }
-  .fill-black-50-m {
-    fill: rgba(0, 0, 0, 0.5); }
-  .fill-black-125-m {
-    fill: rgba(0, 0, 0, 0.125); }
-  .fill-white-m {
-    fill: #fff; }
-  .fill-white-10-m {
-    fill: rgba(255, 255, 255, 0.1); }
-  .fill-pale-gray-m {
-    fill: #e6edf2; }
-  .fill-blue-m {
-    fill: #1f8beb; }
-  .fill-blue-light-m {
-    fill: #84c1f5; }
-  .fill-blue-mid-m {
-    fill: #116be1; }
-  .fill-blue-dark-m {
-    fill: #0439b0; }
-  .fill-red-m {
-    fill: #fe5f5f; } }
-
-@media screen and (min-width: 60em) {
-  .fill-inherit-l {
-    fill: inherit; }
-  .fill-initial-l {
-    fill: initial; }
-  .fill-current-l {
-    fill: currentColor; }
-  .fill-transparent-l {
-    fill: transparent; }
-  .fill-black-l {
-    fill: #000; }
-  .fill-black-85-l {
-    fill: rgba(0, 0, 0, 0.85); }
-  .fill-black-50-l {
-    fill: rgba(0, 0, 0, 0.5); }
-  .fill-black-125-l {
-    fill: rgba(0, 0, 0, 0.125); }
-  .fill-white-l {
-    fill: #fff; }
-  .fill-white-10-l {
-    fill: rgba(255, 255, 255, 0.1); }
-  .fill-pale-gray-l {
-    fill: #e6edf2; }
-  .fill-blue-l {
-    fill: #1f8beb; }
-  .fill-blue-light-l {
-    fill: #84c1f5; }
-  .fill-blue-mid-l {
-    fill: #116be1; }
-  .fill-blue-dark-l {
-    fill: #0439b0; }
-  .fill-red-l {
     fill: #fe5f5f; } }
 
 /* Stroke colors */
@@ -222,7 +154,7 @@
 .stroke-red {
   stroke: #fe5f5f; }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 50.75em) {
   .stroke-inherit-ns {
     stroke: inherit; }
   .stroke-initial-ns {
@@ -254,74 +186,6 @@
   .stroke-blue-dark-ns {
     stroke: #0439b0; }
   .stroke-red-ns {
-    stroke: #fe5f5f; } }
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-  .stroke-inherit-m {
-    stroke: inherit; }
-  .stroke-initial-m {
-    stroke: initial; }
-  .stroke-current-m {
-    stroke: currentColor; }
-  .stroke-transparent-m {
-    stroke: transparent; }
-  .stroke-black-m {
-    stroke: #000; }
-  .stroke-black-85-m {
-    stroke: rgba(0, 0, 0, 0.85); }
-  .stroke-black-50-m {
-    stroke: rgba(0, 0, 0, 0.5); }
-  .stroke-black-125-m {
-    stroke: rgba(0, 0, 0, 0.125); }
-  .stroke-white-m {
-    stroke: #fff; }
-  .stroke-white-10-m {
-    stroke: rgba(255, 255, 255, 0.1); }
-  .stroke-pale-gray-m {
-    stroke: #e6edf2; }
-  .stroke-blue-m {
-    stroke: #1f8beb; }
-  .stroke-blue-light-m {
-    stroke: #84c1f5; }
-  .stroke-blue-mid-m {
-    stroke: #116be1; }
-  .stroke-blue-dark-m {
-    stroke: #0439b0; }
-  .stroke-red-m {
-    stroke: #fe5f5f; } }
-
-@media screen and (min-width: 60em) {
-  .stroke-inherit-l {
-    stroke: inherit; }
-  .stroke-initial-l {
-    stroke: initial; }
-  .stroke-current-l {
-    stroke: currentColor; }
-  .stroke-transparent-l {
-    stroke: transparent; }
-  .stroke-black-l {
-    stroke: #000; }
-  .stroke-black-85-l {
-    stroke: rgba(0, 0, 0, 0.85); }
-  .stroke-black-50-l {
-    stroke: rgba(0, 0, 0, 0.5); }
-  .stroke-black-125-l {
-    stroke: rgba(0, 0, 0, 0.125); }
-  .stroke-white-l {
-    stroke: #fff; }
-  .stroke-white-10-l {
-    stroke: rgba(255, 255, 255, 0.1); }
-  .stroke-pale-gray-l {
-    stroke: #e6edf2; }
-  .stroke-blue-l {
-    stroke: #1f8beb; }
-  .stroke-blue-light-l {
-    stroke: #84c1f5; }
-  .stroke-blue-mid-l {
-    stroke: #116be1; }
-  .stroke-blue-dark-l {
-    stroke: #0439b0; }
-  .stroke-red-l {
     stroke: #fe5f5f; } }
 
 /* Stroke widths */
@@ -472,7 +336,7 @@
 .swa {
   stroke-width: auto; }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 50.75em) {
   .sw0-ns {
     stroke-width: 0; }
   .sw5-ns {
@@ -582,228 +446,4 @@
     stroke-width: -moz-calc(100% / 3);
     stroke-width: calc(100% / 3); }
   .swa-ns {
-    stroke-width: auto; } }
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-  .sw0-m {
-    stroke-width: 0; }
-  .sw5-m {
-    stroke-width: 5px;
-    stroke-width: 0.3125rem; }
-  .sw8-m {
-    stroke-width: 8px;
-    stroke-width: 0.5rem; }
-  .sw10-m {
-    stroke-width: 10px;
-    stroke-width: 0.625rem; }
-  .swn10-m {
-    stroke-width: -10px;
-    stroke-width: -0.625rem; }
-  .sw12-m {
-    stroke-width: 12px;
-    stroke-width: 0.75rem; }
-  .sw15-m {
-    stroke-width: 15px;
-    stroke-width: 0.9375rem; }
-  .sw18-m {
-    stroke-width: 18px;
-    stroke-width: 1.125rem; }
-  .sw20-m {
-    stroke-width: 20px;
-    stroke-width: 1.25rem; }
-  .sw25-m {
-    stroke-width: 25px;
-    stroke-width: 1.5625rem; }
-  .sw30-m {
-    stroke-width: 30px;
-    stroke-width: 1.875rem; }
-  .sw32-m {
-    stroke-width: 32px;
-    stroke-width: 2rem; }
-  .sw36-m {
-    stroke-width: 36px;
-    stroke-width: 2.25rem; }
-  .sw40-m {
-    stroke-width: 40px;
-    stroke-width: 2.5rem; }
-  .sw45-m {
-    stroke-width: 45px;
-    stroke-width: 2.8125rem; }
-  .sw50-m {
-    stroke-width: 50px;
-    stroke-width: 3.125rem; }
-  .sw55-m {
-    stroke-width: 55px;
-    stroke-width: 3.4375rem; }
-  .sw60-m {
-    stroke-width: 60px;
-    stroke-width: 3.75rem; }
-  .sw65-m {
-    stroke-width: 65px;
-    stroke-width: 4.0625rem; }
-  .sw70-m {
-    stroke-width: 70px;
-    stroke-width: 4.375rem; }
-  .sw75-m {
-    stroke-width: 75px;
-    stroke-width: 4.6875rem; }
-  .swn75-m {
-    stroke-width: -75px;
-    stroke-width: -4.6875rem; }
-  .sw80-m {
-    stroke-width: 80px;
-    stroke-width: 5rem; }
-  .sw85-m {
-    stroke-width: 85px;
-    stroke-width: 5.3125rem; }
-  .sw90-m {
-    stroke-width: 90px;
-    stroke-width: 5.625rem; }
-  .sw100-m {
-    stroke-width: 100px;
-    stroke-width: 6.25rem; }
-  .sw120-m {
-    stroke-width: 120px;
-    stroke-width: 7.5rem; }
-  .sw135-m {
-    stroke-width: 135px;
-    stroke-width: 8.4375rem; }
-  .sw140-m {
-    stroke-width: 140px;
-    stroke-width: 8.75rem; }
-  .sw150-m {
-    stroke-width: 150px;
-    stroke-width: 9.375rem; }
-  .sw160-m {
-    stroke-width: 160px;
-    stroke-width: 10rem; }
-  .sw175-m {
-    stroke-width: 175px;
-    stroke-width: 10.9375rem; }
-  .sw180-m {
-    stroke-width: 180px;
-    stroke-width: 11.25rem; }
-  .sw200-m {
-    stroke-width: 200px;
-    stroke-width: 12.5rem; }
-  .sw240-m {
-    stroke-width: 240px;
-    stroke-width: 15rem; }
-  .swthird-m {
-    stroke-width: -webkit-calc(100% / 3);
-    stroke-width: -moz-calc(100% / 3);
-    stroke-width: calc(100% / 3); }
-  .swa-m {
-    stroke-width: auto; } }
-
-@media screen and (min-width: 60em) {
-  .sw0-l {
-    stroke-width: 0; }
-  .sw5-l {
-    stroke-width: 5px;
-    stroke-width: 0.3125rem; }
-  .sw8-l {
-    stroke-width: 8px;
-    stroke-width: 0.5rem; }
-  .sw10-l {
-    stroke-width: 10px;
-    stroke-width: 0.625rem; }
-  .swn10-l {
-    stroke-width: -10px;
-    stroke-width: -0.625rem; }
-  .sw12-l {
-    stroke-width: 12px;
-    stroke-width: 0.75rem; }
-  .sw15-l {
-    stroke-width: 15px;
-    stroke-width: 0.9375rem; }
-  .sw18-l {
-    stroke-width: 18px;
-    stroke-width: 1.125rem; }
-  .sw20-l {
-    stroke-width: 20px;
-    stroke-width: 1.25rem; }
-  .sw25-l {
-    stroke-width: 25px;
-    stroke-width: 1.5625rem; }
-  .sw30-l {
-    stroke-width: 30px;
-    stroke-width: 1.875rem; }
-  .sw32-l {
-    stroke-width: 32px;
-    stroke-width: 2rem; }
-  .sw36-l {
-    stroke-width: 36px;
-    stroke-width: 2.25rem; }
-  .sw40-l {
-    stroke-width: 40px;
-    stroke-width: 2.5rem; }
-  .sw45-l {
-    stroke-width: 45px;
-    stroke-width: 2.8125rem; }
-  .sw50-l {
-    stroke-width: 50px;
-    stroke-width: 3.125rem; }
-  .sw55-l {
-    stroke-width: 55px;
-    stroke-width: 3.4375rem; }
-  .sw60-l {
-    stroke-width: 60px;
-    stroke-width: 3.75rem; }
-  .sw65-l {
-    stroke-width: 65px;
-    stroke-width: 4.0625rem; }
-  .sw70-l {
-    stroke-width: 70px;
-    stroke-width: 4.375rem; }
-  .sw75-l {
-    stroke-width: 75px;
-    stroke-width: 4.6875rem; }
-  .swn75-l {
-    stroke-width: -75px;
-    stroke-width: -4.6875rem; }
-  .sw80-l {
-    stroke-width: 80px;
-    stroke-width: 5rem; }
-  .sw85-l {
-    stroke-width: 85px;
-    stroke-width: 5.3125rem; }
-  .sw90-l {
-    stroke-width: 90px;
-    stroke-width: 5.625rem; }
-  .sw100-l {
-    stroke-width: 100px;
-    stroke-width: 6.25rem; }
-  .sw120-l {
-    stroke-width: 120px;
-    stroke-width: 7.5rem; }
-  .sw135-l {
-    stroke-width: 135px;
-    stroke-width: 8.4375rem; }
-  .sw140-l {
-    stroke-width: 140px;
-    stroke-width: 8.75rem; }
-  .sw150-l {
-    stroke-width: 150px;
-    stroke-width: 9.375rem; }
-  .sw160-l {
-    stroke-width: 160px;
-    stroke-width: 10rem; }
-  .sw175-l {
-    stroke-width: 175px;
-    stroke-width: 10.9375rem; }
-  .sw180-l {
-    stroke-width: 180px;
-    stroke-width: 11.25rem; }
-  .sw200-l {
-    stroke-width: 200px;
-    stroke-width: 12.5rem; }
-  .sw240-l {
-    stroke-width: 240px;
-    stroke-width: 15rem; }
-  .swthird-l {
-    stroke-width: -webkit-calc(100% / 3);
-    stroke-width: -moz-calc(100% / 3);
-    stroke-width: calc(100% / 3); }
-  .swa-l {
     stroke-width: auto; } }

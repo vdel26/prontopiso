@@ -24,7 +24,7 @@
 .fs-oblique {
   font-style: oblique; }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 50.75em) {
   .i-ns {
     font-style: italic; }
   .fs-inherit-ns {
@@ -34,28 +34,4 @@
   .fs-italic-ns {
     font-style: italic; }
   .fs-oblique-ns {
-    font-style: oblique; } }
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-  .i-m {
-    font-style: italic; }
-  .fs-inherit-m {
-    font-style: inherit; }
-  .fs-normal-m {
-    font-style: normal; }
-  .fs-italic-m {
-    font-style: italic; }
-  .fs-oblique-m {
-    font-style: oblique; } }
-
-@media screen and (min-width: 60em) {
-  .i-l {
-    font-style: italic; }
-  .fs-inherit-l {
-    font-style: inherit; }
-  .fs-normal-l {
-    font-style: normal; }
-  .fs-italic-l {
-    font-style: italic; }
-  .fs-oblique-l {
     font-style: oblique; } }

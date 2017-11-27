@@ -34,7 +34,7 @@
   position: -webkit-sticky;
   position: sticky; }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 50.75em) {
   .inherit-ns {
     position: inherit; }
   .initial-ns {
@@ -50,43 +50,5 @@
   .fixed-ns {
     position: fixed; }
   .sticky-ns {
-    position: -webkit-sticky;
-    position: sticky; } }
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-  .inherit-m {
-    position: inherit; }
-  .initial-m {
-    position: initial; }
-  .unset-m {
-    position: unset; }
-  .static-m {
-    position: static; }
-  .relative-m {
-    position: relative; }
-  .absolute-m {
-    position: absolute; }
-  .fixed-m {
-    position: fixed; }
-  .sticky-m {
-    position: -webkit-sticky;
-    position: sticky; } }
-
-@media screen and (min-width: 60em) {
-  .inherit-l {
-    position: inherit; }
-  .initial-l {
-    position: initial; }
-  .unset-l {
-    position: unset; }
-  .static-l {
-    position: static; }
-  .relative-l {
-    position: relative; }
-  .absolute-l {
-    position: absolute; }
-  .fixed-l {
-    position: fixed; }
-  .sticky-l {
     position: -webkit-sticky;
     position: sticky; } }

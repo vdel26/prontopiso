@@ -29,7 +29,7 @@
       -ms-hyphens: auto;
           hyphens: auto; }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 50.75em) {
   .hyphen-none-ns {
     -webkit-hyphens: none;
        -moz-hyphens: none;
@@ -41,40 +41,6 @@
         -ms-hyphens: manual;
             hyphens: manual; }
   .hyphen-auto-ns {
-    -webkit-hyphens: auto;
-       -moz-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto; } }
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-  .hyphen-none-m {
-    -webkit-hyphens: none;
-       -moz-hyphens: none;
-        -ms-hyphens: none;
-            hyphens: none; }
-  .hyphen-manual-m {
-    -webkit-hyphens: manual;
-       -moz-hyphens: manual;
-        -ms-hyphens: manual;
-            hyphens: manual; }
-  .hyphen-auto-m {
-    -webkit-hyphens: auto;
-       -moz-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto; } }
-
-@media screen and (min-width: 60em) {
-  .hyphen-none-l {
-    -webkit-hyphens: none;
-       -moz-hyphens: none;
-        -ms-hyphens: none;
-            hyphens: none; }
-  .hyphen-manual-l {
-    -webkit-hyphens: manual;
-       -moz-hyphens: manual;
-        -ms-hyphens: manual;
-            hyphens: manual; }
-  .hyphen-auto-l {
     -webkit-hyphens: auto;
        -moz-hyphens: auto;
         -ms-hyphens: auto;

@@ -28,7 +28,7 @@
   word-wrap: break-word;
   overflow-wrap: break-word; }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 50.75em) {
   .ow-inherit-ns {
     word-wrap: inherit;
     overflow: inherit; }
@@ -42,39 +42,5 @@
     word-wrap: normal;
     overflow: normal; }
   .ow-break-ns {
-    word-wrap: break-word;
-    overflow: break-word; } }
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-  .ow-inherit-m {
-    word-wrap: inherit;
-    overflow: inherit; }
-  .ow-initial-m {
-    word-wrap: initial;
-    overflow: initial; }
-  .ow-unset-m {
-    word-wrap: unset;
-    overflow: unset; }
-  .ow-normal-m {
-    word-wrap: normal;
-    overflow: normal; }
-  .ow-break-m {
-    word-wrap: break-word;
-    overflow: break-word; } }
-
-@media screen and (min-width: 60em) {
-  .ow-inherit-l {
-    word-wrap: inherit;
-    overflow: inherit; }
-  .ow-initial-l {
-    word-wrap: initial;
-    overflow: initial; }
-  .ow-unset-l {
-    word-wrap: unset;
-    overflow: unset; }
-  .ow-normal-l {
-    word-wrap: normal;
-    overflow: normal; }
-  .ow-break-l {
     word-wrap: break-word;
     overflow: break-word; } }

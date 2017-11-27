@@ -35,7 +35,7 @@
   -o-object-fit: scale-down;
      object-fit: scale-down; }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 50.75em) {
   .of-inherit-ns {
     -o-object-fit: inherit;
        object-fit: inherit; }
@@ -58,57 +58,5 @@
     -o-object-fit: none;
        object-fit: none; }
   .of-scale-down-ns {
-    -o-object-fit: scale-down;
-       object-fit: scale-down; } }
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-  .of-inherit-m {
-    -o-object-fit: inherit;
-       object-fit: inherit; }
-  .of-initial-m {
-    -o-object-fit: initial;
-       object-fit: initial; }
-  .of-unset-m {
-    -o-object-fit: unset;
-       object-fit: unset; }
-  .of-fill-m {
-    -o-object-fit: fill;
-       object-fit: fill; }
-  .of-contain-m {
-    -o-object-fit: contain;
-       object-fit: contain; }
-  .of-cover-m {
-    -o-object-fit: cover;
-       object-fit: cover; }
-  .of-none-m {
-    -o-object-fit: none;
-       object-fit: none; }
-  .of-scale-down-m {
-    -o-object-fit: scale-down;
-       object-fit: scale-down; } }
-
-@media screen and (min-width: 60em) {
-  .of-inherit-l {
-    -o-object-fit: inherit;
-       object-fit: inherit; }
-  .of-initial-l {
-    -o-object-fit: initial;
-       object-fit: initial; }
-  .of-unset-l {
-    -o-object-fit: unset;
-       object-fit: unset; }
-  .of-fill-l {
-    -o-object-fit: fill;
-       object-fit: fill; }
-  .of-contain-l {
-    -o-object-fit: contain;
-       object-fit: contain; }
-  .of-cover-l {
-    -o-object-fit: cover;
-       object-fit: cover; }
-  .of-none-l {
-    -o-object-fit: none;
-       object-fit: none; }
-  .of-scale-down-l {
     -o-object-fit: scale-down;
        object-fit: scale-down; } }

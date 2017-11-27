@@ -45,7 +45,7 @@
 .lh-200 {
   line-height: 2; }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 50.75em) {
   .lh-100-ns {
     line-height: 1; }
   .lh-120-ns {
@@ -69,56 +69,4 @@
   .lh-185-ns {
     line-height: 1.85; }
   .lh-200-ns {
-    line-height: 2; } }
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-  .lh-100-m {
-    line-height: 1; }
-  .lh-120-m {
-    line-height: 1.2; }
-  .lh-125-m {
-    line-height: 1.25; }
-  .lh-130-m {
-    line-height: 1.3; }
-  .lh-135-m {
-    line-height: 1.35; }
-  .lh-140-m {
-    line-height: 1.4; }
-  .lh-150-m {
-    line-height: 1.5; }
-  .lh-160-m {
-    line-height: 1.6; }
-  .lh-165-m {
-    line-height: 1.65; }
-  .lh-175-m {
-    line-height: 1.75; }
-  .lh-185-m {
-    line-height: 1.85; }
-  .lh-200-m {
-    line-height: 2; } }
-
-@media screen and (min-width: 60em) {
-  .lh-100-l {
-    line-height: 1; }
-  .lh-120-l {
-    line-height: 1.2; }
-  .lh-125-l {
-    line-height: 1.25; }
-  .lh-130-l {
-    line-height: 1.3; }
-  .lh-135-l {
-    line-height: 1.35; }
-  .lh-140-l {
-    line-height: 1.4; }
-  .lh-150-l {
-    line-height: 1.5; }
-  .lh-160-l {
-    line-height: 1.6; }
-  .lh-165-l {
-    line-height: 1.65; }
-  .lh-175-l {
-    line-height: 1.75; }
-  .lh-185-l {
-    line-height: 1.85; }
-  .lh-200-l {
     line-height: 2; } }

@@ -45,7 +45,7 @@
 .fw7 {
   font-weight: 700; }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 50.75em) {
   .normal-ns {
     font-weight: normal; }
   .b-ns {
@@ -59,36 +59,4 @@
   .fw6-ns {
     font-weight: 600; }
   .fw7-ns {
-    font-weight: 700; } }
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-  .normal-m {
-    font-weight: normal; }
-  .b-m {
-    font-weight: bold; }
-  .fwi-m {
-    font-weight: inherit; }
-  .fw4-m {
-    font-weight: 400; }
-  .fw5-m {
-    font-weight: 500; }
-  .fw6-m {
-    font-weight: 600; }
-  .fw7-m {
-    font-weight: 700; } }
-
-@media screen and (min-width: 60em) {
-  .normal-l {
-    font-weight: normal; }
-  .b-l {
-    font-weight: bold; }
-  .fwi-l {
-    font-weight: inherit; }
-  .fw4-l {
-    font-weight: 400; }
-  .fw5-l {
-    font-weight: 500; }
-  .fw6-l {
-    font-weight: 600; }
-  .fw7-l {
     font-weight: 700; } }

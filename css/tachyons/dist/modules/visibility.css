@@ -17,22 +17,8 @@
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px); }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 50.75em) {
   .clip-ns {
-    position: fixed !important;
-    _position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px); } }
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-  .clip-m {
-    position: fixed !important;
-    _position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px); } }
-
-@media screen and (min-width: 60em) {
-  .clip-l {
     position: fixed !important;
     _position: absolute !important;
     clip: rect(1px 1px 1px 1px);
