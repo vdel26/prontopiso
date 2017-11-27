@@ -69,6 +69,7 @@
   background-position: center;
   background-size: cover;
   min-height: 110vh;
+  background-attachment: fixed;
 }
 
 #hero::after {
@@ -122,6 +123,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   @media screen and (min-width: 30em) {
     height: 550px;
   }
