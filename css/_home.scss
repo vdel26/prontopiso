@@ -68,8 +68,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 110vh;
   background-attachment: fixed;
+  min-height: 60vmax;
 }
 
 #hero::after {
