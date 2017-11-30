@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @media screen and (min-width: 30em) {
+  @media screen and (min-width: 50.75em) {
     background-size: contain;
   }
 }
@@ -14,7 +14,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @media screen and (min-width: 30em) {
+  @media screen and (min-width: 50.75em) {
     background-size: contain;
   }
 }
@@ -147,7 +147,7 @@ input[type=range]:focus::-ms-fill-upper {
   background: #0342ad;
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 50.75em) {
   input[type=range]::after {
     border-radius: 9999px;
     border-top-left-radius: 0;
